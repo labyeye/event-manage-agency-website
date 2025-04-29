@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devadan Cup 2025 - Sports Gallery</title>
+    <link rel="icon" href="./assets/logo2.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .sport-section {
+        margin-bottom: 40px;
+      }
+
+      .sport-section h3 {
+        color: #f4b86f;
+        margin-bottom: 20px;
+        font-size: 24px;
+        border-bottom: 2px solid #a27158;
+        padding-bottom: 10px;
+      }
+
+      .lightbox-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .image:hover {
+        transform: scale(1.05);
+      }
+
+      .image img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      /* Existing lightbox styles remain the same */
+      .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+      }
+
+      .lightbox.show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lightbox-content {
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      .lightbox-content img {
+        max-width: 100%;
+        max-height: 80vh;
+      }
+
+      .lightbox-content p {
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .svg1 {
+        position: absolute;
+        transform: scale(0.8) translate(-55vw, -75vw);
+        z-index: -1;
+      }
+
+      .svg2 {
+        position: absolute;
+        transform: scale(0.8) translate(25vw, -85vw);
+        z-index: -1;
+      }
+
+      .svg3 {
+        position: absolute;
+        transform: scale(0.6) translate(55vw, -25vw);
+        z-index: -1;
+      }
+
+      .svg4 {
+        position: absolute;
+        transform: scale(0.6) translate(-125vw, -25vw);
+        z-index: -1;
+      }
+      @media only screen and (max-width:768px){
+        .svg1,.svg2,.svg3,.svg4{
+          display:none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Component -->
+    <div class="nav-component">
+      <div class="nav-logo"></div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="event.html">Events</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="nav-logo-1"></div>
+      <div class="hamburger-menu" onclick="toggleMobileNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <!-- SVG Elements -->
+    <svg
+      width="2827"
+      height="1753"
+      viewBox="0 0 2827 1753"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="svg1"
+    >
+      <g filter="url(#filter0_f_244_4)">
+        <path
+          d="M2326 894.5C2326 1087.8 2375.5 1369.5 850 1200C656.7 1200 500 1043.3 500 850C500 656.7 656.7 500 850 500C1043.3 500 2326 701.2 2326 894.5Z"
+          fill="url(#paint0_linear_244_4)"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_f_244_4"
+          x="0"
+          y="0"
+          width="2826.18"
+          height="1752.12"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+          <feGaussianBlur
+            stdDeviation="250"
+            result="effect1_foregroundBlur_244_4"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_244_4"
+          x1="850"
+          y1="500"
+          x2="850"
+          y2="1200"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#F4B86F" />
+          <stop offset="0.419" stop-color="#A27158" />
+          <stop offset="0.844" stop-color="#310538" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg
+      width="2827"
+      height="1753"
+      viewBox="0 0 2827 1753"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      class="svg2"
+    >
+      <g filter="url(#filter0_f_244_4)">
+        <path
+          d="M2326 894.5C2326 1087.8 2375.5 1369.5 850 1200C656.7 1200 500 1043.3 500 850C500 656.7 656.7 500 850 500C1043.3 500 2326 701.2 2326 894.5Z"
+          fill="url(#paint0_linear_244_4)"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_f_244_4"
+          x="0"
+          y="0"
+          width="2826.18"
+          height="1752.12"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+          <feGaussianBlur
+            stdDeviation="250"
+            result="effect1_foregroundBlur_244_4"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_244_4"
+          x1="850"
+          y1="500"
+          x2="850"
+          y2="1200"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#F4B86F" />
+          <stop offset="0.419" stop-color="#A27158" />
+          <stop offset="0.844" stop-color="#310538" />
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="container">
+      <h2 class="text-center">Sports Gallery</h2>
+
+      <!-- Cricket Section -->
+      <div class="sport-section">
+        <h3>Cricket</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/cricket/1.png', )"
+          >
+            <img
+              src="./assets/cricket/1.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/cricket/2.png', )"
+          >
+            <img
+              src="./assets/cricket/2.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/cricket/3.png', )"
+          >
+            <img
+              src="./assets/cricket/3.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/cricket/4.png', )"
+          >
+            <img
+              src="./assets/cricket/4.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Chess Section -->
+      <div class="sport-section">
+        <h3>Chess</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/chess/0b710995-2527-4c02-978b-15736028c7fe.JPG',)"
+          >
+            <img
+              src="./assets/chess/0b710995-2527-4c02-978b-15736028c7fe.JPG"
+              alt=""
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/chess/5583fcbe-bc74-4353-8f6e-394dbb87c337.JPG', )"
+          >
+            <img
+              src="./assets/chess/5583fcbe-bc74-4353-8f6e-394dbb87c337.JPG"
+              alt=""
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/chess/91f78366-5d8e-4f8f-ae65-8bb263f9fe75.JPG', )"
+          >
+            <img
+              src="./assets/chess/91f78366-5d8e-4f8f-ae65-8bb263f9fe75.JPG"
+              alt=""
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/chess/aa4ca69b-b3c9-438a-b6b5-ec615dc37be6.JPG', )"
+          >
+            <img
+              src="./assets/chess/aa4ca69b-b3c9-438a-b6b5-ec615dc37be6.JPG"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- ThrowBall Section -->
+      <div class="sport-section">
+        <h3>ThrowBall</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/throwBall/20240722_172923.jpg', )"
+          >
+            <img
+              src="./assets/throwBall/20240722_172923.jpg"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/throwBall/20240722_172934.jpg', )"
+          >
+            <img
+              src="./assets/throwBall/20240722_172934.jpg"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/throwBall/20240722_174240.jpg', )"
+          >
+            <img
+              src="./assets/throwBall/20240722_174240.jpg"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/throwBall/20240722_175430.jpg', )"
+          >
+            <img
+              src="./assets/throwBall/20240722_175430.jpg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Esports Section -->
+      <div class="sport-section">
+        <h3>Esports</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/esports/img1.JPG',)"
+          >
+            <img
+              src="./assets/esports/img1.jpg"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/esports/img2.JPG', )"
+          >
+            <img
+              src="./assets/esports/img2.jpg"
+              
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/esports/img3.JPG', )"
+          >
+            <img
+              src="./assets/esports/img3.jpg"
+              
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/assets_card/gaming.jpg', )"
+          >
+            <img
+              src="./assets/assets_card/gaming.jpg"
+              
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Kabaddi Section -->
+      <div class="sport-section">
+        <h3>Kabaddi</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/kabaddi/1.png', )"
+          >
+            <img
+              src="./assets/kabaddi/1.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/kabaddi/2.png', )"
+          >
+            <img
+              src="./assets/kabaddi/2.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/kabaddi/3.png', )"
+          >
+            <img
+              src="./assets/kabaddi/3.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/kabaddi/4.png', )"
+          >
+            <img
+              src="./assets/kabaddi/4.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- VolleyBall Section -->
+      <div class="sport-section">
+        <h3>Volleyball</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/volleyball/1.png', )"
+          >
+            <img
+              src="./assets/volleyball/1.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/volleyball/2.png', )"
+          >
+            <img
+              src="./assets/volleyball/2.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/volleyball/3.png', )"
+          >
+            <img
+              src="./assets/volleyball/3.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/volleyball/4.png', )"
+          >
+            <img
+              src="./assets/volleyball/4.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Badminton Section -->
+      <div class="sport-section">
+        <h3>Badminton</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/badminton/1.png', )"
+          >
+            <img
+              src="./assets/badminton/1.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/badminton/2.png', )"
+          >
+            <img
+              src="./assets/badminton/2.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/badminton/3.png', )"
+          >
+            <img
+              src="./assets/badminton/3.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/badminton/4.png', )"
+          >
+            <img
+              src="./assets/badminton/4.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Basketball Section -->
+      <div class="sport-section">
+        <h3>Basketball</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/basketball/1.png', )"
+          >
+            <img
+              src="./assets/basketball/1.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/basketball/2.png', )"
+          >
+            <img
+              src="./assets/basketball/2.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/basketball/3.png', )"
+          >
+            <img
+              src="./assets/basketball/3.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/basketball/4.png', )"
+          >
+            <img
+              src="./assets/basketball/4.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Football Section -->
+      <div class="sport-section">
+        <h3>Football</h3>
+        <div class="lightbox-gallery">
+          <div
+            class="image"
+            onclick="openLightbox('./assets/football/1.png', )"
+          >
+            <img
+              src="./assets/football/1.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/football/2.png', )"
+          >
+            <img
+              src="./assets/football/2.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/football/3.png', )"
+          >
+            <img
+              src="./assets/football/3.png"
+            />
+          </div>
+          <div
+            class="image"
+            onclick="openLightbox('./assets/football/4.png', )"
+          >
+            <img
+              src="./assets/football/4.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Add remaining sports sections following the same pattern -->
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <img id="lightbox-image" src="" alt="" />
+        <p id="lightbox-caption"></p>
+      </div>
+    </div>
+
+    <!-- Existing footer remains the same -->
+
+    <script>
+      function openLightbox(src, caption) {
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightbox-image");
+        const lightboxCaption = document.getElementById("lightbox-caption");
+
+        lightboxImage.src = src;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add("show");
+      }
+
+      function closeLightbox() {
+        const lightbox = document.getElementById("lightbox");
+        lightbox.classList.remove("show");
+      }
+
+      document
+        .getElementById("lightbox")
+        .addEventListener("click", closeLightbox);
+      document
+        .querySelector(".lightbox-content")
+        .addEventListener("click", function (e) {
+          e.stopPropagation();
+        });
+    </script>
+<script src="./scripts.js"></script>
+  </body>
+</html>

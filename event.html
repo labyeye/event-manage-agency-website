@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devadan Cup 2025</title>
+  <link rel="shortcut icon" href="./assets/logo2.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<style>
+  .svg1 {
+    position: absolute;
+    transform: scale(0.8) translate(-55vw, -75vw);
+    z-index: -1;
+  }
+
+  .svg2 {
+    position: absolute;
+    transform: scale(0.8) translate(25vw, -85vw);
+    z-index: -1;
+  }
+
+  .svg3 {
+    position: absolute;
+    transform: scale(0.6) translate(55vw, -25vw);
+    z-index: -1;
+  }
+
+  .svg4 {
+    position: absolute;
+    transform: scale(0.6) translate(-125vw, -25vw);
+    z-index: -1;
+  }
+  .reg-link{
+      position: absolute;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 1.2vw;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      margin: -12.5vw 85vw;
+  }
+  @media only screen and (max-width: 768px) {
+    .reg-link{
+      font-size: 5vw;
+      margin: -10vw 60vw;
+    }
+  }
+</style>
+
+<body>
+  <!-- Navbar Component -->
+  <div class="nav-component">
+    <div class="nav-logo"></div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="event.html">Events</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="nav-logo-1"></div>
+    <div class="hamburger-menu" onclick="toggleMobileNav()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <!-- SVG Elements -->
+  <svg width="2827" height="1753" viewBox="0 0 2827 1753" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg1">
+    <g filter="url(#filter0_f_244_4)">
+      <path d="M2326 894.5C2326 1087.8 2375.5 1369.5 850 1200C656.7 1200 500 1043.3 500 850C500 656.7 656.7 500 850 500C1043.3 500 2326 701.2 2326 894.5Z" fill="url(#paint0_linear_244_4)" />
+    </g>
+    <defs>
+      <filter id="filter0_f_244_4" x="0" y="0" width="2826.18" height="1752.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_244_4" />
+      </filter>
+      <linearGradient id="paint0_linear_244_4" x1="850" y1="500" x2="850" y2="1200" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F4B86F" />
+        <stop offset="0.419" stop-color="#A27158" />
+        <stop offset="0.844" stop-color="#310538" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <svg width="2827" height="1753" viewBox="0 0 2827 1753" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg2">
+    <g filter="url(#filter0_f_244_4)">
+      <path d="M2326 894.5C2326 1087.8 2375.5 1369.5 850 1200C656.7 1200 500 1043.3 500 850C500 656.7 656.7 500 850 500C1043.3 500 2326 701.2 2326 894.5Z" fill="url(#paint0_linear_244_4)" />
+    </g>
+    <defs>
+      <filter id="filter0_f_244_4" x="0" y="0" width="2826.18" height="1752.12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_244_4" />
+      </filter>
+      <linearGradient id="paint0_linear_244_4" x1="850" y1="500" x2="850" y2="1200" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#F4B86F" />
+        <stop offset="0.419" stop-color="#A27158" />
+        <stop offset="0.844" stop-color="#310538" />
+      </linearGradient>
+    </defs>
+  </svg>
+  <div class="event-div">
+    <h1>Upcoming Events</h1>
+    <p class="event-description">
+      Get ready for the ultimate showdown! Join us at the Devadan Cup'25 for an action-packed weeks of fierce competition, unforgettable moments, and team spirit!    </p>
+    <br />
+    <a href="https://feebook.southindianbank.com/FeeBookUser/org?id=323" target="_blank" class="reg-link">
+      Register
+    </a>
+    <a href="./assets/Brochure Devadan.pdf" class="brochure-link" target="_blank">
+      <span>View Brochure</span>
+    </a>
+ 
+    <br />
+    <br />
+
+    <input type="search" placeholder="Search Events" class="search" id="search-input" />
+
+    <div class="event-grid" id="event-grid">
+      <!-- Event cards will be dynamically inserted here -->
+    </div>
+  </div>
+  <div style="height: 10vh"></div>
+  <div class="footer">
+    <div class="footer-info">
+      <div class="footer-icon-flex">
+        <div class="icon-1"></div>
+        <span class="line">|</span>
+        <div class="icon-2"></div>
+      </div>
+      <div class="footer-uni">
+        <br />
+
+        Christ University, Kengeri Campus offers a blend of traditional and
+        world-class facilities, including department-specific buildings,
+        libraries, research facilities, and residences, amidst the city's
+        greenery.
+      </div>
+    </div>
+    <ul class="footer-links">
+      <li class="header">Links</li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="event.html">Events</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-event-info">
+      <div class="footer-para">
+        DEVADAN CUP – A premier sports event that fosters teamwork, resilience, and competitive spirit. It brings together athletes to showcase their skills and sportsmanship, creating an environment of excellence and camaraderie.
+        <br />
+        <br />
+        - developed by
+        <a href="https://github.com/yuvraajnarula" target="_blank" style="text-decoration: none; color: rgba(255, 255, 255, 0.2)">Yuvraaj Narula</a>
+      </div>
+
+      <ul class="footer-social-links">
+        <li>
+          <a href="https://www.linkedin.com/company/christ-university-faculty-of-engineering/?originalSubdomain=in" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.7778 0C18.3671 0 18.9324 0.234126 19.3491 0.650874C19.7659 1.06762 20 1.63285 20 2.22222V17.7778C20 18.3671 19.7659 18.9324 19.3491 19.3491C18.9324 19.7659 18.3671 20 17.7778 20H2.22222C1.63285 20 1.06762 19.7659 0.650874 19.3491C0.234126 18.9324 0 18.3671 0 17.7778V2.22222C0 1.63285 0.234126 1.06762 0.650874 0.650874C1.06762 0.234126 1.63285 0 2.22222 0H17.7778ZM17.2222 17.2222V11.3333C17.2222 10.3727 16.8406 9.45133 16.1613 8.77204C15.482 8.09274 14.5607 7.71111 13.6 7.71111C12.6556 7.71111 11.5556 8.28889 11.0222 9.15556V7.92222H7.92222V17.2222H11.0222V11.7444C11.0222 10.8889 11.7111 10.1889 12.5667 10.1889C12.9792 10.1889 13.3749 10.3528 13.6666 10.6445C13.9583 10.9362 14.1222 11.3319 14.1222 11.7444V17.2222H17.2222ZM4.31111 6.17778C4.80618 6.17778 5.28098 5.98111 5.63104 5.63104C5.98111 5.28098 6.17778 4.80618 6.17778 4.31111C6.17778 3.27778 5.34444 2.43333 4.31111 2.43333C3.81309 2.43333 3.33547 2.63117 2.98332 2.98332C2.63117 3.33547 2.43333 3.81309 2.43333 4.31111C2.43333 5.34444 3.27778 6.17778 4.31111 6.17778ZM5.85556 17.2222V7.92222H2.77778V17.2222H5.85556Z" fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://christuniversity.in" target="_blank">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 11C21 13.6522 19.9464 16.1957 18.0711 18.0711C16.1957 19.9464 13.6522 21 11 21C8.34784 21 5.8043 19.9464 3.92893 18.0711C2.05357 16.1957 1 13.6522 1 11M21 11C21 8.34784 19.9464 5.8043 18.0711 3.92893C16.1957 2.05357 13.6522 1 11 1C8.34784 1 5.8043 2.05357 3.92893 3.92893C2.05357 5.8043 1 8.34784 1 11M21 11H1" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14.8461 11C14.6572 14.6569 13.3102 18.159 11 21C8.68969 18.159 7.34273 14.6569 7.15381 11C7.34273 7.34309 8.68969 3.841 11 1C13.3102 3.841 14.6572 7.34309 14.8461 11Z" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/magnovite.kengeri/" target="_blank" rel="noopener noreferrer">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.8 0H14.2C17.4 0 20 2.6 20 5.8V14.2C20 15.7383 19.3889 17.2135 18.3012 18.3012C17.2135 19.3889 15.7383 20 14.2 20H5.8C2.6 20 0 17.4 0 14.2V5.8C0 4.26174 0.61107 2.78649 1.69878 1.69878C2.78649 0.61107 4.26174 0 5.8 0ZM5.6 2C4.64522 2 3.72955 2.37928 3.05442 3.05442C2.37928 3.72955 2 4.64522 2 5.6V14.4C2 16.39 3.61 18 5.6 18H14.4C15.3548 18 16.2705 17.6207 16.9456 16.9456C17.6207 16.2705 18 15.3548 18 14.4V5.6C18 3.61 16.39 2 14.4 2H5.6ZM15.25 3.5C15.5815 3.5 15.8995 3.6317 16.1339 3.86612C16.3683 4.10054 16.5 4.41848 16.5 4.75C16.5 5.08152 16.3683 5.39946 16.1339 5.63388C15.8995 5.8683 15.5815 6 15.25 6C14.9185 6 14.6005 5.8683 14.3661 5.63388C14.1317 5.39946 14 5.08152 14 4.75C14 4.41848 14.1317 4.10054 14.3661 3.86612C14.6005 3.6317 14.9185 3.5 15.25 3.5ZM10 5C11.3261 5 12.5979 5.52678 13.5355 6.46447C14.4732 7.40215 15 8.67392 15 10C15 11.3261 14.4732 12.5979 13.5355 13.5355C12.5979 14.4732 11.3261 15 10 15C8.67392 15 7.40215 14.4732 6.46447 13.5355C5.52678 12.5979 5 11.3261 5 10C5 8.67392 5.52678 7.40215 6.46447 6.46447C7.40215 5.52678 8.67392 5 10 5ZM10 7C9.20435 7 8.44129 7.31607 7.87868 7.87868C7.31607 8.44129 7 9.20435 7 10C7 10.7956 7.31607 11.5587 7.87868 12.1213C8.44129 12.6839 9.20435 13 10 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 10 7Z" fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+
+  <script src="scripts.js"></script>
+
+  <script>
+    let events = [{
+        "img": "./assets/assets_card/cricket.png",
+        "event": "Cricket Tournament",
+        "description": "Get ready for an exciting boys-only cricket tournament! Each team must consist of 11 players plus 5 substitutes, and registration is simple—only one team member needs to register. Teams should arrive at least 20 minutes before their match to ensure a smooth start."
+        ,"rules" : [
+          'Each team must consist of 16 players (11 playing members and 5 substitutes).',
+          'The tournament will follow the T20 format with a maximum of 20 overs per innings. Each bowler can bowl a maximum of 4 overs in a match.',
+          'Proper cricket attire, including whites, and cricket shoes, is mandatory. Batsmen and wicket-keepers must wear protective gear such as pads, gloves, helmets, and abdominal guards.',
+          'Fixtures will be forwarded to the captain before the tournament starts. No changing of schedule will be tolerated from the organization.',
+          'The umpire\'s decision will be 5. final and binding.',
+          'Each team should bring SG Club 4 piece ball, or else they can buy at a non-recieptable payment from the organizers.',
+          'Last date for registration: Cricket – 13th February 2025.',
+          'For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan Cup- Cricket',
+        ],
+        "POC" : "Abel(+91 9037996304)",
+      },
+      {
+        "img": "./assets/assets_card/gaming.jpg",
+        "event": "ESPORTS Tournament",
+        "description": "Whether you're battling it out in BGMI, showing your skills in VALORANT, competing for the title in FIFA 24, strategizing in Clash of Clans, or boosting in Rocket League, this is an event you don't want to miss. Let the games begin!"
+        ,"rules" : [
+          "Participants must be officially registered before the event starts.",
+          "All players must maintain sportsmanship, respect referees, and avoid toxic behavior.",
+          "Players must join matches at least 10 minutes before the scheduled time. Late arrivals may face disqualification",
+          "Participants must use their own verified gaming accounts. Smurfing or account sharing is strictly prohibited.",
+          "Any form of cheating, hacking, or use of external assistance will lead to an immediate ban.",
+          "Each game will have a pre-defined format (Group Stage, Knockouts, Finals).",
+          "All matches will take place only on working days (Monday–Friday).",
+          "Players are responsible for their own internet and device setup. Matches will notbe restarted for individual disconnections."
+        ],
+        "POC" : "Labh Bothra (+91 9234112345)",
+        "prizePOOL" : [
+          ["BGMI", "₹2,500","₹1,500","₹1,000"],
+          ["VALORANT", "₹3,000","₹2,000","NO"],
+          ["FIFA", "₹2,000","₹1,500","₹1,000"],
+          ["Clash of Clans", "₹1,000","₹500", "NO"],
+          ["Rocket League", "₹1,500","₹1,000", "NO"]
+        ]
+      },
+      {
+        "img": "./assets/assets_card/football.png",
+        "event": "Football Tournament",
+        "description": " Form your team of 11 players plus 5 substitutes, with only one registration required per team, and prepare for an exciting day of football action. "
+        ,"rules":[
+          "Each team must consist of 18 players (11 starting players and 7 substitutes).",
+          "Wearing shin pads and stockings is compulsory. Bibs will be provided only if two teams have similar jersey colors.",
+          "The offside rule will be strictly followed. Back passes to the goalkeeper are not allowed and will result in a foul.",
+          "Any dissent with the referee’s decision will result in a direct yellow card without warning. If a player receives a red card, they will be suspended for the next match.",
+          "Misbehavior, misconduct, or violation of rules will lead to immediate disqualification of the player or the team. The referee’s decision will be final and binding.",
+          "Last date for registration: 25th February 2025.",
+          "For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan cup-Other outdoor sports"
+        ],
+        "POC" : "Allen(+91 9847336224)"
+      },
+      {
+        "img": "./assets/assets_card/basketball.jpg",
+        "event": "Basketball Tournament",
+        "description": "Fast-paced, high-energy basketball action awaits as college teams compete in a single-elimination format for the championship. Who will rise to the challenge and claim victory?"
+        ,"rules":[
+          "Each team must consist of 12 players (5 starting players and 7 substitutes).",
+          "Players must wear proper basketball attire, including jerseys, shorts, and shoes. All players must have unique jersey numbers. Bibs will be provided only if two teams have similar jersey colors.",
+          "Any dissent with the referee’s decision will result in a direct technical foul. Continued dissent or misbehavior will lead to immediate disqualification of the player or team.",
+          "The referee’s decision will be 4. final and binding.",
+          "Last date for registration: 25th February 2025.",
+          "For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan cup-Other outdoor sports"
+        ],
+        "POC" : "Aman Hooda(+91 96754444622)"
+      },
+      {
+        "img": "./assets/assets_card/volleyball.png",
+        "event": "Volleyball Tournament",
+        "description": "The best volleyball teams come together to compete for the national title. Watch as players showcase their incredible agility, precision, and teamwork in every match."
+        ,"rules":[
+          "Team Composition: 6+6 (substitutes) players.Matches will follow the knockout format.",
+          "Best of 3 sets of which 2 sets are of 25 points and the decider set to be played for 15 points.",
+          "Players must follow proper rotation rules during the match, and no player can stay in a fixed position throughout the game.",
+          "The referee’s decision will be 4. final and binding.",
+          "Misbehavior, misconduct, or violation of rules will lead to immediate disqualification of the player or team.",
+          "Last date for registration: 25th February 2025.",
+          "For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan cup-Other outdoor sports"
+        ],
+        "POC" : "Teja (+91 98819 96000)"
+      },
+      {
+        "img": "./assets/assets_card/kabaddi.png",
+        "event": "Kabaddi Tournament",
+        "description": "A unique blend of strategy and strength, Kabaddi brings fast-paced action to the tournament. Watch as teams showcase their endurance and tactical skills to win it all."
+        ,"rules":[
+          "Each team must consist of 12 players (7 playing members and 5 substitutes).",
+          "Matches will follow the knockout format",
+          "Weight limit for Players is 85Kg.",
+          "Team players must wear the same jersey.",
+          "The referee\'s decision will be final and binding",
+          "Misbehavior, misconduct, or violation of rules will lead to immediate disqualification of the player or team.",
+          "Last date for registration: 25th February 2025.",
+          "For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan cup-Other outdoor sports"
+        ],
+        "POC" : "Madhavan (+91 99166 44190)"
+      },
+      {
+        "img": "./assets/assets_card/badminton.jpg",
+        "event": "Badminton Tournament",
+        "description": "Expect fierce competition in this fast-paced badminton tournament. Athletes will battle it out in quick, intense matches, with incredible reflexes and precision on display."
+        ,"rules" : [
+          "Team Composition: 5+2 players for men's team.",
+          "Team Composition: 3+1 players for women's team.",
+          "Game order for the event for men will be : Singles, 2nd singles, Doubles, 3rd Singles, 2nd doubles",
+          "Game order for the event for women will be : Singles, Doubles, Reverse singles",
+          "The referee’s decision will be final and binding.",
+          "Misbehavior, misconduct, or violation of rules will lead to immediate disqualification.",
+          "Last date for registration: 25th February 2025.",
+          "For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan cup-Indoor sports"
+        ],
+        "POC" : "Denil (+91 8301901290)",
+      },
+      {
+        "img": "./assets/assets_card/hockey.jpeg",
+        "event": "Hockey Tournament",
+        "description": "Watch the excitement unfold in this dynamic hockey tournament, where teams work together to outscore their opponents with high-speed passes and powerful shots."
+        ,"rules":[
+          "Each team consists of 7+5 players (including 1 goalkeeper) with 5 substitutes allowed.",
+          "The tournament follows FIH (International Hockey Federation) rules.",
+          "Players must be present 30 minutes before their scheduled match.",
+          "The referee’s decision will be final and binding.",
+          "Misbehavior, misconduct, or violation of rules will lead to immediate disqualification.",
+          "Hockey is only for engineering students.",
+          "Last date for registration: 25th February 2025.",
+          "For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan cup-Other outdoor sports"
+        ],
+        "POC": "Varun (+91 96325 14105)"
+      },
+      {
+        "img": "./assets/assets_card/tabletennis.jpeg",
+        "event": "Table Tennis Tournament",
+        "description": "Witness fast reflexes and lightning-fast rallies as top table tennis players face off in intense matches. Speed, skill, and precision are key in this highly competitive sport."
+        ,"rules":[
+          "Team Composition: 3+2 players.",
+          "It will be a team match where every team has to select 3 players as ABC or XYZ.",
+          "A will play with X ,B with Y, C with Z and again A with Y, B with X.",
+          "3 matches will be played between both the teams for 11 points each and in these 3 matches the team who wins more number of games will be considered as the winners.",
+          "The referee's decision is final and binding.",
+          "Misbehaviour, misconduct or breaking the rules will result in immediate disqualification.",
+          "Last date for registration: 25th February 2025.",
+          "For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan cup-Indoor sports"
+        ],
+        "POC": "Priyadharshni (+91 94860 18812)"
+      },
+      {
+        "img": "./assets/assets_card/chess.jpg",
+        "event": "Chess Championship",
+        "description": "Strategic brilliance meets intense focus in this chess tournament, where the world’s best players battle for supremacy. Each move could be the difference between victory and defeat."
+        ,"rules":[
+          "This is an Individual Event, and each player competes separately.",
+          "The tournament follows FIDE (International Chess Federation) rules.",
+          "If a piece is touched, it must be moved if a legal move is possible.",
+          "Players must be present 10 minutes before their scheduled match.",
+          "The referee’s decision will be final and binding",
+          "Misbehavior, misconduct, or violation of rules will lead to immediate disqualification.",
+          "Last date for registration: 25th February 2025.",
+          "For Registration: Click Registration Link / SCAN QR >> SPORTS >> Devadan cup-Chess"
+        ],
+        "POC": "Bharath (+91 90304 03206)"
+      }
+    ];
+    // DOM elements
+    const searchInput = document.getElementById("search-input");
+    const eventGrid = document.getElementById("event-grid");
+
+    // Function to create an event card
+    function createEventCard(event) {
+      const card = document.createElement("div");
+      card.classList.add("event-card");
+
+      card.innerHTML = `
+        <img src="${event.img}" alt="${event.event}" style="width:100%;height:27.5vw;border-radius: 10px;">
+        <div class="event-card-header">
+            <h3>${event.event}</h3>
+        </div>
+        <div class="event-card-body">
+            <p>${event.description.slice(0,75)}...</p>
+        </div>
+        <button class='event-btn' id="${event.event}" style="cursor: pointer;">
+          View Description  
+        </button>
+    `;
+      card.querySelector(".event-btn").addEventListener("click", function() {
+        localStorage.setItem("target", JSON.stringify(event));
+        window.open('eventcard.html', 'blank');
+      });
+      return card;
+    }
+
+    // Function to display events based on search query
+    function displayEvents(query) {
+      // Clear current events
+      eventGrid.innerHTML = "";
+
+      // Filter events by query
+      const filteredEvents = events.filter(event =>
+        event.event.toLowerCase().includes(query.toLowerCase()) ||
+        event.description.toLowerCase().includes(query.toLowerCase())
+      );
+
+      // Add filtered event cards to the grid
+      if (filteredEvents.length > 0) {
+        filteredEvents.forEach(event => {
+          eventGrid.appendChild(createEventCard(event));
+        });
+      } else {
+        eventGrid.innerHTML = "<p>No events found</p>";
+      }
+    }
+
+    // Initial display of all events
+    displayEvents("");
+
+    // Search event handler
+    searchInput.addEventListener("input", function() {
+      displayEvents(searchInput.value);
+    });
+  </script>
+</body>
+
+</html>
