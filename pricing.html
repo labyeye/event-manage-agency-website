@@ -51,12 +51,6 @@
         padding: 1rem 4vw;
       }
       .pricing-card {
-        background: linear-gradient(
-          45deg,
-          #f4b86f 0%,
-          #a27158 50%,
-          #5c0469 100%
-        );
         color: #fff;
         border-radius: 20px;
         padding: 2rem;
@@ -65,9 +59,17 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: 420px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* <-- Added transition */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
-
+      .silver-card {
+        background: linear-gradient(135deg, #dcdcdc 0%, #a8a8a8 100%);
+      }
+      .gold-card {
+        background: linear-gradient(135deg, #ffcc33 0%, #ff9900 100%);
+      }
+      .platinum-card {
+        background: linear-gradient(135deg, #00cc99 0%, #006633 100%);
+      }
       /* Hover Effect */
       .pricing-card:hover {
         transform: scale(1.03); /* <-- Slight zoom */
@@ -141,7 +143,7 @@
       <!-- Wedding Packages -->
       <h2 class="category-title">Wedding Packages</h2>
       <div class="pricing-grid">
-        <div class="pricing-card">
+        <div class="pricing-card silver-card">
           <h3>Silver Package</h3>
           <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
           <p>
@@ -152,7 +154,7 @@
           <div class="price" style="font-size: 1.5rem">INR 40,000</div>
           <a href="contact.html" class="book-btn">Book Now</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card gold-card">
           <h3>Gold Package</h3>
           <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
           <p>
@@ -164,7 +166,7 @@
           <div class="price" style="font-size: 1.5rem">INR 85,000</div>
           <a href="contact.html" class="book-btn">Book Now</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card platinum-card">
           <h3>Platinum Package</h3>
           <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
           <p>
@@ -180,7 +182,7 @@
       <!-- Corporate Events -->
       <h2 class="category-title">Corporate Events</h2>
       <div class="pricing-grid">
-        <div class="pricing-card">
+        <div class="pricing-card silver-card">
           <h3>Silver Package</h3>
           <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
           <p>
@@ -191,7 +193,7 @@
           <div class="price" style="font-size: 1.5rem">INR 30,000</div>
           <a href="contact.html" class="book-btn">Book Now</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card gold-card">
           <h3>Gold Package</h3>
           <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
           <p>
@@ -202,7 +204,7 @@
           <div class="price" style="font-size: 1.5rem">INR 65,000</div>
           <a href="contact.html" class="book-btn">Book Now</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card platinum-card">
           <h3>Platinum Package</h3>
           <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
           <p>
@@ -218,7 +220,7 @@
       <!-- Birthday Parties -->
       <h2 class="category-title">Birthday Parties</h2>
       <div class="pricing-grid">
-        <div class="pricing-card">
+        <div class="pricing-card silver-card">
           <h3>Silver Package</h3>
           <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
           <p>
@@ -229,7 +231,7 @@
           <div class="price" style="font-size: 1.5rem">INR 15,000</div>
           <a href="contact.html" class="book-btn">Book Now</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card gold-card">
           <h3>Gold Package</h3>
           <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
           <p>
@@ -240,7 +242,7 @@
           <div class="price" style="font-size: 1.5rem">INR 30,000</div>
           <a href="contact.html" class="book-btn">Book Now</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card platinum-card">
           <h3>Platinum Package</h3>
           <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
           <p>
@@ -256,7 +258,7 @@
       <!-- College Festivals -->
       <h2 class="category-title">College Festivals</h2>
       <div class="pricing-grid">
-        <div class="pricing-card">
+        <div class="pricing-card silver-card">
           <h3>Silver Package</h3>
           <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
           <p>
@@ -267,7 +269,7 @@
           <div class="price" style="font-size: 1.5rem">INR 40,000</div>
           <a href="contact.html" class="book-btn">Book Now</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card gold-card">
           <h3>Gold Package</h3>
           <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
           <p>
@@ -278,7 +280,7 @@
           <div class="price" style="font-size: 1.5rem">INR 80,000</div>
           <a href="contact.html" class="book-btn">Book Now</a>
         </div>
-        <div class="pricing-card">
+        <div class="pricing-card platinum-card">
           <h3>Platinum Package</h3>
           <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
           <p>
