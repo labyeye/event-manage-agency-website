@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./index.css" />
     <style>
       .container {
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         padding: 20px;
       }
@@ -107,9 +107,15 @@
         transform: scale(0.6) translate(-125vw, -25vw);
         z-index: -1;
       }
-      @media only screen and (max-width:768px){
-        .svg1,.svg2,.svg3,.svg4{
-          display:none;
+      @media only screen and (max-width: 768px) {
+        .svg1,
+        .svg2,
+        .svg3,
+        .svg4 {
+          display: none;
+        }
+        .section-title {
+          font-size: 1.6rem;
         }
       }
     </style>
@@ -120,14 +126,14 @@
       <div class="nav-logo"></div>
       <div class="nav-links">
         <ul>
-           <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="eventcard.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-        </ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="eventcard.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
         </ul>
       </div>
       <div class="nav-logo-1"></div>
@@ -138,470 +144,235 @@
       </div>
     </div>
 
-    <!-- SVG Elements -->
-    <svg
-      width="2827"
-      height="1753"
-      viewBox="0 0 2827 1753"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class="svg1"
-    >
-      <g filter="url(#filter0_f_244_4)">
-        <path
-          d="M2326 894.5C2326 1087.8 2375.5 1369.5 850 1200C656.7 1200 500 1043.3 500 850C500 656.7 656.7 500 850 500C1043.3 500 2326 701.2 2326 894.5Z"
-          fill="url(#paint0_linear_244_4)"
-        />
-      </g>
-      <defs>
-        <filter
-          id="filter0_f_244_4"
-          x="0"
-          y="0"
-          width="2826.18"
-          height="1752.12"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feGaussianBlur
-            stdDeviation="250"
-            result="effect1_foregroundBlur_244_4"
-          />
-        </filter>
-        <linearGradient
-          id="paint0_linear_244_4"
-          x1="850"
-          y1="500"
-          x2="850"
-          y2="1200"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#F4B86F" />
-          <stop offset="0.419" stop-color="#A27158" />
-          <stop offset="0.844" stop-color="#310538" />
-        </linearGradient>
-      </defs>
-    </svg>
-
-    <svg
-      width="2827"
-      height="1753"
-      viewBox="0 0 2827 1753"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      class="svg2"
-    >
-      <g filter="url(#filter0_f_244_4)">
-        <path
-          d="M2326 894.5C2326 1087.8 2375.5 1369.5 850 1200C656.7 1200 500 1043.3 500 850C500 656.7 656.7 500 850 500C1043.3 500 2326 701.2 2326 894.5Z"
-          fill="url(#paint0_linear_244_4)"
-        />
-      </g>
-      <defs>
-        <filter
-          id="filter0_f_244_4"
-          x="0"
-          y="0"
-          width="2826.18"
-          height="1752.12"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          />
-          <feGaussianBlur
-            stdDeviation="250"
-            result="effect1_foregroundBlur_244_4"
-          />
-        </filter>
-        <linearGradient
-          id="paint0_linear_244_4"
-          x1="850"
-          y1="500"
-          x2="850"
-          y2="1200"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop stop-color="#F4B86F" />
-          <stop offset="0.419" stop-color="#A27158" />
-          <stop offset="0.844" stop-color="#310538" />
-        </linearGradient>
-      </defs>
-    </svg>
-
     <div class="container">
-      <h2 class="text-center">Sports Gallery</h2>
+      <h2 class="text-center">Gallery</h2>
 
       <!-- Cricket Section -->
-      <div class="sport-section">
-        <h3>Cricket</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/cricket/1.png', )"
-          >
+      <!-- Wedding Section (Updated to Slider) -->
+      <section class="gallery-section">
+        <h2 class="section-title">Wedding Memories</h2>
+        <div class="gallery-slider">
+          <div class="gallery-track">
             <img
-              src="./assets/cricket/1.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/487273487_1145934824235102_6948331620169057020_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PLESMnoJSjYQ7kNvwFzgsCY&_nc_oc=AdlaeXivZcew_DhbS4mpba0DqTZO5z_tEywuiea6sGzHXworGbpSEw_ANZk8xKRYXlI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=ykrsQq2OeY7w64jwgy3yAw&oh=00_AfH3I66cDwJCC28s8eIkldTImHtIbK1lttOW7YwC2YKXsQ&oe=68170AFB"
+              alt="Wedding Photo 1"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/cricket/2.png', )"
-          >
             <img
-              src="./assets/cricket/2.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475150276_1097857159042869_584287534565623502_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ULfORaIlGjEQ7kNvwGlt_Rm&_nc_oc=AdlE1qudR5oJAUb7NBVgzb2-X-3Y0IbUYu-qKhYzEqJtdWa4ZBav2Io_pT-FQS19pzI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=pPERl5aZdFIzXlMEZ3ALbw&oh=00_AfGkTgbDY7mJAHHUE5sWClhl-7FT-9xksd7Cacj_LKbMyw&oe=6816F31B"
+              alt="Wedding Photo 2"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/cricket/3.png', )"
-          >
             <img
-              src="./assets/cricket/3.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JMNWvAOOHRQQ7kNvwEM4z7w&_nc_oc=Adlk8LEtdkiSwmo_-5Pc-BI7YV2Q32E97UAzzhCYrZbbNsHqEXLSZsDjbh_MRaIYLAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=qXbBcnRxkZgD1MzFNZROOA&oh=00_AfGfYHx715XrOLNXBjWpjLmimAXofZoHJJRtHcQhHUpxeQ&oe=681705F4"
+              alt="Wedding Photo 3"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/cricket/4.png', )"
-          >
             <img
-              src="./assets/cricket/4.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/185321688_4231331373573055_8647493694388779079_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qYpQbru43pgQ7kNvwGUVunQ&_nc_oc=AdmiKMhPqdIdaaI9A2P-scBmqm_4cVp4QzQO9RRpdvz-cUS1Gz8CE9LNvKvQepZOllQ&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=Ii9jmjaGOD9BjaEr_laZgw&oh=00_AfFsEZ3P5lWkfBbJ_L-t68CtuFbBav6WQhawF6zf1RZ_eQ&oe=6838AD1B"
+              alt="Wedding Photo 4"
             />
-          </div>
-        </div>
-      </div>
-
-      <!-- Chess Section -->
-      <div class="sport-section">
-        <h3>Chess</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/chess/0b710995-2527-4c02-978b-15736028c7fe.JPG',)"
-          >
             <img
-              src="./assets/chess/0b710995-2527-4c02-978b-15736028c7fe.JPG"
-              alt=""
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/118825861_3530364873669712_2650920288908157945_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9a1Tkd4nj2AQ7kNvwHFwRzY&_nc_oc=AdlK4SchPKSxGViVY9e1JVGo77kn0P8-iBObPYu80mhI5XBfLIxvCeoqv02-Xe4Y92U&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=7DofNjTakYdvN8ddU_YA9Q&oh=00_AfHLnkH5YF5sp9-I8Tp7hM8ppPirKczv_U72ERk1NqsgEw&oe=68389459"
+              alt="Wedding Photo 5"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/chess/5583fcbe-bc74-4353-8f6e-394dbb87c337.JPG', )"
-          >
             <img
-              src="./assets/chess/5583fcbe-bc74-4353-8f6e-394dbb87c337.JPG"
-              alt=""
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86295746_3000673609972177_2557816796165963776_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dxYhjQH9NH8Q7kNvwFkqKP4&_nc_oc=AdkM0mdt8eu1orZ50i1UHnV0-k3d349l2E-O8aZVUndJbIoKKh_RNOaUzyWajdqftAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=EoUU_eyHutmtddSefnchdA&oh=00_AfEa2Tzpgu6SXNvlYkw0EwjImnIkPaX1aYdj8aXt1bq0yA&oe=6838869F"
+              alt="Wedding Photo 6"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/chess/91f78366-5d8e-4f8f-ae65-8bb263f9fe75.JPG', )"
-          >
             <img
-              src="./assets/chess/91f78366-5d8e-4f8f-ae65-8bb263f9fe75.JPG"
-              alt=""
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/32498159_1885028064870076_946938712791449600_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b8OB4kNPbwMQ7kNvwEl2PtT&_nc_oc=AdlOMIU2lWo32waCsntaQ40gh_27U8bru2iKLcrbxq21KKn8xUQ5PpIPivjFT3_sEg4&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=lZCCs5n23sGSjTcMzCFMig&oh=00_AfFnKvXL4xQ1PU7VKqaIX1ZIVYlqgnLy7frqeY-pqVFmew&oe=68388874"
+              alt="Wedding Photo 1"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/chess/aa4ca69b-b3c9-438a-b6b5-ec615dc37be6.JPG', )"
-          >
             <img
-              src="./assets/chess/aa4ca69b-b3c9-438a-b6b5-ec615dc37be6.JPG"
-              alt=""
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/52588120_2293055597400652_4618850590812798976_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=IwPMUDbgZ18Q7kNvwEHJdum&_nc_oc=AdkahXD50hd9R_-93dZFZhpQggrj2BHZxScbpPNIvA4tz40r3fs9flUVsN1keEfelGw&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=I1CdANSPeeVrVbsHX_Yw-w&oh=00_AfFfFewH-XVRmP97wy__OV6aTZ_SM6464Swl_HTTFPhJgQ&oe=6838AAEE"
+              alt="Wedding Photo 2"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JMNWvAOOHRQQ7kNvwEM4z7w&_nc_oc=Adlk8LEtdkiSwmo_-5Pc-BI7YV2Q32E97UAzzhCYrZbbNsHqEXLSZsDjbh_MRaIYLAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=qXbBcnRxkZgD1MzFNZROOA&oh=00_AfGfYHx715XrOLNXBjWpjLmimAXofZoHJJRtHcQhHUpxeQ&oe=681705F4"
+              alt="Wedding Photo 3"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/185321688_4231331373573055_8647493694388779079_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qYpQbru43pgQ7kNvwGUVunQ&_nc_oc=AdmiKMhPqdIdaaI9A2P-scBmqm_4cVp4QzQO9RRpdvz-cUS1Gz8CE9LNvKvQepZOllQ&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=Ii9jmjaGOD9BjaEr_laZgw&oh=00_AfFsEZ3P5lWkfBbJ_L-t68CtuFbBav6WQhawF6zf1RZ_eQ&oe=6838AD1B"
+              alt="Wedding Photo 4"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/83938965_2962464140459791_6553783767691952128_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=emFAKz1vVo4Q7kNvwEEpirQ&_nc_oc=AdmFNbCm0audG5ISzLANrQO1SzFTvaHqYP0HINEHRCYiMKHZAkxMZIYZgTbfon5_Pbc&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=DIMgtdS8Sda7F5fCw_3Luw&oh=00_AfG6UD4AOpuEiWQ_oLA6lsWmOPOHhxJ4MdGa-4dmKuH3fA&oe=6838A18B"
+              alt="Wedding Photo 5"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86439234_3000657153307156_7637437547282432000_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6uPAZgC6h-kQ7kNvwG9KiM6&_nc_oc=Adm4lf5QSqmO0CRyrFX8yw340jquvC0mYpfGH7uOtxsnp6hzTCQ9SgI9Kbj-0ekIaco&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=kGnAURHqMaaYo428lzwj7A&oh=00_AfE_5YtyJvPy-g0xHZvgwsnNvvSye0KH6m9AZ1fGF6xOVA&oe=6838A32D"
+              alt="Wedding Photo 6"
             />
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- ThrowBall Section -->
-      <div class="sport-section">
-        <h3>ThrowBall</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/throwBall/20240722_172923.jpg', )"
-          >
+      <section class="gallery-section">
+        <h2 class="section-title">Wedding Memories</h2>
+        <div class="gallery-slider">
+          <div class="gallery-track">
             <img
-              src="./assets/throwBall/20240722_172923.jpg"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/487273487_1145934824235102_6948331620169057020_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PLESMnoJSjYQ7kNvwFzgsCY&_nc_oc=AdlaeXivZcew_DhbS4mpba0DqTZO5z_tEywuiea6sGzHXworGbpSEw_ANZk8xKRYXlI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=ykrsQq2OeY7w64jwgy3yAw&oh=00_AfH3I66cDwJCC28s8eIkldTImHtIbK1lttOW7YwC2YKXsQ&oe=68170AFB"
+              alt="Wedding Photo 1"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/throwBall/20240722_172934.jpg', )"
-          >
             <img
-              src="./assets/throwBall/20240722_172934.jpg"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475150276_1097857159042869_584287534565623502_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ULfORaIlGjEQ7kNvwGlt_Rm&_nc_oc=AdlE1qudR5oJAUb7NBVgzb2-X-3Y0IbUYu-qKhYzEqJtdWa4ZBav2Io_pT-FQS19pzI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=pPERl5aZdFIzXlMEZ3ALbw&oh=00_AfGkTgbDY7mJAHHUE5sWClhl-7FT-9xksd7Cacj_LKbMyw&oe=6816F31B"
+              alt="Wedding Photo 2"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/throwBall/20240722_174240.jpg', )"
-          >
             <img
-              src="./assets/throwBall/20240722_174240.jpg"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JMNWvAOOHRQQ7kNvwEM4z7w&_nc_oc=Adlk8LEtdkiSwmo_-5Pc-BI7YV2Q32E97UAzzhCYrZbbNsHqEXLSZsDjbh_MRaIYLAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=qXbBcnRxkZgD1MzFNZROOA&oh=00_AfGfYHx715XrOLNXBjWpjLmimAXofZoHJJRtHcQhHUpxeQ&oe=681705F4"
+              alt="Wedding Photo 3"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/throwBall/20240722_175430.jpg', )"
-          >
             <img
-              src="./assets/throwBall/20240722_175430.jpg"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/185321688_4231331373573055_8647493694388779079_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qYpQbru43pgQ7kNvwGUVunQ&_nc_oc=AdmiKMhPqdIdaaI9A2P-scBmqm_4cVp4QzQO9RRpdvz-cUS1Gz8CE9LNvKvQepZOllQ&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=Ii9jmjaGOD9BjaEr_laZgw&oh=00_AfFsEZ3P5lWkfBbJ_L-t68CtuFbBav6WQhawF6zf1RZ_eQ&oe=6838AD1B"
+              alt="Wedding Photo 4"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/118825861_3530364873669712_2650920288908157945_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9a1Tkd4nj2AQ7kNvwHFwRzY&_nc_oc=AdlK4SchPKSxGViVY9e1JVGo77kn0P8-iBObPYu80mhI5XBfLIxvCeoqv02-Xe4Y92U&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=7DofNjTakYdvN8ddU_YA9Q&oh=00_AfHLnkH5YF5sp9-I8Tp7hM8ppPirKczv_U72ERk1NqsgEw&oe=68389459"
+              alt="Wedding Photo 5"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86295746_3000673609972177_2557816796165963776_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dxYhjQH9NH8Q7kNvwFkqKP4&_nc_oc=AdkM0mdt8eu1orZ50i1UHnV0-k3d349l2E-O8aZVUndJbIoKKh_RNOaUzyWajdqftAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=EoUU_eyHutmtddSefnchdA&oh=00_AfEa2Tzpgu6SXNvlYkw0EwjImnIkPaX1aYdj8aXt1bq0yA&oe=6838869F"
+              alt="Wedding Photo 6"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/32498159_1885028064870076_946938712791449600_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b8OB4kNPbwMQ7kNvwEl2PtT&_nc_oc=AdlOMIU2lWo32waCsntaQ40gh_27U8bru2iKLcrbxq21KKn8xUQ5PpIPivjFT3_sEg4&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=lZCCs5n23sGSjTcMzCFMig&oh=00_AfFnKvXL4xQ1PU7VKqaIX1ZIVYlqgnLy7frqeY-pqVFmew&oe=68388874"
+              alt="Wedding Photo 1"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/52588120_2293055597400652_4618850590812798976_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=IwPMUDbgZ18Q7kNvwEHJdum&_nc_oc=AdkahXD50hd9R_-93dZFZhpQggrj2BHZxScbpPNIvA4tz40r3fs9flUVsN1keEfelGw&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=I1CdANSPeeVrVbsHX_Yw-w&oh=00_AfFfFewH-XVRmP97wy__OV6aTZ_SM6464Swl_HTTFPhJgQ&oe=6838AAEE"
+              alt="Wedding Photo 2"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JMNWvAOOHRQQ7kNvwEM4z7w&_nc_oc=Adlk8LEtdkiSwmo_-5Pc-BI7YV2Q32E97UAzzhCYrZbbNsHqEXLSZsDjbh_MRaIYLAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=qXbBcnRxkZgD1MzFNZROOA&oh=00_AfGfYHx715XrOLNXBjWpjLmimAXofZoHJJRtHcQhHUpxeQ&oe=681705F4"
+              alt="Wedding Photo 3"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/185321688_4231331373573055_8647493694388779079_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qYpQbru43pgQ7kNvwGUVunQ&_nc_oc=AdmiKMhPqdIdaaI9A2P-scBmqm_4cVp4QzQO9RRpdvz-cUS1Gz8CE9LNvKvQepZOllQ&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=Ii9jmjaGOD9BjaEr_laZgw&oh=00_AfFsEZ3P5lWkfBbJ_L-t68CtuFbBav6WQhawF6zf1RZ_eQ&oe=6838AD1B"
+              alt="Wedding Photo 4"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/83938965_2962464140459791_6553783767691952128_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=emFAKz1vVo4Q7kNvwEEpirQ&_nc_oc=AdmFNbCm0audG5ISzLANrQO1SzFTvaHqYP0HINEHRCYiMKHZAkxMZIYZgTbfon5_Pbc&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=DIMgtdS8Sda7F5fCw_3Luw&oh=00_AfG6UD4AOpuEiWQ_oLA6lsWmOPOHhxJ4MdGa-4dmKuH3fA&oe=6838A18B"
+              alt="Wedding Photo 5"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86439234_3000657153307156_7637437547282432000_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6uPAZgC6h-kQ7kNvwG9KiM6&_nc_oc=Adm4lf5QSqmO0CRyrFX8yw340jquvC0mYpfGH7uOtxsnp6hzTCQ9SgI9Kbj-0ekIaco&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=kGnAURHqMaaYo428lzwj7A&oh=00_AfE_5YtyJvPy-g0xHZvgwsnNvvSye0KH6m9AZ1fGF6xOVA&oe=6838A32D"
+              alt="Wedding Photo 6"
             />
           </div>
         </div>
-      </div>
-
-      <!-- Esports Section -->
-      <div class="sport-section">
-        <h3>Esports</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/esports/img1.JPG',)"
-          >
+      </section>
+      <section class="gallery-section">
+        <h2 class="section-title">Wedding Memories</h2>
+        <div class="gallery-slider">
+          <div class="gallery-track">
             <img
-              src="./assets/esports/img1.jpg"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/487273487_1145934824235102_6948331620169057020_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PLESMnoJSjYQ7kNvwFzgsCY&_nc_oc=AdlaeXivZcew_DhbS4mpba0DqTZO5z_tEywuiea6sGzHXworGbpSEw_ANZk8xKRYXlI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=ykrsQq2OeY7w64jwgy3yAw&oh=00_AfH3I66cDwJCC28s8eIkldTImHtIbK1lttOW7YwC2YKXsQ&oe=68170AFB"
+              alt="Wedding Photo 1"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/esports/img2.JPG', )"
-          >
             <img
-              src="./assets/esports/img2.jpg"
-              
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475150276_1097857159042869_584287534565623502_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ULfORaIlGjEQ7kNvwGlt_Rm&_nc_oc=AdlE1qudR5oJAUb7NBVgzb2-X-3Y0IbUYu-qKhYzEqJtdWa4ZBav2Io_pT-FQS19pzI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=pPERl5aZdFIzXlMEZ3ALbw&oh=00_AfGkTgbDY7mJAHHUE5sWClhl-7FT-9xksd7Cacj_LKbMyw&oe=6816F31B"
+              alt="Wedding Photo 2"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/esports/img3.JPG', )"
-          >
             <img
-              src="./assets/esports/img3.jpg"
-              
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JMNWvAOOHRQQ7kNvwEM4z7w&_nc_oc=Adlk8LEtdkiSwmo_-5Pc-BI7YV2Q32E97UAzzhCYrZbbNsHqEXLSZsDjbh_MRaIYLAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=qXbBcnRxkZgD1MzFNZROOA&oh=00_AfGfYHx715XrOLNXBjWpjLmimAXofZoHJJRtHcQhHUpxeQ&oe=681705F4"
+              alt="Wedding Photo 3"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/assets_card/gaming.jpg', )"
-          >
             <img
-              src="./assets/assets_card/gaming.jpg"
-              
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/185321688_4231331373573055_8647493694388779079_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qYpQbru43pgQ7kNvwGUVunQ&_nc_oc=AdmiKMhPqdIdaaI9A2P-scBmqm_4cVp4QzQO9RRpdvz-cUS1Gz8CE9LNvKvQepZOllQ&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=Ii9jmjaGOD9BjaEr_laZgw&oh=00_AfFsEZ3P5lWkfBbJ_L-t68CtuFbBav6WQhawF6zf1RZ_eQ&oe=6838AD1B"
+              alt="Wedding Photo 4"
             />
-          </div>
-        </div>
-      </div>
-
-      <!-- Kabaddi Section -->
-      <div class="sport-section">
-        <h3>Kabaddi</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/kabaddi/1.png', )"
-          >
             <img
-              src="./assets/kabaddi/1.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/118825861_3530364873669712_2650920288908157945_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9a1Tkd4nj2AQ7kNvwHFwRzY&_nc_oc=AdlK4SchPKSxGViVY9e1JVGo77kn0P8-iBObPYu80mhI5XBfLIxvCeoqv02-Xe4Y92U&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=7DofNjTakYdvN8ddU_YA9Q&oh=00_AfHLnkH5YF5sp9-I8Tp7hM8ppPirKczv_U72ERk1NqsgEw&oe=68389459"
+              alt="Wedding Photo 5"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/kabaddi/2.png', )"
-          >
             <img
-              src="./assets/kabaddi/2.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86295746_3000673609972177_2557816796165963776_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dxYhjQH9NH8Q7kNvwFkqKP4&_nc_oc=AdkM0mdt8eu1orZ50i1UHnV0-k3d349l2E-O8aZVUndJbIoKKh_RNOaUzyWajdqftAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=EoUU_eyHutmtddSefnchdA&oh=00_AfEa2Tzpgu6SXNvlYkw0EwjImnIkPaX1aYdj8aXt1bq0yA&oe=6838869F"
+              alt="Wedding Photo 6"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/kabaddi/3.png', )"
-          >
             <img
-              src="./assets/kabaddi/3.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/32498159_1885028064870076_946938712791449600_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b8OB4kNPbwMQ7kNvwEl2PtT&_nc_oc=AdlOMIU2lWo32waCsntaQ40gh_27U8bru2iKLcrbxq21KKn8xUQ5PpIPivjFT3_sEg4&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=lZCCs5n23sGSjTcMzCFMig&oh=00_AfFnKvXL4xQ1PU7VKqaIX1ZIVYlqgnLy7frqeY-pqVFmew&oe=68388874"
+              alt="Wedding Photo 1"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/kabaddi/4.png', )"
-          >
             <img
-              src="./assets/kabaddi/4.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/52588120_2293055597400652_4618850590812798976_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=IwPMUDbgZ18Q7kNvwEHJdum&_nc_oc=AdkahXD50hd9R_-93dZFZhpQggrj2BHZxScbpPNIvA4tz40r3fs9flUVsN1keEfelGw&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=I1CdANSPeeVrVbsHX_Yw-w&oh=00_AfFfFewH-XVRmP97wy__OV6aTZ_SM6464Swl_HTTFPhJgQ&oe=6838AAEE"
+              alt="Wedding Photo 2"
             />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JMNWvAOOHRQQ7kNvwEM4z7w&_nc_oc=Adlk8LEtdkiSwmo_-5Pc-BI7YV2Q32E97UAzzhCYrZbbNsHqEXLSZsDjbh_MRaIYLAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=qXbBcnRxkZgD1MzFNZROOA&oh=00_AfGfYHx715XrOLNXBjWpjLmimAXofZoHJJRtHcQhHUpxeQ&oe=681705F4"
+              alt="Wedding Photo 3"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/185321688_4231331373573055_8647493694388779079_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qYpQbru43pgQ7kNvwGUVunQ&_nc_oc=AdmiKMhPqdIdaaI9A2P-scBmqm_4cVp4QzQO9RRpdvz-cUS1Gz8CE9LNvKvQepZOllQ&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=Ii9jmjaGOD9BjaEr_laZgw&oh=00_AfFsEZ3P5lWkfBbJ_L-t68CtuFbBav6WQhawF6zf1RZ_eQ&oe=6838AD1B"
+              alt="Wedding Photo 4"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/83938965_2962464140459791_6553783767691952128_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=emFAKz1vVo4Q7kNvwEEpirQ&_nc_oc=AdmFNbCm0audG5ISzLANrQO1SzFTvaHqYP0HINEHRCYiMKHZAkxMZIYZgTbfon5_Pbc&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=DIMgtdS8Sda7F5fCw_3Luw&oh=00_AfG6UD4AOpuEiWQ_oLA6lsWmOPOHhxJ4MdGa-4dmKuH3fA&oe=6838A18B"
+              alt="Wedding Photo 5"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86439234_3000657153307156_7637437547282432000_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6uPAZgC6h-kQ7kNvwG9KiM6&_nc_oc=Adm4lf5QSqmO0CRyrFX8yw340jquvC0mYpfGH7uOtxsnp6hzTCQ9SgI9Kbj-0ekIaco&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=kGnAURHqMaaYo428lzwj7A&oh=00_AfE_5YtyJvPy-g0xHZvgwsnNvvSye0KH6m9AZ1fGF6xOVA&oe=6838A32D"
+              alt="Wedding Photo 6"
+            />
+            
           </div>
         </div>
-      </div>
-
-      <!-- VolleyBall Section -->
-      <div class="sport-section">
-        <h3>Volleyball</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/volleyball/1.png', )"
-          >
+      </section>
+      <section class="gallery-section">
+        <h2 class="section-title">Wedding Memories</h2>
+        <div class="gallery-slider">
+          <div class="gallery-track">
             <img
-              src="./assets/volleyball/1.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/487273487_1145934824235102_6948331620169057020_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=PLESMnoJSjYQ7kNvwFzgsCY&_nc_oc=AdlaeXivZcew_DhbS4mpba0DqTZO5z_tEywuiea6sGzHXworGbpSEw_ANZk8xKRYXlI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=ykrsQq2OeY7w64jwgy3yAw&oh=00_AfH3I66cDwJCC28s8eIkldTImHtIbK1lttOW7YwC2YKXsQ&oe=68170AFB"
+              alt="Wedding Photo 1"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/volleyball/2.png', )"
-          >
             <img
-              src="./assets/volleyball/2.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475150276_1097857159042869_584287534565623502_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ULfORaIlGjEQ7kNvwGlt_Rm&_nc_oc=AdlE1qudR5oJAUb7NBVgzb2-X-3Y0IbUYu-qKhYzEqJtdWa4ZBav2Io_pT-FQS19pzI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=pPERl5aZdFIzXlMEZ3ALbw&oh=00_AfGkTgbDY7mJAHHUE5sWClhl-7FT-9xksd7Cacj_LKbMyw&oe=6816F31B"
+              alt="Wedding Photo 2"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/volleyball/3.png', )"
-          >
             <img
-              src="./assets/volleyball/3.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JMNWvAOOHRQQ7kNvwEM4z7w&_nc_oc=Adlk8LEtdkiSwmo_-5Pc-BI7YV2Q32E97UAzzhCYrZbbNsHqEXLSZsDjbh_MRaIYLAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=qXbBcnRxkZgD1MzFNZROOA&oh=00_AfGfYHx715XrOLNXBjWpjLmimAXofZoHJJRtHcQhHUpxeQ&oe=681705F4"
+              alt="Wedding Photo 3"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/volleyball/4.png', )"
-          >
             <img
-              src="./assets/volleyball/4.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/185321688_4231331373573055_8647493694388779079_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qYpQbru43pgQ7kNvwGUVunQ&_nc_oc=AdmiKMhPqdIdaaI9A2P-scBmqm_4cVp4QzQO9RRpdvz-cUS1Gz8CE9LNvKvQepZOllQ&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=Ii9jmjaGOD9BjaEr_laZgw&oh=00_AfFsEZ3P5lWkfBbJ_L-t68CtuFbBav6WQhawF6zf1RZ_eQ&oe=6838AD1B"
+              alt="Wedding Photo 4"
             />
-          </div>
-        </div>
-      </div>
-
-      <!-- Badminton Section -->
-      <div class="sport-section">
-        <h3>Badminton</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/badminton/1.png', )"
-          >
             <img
-              src="./assets/badminton/1.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/118825861_3530364873669712_2650920288908157945_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=9a1Tkd4nj2AQ7kNvwHFwRzY&_nc_oc=AdlK4SchPKSxGViVY9e1JVGo77kn0P8-iBObPYu80mhI5XBfLIxvCeoqv02-Xe4Y92U&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=7DofNjTakYdvN8ddU_YA9Q&oh=00_AfHLnkH5YF5sp9-I8Tp7hM8ppPirKczv_U72ERk1NqsgEw&oe=68389459"
+              alt="Wedding Photo 5"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/badminton/2.png', )"
-          >
             <img
-              src="./assets/badminton/2.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86295746_3000673609972177_2557816796165963776_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dxYhjQH9NH8Q7kNvwFkqKP4&_nc_oc=AdkM0mdt8eu1orZ50i1UHnV0-k3d349l2E-O8aZVUndJbIoKKh_RNOaUzyWajdqftAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=EoUU_eyHutmtddSefnchdA&oh=00_AfEa2Tzpgu6SXNvlYkw0EwjImnIkPaX1aYdj8aXt1bq0yA&oe=6838869F"
+              alt="Wedding Photo 6"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/badminton/3.png', )"
-          >
             <img
-              src="./assets/badminton/3.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/32498159_1885028064870076_946938712791449600_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=b8OB4kNPbwMQ7kNvwEl2PtT&_nc_oc=AdlOMIU2lWo32waCsntaQ40gh_27U8bru2iKLcrbxq21KKn8xUQ5PpIPivjFT3_sEg4&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=lZCCs5n23sGSjTcMzCFMig&oh=00_AfFnKvXL4xQ1PU7VKqaIX1ZIVYlqgnLy7frqeY-pqVFmew&oe=68388874"
+              alt="Wedding Photo 1"
             />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/badminton/4.png', )"
-          >
             <img
-              src="./assets/badminton/4.png"
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/52588120_2293055597400652_4618850590812798976_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_ohc=IwPMUDbgZ18Q7kNvwEHJdum&_nc_oc=AdkahXD50hd9R_-93dZFZhpQggrj2BHZxScbpPNIvA4tz40r3fs9flUVsN1keEfelGw&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=I1CdANSPeeVrVbsHX_Yw-w&oh=00_AfFfFewH-XVRmP97wy__OV6aTZ_SM6464Swl_HTTFPhJgQ&oe=6838AAEE"
+              alt="Wedding Photo 2"
             />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=JMNWvAOOHRQQ7kNvwEM4z7w&_nc_oc=Adlk8LEtdkiSwmo_-5Pc-BI7YV2Q32E97UAzzhCYrZbbNsHqEXLSZsDjbh_MRaIYLAI&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=qXbBcnRxkZgD1MzFNZROOA&oh=00_AfGfYHx715XrOLNXBjWpjLmimAXofZoHJJRtHcQhHUpxeQ&oe=681705F4"
+              alt="Wedding Photo 3"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/185321688_4231331373573055_8647493694388779079_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=qYpQbru43pgQ7kNvwGUVunQ&_nc_oc=AdmiKMhPqdIdaaI9A2P-scBmqm_4cVp4QzQO9RRpdvz-cUS1Gz8CE9LNvKvQepZOllQ&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=Ii9jmjaGOD9BjaEr_laZgw&oh=00_AfFsEZ3P5lWkfBbJ_L-t68CtuFbBav6WQhawF6zf1RZ_eQ&oe=6838AD1B"
+              alt="Wedding Photo 4"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/83938965_2962464140459791_6553783767691952128_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=emFAKz1vVo4Q7kNvwEEpirQ&_nc_oc=AdmFNbCm0audG5ISzLANrQO1SzFTvaHqYP0HINEHRCYiMKHZAkxMZIYZgTbfon5_Pbc&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=DIMgtdS8Sda7F5fCw_3Luw&oh=00_AfG6UD4AOpuEiWQ_oLA6lsWmOPOHhxJ4MdGa-4dmKuH3fA&oe=6838A18B"
+              alt="Wedding Photo 5"
+            />
+            <img
+              src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86439234_3000657153307156_7637437547282432000_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6uPAZgC6h-kQ7kNvwG9KiM6&_nc_oc=Adm4lf5QSqmO0CRyrFX8yw340jquvC0mYpfGH7uOtxsnp6hzTCQ9SgI9Kbj-0ekIaco&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=kGnAURHqMaaYo428lzwj7A&oh=00_AfE_5YtyJvPy-g0xHZvgwsnNvvSye0KH6m9AZ1fGF6xOVA&oe=6838A32D"
+              alt="Wedding Photo 6"
+            />
+            
           </div>
         </div>
-      </div>
-
-      <!-- Basketball Section -->
-      <div class="sport-section">
-        <h3>Basketball</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/basketball/1.png', )"
-          >
-            <img
-              src="./assets/basketball/1.png"
-            />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/basketball/2.png', )"
-          >
-            <img
-              src="./assets/basketball/2.png"
-            />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/basketball/3.png', )"
-          >
-            <img
-              src="./assets/basketball/3.png"
-            />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/basketball/4.png', )"
-          >
-            <img
-              src="./assets/basketball/4.png"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Football Section -->
-      <div class="sport-section">
-        <h3>Football</h3>
-        <div class="lightbox-gallery">
-          <div
-            class="image"
-            onclick="openLightbox('./assets/football/1.png', )"
-          >
-            <img
-              src="./assets/football/1.png"
-            />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/football/2.png', )"
-          >
-            <img
-              src="./assets/football/2.png"
-            />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/football/3.png', )"
-          >
-            <img
-              src="./assets/football/3.png"
-            />
-          </div>
-          <div
-            class="image"
-            onclick="openLightbox('./assets/football/4.png', )"
-          >
-            <img
-              src="./assets/football/4.png"
-            />
-          </div>
-        </div>
-      </div>
-
+      </section>
+      
       <!-- Add remaining sports sections following the same pattern -->
     </div>
 
@@ -640,6 +411,6 @@
           e.stopPropagation();
         });
     </script>
-<script src="./scripts.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
