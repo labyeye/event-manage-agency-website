@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Edit Booking</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5 bg-light">
+  <div class="container">
+    <h3>Edit Booking</h3>
+    <form action="/admin/booking/edit/<%= booking._id %>" method="POST" class="bg-white p-4 rounded shadow-sm">
+      <div class="mb-3">
+        <label>Name</label>
+        <input type="text" name="name" value="<%= booking.name %>" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label>Email</label>
+        <input type="email" name="email" value="<%= booking.email %>" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label>Phone</label>
+        <input type="text" name="phone" value="<%= booking.phone %>" class="form-control" required />
+      </div>
+      <div class="mb-3">
+        <label>Event Type</label>
+        <input type="text" name="eventType" value="<%= booking.eventType %>" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label>Package</label>
+        <select name="package" class="form-control">
+          <option <%= booking.package === "Silver" ? "selected" : "" %>>Silver</option>
+          <option <%= booking.package === "Gold" ? "selected" : "" %>>Gold</option>
+          <option <%= booking.package === "Platinum" ? "selected" : "" %>>Platinum</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label>Event Date</label>
+        <input type="date" name="date" value="<%= booking.date %>" class="form-control" />
+      </div>
+      <div class="mb-3">
+        <label>Status</label>
+        <select name="status" class="form-control">
+          <option <%= booking.status === "Pending" ? "selected" : "" %>>Pending</option>
+          <option <%= booking.status === "Approved" ? "selected" : "" %>>Approved</option>
+          <option <%= booking.status === "Rejected" ? "selected" : "" %>>Rejected</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Save Changes</button>
+      <a href="/admin/dashboard" class="btn btn-secondary">Back</a>
+    </form>
+  </div>
+</body>
+</html>
