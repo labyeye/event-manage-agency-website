@@ -65,7 +65,7 @@
       input,
       select,
       textarea {
-        width: 100%;
+        width: 90%;
         padding: 12px;
         margin-bottom: 20px;
         border: 2px solid #f4b86f;
@@ -149,10 +149,20 @@
       }
 
       @media screen and (max-width: 768px) {
-        .form-container {
-          margin-top: 60px;
-          padding: 25px;
+        .form-wrapper {
+          padding: 40px 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
+
+        .form-container {
+          margin: auto;
+          padding: 25px;
+          width: 90%;
+          max-width: 350px;
+        }
+
         .photo-card {
           display: none;
         }
@@ -169,7 +179,10 @@
           <li><a href="about.html">About</a></li>
           <li><a href="eventcard.html">Services</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact us</a></li>
+          
+
         </ul>
       </div>
       <a href="booking.html" class="book-now-btn">Book Now</a>
