@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Event | AR Event & Wedding Planner</title>
+    <meta
+      name="description"
+      content="Book your next unforgettable event with AR Event & Wedding Planner – weddings, birthdays, corporate events and more."
+    />
+    <meta
+      name="keywords"
+      content="event booking, wedding planner, AR Events, birthday party, Bangalore event planner"
+    />
+    <meta name="author" content="AR Event & Wedding Planner" />
+    <meta
+      property="og:title"
+      content="Book Your Event | AR Event & Wedding Planner"
+    />
+    <meta
+      property="og:description"
+      content="Plan your perfect event with us. Booking open for weddings, birthdays, and corporate events."
+    />
+    <meta property="og:image" content="./assets/logo2.svg" />
+    <meta property="og:url" content="https://yourwebsite.com/booking.html" />
+    <meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="./assets/logo2.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      .form-wrapper {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+      }
+
+      .form-container {
+        max-width: 650px;
+        width: 100%;
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        z-index: 0;
+      }
+
+      .form-container h1 {
+        text-align: center;
+        font-size: 2.5em;
+        background: linear-gradient(45deg, #f4b86f, #a27158, #5c0469);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 30px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 2px solid #f4b86f;
+        border-radius: 8px;
+        font-size: 1em;
+        background-color: #fff5e9;
+      }
+
+      button {
+        padding: 12px 30px;
+        background: linear-gradient(45deg, #f4b86f, #a27158, #5c0469);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.1em;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        background: linear-gradient(45deg, #5c0469, #a27158, #f4b86f);
+      }
+
+      .photo-card {
+        margin-top: 50px;
+        position: absolute;
+        width: 250px;
+        height: 320px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        animation: float 6s ease-in-out infinite;
+        z-index: 1;
+      }
+
+      .photo-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .photo-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .card-top-left {
+        top: 10%;
+        left: 5%;
+        animation-delay: 0s;
+      }
+      .card-top-right {
+        top: 10%;
+        right: 5%;
+        animation-delay: 1s;
+      }
+      .card-bottom-left {
+        bottom: 10%;
+        left: 8%;
+        animation-delay: 2s;
+      }
+      .card-bottom-right {
+        bottom: 10%;
+        right: 8%;
+        animation-delay: 3s;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .form-container {
+          margin-top: 60px;
+          padding: 25px;
+        }
+        .photo-card {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav-component">
+      <div class="nav-logo"></div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="eventcard.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <a href="booking.html" class="book-now-btn">Book Now</a>
+      <div class="hamburger-menu" onclick="toggleMobileNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+
+    <!-- Floating Photo Cards -->
+    <div class="photo-card card-top-left">
+      <img
+        src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/486716854_1145934934235091_8692439223257752556_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FQjhGuXsI90Q7kNvwG7YqK0&_nc_oc=AdnvPkodN0kO7bnhiWpGfOXOBA1q7xwZ065YYYWBeFNoyobRR0qR9skoYEeGuVQzT6Q&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=w_dxpLRwkHYOzBzSdTZMBA&oh=00_AfEQprGclUJu0FF-kjDFPyMnfRXIBY3_TB1lgh1jGAYqVQ&oe=68166810"
+        alt="Event Image 1"
+      />
+    </div>
+    <div class="photo-card card-top-right">
+      <img
+        src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/109095161_3373340779372123_8733911015836493381_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=n8K1EuSIQLMQ7kNvwH1bPRG&_nc_oc=Adke8Nyd_riBngrMTaXsfukYXieVtrUO-CEVTcqrP6nTZO4cg_VTBEbTRm4_tMfonMo&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=SCHS-HyTEwyFqpMjRpWVsA&oh=00_AfE3DM58MS8XivfHrOGmyU-qOO_wKsjKD1C1doEyDtDN5w&oe=683831DA"
+        alt="Event Image 2"
+      />
+    </div>
+    <div class="photo-card card-bottom-left">
+      <img
+        src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475134954_1097861299042455_7276947943621487406_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cDN8viuaNPkQ7kNvwGOP62k&_nc_oc=Adnfyr9oTfnhs82K_nsGkVhxdIu78816uyHpe7CMgYK0I_wWatZ8QwXEUIg10xO7lWk&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=kwMLd_SOal-5jEScT-VoTQ&oh=00_AfHbEtSol3ZGWpp6mtMPupuABcvkvtoJHqt8YzgVhxeUGw&oe=68168215"
+        alt="Event Image 3"
+      />
+    </div>
+    <div class="photo-card card-bottom-right">
+      <img
+        src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Hjq2NlsyHBgQ7kNvwHCsJWj&_nc_oc=Adk-qp5xXt8TqnjTNi0AlbVS813NLakAAT3IBzRPWQDk2LxkM_Ucss5w8IlvGhqQRCw&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=vEmE-5RYN28EqdGeeDIuPg&oh=00_AfGiY8KNRAruLp6JwhYdbzVN2TFDv0ygulJ0CXhVgAPuJQ&oe=68169574"
+        alt="Event Image 4"
+      />
+    </div>
+
+    <!-- Booking Form -->
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h1>Book Your Event</h1>
+        <form action="#" method="POST">
+          <label for="name">Full Name*</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email Address*</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone">Phone Number*</label>
+          <input type="tel" id="phone" name="phone" required />
+          <label for="eventType">Type of Event*</label>
+          <select id="eventType" name="eventType" required>
+            <option value="">-- Select --</option>
+            <option value="wedding">Wedding</option>
+            <option value="birthday">Birthday</option>
+            <option value="corporate">Corporate Event</option>
+            <option value="spiritual">Spiritual Gathering</option>
+            <option value="other">Other</option>
+          </select>
+          <label for="date">Preferred Event Date*</label>
+          <input type="date" id="date" name="date" required />
+          <label for="message">Additional Notes</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tell us more about your event..."
+          ></textarea>
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer (from index.html) -->
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="footer-icon-flex">
+          <div class="icon-1"></div>
+          <span class="line">|</span>
+          <div class="icon-2"></div>
+        </div>
+        <div class="footer-uni">
+          <br />
+          A Pioneer in the Event Management & Wedding Planner Field From
+          Muzaffarpur, Bihar in Creative.
+        </div>
+      </div>
+
+      <ul class="footer-links">
+        <li class="header">Links</li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="eventcard.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="footer-event-info">
+        <div class="footer-para">
+          <a
+            href="#"
+            target="_blank"
+            style="text-decoration: none; color: rgb(0, 0, 0)"
+          >
+            © 2025 AR event and wedding planner. All rights reserved.
+          </a>
+        </div>
+        <div class="footer-para">
+          <br />
+          - developed by
+          <a
+            href="https://pixelatenest.com"
+            target="_blank"
+            style="text-decoration: none; color: rgb(0, 0, 0)"
+            >Pixelate Nest</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Nav Toggle Script -->
+    <script>
+      function toggleMobileNav() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

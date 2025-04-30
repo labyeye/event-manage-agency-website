@@ -14,17 +14,37 @@ html {
   padding: 0;
   scroll-behavior: smooth;
 }
+.book-now-btn {
+  padding: 10px 25px;
+  margin-right: 2vw;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #F4B86F, #A27158, #5c0469);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.book-now-btn:hover {
+  background: linear-gradient(45deg, #5c0469, #A27158, #F4B86F);
+}
+
+
 
 .nav-component {
+  position: relative; /* Was: relative */
+  top: 0;
+  left: 0;
   width: 100%;
+  z-index: 1000; /* Increase this */
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  margin-top: 1.5vw;
-  z-index: 1;
-  position: relative;
+  background: #fff5e9; /* Optional: background so it's readable */
 }
+
 
 .nav-component .nav-logo {
   height: 12.5vh;
@@ -120,21 +140,14 @@ html {
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
+  z-index: 0;
+
 }
 
-.hero-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 0 !important;
   max-width: 1000px;
   padding: 0 10px;
 }
@@ -186,10 +199,14 @@ html {
 @media screen and (max-width: 768px) {
   .hero-content h1 {
     font-size: 9vw;
+    z-index: 0 !important;
+
   }
 
   .hero-content p {
     font-size: 4vw;
+    z-index: 0 !important;
+
   }
 
   .hero-btn {
@@ -966,7 +983,7 @@ html {
 
   .nav-links.active {
     display: flex;
-    z-index: 100;
+    z-index: 99999;
   }
 
   .nav-links ul {
@@ -980,6 +997,10 @@ html {
   .nav-links ul li a {
     color: #eee;
     font-size: 5vw;
+  }
+  .hero-section {
+    position: relative;
+    z-index: 1;
   }
 
   .hamburger-menu {
