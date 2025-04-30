@@ -121,6 +121,7 @@ html {
   width: 30px;
   height: 25px;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .hamburger-menu .bar {
@@ -984,7 +985,9 @@ html {
 
   .nav-links.active {
     display: flex;
+    width:350px;
     z-index: 99999;
+    height: 30vh;
   }
 
   .nav-links ul {
