@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
@@ -5,18 +6,22 @@ const session = require("express-session");
 const bcrypt = require("bcryptjs");
 const path = require("path");
 const cors = require("cors");
+const twilio = require("twilio");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
+// Twilio Setup
+const twilioClient = twilio(
+  process.env.TWILIO_ACCOUNT_SID,
+  process.env.TWILIO_AUTH_TOKEN
+);
 
 mongoose
-  .connect(
-    "mongodb+srv://labhbother12:13801234@cluster0.8gdivgr.mongodb.net/",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
 
@@ -71,13 +76,11 @@ const User = mongoose.model("User", userSchema);
   }
 })();
 
-// ✅ Auth middleware
 function isAuthenticated(req, res, next) {
   if (req.session.isAuthenticated) return next();
   res.redirect("/admin/login");
 }
 
-// ✅ Public booking form submit
 app.post("/submit-booking", async (req, res) => {
   try {
     const booking = new Booking(req.body);
@@ -88,38 +91,14 @@ app.post("/submit-booking", async (req, res) => {
   }
 });
 
-// ✅ Admin login
 app.get("/admin/login", (req, res) => {
   res.render("login", { error: null });
-});
-// Edit booking - form
-app.get("/admin/booking/edit/:id", isAuthenticated, async (req, res) => {
-  const booking = await Booking.findById(req.params.id);
-  res.render("edit-booking", { booking });
-});
-
-// Edit booking - submit
-app.post("/admin/booking/edit/:id", isAuthenticated, async (req, res) => {
-  await Booking.findByIdAndUpdate(req.params.id, req.body);
-  res.redirect("/admin/dashboard");
-});
-
-// Delete a booking
-app.post("/admin/booking/delete/:id", isAuthenticated, async (req, res) => {
-  try {
-    await Booking.findByIdAndDelete(req.params.id);
-    res.redirect("/admin/dashboard");
-  } catch (err) {
-    res.status(500).send("Error deleting booking.");
-  }
 });
 
 app.post("/admin/login", async (req, res) => {
   const user = await User.findOne({ username: req.body.username });
-  const valid =
-    user && (await bcrypt.compare(req.body.password, user.password));
+  const valid = user && (await bcrypt.compare(req.body.password, user.password));
   if (!valid) return res.render("login", { error: "Invalid credentials" });
-
   req.session.isAuthenticated = true;
   res.redirect("/admin/dashboard");
 });
@@ -129,19 +108,52 @@ app.get("/admin/logout", (req, res) => {
   res.redirect("/admin/login");
 });
 
-// ✅ Admin dashboard
 app.get("/admin/dashboard", isAuthenticated, async (req, res) => {
   const bookings = await Booking.find().sort({ createdAt: -1 });
   res.render("dashboard", { bookings });
 });
 
-// ✅ Admin approve/reject
 app.post("/admin/booking/status/:id", isAuthenticated, async (req, res) => {
+  const booking = await Booking.findById(req.params.id);
+  if (!booking) return res.status(404).send("Booking not found");
   await Booking.findByIdAndUpdate(req.params.id, { status: req.body.status });
+
+  if (req.body.status === "Approved") {
+    const message = `Hi ${booking.name}, your booking has been approved! We’ll contact you soon. – AR Event & Wedding Planner`;
+    try {
+      await twilioClient.messages.create({
+        body: message,
+        from: process.env.TWILIO_PHONE_NUMBER,
+        to: `+91${booking.phone}`,
+      });
+      console.log("✅ SMS sent");
+    } catch (err) {
+      console.error("❌ SMS failed:", err.message);
+    }
+  }
+
   res.redirect("/admin/dashboard");
 });
 
-// ✅ Start server
+app.get("/admin/booking/edit/:id", isAuthenticated, async (req, res) => {
+  const booking = await Booking.findById(req.params.id);
+  res.render("edit-booking", { booking });
+});
+
+app.post("/admin/booking/edit/:id", isAuthenticated, async (req, res) => {
+  await Booking.findByIdAndUpdate(req.params.id, req.body);
+  res.redirect("/admin/dashboard");
+});
+
+app.post("/admin/booking/delete/:id", isAuthenticated, async (req, res) => {
+  try {
+    await Booking.findByIdAndDelete(req.params.id);
+    res.redirect("/admin/dashboard");
+  } catch (err) {
+    res.status(500).send("Error deleting booking.");
+  }
+});
+
 app.listen(port, () => {
-  console.log(`🚀 Server running: http://localhost:${port}`);
+  console.log(`🚀 Server running on http://localhost:${port}`);
 });
