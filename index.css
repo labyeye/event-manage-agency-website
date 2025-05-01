@@ -14,6 +14,7 @@ html {
   padding: 0;
   scroll-behavior: smooth;
 }
+
 .book-now-btn {
   padding: 10px 25px;
   margin-right: 2vw;
@@ -33,16 +34,19 @@ html {
 
 
 .nav-component {
-  position: relative; /* Was: relative */
+  position: relative;
+  /* Was: relative */
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Increase this */
+  z-index: 1000;
+  /* Increase this */
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  background: #fff5e9; /* Optional: background so it's readable */
+  background: #fff5e9;
+  /* Optional: background so it's readable */
   margin-top: 1.5vh;
 }
 
@@ -73,7 +77,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 7.5vw;
   height: 70%;
   box-shadow: 0 5px 15px #FFA931;
 }
@@ -985,10 +988,10 @@ html {
 
   .nav-links.active {
     display: flex;
-    width:350px;
+    width: 350px;
     z-index: 99999;
     height: 30vh;
-    
+    margin-left: 20px;
   }
 
   .nav-links ul {
@@ -1003,6 +1006,7 @@ html {
     color: #eee;
     font-size: 5vw;
   }
+
   .hero-section {
     position: relative;
     z-index: 1;
@@ -1120,6 +1124,7 @@ html {
   color: rgb(0, 0, 0);
   font-size: 1.2vw;
 }
+
 .footer-credit,
 .footer-dev {
   font-size: 0.9vw;
@@ -1132,6 +1137,7 @@ html {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+
 .footer-dev a:hover {
   color: rgb(0, 0, 0);
 }
