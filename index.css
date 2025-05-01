@@ -49,6 +49,20 @@ html {
   filter: blur(60px);
   pointer-events: none;
 }
+.wave-container {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.wave-container svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
 @media screen and (max-width: 768px) {
   .bg-bubble {
     position: absolute;
