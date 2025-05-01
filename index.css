@@ -31,7 +31,45 @@ html {
   background: linear-gradient(45deg, #5c0469, #A27158, #F4B86F);
 }
 
-
+.bg-bubble {
+  position: absolute;
+  z-index: 0;
+  top: 29%;
+  right: 1500px;
+  transform: scale(1.5);
+  filter: blur(60px);
+  pointer-events: none;
+}
+.bg-bubble1 {
+  position: absolute;
+  z-index: 0;
+  top: 70%;
+  right: -100px;  /* Use right instead of left */
+  transform: scale(1.5);
+  filter: blur(60px);
+  pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+  .bg-bubble {
+    position: absolute;
+    z-index: 0;
+    top: 29%;
+    right: 200px;
+    transform: scale(1.5);
+    filter: blur(60px);
+    pointer-events: none;
+  }
+  .bg-bubble1 {
+    position: absolute;
+    z-index: 0;
+    top: 70%;
+    right: -100px;  /* Use right instead of left */
+    transform: scale(1.5);
+    filter: blur(60px);
+    pointer-events: none;
+  }
+  
+}
 
 .nav-component {
   position: relative;
@@ -677,6 +715,8 @@ html {
   background-clip: text;
   color: transparent;
   margin-bottom: 20px;
+
+
 }
 
 .about-content p {
