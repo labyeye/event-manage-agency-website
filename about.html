@@ -111,19 +111,18 @@
       <div class="nav-logo"></div>
       <div class="nav-links">
         <ul>
-           <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="eventcard.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact us</a></li>
-          
-        </ul>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="eventcard.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
         </ul>
       </div>
-      
-            <a href="book.html" class="book-now-btn">Book Now</a>
+
+      <a href="book.html" class="book-now-btn">Book Now</a>
       <div class="hamburger-menu" onclick="toggleMobileNav()">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -136,12 +135,12 @@
       <div class="about-content">
         <h2>About AR event and wedding planner</h2>
         <p>
-          At AR event and wedding planner, we believe every event is an opportunity to
-          craft unforgettable memories. Based at Christ University, Kengeri
-          Campus, we specialize in creating exceptional experiences — from
-          vibrant festivals to elegant private gatherings. With creativity,
-          precision, and a passion for perfection, our team transforms your
-          vision into reality.
+          At AR event and wedding planner, we believe every event is an
+          opportunity to craft unforgettable memories. Based at Christ
+          University, Kengeri Campus, we specialize in creating exceptional
+          experiences — from vibrant festivals to elegant private gatherings.
+          With creativity, precision, and a passion for perfection, our team
+          transforms your vision into reality.
         </p>
         <p>
           Our services cover end-to-end event planning including concept design,
@@ -211,8 +210,8 @@
       <div class="leader-message">
         <h2>A Message from Our Founder</h2>
         <p>
-          "At AR event and wedding planner, every celebration is a story waiting to
-          unfold. Our mission is simple – to design experiences that are
+          "At AR event and wedding planner, every celebration is a story waiting
+          to unfold. Our mission is simple – to design experiences that are
           memorable, seamless, and emotionally resonant. We don't just plan
           events; we craft moments that inspire."
         </p>
@@ -260,8 +259,8 @@
       </ul>
       <div class="footer-event-info">
         <div class="footer-para">
-          AR event and wedding planner – crafting unforgettable celebrations with
-          passion, creativity, and precision.<br /><br />
+          AR event and wedding planner – crafting unforgettable celebrations
+          with passion, creativity, and precision.<br /><br />
           Developed by
           <a
             href="https://pixelatenest.com"
@@ -277,6 +276,16 @@
       function toggleMobileNav() {
         document.querySelector(".nav-links").classList.toggle("active");
       }
+    </script>
+    <script>
+      const links = document.querySelectorAll(".nav-links ul li a");
+      const currentPage = window.location.pathname.split("/").pop();
+
+      links.forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
     </script>
   </body>
 </html>

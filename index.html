@@ -33,6 +33,10 @@
   </head>
 
   <body>
+    <div id="preloader">
+      <div class="loader-text">WELCOME <br> TO <br>AR EVENT AND WEDDING PLANNER</div>
+    </div>
+
     <!-- Navbar Component -->
     <div class="nav-component">
       <div class="nav-logo"></div>
@@ -356,5 +360,27 @@
 
       gtag("config", "G-3LRHBTD121");
     </script>
+    <script>
+      const links = document.querySelectorAll(".nav-links ul li a");
+      const currentPage = window.location.pathname.split("/").pop();
+
+      links.forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        setTimeout(() => {
+          preloader.style.opacity = "0";
+          setTimeout(() => {
+            preloader.style.display = "none";
+          }, 500); // fade-out duration
+        }, 3000); // total visible time
+      });
+    </script>
+    
   </body>
 </html>

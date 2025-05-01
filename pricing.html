@@ -323,5 +323,15 @@
       </div>
     </div>
     <script src="scripts.js"></script>
+    <script>
+      const links = document.querySelectorAll('.nav-links ul li a');
+      const currentPage = window.location.pathname.split('/').pop();
+    
+      links.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        }
+      });
+    </script>
   </body>
 </html>

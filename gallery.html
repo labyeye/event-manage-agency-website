@@ -131,13 +131,13 @@
             <li><a href="about.html">About</a></li>
             <li><a href="eventcard.html">Services</a></li>
             <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html">Contact us</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact us</a></li>
           </ul>
         </ul>
       </div>
-      
-            <a href="book.html" class="book-now-btn">Book Now</a>
+
+      <a href="book.html" class="book-now-btn">Book Now</a>
       <div class="hamburger-menu" onclick="toggleMobileNav()">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -313,7 +313,6 @@
               src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86439234_3000657153307156_7637437547282432000_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6uPAZgC6h-kQ7kNvwG9KiM6&_nc_oc=Adm4lf5QSqmO0CRyrFX8yw340jquvC0mYpfGH7uOtxsnp6hzTCQ9SgI9Kbj-0ekIaco&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=kGnAURHqMaaYo428lzwj7A&oh=00_AfE_5YtyJvPy-g0xHZvgwsnNvvSye0KH6m9AZ1fGF6xOVA&oe=6838A32D"
               alt="Wedding Photo 6"
             />
-            
           </div>
         </div>
       </section>
@@ -369,11 +368,10 @@
               src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/86439234_3000657153307156_7637437547282432000_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=6uPAZgC6h-kQ7kNvwG9KiM6&_nc_oc=Adm4lf5QSqmO0CRyrFX8yw340jquvC0mYpfGH7uOtxsnp6hzTCQ9SgI9Kbj-0ekIaco&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=kGnAURHqMaaYo428lzwj7A&oh=00_AfE_5YtyJvPy-g0xHZvgwsnNvvSye0KH6m9AZ1fGF6xOVA&oe=6838A32D"
               alt="Wedding Photo 6"
             />
-            
           </div>
         </div>
       </section>
-      
+
       <!-- Add remaining sports sections following the same pattern -->
     </div>
 
@@ -459,5 +457,15 @@
         });
     </script>
     <script src="./scripts.js"></script>
+    <script>
+      const links = document.querySelectorAll(".nav-links ul li a");
+      const currentPage = window.location.pathname.split("/").pop();
+
+      links.forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
   </body>
 </html>
