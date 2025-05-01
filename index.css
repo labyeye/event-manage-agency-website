@@ -35,25 +35,36 @@ html {
 .bg-bubble,
 .bg-bubble1 {
   position: fixed;
-  z-index: -1; /* Ensure bubbles stay behind content */
-  transform: scale(1.5); /* Make the bubbles larger */
-  filter: blur(60px); /* Apply blur to the bubbles */
-  pointer-events: none; /* Ensures the bubbles don’t block interactions */
-  height: 100vh; /* Set height to take up full screen height */
-  width: 100vw; /* Set width to take full screen width */
-  top: 0; /* Ensure it starts from the top */
+  z-index: -1;
+  /* Ensure bubbles stay behind content */
+  transform: scale(1.5);
+  /* Make the bubbles larger */
+  filter: blur(60px);
+  /* Apply blur to the bubbles */
+  pointer-events: none;
+  /* Ensures the bubbles don’t block interactions */
+  height: 100vh;
+  /* Set height to take up full screen height */
+  width: 100vw;
+  /* Set width to take full screen width */
+  top: 0;
+  /* Ensure it starts from the top */
 }
 
 /* Left bubble */
 .bg-bubble {
-  left: -50vw; /* Move bubble to the left off-screen */
-  clip-path: ellipse(70% 60% at 50% 50%); /* Crops the bubble to show only the left half */
+  left: -50vw;
+  /* Move bubble to the left off-screen */
+  clip-path: ellipse(70% 60% at 50% 50%);
+  /* Crops the bubble to show only the left half */
 }
 
 /* Right bubble */
 .bg-bubble1 {
-  right: -50vw; /* Move bubble to the right off-screen */
-  clip-path: ellipse(70% 60% at 50% 50%); /* Crops the bubble to show only the right half */
+  right: -50vw;
+  /* Move bubble to the right off-screen */
+  clip-path: ellipse(70% 60% at 50% 50%);
+  /* Crops the bubble to show only the right half */
 }
 
 .wave-container {
@@ -1440,14 +1451,15 @@ html {
     margin-top: -50vw !important;
   }
 
-  html,body {
+  html,
+  body {
     width: 100%;
     height: 100%;
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
   }
-  
+
   .schedule-div ul {
     display: none;
   }
