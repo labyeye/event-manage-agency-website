@@ -159,8 +159,8 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0;
-  padding: 3px;
+  margin: 10px;
+  padding: 0px;
 }
 
 .nav-links ul li a.active {
@@ -307,7 +307,7 @@ html {
 }
 
 .hero-content h1 {
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 800;
   animation: fadeDown 1s ease-in-out;
   margin: auto;
@@ -315,7 +315,7 @@ html {
 }
 
 .hero-content p {
-  font-size: 1.5vw;
+  font-size: 1.0vw;
   margin-bottom: 30px;
   font-weight: 400;
   animation: fadeDown 1.5s ease-in-out;
