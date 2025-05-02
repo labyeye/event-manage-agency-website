@@ -145,22 +145,22 @@ html {
   border-radius: 50px;
   color: #fff;
   border: 2px solid rgba(255, 255, 255, 0.05);
-  flex: 0.4;
+  flex: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 53%;
   box-shadow: 0 5px 15px #FFA931;
 }
 
 .nav-links ul {
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 3px;
 }
 
 .nav-links ul li a.active {
