@@ -864,6 +864,7 @@ html {
 
   .about-content p {
     font-size: 4vw;
+    text-align: justify;
   }
 
   .about-image {
