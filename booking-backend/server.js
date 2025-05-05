@@ -81,11 +81,21 @@ function isAuthenticated(req, res, next) {
   res.redirect("/admin/login");
 }
 
+// Utility function to get booking statistics
+async function getBookingStats() {
+  const total = await Booking.countDocuments();
+  const approved = await Booking.countDocuments({ status: "Approved" });
+  const pending = await Booking.countDocuments({ status: "Pending" });
+  const rejected = await Booking.countDocuments({ status: "Rejected" });
+  
+  return { total, approved, pending, rejected };
+}
+
 app.post("/submit-booking", async (req, res) => {
   try {
     const booking = new Booking(req.body);
     await booking.save();
-    res.send("✅ Booking submitted! We’ll contact you soon.");
+    res.send("✅ Booking submitted! We'll contact you soon.");
   } catch (err) {
     res.status(500).send("❌ Booking submission failed.");
   }
@@ -109,40 +119,79 @@ app.get("/admin/logout", (req, res) => {
 });
 
 app.get("/admin/dashboard", isAuthenticated, async (req, res) => {
-  const bookings = await Booking.find().sort({ createdAt: -1 });
-  res.render("dashboard", { bookings });
+  try {
+    const bookings = await Booking.find().sort({ createdAt: -1 });
+    const stats = await getBookingStats();
+    
+    res.render("dashboard", { 
+      bookings,
+      stats: {
+        total: stats.total,
+        approved: stats.approved,
+        pending: stats.pending,
+        rejected: stats.rejected
+      }
+    });
+  } catch (err) {
+    console.error("Error fetching dashboard data:", err);
+    res.status(500).send("Error loading dashboard");
+  }
+});
+
+// API endpoint for stats (can be used for AJAX updates)
+app.get("/api/dashboard-stats", isAuthenticated, async (req, res) => {
+  try {
+    const stats = await getBookingStats();
+    res.json(stats);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch stats" });
+  }
 });
 
 app.post("/admin/booking/status/:id", isAuthenticated, async (req, res) => {
-  const booking = await Booking.findById(req.params.id);
-  if (!booking) return res.status(404).send("Booking not found");
-  await Booking.findByIdAndUpdate(req.params.id, { status: req.body.status });
+  try {
+    const booking = await Booking.findById(req.params.id);
+    if (!booking) return res.status(404).send("Booking not found");
+    
+    await Booking.findByIdAndUpdate(req.params.id, { status: req.body.status });
 
-  if (req.body.status === "Approved") {
-    const message = `Hi ${booking.name}, your booking has been approved! We’ll contact you soon. – AR Event & Wedding Planner`;
-    try {
-      await twilioClient.messages.create({
-        body: message,
-        from: process.env.TWILIO_PHONE_NUMBER,
-        to: `+91${booking.phone}`,
-      });
-      console.log("✅ SMS sent");
-    } catch (err) {
-      console.error("❌ SMS failed:", err.message);
+    if (req.body.status === "Approved") {
+      const message = `Hi ${booking.name}, your booking has been approved! We'll contact you soon. – AR Event & Wedding Planner`;
+      try {
+        await twilioClient.messages.create({
+          body: message,
+          from: process.env.TWILIO_PHONE_NUMBER,
+          to: `+91${booking.phone}`,
+        });
+        console.log("✅ SMS sent");
+      } catch (err) {
+        console.error("❌ SMS failed:", err.message);
+      }
     }
-  }
 
-  res.redirect("/admin/dashboard");
+    res.redirect("/admin/dashboard");
+  } catch (err) {
+    console.error("Error updating booking status:", err);
+    res.status(500).send("Error updating booking status");
+  }
 });
 
 app.get("/admin/booking/edit/:id", isAuthenticated, async (req, res) => {
-  const booking = await Booking.findById(req.params.id);
-  res.render("edit-booking", { booking });
+  try {
+    const booking = await Booking.findById(req.params.id);
+    res.render("edit-booking", { booking });
+  } catch (err) {
+    res.status(500).send("Error loading booking");
+  }
 });
 
 app.post("/admin/booking/edit/:id", isAuthenticated, async (req, res) => {
-  await Booking.findByIdAndUpdate(req.params.id, req.body);
-  res.redirect("/admin/dashboard");
+  try {
+    await Booking.findByIdAndUpdate(req.params.id, req.body);
+    res.redirect("/admin/dashboard");
+  } catch (err) {
+    res.status(500).send("Error updating booking");
+  }
 });
 
 app.post("/admin/booking/delete/:id", isAuthenticated, async (req, res) => {
