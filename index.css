@@ -227,56 +227,7 @@ html {
   overflow: hidden;
   z-index: 0;
 
-}
-
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(ellipse at center, #FFF5E9, #FFC06F);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  padding: 0;
-  text-align: center;
-}
-
-/* For small screens like mobile devices */
-@media (max-width: 768px) {
-  #preloader {
-    padding: 0;
-    flex-direction: column;
-    /* Ensures text and other content stack vertically */
-  }
-
-  #preloader h1 {
-    font-size: 2rem;
-    /* Smaller font size for better visibility */
-    margin: 1rem 0;
-    padding: 0 10px;
-    /* Adding a little padding to prevent text from touching edges */
-  }
-}
-
-/* For very small screens like phones in portrait mode */
-@media (max-width: 480px) {
-  #preloader {
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #preloader h1 {
-    font-size: 1.6rem;
-    margin: 0.8rem 0;
-    padding: 0 15px;
-  }
-}
-
+  }q
 
 .loader-text {
   font-size: 1.5rem;
