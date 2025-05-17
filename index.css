@@ -246,7 +246,7 @@ html {
 .services-section {
   padding: 50px 5%;
   text-align: center;
-  background-image: url('https://images.squarespace-cdn.com/content/v1/578537f5cd0f68f8a7411561/1569002290085-NDGE7SVHVLV3XL9VJ4S6/Hyatt+Regency+Scottsdale.jpg');
+  background-color:fff4e9;
   animation: fadeInSection 1s ease forwards;
   opacity: 0;
   background-size: cover;
