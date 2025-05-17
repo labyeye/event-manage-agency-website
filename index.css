@@ -162,9 +162,10 @@ html {
 }
 .hero-content h1 {
   font-size: 4vw;
-  font-weight: 800;
+  font-weight: 500;
   animation: fadeDown 1s ease-in-out;
   margin: auto;
+  color:white;
   text-align: center;
 }
 
@@ -172,6 +173,7 @@ html {
   font-size: 1.0vw;
   margin-bottom: 30px;
   font-weight: 400;
+  color:white;
   animation: fadeDown 1.5s ease-in-out;
 }
 
