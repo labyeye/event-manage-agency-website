@@ -142,7 +142,20 @@ html {
   overflow: hidden;
   z-index: 0;
 }
-
+.hero-section-about {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: url('https://gunineevents.com/wp-content/uploads/2024/11/Birthday-Party-Event.jpg  ') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack nav and content vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align nav at the top */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 0;
+}
 
 #preloader {
   position: absolute;
@@ -157,6 +170,7 @@ html {
   z-index: 9999; /* Above everything */
   transition: opacity 0.5s ease;
 }
+
 .loader-text {
   font-size: 1.5rem;
   font-weight: 900;
@@ -169,8 +183,6 @@ html {
   0% { opacity: 0.2; letter-spacing: 2px; }
   100% { opacity: 1; letter-spacing: 8px; }
 }
-
-
 
 .hero-content {
   position: absolute;
