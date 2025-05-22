@@ -128,11 +128,10 @@
 </head>
 
 <body>
-  <!-- Navbar Component -->
-  <div class="nav-component">
-    <div class="nav-logo"></div>
-    <div class="nav-links">
-      <ul>
+  <section class="hero-section">
+    <div class="nav-component">
+      <div class="nav-logo"></div>
+      <div class="nav-links">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -141,19 +140,40 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="contact.html">Contact us</a></li>
         </ul>
-      </ul>
+      </div>
+      <a href="book.html" class="book-now-btn">Book Now</a>
+      <div class="hamburger-menu" onclick="toggleMobileNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+    <div class="photo-card card-top-left">
+      <img src="./assets/images/Wedding/90156374_3077445212295016_7878033746824265728_n.jpg" alt="Event 1" />
     </div>
 
-    <a href="book.html" class="book-now-btn">Book Now</a>
-    <div class="hamburger-menu" onclick="toggleMobileNav()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+    <div class="photo-card card-top-right">
+      <img src="./assets/images/Stage/486772887_1145953890899862_7609681149727219778_n.jpg" alt="Event 2" />
     </div>
-  </div>
 
+    <div class="photo-card card-bottom-left">
+      <img src="./assets/images/Stage/84181483_2991883077517897_7046372587617648640_n.jpg" alt="Event 3" />
+    </div>
+
+    <div class="photo-card card-bottom-right">
+      <img src="./assets/images/God/57010183_2371554919550719_7907866649791823872_n.jpg" alt="Event 4" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Gallery</h1>
+      <p>
+        We organize spectacular events that are unforgettable, creative, and
+        flawless.
+      </p>
+      <a href="contact.html" class="hero-btn">Plan Your Event</a>
+    </div>
+  </section>
   <div class="container">
-    <h2 class="text-center">Gallery</h2>
     <section class="gallery">
 
       <div class="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 relative">
@@ -275,11 +295,70 @@
               <img class="object-cover h-full"
                 src="./assets/images/Wedding/474687434_1095392799289305_5414725815205043615_n.jpg">
             </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-2">
+          <div class="flex flex-1 flex-col gap-2">
+            <div class="flex flex-1 flex-col">
+              <!-- img_01 -->
+              <img class="object-cover h-full"
+                src="./assets/images/Wedding/475371625_1097849975710254_5933682938701390008_n.jpg">
+            </div>
+            <div class="hidden md:flex flex-1 flex-row gap-2">
+              <div class="flex flex-1 flex-col">
+                <!-- img_02 -->
+                <img class="object-cover h-full"
+                  src="./assets/images/Wedding/475378087_1097857172376201_3599659323653489381_n.jpg">
+              </div>
+              <div class="hidden md:flex flex-1 flex-col">
+                <!-- img_03 -->
+                <img class="object-cover h-full"
+                  src="./assets/images/Wedding/90156374_3077445212295016_7878033746824265728_n.jpg">
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-1 flex-col gap-2">
+            <div class="hidden md:flex flex-1 flex-row gap-2">
+              <div class="flex flex-1 flex-col">
+                <!-- img_04 -->
+                <img class="object-cover h-full"
+                  src="./assets/images/Stage/90223328_3068980579808146_5352626258477842432_n.jpg">
+              </div>
+              <div class="hidden md:flex flex-1 flex-col">
+                <!-- img_05 -->
+                <img class="object-cover h-full"
+                  src="./assets/images/Stage/86657351_3000657213307150_7170818758213107712_n.jpg">
+              </div>
+            </div>
+            <div class="flex flex-1 flex-col">
+              <!-- img_06 -->
+              <img class="object-cover h-full"
+                src="./assets/images/Stage/84181483_2991883077517897_7046372587617648640_n.jpg">
+            </div>
+          </div>
+          <div class="flex flex-1 flex-col gap-2">
+            <div class="flex flex-1 flex-col">
+              <!-- img_06 -->
+              <img class="object-cover h-full"
+                src="./assets/images/God/57649304_2371554386217439_2945118023293337600_n.jpg">
+            </div>
+            <div class="hidden md:flex flex-1 flex-row gap-2">
+              <div class="flex flex-1 flex-col">
+                <!-- img_04 -->
+                <img class="object-cover h-full"
+                  src="./assets/images/God/57072593_2371555546217323_1907736164060626944_n.jpg">
+              </div>
+              <div class="hidden md:flex flex-1 flex-col">
+                <!-- img_05 -->
+                <img class="object-cover h-full"
+                  src="./assets/images/God/56997563_2371555822883962_5152140449275707392_n.jpg">
+              </div>
+            </div>
 
           </div>
-
-
         </div>
+        
       </div>
   </div>
 
