@@ -1115,35 +1115,8 @@ html {
   }
 }
 
-.home-div h1 {
-  font-size: 6vw;
-  line-height: 5vw;
-  margin-top: 1.5vw;
-  animation-name: h1;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
-  transition: all 0.5s ease;
-}
-
-.animation-fade-img {
-  width: 100%;
-  margin-top: -31vw;
-  z-index: 2;
-  animation-name: image;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-  transition: all 0.5s ease;
-}
-
 @media only screen and (max-width: 765px) {
-  .animation-fade-img {
-    width: 100% !important;
-    margin-left: -25vw;
-    margin-top: -50vw !important;
-  }
-
+ 
   html,
   body {
     width: 100%;
@@ -1153,179 +1126,6 @@ html {
     overflow-x: hidden;
   }
 
-  .schedule-div ul {
-    display: none;
-  }
-
-  .nav-logo-1 {
-    display: none;
-  }
-
-  .schedule-div table {
-    display: block !important;
-    margin-left: 7.5vw !important;
-  }
-
-}
-
-.schedule-div h1 {
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 94.4%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 5vw;
-  text-decoration: none;
-  text-align: center;
-}
-
-.schedule-div ul {
-  list-style: none;
-  margin: 30px auto;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  width: 800px;
-}
-
-.schedule-div ul:after {
-  background: linear-gradient(135deg, #F4B86F 0%, #A27158 49%, #5c0469 94.4%);
-  content: "";
-  left: 50%;
-  margin-left: -2px;
-  min-height: 100%;
-  position: absolute;
-  top: 0;
-  width: 4px;
-  z-index: 1;
-}
-
-.schedule-div ul li {
-  backdrop-filter: blur(5.6px);
-  padding: 10px;
-  position: relative;
-  z-index: 2;
-  width: 350px;
-  border-radius: 10px;
-  color: #eee;
-  cursor: pointer;
-  background-size: 200% 100%;
-  transition: background-position 0.5s ease;
-  margin-bottom: 5vw;
-}
-
-.schedule-div ul li.left {
-  background-image: linear-gradient(90deg, #2510034f 0%, #6c4b344f 50%, #2510034f 100%);
-  background-position: 0% 0;
-  float: left;
-  margin-top: 2.5vw;
-}
-
-.schedule-div ul li.right {
-  background-image: linear-gradient(-90deg, #2510034f 0%, #6c4b344f 50%, #2510034f 100%);
-  background-position: 100% 0;
-  float: right;
-}
-
-.schedule-div ul li.left:hover {
-  background-position: 100% 0;
-}
-
-.schedule-div ul li.right:hover {
-  background-position: -100% 0;
-}
-
-.schedule-div ul li h2 {
-  font-size: 2.2vw;
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 99.4%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-left: 1.5vw;
-  margin-top: -1vw;
-  margin-bottom: 0.5vw;
-}
-
-.schedule-div ul li p {
-  color: #aea7a2ad;
-  margin-left: 1.5vw;
-  margin-top: 2.5vw;
-}
-
-.schedule-div ul li::before {
-  width: .5vw;
-  height: .5vw;
-  border-radius: 50%;
-  background: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 94.4%);
-  content: "";
-  position: absolute;
-  display: inline-block;
-  padding: 5px;
-}
-
-.schedule-div ul li.left::before,
-.schedule-div ul li.right::before {
-  border: 5px solid #000;
-}
-
-.schedule-div ul li.left::before {
-  margin-top: 7.5vw;
-  margin-left: 24.55vw;
-}
-
-.schedule-div ul li.right::before {
-  margin-top: 7.5vw;
-  margin-left: -3.45vw;
-}
-
-.schedule-div ul li img {
-  position: relative;
-  width: 95%;
-  display: block;
-  margin: 20px auto;
-}
-
-.schedule-div table {
-  display: none;
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 2vw;
-  color: #eee;
-  text-align: center;
-  background-color: rgba(37, 16, 3, 0.31);
-  /* Semi-transparent background */
-  backdrop-filter: blur(6px);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.schedule-div table tr td,
-.schedule-div table tr th {
-  border: transparent 2px solid;
-  padding: 15px;
-  font-size: 1.1rem;
-}
-
-.schedule-div table th {
-  background: linear-gradient(#F4B86F 0%, #A27158 94.4%);
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.schedule-div table tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.1);
-  /* Alternate row color */
-}
-
-.schedule-div table tr:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  /* Hover effect */
-  cursor: pointer;
-}
-
-.schedule-div table td {
-  background-color: rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contact-div h1 {
@@ -1367,42 +1167,6 @@ html {
   color: transparent;
 }
 
-.contact-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.con-media {
-  width: 25vw;
-  height: 25vw;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 0.25vw;
-}
-
-.con-content {
-  margin-left: 5vw;
-  color: #eee;
-}
-
-.con-content h2,
-.con-contact h2 {
-  font-size: 2.5vw;
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 99.4%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.con-contact h2 {
-  text-align: center;
-}
-
-.contact-div .l {
-  height: fit-content !important;
-}
-
 @media only screen and (max-width: 765px) {
   .contact-div h1 {
     font-size: 10vw;
@@ -1416,93 +1180,6 @@ html {
     height: 100vh;
     margin-left: 1.5vw;
   }
-
-  .contact-flex {
-    flex-direction: column;
-  }
-
-  .contact-flex h2 {
-    font-size: 5vw;
-  }
-
-  .contact-div .l {
-    height: fit-content !important;
-  }
-
-  .con-media {
-    height: 60vw;
-    width: 60vw;
-  }
-}
-
-.vision-mission {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.vision-mission div {
-  flex: 1;
-}
-
-.community-div h1,
-.vision-mission h1 {
-  font-size: 5vw;
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 99.4%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-align: center;
-}
-
-.prizepool table {
-  color: #eee;
-  width: 90%;
-  margin-left: 5%;
-  border-collapse: collapse;
-  margin-top: 2vw;
-  text-align: center;
-  background-color: rgba(37, 16, 3, 0.31);
-  backdrop-filter: blur(6px);
-  border: 2px solid rgba(37, 16, 3, 0.31);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.prizepool table th {
-  background-color: #a17b634f;
-}
-
-.prizepool table th,
-.prizepool table td {
-  padding: 10px;
-}
-
-.vision-mission p {
-  color: #aea7a2ad;
-  text-align: center;
-  width: 85%;
-  margin-left: 7.5%;
-  display: block;
-  font-size: 1.2vw;
-}
-
-.comm-grid {
-  width: 95%;
-  margin-left: 2.5%;
-  margin-bottom: 10vw;
-}
-
-@media only screen and (max-width: 765px) {
-  .comm-grid {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .community-div h1 {
-    font-size: 10vw;
-  }
 }
 
 .event-btn {
@@ -1513,13 +1190,6 @@ html {
   border: 2px solid rgba(255, 255, 255, 0.05);
   font-family: "Poppins", sans-serif;
 }
-
-@media screen and (max-width: 768px) {
-  .vision-mission p {
-    font-size: 5vw;
-  }
-}
-
 #community-grid .event-card {
   width: 15vw !important;
   height: fit-content !important;
@@ -1548,13 +1218,6 @@ html {
     margin-top: -3.5vw;
   }
 
-  .vision-mission {
-    flex-direction: column;
-  }
-
-  .vision-mission h1 {
-    font-size: 7.5vw;
-  }
 }
 
 .timeline {
@@ -1643,17 +1306,6 @@ html {
   padding-right: 15px;
 }
 
-.timeline-item--active {
-  opacity: 1;
-  transform: translateY(0);
-  filter: blur(0px);
-}
-
-.timeline-item--active:before {
-  top: 50%;
-  transition: .3s all .2s;
-  opacity: 1;
-}
 
 .timeline__content-title {
   margin: -50px 0 20px 0;
@@ -1725,15 +1377,4 @@ html {
   letter-spacing: 5px;
   margin: 10px 0 0 0;
   font-weight: normal;
-}
-
-/* DEMO */
-.demo-footer {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.demo-footer a {
-  color: #999;
-  display: inline-block;
 }
