@@ -51,7 +51,6 @@
         text-align: center;
         font-size: 2.5em;
         background: linear-gradient(45deg, #f4b86f, #a27158, #5c0469);
-        -webkit-background-clip: text;
         color: transparent;
         margin-bottom: 30px;
       }
@@ -88,31 +87,6 @@
 
       button:hover {
         background: linear-gradient(45deg, #5c0469, #a27158, #f4b86f);
-      }
-
-      .photo-card {
-        margin-top: 70px;
-        position: absolute;
-        width: 250px;
-        height: 320px;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(8px);
-        animation: float 6s ease-in-out infinite;
-        z-index: 1;
-      }
-
-      .photo-card img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-      }
-
-      .photo-card:hover img {
-        transform: scale(1.1);
       }
 
       .card-top-left {
@@ -171,55 +145,54 @@
   <body>
     
     <!-- Navbar -->
-    <div class="nav-component">
-      <div class="nav-logo"></div>
-      <div class="nav-links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="eventcard.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
+    <section class="hero-section-book">
+      <div class="nav-component">
+        <div class="nav-logo"></div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="eventcard.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <a href="book.html" class="book-now-btn">Book Now</a>
+        <div class="hamburger-menu" onclick="toggleMobileNav()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
-      <a href="booking.html" class="book-now-btn">Book Now</a>
-      <div class="hamburger-menu" onclick="toggleMobileNav()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div class="photo-card card-top-left">
+        <img src="./assets/images/Wedding/475159695_1097850219043563_871709032766323656_n.jpg" alt="Event 1" />
       </div>
-    </div>
-
-    <!-- Floating Photo Cards -->
-    <div class="photo-card card-top-left">
-      <img
-        src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/486716854_1145934934235091_8692439223257752556_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=FQjhGuXsI90Q7kNvwG7YqK0&_nc_oc=AdnvPkodN0kO7bnhiWpGfOXOBA1q7xwZ065YYYWBeFNoyobRR0qR9skoYEeGuVQzT6Q&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=w_dxpLRwkHYOzBzSdTZMBA&oh=00_AfEQprGclUJu0FF-kjDFPyMnfRXIBY3_TB1lgh1jGAYqVQ&oe=68166810"
-        alt="Event Image 1"
-      />
-    </div>
-    <div class="photo-card card-top-right">
-      <img
-        src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t1.6435-9/109095161_3373340779372123_8733911015836493381_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=n8K1EuSIQLMQ7kNvwH1bPRG&_nc_oc=Adke8Nyd_riBngrMTaXsfukYXieVtrUO-CEVTcqrP6nTZO4cg_VTBEbTRm4_tMfonMo&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=SCHS-HyTEwyFqpMjRpWVsA&oh=00_AfE3DM58MS8XivfHrOGmyU-qOO_wKsjKD1C1doEyDtDN5w&oe=683831DA"
-        alt="Event Image 2"
-      />
-    </div>
-    <div class="photo-card card-bottom-left">
-      <img
-        src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475134954_1097861299042455_7276947943621487406_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cDN8viuaNPkQ7kNvwGOP62k&_nc_oc=Adnfyr9oTfnhs82K_nsGkVhxdIu78816uyHpe7CMgYK0I_wWatZ8QwXEUIg10xO7lWk&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=kwMLd_SOal-5jEScT-VoTQ&oh=00_AfHbEtSol3ZGWpp6mtMPupuABcvkvtoJHqt8YzgVhxeUGw&oe=68168215"
-        alt="Event Image 3"
-      />
-    </div>
-    <div class="photo-card card-bottom-right">
-      <img
-        src="https://scontent.fmzu1-1.fna.fbcdn.net/v/t39.30808-6/475371625_1097849975710254_5933682938701390008_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=Hjq2NlsyHBgQ7kNvwHCsJWj&_nc_oc=Adk-qp5xXt8TqnjTNi0AlbVS813NLakAAT3IBzRPWQDk2LxkM_Ucss5w8IlvGhqQRCw&_nc_zt=23&_nc_ht=scontent.fmzu1-1.fna&_nc_gid=vEmE-5RYN28EqdGeeDIuPg&oh=00_AfGiY8KNRAruLp6JwhYdbzVN2TFDv0ygulJ0CXhVgAPuJQ&oe=68169574"
-        alt="Event Image 4"
-      />
-    </div>
+  
+      <div class="photo-card card-top-right">
+        <img src="./assets/images/1.jpg" alt="Event 2" />
+      </div>
+  
+      <div class="photo-card card-bottom-left">
+        <img src="./assets/images/Stage/465692651_8953257021380443_8109159992700779700_n.jpg" alt="Event 3" />
+      </div>
+  
+      <div class="photo-card card-bottom-right">
+        <img src="./assets/images/3.jpg" alt="Event 4" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Book Your Event</h1>
+        <p>
+          We organize spectacular events that are unforgettable, creative, and
+          flawless.
+        </p>
+        <a href="./book.html" class="hero-btn">Plan Your Event</a>
+      </div>
+    </section>  
 
     <div class="form-wrapper">
       <div class="form-container">
-        <h1>Book Your Event</h1>
         <form id="bookingForm" action="https://event-manage-agency-website.onrender.com/submit-booking" method="POST">
             <label for="name">Full Name*</label>
             <input type="text" id="name" name="name" required />

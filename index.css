@@ -199,7 +199,20 @@ html {
   overflow: hidden;
   z-index: 0;
 }
-
+.hero-section-book {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: url('https://www.shaadidukaan.com/vogue/wp-content/uploads/2025/02/south-indian-wedding-3-6.webp') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack nav and content vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align nav at the top */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 0;
+}
 #preloader {
   position: absolute;
   top: 0;
