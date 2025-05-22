@@ -128,6 +128,20 @@ html {
   overflow: hidden;
   z-index: 0;
 }
+.hero-section-gallery {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: url('https://marketplace.canva.com/EAFCv95os60/1/0/1600w/canva-black-white-minimalist-wedding-photo-collage-6zunuILMPAc.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack nav and content vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align nav at the top */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 0;
+}
 
 
 #preloader {
