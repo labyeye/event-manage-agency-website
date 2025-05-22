@@ -185,6 +185,21 @@ html {
   overflow: hidden;
   z-index: 0;
 }
+.hero-section-services {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: url('https://luxaus.au/wp-content/uploads/2024/04/OP8_1807-1024x683.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack nav and content vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align nav at the top */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 0;
+}
+
 #preloader {
   position: absolute;
   top: 0;
