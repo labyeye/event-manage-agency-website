@@ -71,6 +71,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 53%;
+  border-radius:30px;
 }
 
 .nav-links ul {
@@ -798,32 +799,6 @@ html {
   margin-bottom: 5vw;
 }
 
-.container .text-center {
-  font-size: 5vw;
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 41.9%, #5c0469 84.4%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.lightbox-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.lightbox-gallery img {
-  max-width: 100%;
-  display: block;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-}
-
-.lightbox-gallery img:hover {
-  transform: scale(1.05);
-}
-
 .lightbox {
   display: none;
   position: fixed;
@@ -854,71 +829,7 @@ html {
   margin: auto;
 }
 
-.lightbox .caption {
-  color: white;
-  text-align: center;
-  margin-top: 15px;
-  font-size: 1em;
-
-}
-
-.mobile-nav-flex,
-.mobile-nav-component {
-  display: none;
-}
-
 @media only screen and (max-width: 765px) {
-
-  .home-div h1 {
-    font-size: 15vw !important;
-    line-height: 20vw !important;
-    margin-left: -7.5vw;
-    padding: 20px;
-    margin-top: 20vw;
-    width: 105%;
-  }
-
-  .home-div p {
-    font-size: 3.5vw;
-    width: 100%;
-    margin: -8.5vw 1.5vw;
-  }
-
-  .home-div span {
-    font-size: 5vw;
-    margin-top: 12vw;
-  }
-
-  .about-div {
-    flex-direction: column-reverse;
-    height: auto;
-    padding: 10vw 0;
-  }
-
-  .about-con {
-    width: 80%;
-    margin-top: -17.5vw;
-  }
-
-  .about-con h1,
-  .event-div h1 {
-    font-size: 10vw;
-  }
-
-  .about-con p,
-  .event-div p {
-    margin-top: 2.5vw;
-    font-size: 3.5vw;
-  }
-
-  .about-img {
-    width: 200%;
-    height: 120vw;
-    transform: scale(0.5);
-    margin-left: 0;
-    margin-top: -25vw;
-  }
-
   .event-grid {
     grid-template-columns: 1fr;
     grid-gap: 4vw;
@@ -926,10 +837,6 @@ html {
 
   .event-card {
     padding: 10px;
-  }
-
-  .container .text-center {
-    font-size: 10vw;
   }
 
   .nav-links {
@@ -979,11 +886,6 @@ html {
     height: 12vh;
     width: 11.5vh;
   }
-
-  .nav-link-btn {
-    display: none;
-  }
-
 }
 
 .footer {
@@ -1082,23 +984,6 @@ html {
   font-weight: 600;
   color: rgb(0, 0, 0);
   font-size: 1.2vw;
-}
-
-.footer-credit,
-.footer-dev {
-  font-size: 0.9vw;
-  text-align: center;
-  color: rgb(0, 0, 0);
-  margin-top: 10px;
-}
-
-.footer-dev a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-}
-
-.footer-dev a:hover {
-  color: rgb(0, 0, 0);
 }
 
 .footer-links li {
