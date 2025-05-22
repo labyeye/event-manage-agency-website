@@ -171,6 +171,20 @@ html {
   overflow: hidden;
   z-index: 0;
 }
+.hero-section-contact {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background: url('https://blog.venuelook.com/wp-content/uploads/2024/01/Indian-wedding-grand-celebration.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack nav and content vertically */
+  align-items: center;
+  justify-content: flex-start; /* Align nav at the top */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  z-index: 0;
+}
 #preloader {
   position: absolute;
   top: 0;
