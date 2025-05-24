@@ -581,8 +581,6 @@ html {
   margin: 20px 0 30px;
   animation: fadeInDown 1s ease-in-out;
 }
-
-/* Gallery Slider */
 .gallery-slider {
   overflow: hidden;
   width: 100%;

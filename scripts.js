@@ -6,7 +6,6 @@ function toggleMobileNav() {
   navLinks.classList.toggle('active', isMobileNavOpen);
 }
 
-// ✅ Close mobile nav when any link is clicked
 document.addEventListener("DOMContentLoaded", () => {
   const navLinksContainer = document.querySelector('.nav-links');
 
