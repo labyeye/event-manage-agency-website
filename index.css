@@ -338,13 +338,40 @@ html {
     height: 48px;
     margin-top: -15px;
 }
+.gallery-section {
+  padding: 50px 5%;
+  text-align: center;
+  background-color:fff4e9;
+  animation: fadeInSection 1s ease forwards;
+  opacity: 0;
+  background-size: cover;
+
+}
 .gallery-section img {
   height: 48px;
   margin-top: -15px;
 }
+.testimonials-section {
+  padding: 50px 5%;
+  text-align: center;
+  background-color:fff4e9;
+  animation: fadeInSection 1s ease forwards;
+  opacity: 0;
+  background-size: cover;
+
+}
 .testimonials-section img {
   height: 48px;
   margin-top: -15px;
+}
+.why-us {
+  padding: 50px 5%;
+  text-align: center;
+  background-color:fff4e9;
+  animation: fadeInSection 1s ease forwards;
+  opacity: 0;
+  background-size: cover;
+
 }
 .why-us img {
   height: 48px;
