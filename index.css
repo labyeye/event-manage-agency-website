@@ -334,6 +334,22 @@ html {
   background-size: cover;
 
 }
+.services-section img {
+    height: 48px;
+    margin-top: -15px;
+}
+.gallery-section img {
+  height: 48px;
+  margin-top: -15px;
+}
+.testimonials-section img {
+  height: 48px;
+  margin-top: -15px;
+}
+.why-us img {
+  height: 48px;
+  margin-top: -15px;
+}
 
 @keyframes fadeInSection {
   from {
