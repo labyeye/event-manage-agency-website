@@ -397,6 +397,7 @@ html {
 
 .services-section h2 {
   font-size: 2.4vw;
+  font-family:"Borisna";
   -webkit-background-clip: text;
   background-clip: text;
   color: rgb(0, 0, 0);
@@ -443,7 +444,7 @@ html {
 }
 
 .card-overlay h3 {
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: 700;
   margin: 0 0 10px;
   z-index: 2;
