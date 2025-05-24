@@ -447,6 +447,7 @@ html {
   font-weight: 700;
   margin: 0 0 10px;
   z-index: 2;
+  font-family:"Borisna";
   transition: all 0.4s ease;
   text-align: center;
   max-width: 90%;
@@ -884,7 +885,8 @@ html {
 }
 
 .event-card h3 {
-  font-size: 1.5em;
+  font-family:"Borinsa";
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
