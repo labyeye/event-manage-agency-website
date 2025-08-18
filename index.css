@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
-  font-family: 'Borisna';
-  src: url('./assets/fonts/Borisna.ttf') format('ttf');
+  font-family: "Borisna";
+  src: url("./assets/fonts/Borisna.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -20,6 +20,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Prevent overflow by making sure width includes padding and border */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 .floating-buttons {
   position: fixed;
@@ -57,9 +63,8 @@ html {
 }
 
 .whatsapp-btn {
-  background-color: #25D366;
+  background-color: #25d366;
   text-decoration: none;
-
 }
 
 .call-btn {
@@ -112,7 +117,7 @@ html {
   padding: 10px 25px;
   margin-right: 2vw;
   border-radius: 30px;
-  background: linear-gradient(45deg, #F4B86F, #A27158, #5c0469);
+  background: linear-gradient(45deg, #f4b86f, #a27158, #5c0469);
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -121,7 +126,7 @@ html {
 }
 
 .book-now-btn:hover {
-  background: linear-gradient(45deg, #5c0469, #A27158, #F4B86F);
+  background: linear-gradient(45deg, #5c0469, #a27158, #f4b86f);
 }
 .wave-container {
   width: 100%;
@@ -143,15 +148,15 @@ html {
   align-items: center;
   justify-content: space-between;
   padding: 20px 5%;
-  background: transparent; 
+  background: transparent;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-component .nav-logo {
   height: 12.5vh;
   width: 12.5vh;
-  margin-left: 2.5vw;
-  background: url('./assets/logo2.svg');
+  margin-left: 0.5vw;
+  background: url("./assets/logo2.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -159,18 +164,19 @@ html {
 .nav-links {
   background-color: rgba(255, 255, 255, 0.05);
   color: #fff;
-  flex: 0.5;
+  flex: 1.2;
+  min-width: "70%";
   display: flex;
   justify-content: center;
   align-items: center;
   height: 53%;
-  border-radius:30px;
+  border-radius: 30px;
 }
 
 .nav-links ul {
   list-style: none;
   display: flex;
-  color:white;
+  color: white;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -181,15 +187,16 @@ html {
 .nav-links ul li a.active {
   box-shadow: 0 5px 15px black;
   color: white;
-  background:transparent;
+  background: transparent;
   padding: 8px 16px;
-  font-weight:400;
+  font-weight: 400;
   border-radius: 20px;
 }
 
 .nav-links ul li a {
   text-decoration: none;
   color: white;
+  font-size: 0.75vw;
 }
 
 .hamburger-menu {
@@ -211,7 +218,8 @@ html {
 .hero-section {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background: url('https://desiweds.com/wp-content/uploads/2021/11/wedding-decorator-style-budget-hero-scaled.jpg') center center/cover no-repeat;
+  background: url("https://desiweds.com/wp-content/uploads/2021/11/wedding-decorator-style-budget-hero-scaled.jpg")
+    center center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column; /* Stack nav and content vertically */
@@ -225,7 +233,8 @@ html {
 .hero-section-gallery {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background: url('https://marketplace.canva.com/EAFCv95os60/1/0/1600w/canva-black-white-minimalist-wedding-photo-collage-6zunuILMPAc.jpg') center center/cover no-repeat;
+  background: url("https://marketplace.canva.com/EAFCv95os60/1/0/1600w/canva-black-white-minimalist-wedding-photo-collage-6zunuILMPAc.jpg")
+    center center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column; /* Stack nav and content vertically */
@@ -239,7 +248,8 @@ html {
 .hero-section-about {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background: url('https://www.theknot.com/tk-media/images/72241d24-e14d-4cca-98a6-9af1d06b95cf.jpg') center center/cover no-repeat;
+  background: url("https://www.theknot.com/tk-media/images/72241d24-e14d-4cca-98a6-9af1d06b95cf.jpg")
+    center center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column; /* Stack nav and content vertically */
@@ -253,7 +263,8 @@ html {
 .hero-section-pricing {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background: url('https://symphonyevents.com.au/wp-content/uploads/2021/08/Wedding-0762-scaled.jpg  ') center center/cover no-repeat;
+  background: url("https://symphonyevents.com.au/wp-content/uploads/2021/08/Wedding-0762-scaled.jpg  ")
+    center center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column; /* Stack nav and content vertically */
@@ -267,7 +278,8 @@ html {
 .hero-section-contact {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background: url('https://blog.venuelook.com/wp-content/uploads/2024/01/Indian-wedding-grand-celebration.jpg') center center/cover no-repeat;
+  background: url("https://blog.venuelook.com/wp-content/uploads/2024/01/Indian-wedding-grand-celebration.jpg")
+    center center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column; /* Stack nav and content vertically */
@@ -281,7 +293,8 @@ html {
 .hero-section-services {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background: url('https://luxaus.au/wp-content/uploads/2024/04/OP8_1807-1024x683.jpg') center center/cover no-repeat;
+  background: url("https://luxaus.au/wp-content/uploads/2024/04/OP8_1807-1024x683.jpg")
+    center center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column; /* Stack nav and content vertically */
@@ -295,7 +308,8 @@ html {
 .hero-section-book {
   width: 100%;
   height: 100vh; /* Full viewport height */
-  background: url('https://www.shaadidukaan.com/vogue/wp-content/uploads/2025/02/south-indian-wedding-3-6.webp') center center/cover no-repeat;
+  background: url("https://www.shaadidukaan.com/vogue/wp-content/uploads/2025/02/south-indian-wedding-3-6.webp")
+    center center/cover no-repeat;
   position: relative;
   display: flex;
   flex-direction: column; /* Stack nav and content vertically */
@@ -312,7 +326,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #FFF4E9; /* Match hero background */
+  background: #fff4e9; /* Match hero background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,8 +343,14 @@ html {
 }
 
 @keyframes fadeText {
-  0% { opacity: 0.2; letter-spacing: 2px; }
-  100% { opacity: 1; letter-spacing: 8px; }
+  0% {
+    opacity: 0.2;
+    letter-spacing: 2px;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 8px;
+  }
 }
 
 .hero-content {
@@ -358,22 +378,22 @@ html {
   font-weight: 500;
   animation: fadeDown 1s ease-in-out;
   margin: auto;
-  color:white;
+  color: white;
   text-align: center;
 }
 
 .hero-content p {
-  font-size: 1.0vw;
+  font-size: 1vw;
   margin-bottom: 30px;
   font-weight: 400;
-  color:white;
+  color: white;
   animation: fadeDown 1.5s ease-in-out;
 }
 
 .hero-btn {
   padding: 12px 30px;
   font-size: 1.2rem;
-  background: linear-gradient(45deg, #F4B86F 0%, #A27158 50%, #5c0469 100%);
+  background: linear-gradient(45deg, #f4b86f 0%, #a27158 50%, #5c0469 100%);
   color: #fff;
   border-radius: 30px;
   text-decoration: none;
@@ -383,7 +403,7 @@ html {
 }
 
 .hero-btn:hover {
-  background: linear-gradient(45deg, #5c0469 0%, #A27158 50%, #F4B86F 100%);
+  background: linear-gradient(45deg, #5c0469 0%, #a27158 50%, #f4b86f 100%);
 }
 
 @keyframes fadeDown {
@@ -403,50 +423,58 @@ html {
   .hero-content h1 {
     font-size: 9vw;
     z-index: 0 !important;
-
   }
 
   .hero-content p {
     font-size: 4vw;
     z-index: 0 !important;
-
   }
 
-.hero-text {
-        font-size: 1.8rem;
-        line-height: 1.3;
-        padding: 0 15px;
-    }
-    
-    /* Keep your button styles */
-    .hero-btn {
-        font-size: 1rem;
-        padding: 12px 30px;
-        margin-top: 20px; /* Adds space above the button */
-    }
+  .hero-text {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    padding: 0 15px;
+  }
+
+  /* Keep your button styles */
+  .hero-btn {
+    font-size: 1rem;
+    padding: 12px 30px;
+    margin-top: 20px; /* Adds space above the button */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-btn {
+    display: block;
+    width: 60vw;
+    font-size: 1.2rem;
+    padding: 18px 0;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: 0 2px 10px rgba(92, 4, 105, 0.15);
+  }
 }
 
 .services-section {
   padding: 50px 5%;
   text-align: center;
-  background-color:fff4e9;
+  background-color: fff4e9;
   animation: fadeInSection 1s ease forwards;
   opacity: 0;
   background-size: cover;
-
 }
 .services-section img {
-    height: 48px;
-    margin-top: -15px;
+  height: 48px;
+  margin-top: -15px;
 }
 .gallery-section {
   padding: 50px 5%;
   text-align: center;
-  background-color:fff4e9;
+  background-color: fff4e9;
   animation: fadeInSection 1s ease forwards;
   opacity: 0;
   background-size: cover;
-
 }
 .gallery-section img {
   height: 48px;
@@ -455,11 +483,10 @@ html {
 .testimonials-section {
   padding: 50px 5%;
   text-align: center;
-  background-color:fff4e9;
+  background-color: fff4e9;
   animation: fadeInSection 1s ease forwards;
   opacity: 0;
   background-size: cover;
-
 }
 .testimonials-section img {
   height: 48px;
@@ -468,11 +495,10 @@ html {
 .why-us {
   padding: 50px 5%;
   text-align: center;
-  background-color:fff4e9;
+  background-color: fff4e9;
   animation: fadeInSection 1s ease forwards;
   opacity: 0;
   background-size: cover;
-
 }
 .why-us img {
   height: 48px;
@@ -493,7 +519,7 @@ html {
 
 .services-section h2 {
   font-size: 2.4vw;
-  font-family:"Borisna";
+  font-family: "Borisna";
   -webkit-background-clip: text;
   background-clip: text;
   color: rgb(0, 0, 0);
@@ -519,7 +545,7 @@ html {
 }
 
 .card-overlay {
-  background: rgba(0, 0, 0, 0.0);
+  background: rgba(0, 0, 0, 0);
   backdrop-filter: blur(0px);
   width: 100%;
   height: 100%;
@@ -544,7 +570,7 @@ html {
   font-weight: 700;
   margin: 0 0 10px;
   z-index: 2;
-  font-family:"Borisna";
+  font-family: "Borisna";
   transition: all 0.4s ease;
   text-align: center;
   max-width: 90%;
@@ -560,7 +586,6 @@ html {
   text-align: center;
   word-wrap: break-word;
 }
-
 
 /* Hover effect */
 .service-card:hover {
@@ -603,7 +628,6 @@ html {
   }
 }
 
-
 .photo-card {
   position: absolute;
   width: 250px;
@@ -615,7 +639,7 @@ html {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   animation: float 6s ease-in-out infinite;
   z-index: 2;
-  margin-top:70px;
+  margin-top: 70px;
 }
 
 .photo-card img {
@@ -681,7 +705,7 @@ html {
   font-size: 2.2vw;
   color: black;
   margin: 50px 0 30px;
-  font-family:"Borisna";
+  font-family: "Borisna";
   animation: fadeInDown 1s ease-in-out;
 }
 .gallery-slider {
@@ -770,7 +794,7 @@ html {
 /* CTA */
 .cta-section {
   text-align: center;
-  background: linear-gradient(45deg, #F4B86F, #A27158, #5c0469);
+  background: linear-gradient(45deg, #f4b86f, #a27158, #5c0469);
   color: white;
   padding: 60px 20px;
   border-radius: 10px;
@@ -862,7 +886,12 @@ html {
 
 .about-content h2 {
   font-size: 3vw;
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 99.4%);
+  background-image: linear-gradient(
+    45deg,
+    #f4b86f 0%,
+    #a27158 49%,
+    #5c0469 99.4%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -879,7 +908,7 @@ html {
 .about-btn {
   display: inline-block;
   padding: 12px 30px;
-  background: linear-gradient(45deg, #F4B86F 0%, #A27158 50%, #5c0469 100%);
+  background: linear-gradient(45deg, #f4b86f 0%, #a27158 50%, #5c0469 100%);
   color: #fff;
   border-radius: 30px;
   text-decoration: none;
@@ -888,7 +917,7 @@ html {
 }
 
 .about-btn:hover {
-  background: linear-gradient(45deg, #5c0469 0%, #A27158 50%, #F4B86F 100%);
+  background: linear-gradient(45deg, #5c0469 0%, #a27158 50%, #f4b86f 100%);
 }
 
 .about-image {
@@ -949,7 +978,6 @@ html {
   }
 }
 
-
 @keyframes scroll {
   0% {
     opacity: 1;
@@ -982,7 +1010,7 @@ html {
 }
 
 .event-card h3 {
-  font-family:"Borinsa";
+  font-family: "Borinsa";
   font-size: 1.2em;
   margin-bottom: 10px;
 }
@@ -1041,22 +1069,24 @@ html {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
     position: absolute;
-    top: 10vh;
+    top: 13vh;
     height: fit-content;
     left: 0;
     padding: 50px 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
 
   .nav-links.active {
     display: flex;
-    width: 350px;
+    width: 100vw;
     z-index: 99999;
-    height: 30vh;
-    margin-left: 20px;
+    height: auto;
+    margin-left: 0;
   }
 
   .nav-links ul {
@@ -1068,8 +1098,14 @@ html {
   }
 
   .nav-links ul li a {
-    color: #eee;
-    font-size: 5vw;
+    color: #fff;
+    font-size: 3.2vw;
+    font-weight: 500;
+    padding: 8px 0;
+    border-radius: 12px;
+    width: 70vw;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .hero-section {
@@ -1130,7 +1166,7 @@ html {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-top: .5vw;
+  margin-top: 0.5vw;
   margin-left: -25vw;
   padding: 0 20px;
 }
@@ -1190,7 +1226,12 @@ html {
 }
 
 .footer-links li a {
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 94.4%);
+  background-image: linear-gradient(
+    45deg,
+    #f4b86f 0%,
+    #a27158 49%,
+    #5c0469 94.4%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1198,7 +1239,7 @@ html {
   text-decoration: none;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
     height: fit-content !important;
@@ -1265,7 +1306,7 @@ html {
   border: 2px solid rgba(255, 255, 255, 0.08);
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   .search {
     width: 100%;
   }
@@ -1273,7 +1314,12 @@ html {
 
 .brochure-link {
   text-decoration: none;
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 41.9%, #5c0469 84.4%);
+  background-image: linear-gradient(
+    45deg,
+    #f4b86f 0%,
+    #a27158 41.9%,
+    #5c0469 84.4%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1315,7 +1361,6 @@ html {
 }
 
 @media only screen and (max-width: 765px) {
- 
   html,
   body {
     width: 100%;
@@ -1324,12 +1369,16 @@ html {
     padding: 0%;
     overflow-x: hidden;
   }
-
 }
 
 .contact-div h1 {
   font-size: 5vw;
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 99.4%);
+  background-image: linear-gradient(
+    45deg,
+    #f4b86f 0%,
+    #a27158 49%,
+    #5c0469 99.4%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1360,7 +1409,12 @@ html {
 .contact-div .contact-card .contact p span {
   font-size: 1.1vw;
   font-weight: 600;
-  background-image: linear-gradient(45deg, #F4B86F 0%, #A27158 49%, #5c0469 99.4%);
+  background-image: linear-gradient(
+    45deg,
+    #f4b86f 0%,
+    #a27158 49%,
+    #5c0469 99.4%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1400,7 +1454,7 @@ html {
   margin-left: 15%;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width: 768px) {
   #community-grid {
     width: 100%;
     margin-left: 17.5vw;
@@ -1416,7 +1470,6 @@ html {
   #community-grid .event-card p {
     margin-top: -3.5vw;
   }
-
 }
 
 .timeline {
@@ -1432,7 +1485,7 @@ html {
   font-weight: normal;
   font-size: 56px;
   margin: -20px 0 0 0;
-  transition: .4s;
+  transition: 0.4s;
   padding: 0 10px;
   line-height: 1;
   box-sizing: border-box;
@@ -1443,7 +1496,7 @@ html {
   margin: 0 10px;
   font-size: 15px;
   box-sizing: border-box;
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, 0.7);
   font-weight: normal;
   line-height: 25px;
 }
@@ -1455,7 +1508,7 @@ html {
   height: 100%;
   margin-left: -1px;
   content: "";
-  background: rgba(255, 255, 255, .07);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 @media only screen and (max-width: 767px) {
@@ -1466,9 +1519,9 @@ html {
 
 .timeline-item {
   padding: 40px 0;
-  opacity: .3;
+  opacity: 0.3;
   filter: blur(2px);
-  transition: .5s;
+  transition: 0.5s;
   box-sizing: border-box;
   width: calc(50% - 40px);
   display: flex;
@@ -1481,9 +1534,9 @@ html {
   letter-spacing: 3px;
   width: 100%;
   position: absolute;
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
-  border-left: 2px solid rgba(255, 255, 255, .5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   top: 70%;
   margin-top: -5px;
   padding-left: 15px;
@@ -1501,10 +1554,9 @@ html {
   left: calc(-100% - 56px);
   padding-left: 0;
   border-left: none;
-  border-right: 2px solid rgba(255, 255, 255, .5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
   padding-right: 15px;
 }
-
 
 .timeline__content-title {
   margin: -50px 0 20px 0;
@@ -1533,7 +1585,7 @@ html {
 
 .timeline__img {
   max-width: 100%;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
 
 .timeline-container {
@@ -1542,7 +1594,7 @@ html {
   top: -25px;
   padding-top: 25px;
   padding-bottom: 25px;
-  transition: .3s ease 0s;
+  transition: 0.3s ease 0s;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1571,7 +1623,7 @@ html {
 }
 
 .timeline-header__subtitle {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   letter-spacing: 5px;
   margin: 10px 0 0 0;
