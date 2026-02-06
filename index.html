@@ -180,7 +180,9 @@
           celebration unique and unforgettable. From idea to execution, we’re
           with you every step of the way.
         </p>
-        <a href="about.html" class="about-btn">Learn More</a>
+        <a href="about.html" class="about-btn"
+          >Learn more about AR event and wedding planner</a
+        >
       </div>
 
       <div class="about-image">
@@ -639,7 +641,9 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-3LRHBTD121");
+      gtag("config", "G-3LRHBTD121", {
+        cookie_flags: "SameSite=None;Secure",
+      });
     </script>
     <script>
       const links = document.querySelectorAll(".nav-links ul li a");
@@ -651,17 +655,7 @@
         }
       });
     </script>
-    <script>
-      window.addEventListener("load", () => {
-        const preloader = document.getElementById("preloader");
-        setTimeout(() => {
-          preloader.style.opacity = "0";
-          setTimeout(() => {
-            preloader.style.display = "none";
-          }, 500); // fade-out duration
-        }, 2000); // total visible time
-      });
-    </script>
+
     <div class="floating-buttons">
       <a
         href="https://wa.me/919006532324"
