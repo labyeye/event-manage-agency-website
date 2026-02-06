@@ -4,6 +4,7 @@
   src: url("./assets/fonts/Borisna.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 body {
   background-color: #fff5e9;
