@@ -24,7 +24,7 @@
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
 
-    <link rel="canonical" href="https://www.arevents.in/event.html" />
+    <link rel="canonical" href="https://arevents.in/event.html" />
 
     <meta name="geo.region" content="IN-BR" />
     <meta name="geo.placename" content="Muzaffarpur" />
@@ -32,7 +32,7 @@
     <meta name="ICBM" content="26.1205614, 85.3861014" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.arevents.in/event.html" />
+    <meta property="og:url" content="https://arevents.in/event.html" />
     <meta
       property="og:title"
       content="Browse Events | AR Event and Wedding Planner"
@@ -43,13 +43,13 @@
     />
     <meta
       property="og:image"
-      content="https://www.arevents.in/assets/logo2.svg"
+      content="https://arevents.in/assets/logo2.svg"
     />
     <meta property="og:locale" content="en_IN" />
     <meta property="og:site_name" content="AR Event and Wedding Planner" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://www.arevents.in/event.html" />
+    <meta name="twitter:url" content="https://arevents.in/event.html" />
     <meta
       name="twitter:title"
       content="Browse Events - AR Events Muzaffarpur"
@@ -60,11 +60,12 @@
     />
     <meta
       name="twitter:image"
-      content="https://www.arevents.in/assets/logo2.svg"
+      content="https://arevents.in/assets/logo2.svg"
     />
 
     <link rel="shortcut icon" href="./assets/logo2.svg" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="./assets/logo2.svg" />    <!-- Preconnect to external domains -->
+    <link rel="apple-touch-icon" href="./assets/logo2.svg" />
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
@@ -78,9 +79,8 @@
       crossorigin
     />
 
-
-
-    <link rel="stylesheet" href="./index.css" />    <!-- Font Awesome with font-display optimization -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Font Awesome with font-display optimization -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -88,7 +88,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <noscript>
       <link
@@ -99,7 +99,6 @@
         referrerpolicy="no-referrer"
       />
     </noscript>
-
   </head>
   <style>
     .svg1 {
@@ -159,10 +158,13 @@
           <li><a href="birthday-parties.html">Birthday Parties</a></li>
           <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
           <li><a href="cultural-events.html">Cultural Events</a></li>
+            <li><a href="college-festivals.html">College Festivals</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact us</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="testimonials.html">Reviews</a></li>
         </ul>
       </div>
 
@@ -187,13 +189,13 @@
       >
         Register
       </a>
-      <a
+      <!-- <a
         href="./assets/Brochure Devadan.pdf"
         class="brochure-link"
         target="_blank"
       >
         <span>View Brochure</span>
-      </a>
+      </a> -->
 
       <br />
       <br />
@@ -266,6 +268,7 @@
             <li><a href="corporate-events.html">Corporate Events</a></li>
             <li><a href="birthday-parties.html">Birthday Parties</a></li>
             <li><a href="cultural-events.html">Cultural Events</a></li>
+            <li><a href="college-festivals.html">College Festivals</a></li>
             <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
           </ul>
         </div>
@@ -508,14 +511,14 @@
         card.classList.add("event-card");
 
         card.innerHTML = `
-        <img src="${eventcard.img}" alt="${eventcard.event}" style="width:100%;height:27.5vw;border-radius: 10px;">
+        <img src="${event.img}" alt="${event.event}" style="width:100%;height:27.5vw;border-radius: 10px;">
         <div class="event-card-header">
-            <h3>${eventcard.event}</h3>
+            <h3>${event.event}</h3>
         </div>
         <div class="event-card-body">
-            <p>${eventcard.description.slice(0, 75)}...</p>
+            <p>${event.description.slice(0, 75)}...</p>
         </div>
-        <button class='event-btn' id="${eventcard.event}" style="cursor: pointer;">
+        <button class='event-btn' id="${event.event}" style="cursor: pointer;">
           View Description  
         </button>
     `;
@@ -534,8 +537,8 @@
         // Filter events by query
         const filteredEvents = events.filter(
           (event) =>
-            eventcard.eventcard.toLowerCase().includes(query.toLowerCase()) ||
-            eventcard.description.toLowerCase().includes(query.toLowerCase()),
+            event.event.toLowerCase().includes(query.toLowerCase()) ||
+            event.description.toLowerCase().includes(query.toLowerCase()),
         );
 
         // Add filtered event cards to the grid
