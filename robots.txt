@@ -1,0 +1,24 @@
+# Robots.txt for AR Event and Wedding Planner
+# Website: https://www.arevents.in
+
+User-agent: *
+Allow: /
+
+# Disallow admin and backend areas
+Disallow: /booking-backend/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /assets/fonts/
+
+# Allow all images and assets
+Allow: /assets/images/
+Allow: /assets/*.svg
+Allow: /assets/*.webp
+Allow: /assets/*.webp
+Allow: /assets/*.webp
+
+# Sitemap location
+Sitemap: https://www.arevents.in/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

@@ -1,463 +1,609 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Affordable and premium event packages by AR Event Management. Choose from Silver, Gold, and Platinum for every occasion." />
-  <meta name="keywords" content="Event Pricing, Wedding Packages, Corporate Event Costs, Birthday Party Plans" />
-  <meta name="author" content="AR Event Management" />
-  <meta property="og:title" content="Pricing | AR Event Management" />
-  <meta property="og:description"
-    content="Explore our Silver, Gold, and Platinum packages across weddings, corporate events, and more." />
-  <title>Pricing | AR Event Management</title>
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    h1,
-    h2 {
-      text-align: center;
-      margin-top: 2rem;
-      color: #333;
-    }
+    <title>
+      Event Pricing & Packages | AR Event and Wedding Planner - Muzaffarpur
+    </title>
+    <meta
+      name="title"
+      content="Event Pricing & Packages | AR Event and Wedding Planner - Muzaffarpur"
+    />
+    <meta
+      name="description"
+      content="Affordable and premium event packages by AR Event and Wedding Planner in Muzaffarpur, Bihar. Choose from Silver, Gold, and Platinum packages for weddings, corporate events, birthday parties and more. Get transparent pricing!"
+    />
+    <meta
+      name="keywords"
+      content="Event Pricing Muzaffarpur, Wedding Package Costs Bihar, Corporate Event Pricing, Birthday Party Packages, Event Management Rates, Wedding Planner Pricing Bihar, Affordable Event Packages, Event Cost Muzaffarpur, AR Events Pricing"
+    />
+    <meta name="author" content="AR event and wedding planner" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
 
-    .pricing-section {
-      padding: 2rem;
-    }
+    <link rel="canonical" href="https://www.arevents.in/pricing.html" />
 
-    .category-title {
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-    }
+    <meta name="geo.region" content="IN-BR" />
+    <meta name="geo.placename" content="Muzaffarpur" />
+    <meta name="geo.position" content="26.1205614;85.3861014" />
+    <meta name="ICBM" content="26.1205614, 85.3861014" />
 
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 1rem 4vw;
-    }
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.arevents.in/pricing.html" />
+    <meta
+      property="og:title"
+      content="Event Pricing & Packages | AR Event Management"
+    />
+    <meta
+      property="og:description"
+      content="Explore our Silver, Gold, and Platinum packages across weddings, corporate events, birthday parties and more in Muzaffarpur, Bihar."
+    />
+    <meta
+      property="og:image"
+      content="https://www.arevents.in/assets/logo2.svg"
+    />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="AR Event and Wedding Planner" />
 
-    /* Add animation for pricing cards */
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.arevents.in/pricing.html" />
+    <meta
+      name="twitter:title"
+      content="Event Pricing - AR Events Muzaffarpur"
+    />
+    <meta
+      name="twitter:description"
+      content="Affordable event packages for weddings, corporate events & celebrations in Muzaffarpur, Bihar."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.arevents.in/assets/logo2.svg"
+    />
+
+    <link rel="shortcut icon" href="./assets/logo2.svg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./assets/logo2.svg" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      h1,
+      h2 {
+        text-align: center;
+        margin-top: 2rem;
+        color: #333;
       }
 
-      100% {
-        opacity: 1;
-        transform: translateY(0);
+      .pricing-section {
+        padding: 2rem;
       }
-    }
 
-    .pricing-card {
-      color: #fff;
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 420px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeInUp 1s ease-out forwards;
-      /* Add this animation */
-      opacity: 0;
-      /* Start as invisible */
-    }
+      .category-title {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+      }
 
-    /* Delay the animation based on the index of the card to create a staggered effect */
-    .pricing-card:nth-child(1) {
-      animation-delay: 0s;
-    }
-
-    .pricing-card:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-
-    .pricing-card:nth-child(3) {
-      animation-delay: 0.4s;
-    }
-
-    .pricing-card:nth-child(4) {
-      animation-delay: 0.6s;
-    }
-
-    .pricing-card:nth-child(5) {
-      animation-delay: 0.8s;
-    }
-
-    .pricing-card:nth-child(6) {
-      animation-delay: 1s;
-    }
-
-    .pricing-card:nth-child(7) {
-      animation-delay: 1.2s;
-    }
-
-    .pricing-card:nth-child(8) {
-      animation-delay: 1.4s;
-    }
-
-    .pricing-card:nth-child(9) {
-      animation-delay: 1.6s;
-    }
-
-    /* Hover Effect */
-    .pricing-card:hover {
-      transform: scale(1.03);
-      /* <-- Slight zoom */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      /* <-- Stronger shadow */
-    }
-
-    .silver-card {
-      background: linear-gradient(135deg, #dcdcdc 0%, #a8a8a8 100%);
-    }
-
-    .gold-card {
-      background: linear-gradient(135deg, #ffcc33 0%, #ff9900 100%);
-    }
-
-    .platinum-card {
-      background: linear-gradient(135deg, #00cc99 0%, #006633 100%);
-    }
-
-    /* Hover Effect */
-    .pricing-card:hover {
-      transform: scale(1.03);
-      /* <-- Slight zoom */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      /* <-- Stronger shadow */
-    }
-
-    .pricing-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-      text-align: center;
-    }
-
-    .pricing-card p {
-      font-size: 1.2rem;
-      line-height: 1.5;
-    }
-
-    .card-logo {
-      width: 200px;
-      height: 200px;
-      margin: 0 auto 1rem;
-      display: block;
-    }
-
-    .price {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin: 1rem 0;
-    }
-
-    .book-btn {
-      margin-top: auto;
-      align-self: flex-end;
-      background: #fff;
-      color: #5c0469;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .book-btn:hover {
-      background: #f1e4d4;
-    }
-
-    @media (max-width: 768px) {
       .pricing-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 1rem 4vw;
       }
-    }
-  </style>
-</head>
 
-<body>
-  <!-- Navbar Component -->
-  <section class="hero-section-pricing">
-    <div class="nav-component">
-      <div class="nav-logo"></div>
-      <div class="nav-links">
+      /* Add animation for pricing cards */
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .pricing-card {
+        color: #fff;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 420px;
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+        animation: fadeInUp 1s ease-out forwards;
+        /* Add this animation */
+        opacity: 0;
+        /* Start as invisible */
+      }
+
+      /* Delay the animation based on the index of the card to create a staggered effect */
+      .pricing-card:nth-child(1) {
+        animation-delay: 0s;
+      }
+
+      .pricing-card:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .pricing-card:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      .pricing-card:nth-child(4) {
+        animation-delay: 0.6s;
+      }
+
+      .pricing-card:nth-child(5) {
+        animation-delay: 0.8s;
+      }
+
+      .pricing-card:nth-child(6) {
+        animation-delay: 1s;
+      }
+
+      .pricing-card:nth-child(7) {
+        animation-delay: 1.2s;
+      }
+
+      .pricing-card:nth-child(8) {
+        animation-delay: 1.4s;
+      }
+
+      .pricing-card:nth-child(9) {
+        animation-delay: 1.6s;
+      }
+
+      /* Hover Effect */
+      .pricing-card:hover {
+        transform: scale(1.03);
+        /* <-- Slight zoom */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        /* <-- Stronger shadow */
+      }
+
+      .silver-card {
+        background: linear-gradient(135deg, #dcdcdc 0%, #a8a8a8 100%);
+      }
+
+      .gold-card {
+        background: linear-gradient(135deg, #ffcc33 0%, #ff9900 100%);
+      }
+
+      .platinum-card {
+        background: linear-gradient(135deg, #00cc99 0%, #006633 100%);
+      }
+
+      /* Hover Effect */
+      .pricing-card:hover {
+        transform: scale(1.03);
+        /* <-- Slight zoom */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        /* <-- Stronger shadow */
+      }
+
+      .pricing-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+      }
+
+      .pricing-card p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+
+      .card-logo {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 1rem;
+        display: block;
+      }
+
+      .price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+
+      .book-btn {
+        margin-top: auto;
+        align-self: flex-end;
+        background: #fff;
+        color: #5c0469;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .book-btn:hover {
+        background: #f1e4d4;
+      }
+
+      @media (max-width: 768px) {
+        .pricing-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hero-section-pricing">
+      <div class="nav-component">
+        <div class="nav-logo"></div>
+        <div class="nav-links">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="corporate-events.html">Corporate Events</a></li>
             <li><a href="wedding-planning.html">Wedding Planning</a></li>
             <li><a href="birthday-parties.html">Birthday Parties</a></li>
-            
+
             <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
-            <li><a href="product-launches.html">Product Launches</a></li>
-            <li><a href="fashion-shows.html">Fashion Shows</a></li>
             <li><a href="cultural-events.html">Cultural Events</a></li>
-           
+
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact us</a></li>
           </ul>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMobileNav()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </div>
-      <div class="hamburger-menu" onclick="toggleMobileNav()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div class="photo-card card-top-left">
+        <img
+          src="./assets/images/Wedding/474687434_1095392799289305_5414725815205043615_n.webp"
+          alt="Event 1"
+        />
       </div>
-    </div>
-    <div class="photo-card card-top-left">
-      <img src="./assets/images/Wedding/474687434_1095392799289305_5414725815205043615_n.jpg" alt="Event 1" />
-    </div>
 
-    <div class="photo-card card-top-right">
-      <img src="./assets/images/Stage/483526635_9690206867685451_2791282982852180630_n.jpg" alt="Event 2" />
-    </div>
+      <div class="photo-card card-top-right">
+        <img
+          src="./assets/images/Stage/483526635_9690206867685451_2791282982852180630_n.webp"
+          alt="Event 2"
+        />
+      </div>
 
-    <div class="photo-card card-bottom-left">
-      <img src="./assets/images/Stage/465714034_8945358075503671_3940784904431931487_n.jpg" alt="Event 3" />
-    </div>
+      <div class="photo-card card-bottom-left">
+        <img
+          src="./assets/images/Stage/465714034_8945358075503671_3940784904431931487_n.webp"
+          alt="Event 3"
+        />
+      </div>
 
-    <div class="photo-card card-bottom-right">
-      <img src="./assets/images/God/56997563_2371555822883962_5152140449275707392_n.jpg" alt="Event 4" />
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Pricing</h1>
-      <p>
-        We organize spectacular events that are unforgettable, creative, and
-        flawless.
-      </p>
-      <a href="./book.html" class="hero-btn">Plan Your Event</a>
-    </div>
-  </section>
-  <section class="pricing-section">
-    <!-- Wedding Packages -->
-    <h2 class="category-title">Wedding Packages</h2>
-    <div class="pricing-grid">
-      <div class="pricing-card silver-card">
-        <h3>Silver Package</h3>
-        <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
-        <p>
-          • Basic decoration<br />
-          • Music<br />
-          • Light coordination for intimate weddings
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 40,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
+      <div class="photo-card card-bottom-right">
+        <img
+          src="./assets/images/God/56997563_2371555822883962_5152140449275707392_n.webp"
+          alt="Event 4"
+        />
       </div>
-      <div class="pricing-card gold-card">
-        <h3>Gold Package</h3>
-        <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Pricing</h1>
         <p>
-          • Premium decor<br />
-          • Catering coordination<br />
-          • Photography<br />
-          • Bridal entry setup
+          We organize spectacular events that are unforgettable, creative, and
+          flawless.
         </p>
-        <div class="price" style="font-size: 1.5rem">INR 85,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
+        <a href="./book.html" class="hero-btn">Plan Your Event</a>
       </div>
-      <div class="pricing-card platinum-card">
-        <h3>Platinum Package</h3>
-        <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
-        <p>
-          • Full wedding planning with themes<br />
-          • Luxury venues<br />
-          • Performances
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 1,50,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
+    </section>
+    <section class="pricing-section">
+      <h2 class="category-title">Wedding Packages</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card silver-card">
+          <h3>Silver Package</h3>
+          <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
+          <p>
+            • Basic decoration<br />
+            • Music<br />
+            • Light coordination for intimate weddings
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 40,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
+        <div class="pricing-card gold-card">
+          <h3>Gold Package</h3>
+          <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
+          <p>
+            • Premium decor<br />
+            • Catering coordination<br />
+            • Photography<br />
+            • Bridal entry setup
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 85,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
+        <div class="pricing-card platinum-card">
+          <h3>Platinum Package</h3>
+          <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
+          <p>
+            • Full wedding planning with themes<br />
+            • Luxury venues<br />
+            • Performances
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 1,50,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Corporate Events -->
-    <h2 class="category-title">Corporate Events</h2>
-    <div class="pricing-grid">
-      <div class="pricing-card silver-card">
-        <h3>Silver Package</h3>
-        <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
-        <p>
-          • Stage setup<br />
-          • Projector setup<br />
-          • Host management
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 30,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
+      <h2 class="category-title">Corporate Events</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card silver-card">
+          <h3>Silver Package</h3>
+          <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
+          <p>
+            • Stage setup<br />
+            • Projector setup<br />
+            • Host management
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 30,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
+        <div class="pricing-card gold-card">
+          <h3>Gold Package</h3>
+          <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
+          <p>
+            • Seminar hall management<br />
+            • Lunch planning<br />
+            • Banners and Emcee
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 65,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
+        <div class="pricing-card platinum-card">
+          <h3>Platinum Package</h3>
+          <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
+          <p>
+            • Conference management<br />
+            • PR and branding<br />
+            • Logistics and hospitality
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 1,25,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
       </div>
-      <div class="pricing-card gold-card">
-        <h3>Gold Package</h3>
-        <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
-        <p>
-          • Seminar hall management<br />
-          • Lunch planning<br />
-          • Banners and Emcee
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 65,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
-      </div>
-      <div class="pricing-card platinum-card">
-        <h3>Platinum Package</h3>
-        <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
-        <p>
-          • Conference management<br />
-          • PR and branding<br />
-          • Logistics and hospitality
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 1,25,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
-      </div>
-    </div>
 
-    <!-- Birthday Parties -->
-    <h2 class="category-title">Birthday Parties</h2>
-    <div class="pricing-grid">
-      <div class="pricing-card silver-card">
-        <h3>Silver Package</h3>
-        <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
-        <p>
-          • Theme decor setup<br />
-          • Cake table decoration<br />
-          • Home celebrations
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 15,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
+      <h2 class="category-title">Birthday Parties</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card silver-card">
+          <h3>Silver Package</h3>
+          <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
+          <p>
+            • Theme decor setup<br />
+            • Cake table decoration<br />
+            • Home celebrations
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 15,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
+        <div class="pricing-card gold-card">
+          <h3>Gold Package</h3>
+          <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
+          <p>
+            • Games and magician<br />
+            • Snacks counter<br />
+            • Balloons arrangement
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 30,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
+        <div class="pricing-card platinum-card">
+          <h3>Platinum Package</h3>
+          <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
+          <p>
+            • Return gifts<br />
+            • Performances<br />
+            • Custom cake
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 50,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
       </div>
-      <div class="pricing-card gold-card">
-        <h3>Gold Package</h3>
-        <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
-        <p>
-          • Games and magician<br />
-          • Snacks counter<br />
-          • Balloons arrangement
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 30,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
-      </div>
-      <div class="pricing-card platinum-card">
-        <h3>Platinum Package</h3>
-        <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
-        <p>
-          • Return gifts<br />
-          • Performances<br />
-          • Custom cake
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 50,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
-      </div>
-    </div>
 
-    <!-- College Festivals -->
-    <h2 class="category-title">College Festivals</h2>
-    <div class="pricing-grid">
-      <div class="pricing-card silver-card">
-        <h3>Silver Package</h3>
-        <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
-        <p>
-          • Stage setup<br />
-          • Sound and light<br />
-          • Cultural day support
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 40,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
+      <h2 class="category-title">College Festivals</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card silver-card">
+          <h3>Silver Package</h3>
+          <img class="card-logo" src="./assets/1.svg" alt="Silver Package" />
+          <p>
+            • Stage setup<br />
+            • Sound and light<br />
+            • Cultural day support
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 40,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
+        <div class="pricing-card gold-card">
+          <h3>Gold Package</h3>
+          <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
+          <p>
+            • Event branding<br />
+            • Guest handling<br />
+            • Artist management
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 80,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
+        <div class="pricing-card platinum-card">
+          <h3>Platinum Package</h3>
+          <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
+          <p>
+            • 3-Day festival management<br />
+            • Celebrity appearance<br />
+            • Full media and logistics
+          </p>
+          <div class="price" style="font-size: 1.5rem">INR 2,00,000</div>
+          <a href="./book.html" class="book-btn">Book Now</a>
+        </div>
       </div>
-      <div class="pricing-card gold-card">
-        <h3>Gold Package</h3>
-        <img class="card-logo" src="./assets/2.svg" alt="Gold Package" />
-        <p>
-          • Event branding<br />
-          • Guest handling<br />
-          • Artist management
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 80,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
-      </div>
-      <div class="pricing-card platinum-card">
-        <h3>Platinum Package</h3>
-        <img class="card-logo" src="./assets/3.svg" alt="Platinum Package" />
-        <p>
-          • 3-Day festival management<br />
-          • Celebrity appearance<br />
-          • Full media and logistics
-        </p>
-        <div class="price" style="font-size: 1.5rem">INR 2,00,000</div>
-        <a href="./book.html" class="book-btn">Book Now</a>
-      </div>
-    </div>
-  </section>
+    </section>
+    <script src="scripts.js"></script>
+    <script>
+      const links = document.querySelectorAll(".nav-links ul li a");
+      const currentPage = window.location.pathname.split("/").pop();
 
-  <div class="footer">
-    <div class="footer-info">
-      <div class="footer-icon-flex">
-        <div class="icon-1"></div>
-        <span class="line">|</span>
-        <div class="icon-2"></div>
-      </div>
-      <div class="footer-uni">
-        Christ University, Kengeri Campus — nurturing excellence through
-        creativity, innovation, and service.
-      </div>
+      links.forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+    <div class="floating-buttons">
+      <a
+        href="https://wa.me/919006532324"
+        class="floating-btn whatsapp-btn"
+        data-tooltip="Chat on WhatsApp"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp fa-bounce"></i>
+      </a>
+      <a
+        href="https://youtube.com/@areventandweddingplanner33?si=FHitkPhgihv9jRJK"
+        class="floating-btn youtube-btn"
+        data-tooltip="Watch on YouTube"
+        aria-label="Watch on YouTube"
+      >
+        <i class="fa-brands fa-youtube fa-beat-fade" style="color: #ff0000"></i>
+      </a>
+      <a
+        href="tel:+919006532324"
+        class="floating-btn call-btn"
+        data-tooltip="Call Us"
+        aria-label="Call Us"
+      >
+        <i class="fa-solid fa-phone-volume fa-shake"></i>
+      </a>
     </div>
-    <ul class="footer-links">
-      <li class="header">Links</li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="eventcard.html">Events</a></li>
-      <li><a href="schedule.html">Schedule</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-    <div class="footer-event-info">
-      <div class="footer-para">
-        AR EVENT MANAGEMENT – crafting unforgettable celebrations with
-        passion, creativity, and precision.<br /><br />
-        Developed by
-        <a href="https://pixelatenest.com" target="_blank"
-          style="text-decoration: none; color: rgba(0, 0, 0, 0.7)">Pixelate Nest</a>
+    <footer class="footer-enhanced">
+      <div class="footer-container">
+        <div class="footer-column footer-about">
+          <div class="footer-logo-section">
+            <div class="footer-icon-flex">
+              <div class="icon-1"></div>
+              <span class="line">|</span>
+              <div class="icon-2"></div>
+            </div>
+          </div>
+          <p class="footer-description">
+            A Pioneer in the Event Management & Wedding Planner Field From
+            Muzaffarpur, Bihar. Creating unforgettable moments since 2013.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://wa.me/919006532324"
+              target="_blank"
+              aria-label="WhatsApp"
+              class="social-icon"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://youtube.com/@areventandweddingplanner33"
+              target="_blank"
+              aria-label="YouTube"
+              class="social-icon"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/people/AR-event-and-wedding-planner/100064093007551/"
+              target="_blank"
+              aria-label="Facebook"
+              class="social-icon"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/ar_event_and_wedding_planner/"
+              target="_blank"
+              aria-label="Instagram"
+              class="social-icon"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column footer-services">
+          <h3 class="footer-heading">Our Services</h3>
+          <ul class="footer-list">
+            <li><a href="wedding-planning.html">Wedding Planning</a></li>
+            <li><a href="corporate-events.html">Corporate Events</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="cultural-events.html">Cultural Events</a></li>
+            <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-quick-links">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h3 class="footer-heading">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span
+                >Nirala Nagar, P&T chowk<br />Muzaffarpur - 842001, Bihar</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919006532324">+91-9006532324</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:areventsol.2013@gmail.com"
+                >areventsol.2013@gmail.com</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-  <script src="scripts.js"></script>
-  <script>
-    const links = document.querySelectorAll(".nav-links ul li a");
-    const currentPage = window.location.pathname.split("/").pop();
 
-    links.forEach((link) => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-      }
-    });
-  </script>
-  <div class="floating-buttons">
-    <a
-      href="https://wa.me/919006532324"
-      class="floating-btn whatsapp-btn"
-      data-tooltip="Chat on WhatsApp"
-      aria-label="Chat on WhatsApp"
-    >
-      <i class="fa-brands fa-whatsapp fa-bounce"></i>
-    </a>
-    <a
-      href="https://youtube.com/@areventandweddingplanner33?si=FHitkPhgihv9jRJK"
-      class="floating-btn youtube-btn"
-      data-tooltip="Watch on YouTube"
-      aria-label="Watch on YouTube"
-    >
-      <i class="fa-brands fa-youtube fa-beat-fade" style="color: #ff0000"></i>
-    </a>
-    <a
-      href="tel:+919006532324"
-      class="floating-btn call-btn"
-      data-tooltip="Call Us"
-      aria-label="Call Us"
-    >
-      <i class="fa-solid fa-phone-volume fa-shake"></i>
-    </a>
-  </div>
-</body>
-
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>© 2025 AR Event and Wedding Planner. All rights reserved.</p>
+          <p class="footer-developer">
+            Developed by
+            <a href="https://pixelatenest.com" target="_blank">Pixelate Nest</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

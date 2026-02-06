@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frequently Asked Questions about AR Event and Wedding Planner services in Muzaffarpur, Bihar. Get answers to common questions about event planning, pricing, and booking."
+    />
+    <meta
+      name="keywords"
+      content="Event Planning FAQ, Wedding Planning Questions, AR Events FAQ, Event Management Muzaffarpur, Wedding Planner Bihar"
+    />
+    <meta name="author" content="AR event and wedding planner" />
+    <meta property="og:title" content="FAQ | AR event and wedding planner" />
+    <meta
+      property="og:description"
+      content="Get answers to frequently asked questions about our event planning services in Muzaffarpur, Bihar."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="./assets/logo2.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>FAQ | AR event and wedding planner - Muzaffarpur, Bihar</title>
+    <style>
+      .faq-section {
+        padding: 80px 5%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .faq-section h1 {
+        text-align: center;
+        font-size: 3rem;
+        color: #5c0469;
+        margin-bottom: 20px;
+        font-family: "Borisna";
+      }
+
+      .faq-intro {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 50px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .faq-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .faq-item {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .faq-item:hover {
+        box-shadow: 0 6px 20px rgba(92, 4, 105, 0.15);
+      }
+
+      .faq-question {
+        padding: 25px 30px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(135deg, #f4b86f 0%, #a27158 100%);
+        color: white;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+      }
+
+      .faq-question:hover {
+        background: linear-gradient(135deg, #5c0469 0%, #a27158 100%);
+      }
+
+      .faq-question i {
+        transition: transform 0.3s ease;
+        font-size: 1.2rem;
+      }
+
+      .faq-item.active .faq-question i {
+        transform: rotate(180deg);
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.3s ease,
+          padding 0.3s ease;
+        padding: 0 30px;
+        background: white;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 500px;
+        padding: 25px 30px;
+      }
+
+      .faq-answer p {
+        color: #444;
+        line-height: 1.8;
+        margin: 0;
+      }
+
+      .faq-categories {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .category-btn {
+        padding: 12px 25px;
+        background: white;
+        border: 2px solid #f4b86f;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        color: #5c0469;
+      }
+
+      .category-btn:hover,
+      .category-btn.active {
+        background: linear-gradient(45deg, #f4b86f, #a27158, #5c0469);
+        color: white;
+        border-color: #5c0469;
+      }
+
+      @media (max-width: 768px) {
+        .faq-section h1 {
+          font-size: 2rem;
+        }
+
+        .faq-question {
+          font-size: 1rem;
+          padding: 20px;
+        }
+
+        .faq-answer {
+          padding: 0 20px;
+        }
+
+        .faq-item.active .faq-answer {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="hero-section-services">
+      <div class="nav-component">
+        <div class="nav-logo"></div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="corporate-events.html">Corporate Events</a></li>
+            <li><a href="wedding-planning.html">Wedding Planning</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
+            <li><a href="cultural-events.html">Cultural Events</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMobileNav()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Frequently Asked Questions</h1>
+        <p>
+          Find answers to common questions about our event planning services
+        </p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <p class="faq-intro">
+        Have questions about our event planning services? Browse through our
+        most frequently asked questions below. Can't find what you're looking
+        for?
+        <a href="contact.html" style="color: #5c0469; font-weight: 600"
+          >Contact us</a
+        >
+        directly!
+      </p>
+
+      <div class="faq-categories">
+        <button class="category-btn active" onclick="filterFAQ('all')">
+          All Questions
+        </button>
+        <button class="category-btn" onclick="filterFAQ('general')">
+          General
+        </button>
+        <button class="category-btn" onclick="filterFAQ('booking')">
+          Booking
+        </button>
+        <button class="category-btn" onclick="filterFAQ('pricing')">
+          Pricing
+        </button>
+        <button class="category-btn" onclick="filterFAQ('services')">
+          Services
+        </button>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>What types of events do you organize?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We specialize in a wide range of events including weddings,
+              corporate events, birthday parties, award ceremonies, product
+              launches, cultural events, college festivals, and private parties.
+              Each event is customized to meet your specific needs and vision.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Where are you located and what areas do you serve?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We are based in Muzaffarpur, Bihar, India. While we primarily
+              serve Muzaffarpur and surrounding areas in Bihar, we also organize
+              events across India. Contact us to discuss your event location and
+              we'll be happy to accommodate your needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>How experienced is your team?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              AR Event and Wedding Planner has been in the event management
+              industry since 2013, bringing over 10 years of experience. We have
+              successfully organized 150+ events and served 100+ satisfied
+              clients, making us one of the most trusted event planners in
+              Muzaffarpur.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="booking">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>How far in advance should I book your services?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We recommend booking at least 3-6 months in advance for weddings
+              and large corporate events to ensure availability and adequate
+              planning time. For smaller events, 1-2 months notice is usually
+              sufficient. However, we can accommodate last-minute requests based
+              on our availability.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="booking">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>What is your booking process?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Our booking process is simple: 1) Contact us via phone, email, or
+              our website. 2) Schedule a consultation to discuss your event
+              requirements. 3) Receive a customized proposal and quote. 4) Sign
+              the agreement and pay the booking advance. 5) Start planning your
+              dream event with our team!
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="booking">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Can I make changes after booking?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, we understand that plans can change. We're flexible and can
+              accommodate modifications to your event details. However,
+              significant changes close to the event date may incur additional
+              charges. We recommend finalizing major details at least 2-4 weeks
+              before the event.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="pricing">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>How much do your services cost?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Our pricing varies based on the type of event, number of guests,
+              services required, and event duration. We offer customized
+              packages to fit different budgets. Visit our
+              <a href="pricing.html" style="color: #5c0469; font-weight: 600"
+                >Pricing page</a
+              >
+              for more details or contact us for a personalized quote.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="pricing">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Do you offer payment plans?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, we offer flexible payment plans. Typically, we require a
+              booking advance (30-40%), followed by installments leading up to
+              the event, with the final payment due before or on the event day.
+              We can customize payment schedules based on your needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="pricing">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Are there any hidden costs?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              No, we believe in complete transparency. All costs are clearly
+              outlined in our proposal and contract. Any additional services
+              requested after booking will be discussed and approved by you
+              before implementation. We provide detailed breakdowns of all
+              expenses.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="services">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Do you provide decoration services?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes! We provide comprehensive decoration services including stage
+              setup, floral arrangements, lighting, backdrops, centerpieces, and
+              themed decorations. Our creative team works with you to bring your
+              vision to life with stunning decor that matches your event theme.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="services">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Can you help with venue selection?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Absolutely! We have partnerships with various venues across
+              Muzaffarpur and Bihar. We can help you find the perfect venue
+              based on your event type, guest count, budget, and preferences. We
+              handle all venue coordination and logistics as well.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="services">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Do you provide catering services?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, we work with trusted catering partners who can provide a wide
+              range of cuisines and menu options. From traditional Indian
+              cuisine to international dishes, we ensure high-quality food
+              service that delights your guests. We can also accommodate dietary
+              restrictions and preferences.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="services">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Do you offer photography and videography?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, we collaborate with professional photographers and
+              videographers who specialize in event coverage. We can arrange for
+              photo and video services, including candid photography, cinematic
+              videos, drone shots, and photo booths to capture all your special
+              moments.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="services">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Can you arrange entertainment for events?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Definitely! We can arrange various entertainment options including
+              DJs, live bands, dancers, anchors/emcees, magicians, and other
+              performers. We tailor entertainment to match your event theme and
+              audience preferences.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>What makes AR Event and Wedding Planner different?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Our commitment to excellence, creativity, and personalized service
+              sets us apart. We focus on understanding your unique vision and
+              bringing it to life with meticulous attention to detail. With over
+              10 years of experience, a dedicated team, and a track record of
+              150+ successful events, we ensure your event is unforgettable.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Still Have Questions?</h2>
+      <a href="contact.html" class="cta-button">Contact Us</a>
+    </section>
+
+    <footer class="footer-enhanced">
+      <div class="footer-container">
+        <div class="footer-column footer-about">
+          <div class="footer-logo-section">
+            <div class="footer-icon-flex">
+              <div class="icon-1"></div>
+              <span class="line">|</span>
+              <div class="icon-2"></div>
+            </div>
+          </div>
+          <p class="footer-description">
+            A Pioneer in the Event Management & Wedding Planner Field From
+            Muzaffarpur, Bihar. Creating unforgettable moments since 2013.
+          </p>
+          <div class="footer-social">
+            <a
+              href="https://wa.me/919006532324"
+              target="_blank"
+              aria-label="WhatsApp"
+              class="social-icon"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://youtube.com/@areventandweddingplanner33"
+              target="_blank"
+              aria-label="YouTube"
+              class="social-icon"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/people/AR-event-and-wedding-planner/100064093007551/"
+              target="_blank"
+              aria-label="Facebook"
+              class="social-icon"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/ar_event_and_wedding_planner/"
+              target="_blank"
+              aria-label="Instagram"
+              class="social-icon"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column footer-services">
+          <h3 class="footer-heading">Our Services</h3>
+          <ul class="footer-list">
+            <li><a href="wedding-planning.html">Wedding Planning</a></li>
+            <li><a href="corporate-events.html">Corporate Events</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="cultural-events.html">Cultural Events</a></li>
+            <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-quick-links">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h3 class="footer-heading">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span
+                >Nirala Nagar, P&T chowk<br />Muzaffarpur - 842001, Bihar</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+919006532324">+91-9006532324</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:areventsol.2013@gmail.com"
+                >areventsol.2013@gmail.com</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>© 2025 AR Event and Wedding Planner. All rights reserved.</p>
+          <p class="footer-developer">
+            Developed by
+            <a href="https://pixelatenest.com" target="_blank">Pixelate Nest</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="floating-buttons">
+      <a
+        href="https://wa.me/919006532324"
+        class="floating-btn whatsapp-btn"
+        data-tooltip="Chat on WhatsApp"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp fa-bounce"></i>
+      </a>
+      <a
+        href="https://youtube.com/@areventandweddingplanner33?si=FHitkPhgihv9jRJK"
+        class="floating-btn youtube-btn"
+        data-tooltip="Watch on YouTube"
+        aria-label="Watch on YouTube"
+      >
+        <i class="fa-brands fa-youtube fa-beat-fade" style="color: #ff0000"></i>
+      </a>
+      <a
+        href="tel:+919006532324"
+        class="floating-btn call-btn"
+        data-tooltip="Call Us"
+        aria-label="Call Us"
+      >
+        <i class="fa-solid fa-phone-volume fa-shake"></i>
+      </a>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script>
+      function toggleFAQ(element) {
+        const faqItem = element.parentElement;
+        const allItems = document.querySelectorAll(".faq-item");
+
+        // Close all other items
+        allItems.forEach((item) => {
+          if (item !== faqItem) {
+            item.classList.remove("active");
+          }
+        });
+
+        // Toggle current item
+        faqItem.classList.toggle("active");
+      }
+
+      function filterFAQ(category) {
+        const allItems = document.querySelectorAll(".faq-item");
+        const allBtns = document.querySelectorAll(".category-btn");
+
+        // Update active button
+        allBtns.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+
+        // Filter items
+        allItems.forEach((item) => {
+          if (category === "all" || item.dataset.category === category) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+          item.classList.remove("active");
+        });
+      }
+
+      // Active nav link
+      const links = document.querySelectorAll(".nav-links ul li a");
+      const currentPage = window.location.pathname.split("/").pop();
+
+      links.forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What types of events do you organize?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We specialize in a wide range of events including weddings, corporate events, birthday parties, award ceremonies, cultural events, college festivals, and private parties."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far in advance should I book your services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We recommend booking at least 3-6 months in advance for weddings and large corporate events. For smaller events, 1-2 months notice is usually sufficient."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide decoration services?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We provide comprehensive decoration services including stage setup, floral arrangements, lighting, backdrops, centerpieces, and themed decorations."
+            }
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>
