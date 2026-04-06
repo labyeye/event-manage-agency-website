@@ -1,0 +1,25 @@
+{
+  "name": "event-management-clone-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts-premium.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "remove-comments": "node remove-comments.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoob-cyber/event-management-clone-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shoob-cyber/event-management-clone-web/issues"
+  },
+  "homepage": "https://github.com/shoob-cyber/event-management-clone-web#readme",
+  "devDependencies": {
+    "purgecss": "^8.0.0",
+    "sharp": "^0.34.5"
+  }
+}

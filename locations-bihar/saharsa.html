@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spiritual Events & Ceremonies in Saharsa | AR Events</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/logo2.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="../common.css" />
+  <link rel="stylesheet" href="../layout.css" />
+  <link rel="stylesheet" href="../components.css" />
+  <link rel="stylesheet" href="../pages.css" />
+  <link rel="stylesheet" href="../styles-premium.css" />
+  <style>
+    .city-page {
+      background-color: var(--bg-dark);
+    }
+
+    .city-hero {
+      position: relative;
+      color: white;
+      padding: 150px 20px;
+      text-align: center;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .city-hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+    }
+
+    .city-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .city-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+    }
+
+    .city-container {
+      margin: 0px auto;
+      padding: 0 20px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-item {
+      background: var(--bg-dark);
+      padding: 30px;
+      border-left: 5px solid #d19c4a;
+    }
+
+    .about-city {
+      background: var(--bg-dark);
+      padding: 50px;
+      border-radius: 8px;
+      margin: 60px auto;
+      max-width: 1200px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(209, 155, 74, 0.329);
+    }
+
+    .about-city h2 {
+      color: #d19c4a;
+      margin-bottom: 20px;
+    }
+
+    .about-city p {
+      color: #ffffff;
+      font-weight: 200;
+      line-height: 1.8;
+      font-size: 1.35rem;
+      font-family: "Playfair Display", serif;
+      text-align: justify;
+    }
+
+    .faq-section {
+      margin: 80px auto;
+      box-shadow: 0 0px 12px 13px rgba(209, 155, 74, 0.329);
+      max-width: 1200px;
+      border-radius: 50px;
+    }
+
+    .faq-section h2 {
+      color: #d19c4a;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .faq-item {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .faq-question {
+      padding: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      color: #333;
+      background: #fafafa;
+    }
+
+    .faq-toggle {
+      color: #d19c4a;
+      transition: transform 0.3s;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding: 20px;
+    }
+
+    .why-choose {
+      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+      color: white;
+      padding: 60px 40px;
+      margin: 60px 0;
+    }
+
+    .why-choose-list li {
+      padding: 10px 0;
+      padding-left: 40px;
+      position: relative;
+      list-style: none;
+    }
+
+    .contact-cta {
+      background: var(--bg-dark);
+      padding: 60px 40px;
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .contact-cta h2 {
+      color: #d19c4a;
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-cta p {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Playfair Display", serif;
+    }
+
+    .contact-cta-btn {
+      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+      color: white;
+      padding: 15px 50px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      .city-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .city-hero {
+        padding: 80px 20px;
+        min-height: 300px;
+      }
+
+      .about-city {
+        padding: 30px 20px;
+      }
+
+      .contact-cta {
+        padding: 40px 20px;
+      }
+
+      .about-city p {
+        color: #ffffff;
+        font-weight: 200;
+        line-height: 1.8;
+        font-size: 1rem;
+        font-family: "Playfair Display", serif;
+        text-align: justify;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="../index.html"><img src="../assets/logo2.svg" alt="Logo" class="logo-img" /></a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="../wedding-planning.html">Wedding Planning</a></li>
+            <li><a href="../corporate-events.html">Corporate Events</a></li>
+            <li><a href="../birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="../cultural-events.html">Cultural Events</a></li>
+            <li>
+              <a href="../religious-ceremonies.html">Religious Ceremonies</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../locations.html">Locations</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li class="mobile-book-btn">
+          <a href="../book.html" class="book-nav-link">Book Now</a>
+        </li>
+      </ul>
+      <a href="../book.html" class="book-btn">Book Now</a>
+    </div>
+    <div class="hamburger-menu" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-background" style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(&quot;../assets/images/Anniversary/ann2.webp&quot;);
+        "></div>
+    <div class="hero-content">
+      <h1 class="fade-in-up">Spiritual Events in Saharsa</h1>
+      <p class="hero-tagline">Sacred Ceremonies</p>
+      <p class="hero-description">
+        Holy city ceremony coordination with temple relationships and
+        spiritual reverence.
+      </p>
+      <div class="hero-cta-group">
+        <a href="../book.html" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i> Plan Your Event
+        </a>
+        <a href="#services" class="btn btn-white">
+          <i class="fas fa-arrow-down"></i> Explore Services
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="city-container">
+    <div class="about-city">
+      <h2>Spiritual Event Planning in Saharsa</h2>
+      <p>
+        Saharsa is a religiously significant spiritual city blessed with rich
+        heritage and divine ambience. It is the perfect destination for
+        conducting धार्मिक functions and celebrations. We, at AR Events &
+        Wedding Planner, ensure to offer you unmatched services in wedding
+        decoration in Saharsa. Our core competencies include religious
+        function decoration in Saharsa, temple decoration in Saharsa, puja
+        decoration in Saharsa, and spiritual function decoration in Saharsa.
+        From wedding decoration in Saharsa, haldi decoration in Saharsa,
+        mehndi decoration in Saharsa, to stage decoration in Saharsa, our
+        decoration ideas for functions and events will impress your guests.
+        Apart from being an expert wedding decorator in Saharsa, we are proud
+        to be a professional wedding planner in Saharsa. Our extensive wedding
+        planning services range from mandap decoration in Saharsa, traditional
+        wedding decoration in Saharsa, balloon decoration in Saharsa, and
+        theme-based function decoration in Saharsa. With 30+ successful sacred
+        functions, AR Events & Wedding Planner is the best event management
+        company in Saharsa.
+      </p>
+    </div>
+    <!-- Services Section -->
+    <section class="global-section" id="services">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-4xl)">
+          <h2 class="fade-in-up" style="
+                color: var(--primary-gold);
+                font-family: &quot;Kenao&quot;, sans-serif;
+                font-size: 3.5rem;
+                letter-spacing: 0.05em;
+              ">
+            Our Services
+          </h2>
+          <p class="fade-in-up" style="
+                color: #ffffff;
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-style: italic;
+                font-size: 1.2rem;
+              ">
+            Bespoke event planning tailored to your unique vision
+          </p>
+        </div>
+        <div class="services-modern-grid">
+          <div class="service-grid-card fade-in-up stagger-1">
+            <div class="service-grid-img">
+              <img src="../assets/images/services/wedding.webp"
+                alt="Professional Indian wedding planning and ceremony decoration in Saharsa Bihar" loading="lazy" />
+            </div>
+            <div class="service-grid-content">
+              <h3>Wedding Planning</h3>
+              <p class="clamp-text">
+                Experience the best wedding decoration in Saharsa with our
+                expert planning and coordination. We specialize in creating
+                memorable ceremonies with premium wedding decoration services
+                in Saharsa. From venue selection to flawless execution, our
+                top wedding planners in Saharsa ensure every detail reflects
+                your vision. Trust us for professional wedding decoration,
+                staging, and complete management services tailored to make
+                your dream wedding a magical reality in Saharsa.
+              </p>
+              <a href="../wedding-planning.html" class="btn-primary grid-btn">Discover More</a>
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-2">
+            <div class="service-grid-img">
+              <img src="../assets/images/services/anniversary.webp"
+                alt="Professional anniversary celebration and romantic event decoration services in Saharsa"
+                loading="lazy" />
+            </div>
+            <div class="service-grid-content">
+              <h3>Anniversary Celebrations</h3>
+              <p class="clamp-text">
+                Celebrate your milestone moments with the best anniversary
+                decoration in Saharsa. Our professional anniversary event
+                planners in Saharsa create romantic and elegant celebrations
+                tailored to your preferences. From intimate dinner setups to
+                grand anniversary parties, we offer complete anniversary
+                decoration services in Saharsa with personalized themes and
+                premium decor that honors your special bond and creates
+                lasting memories.
+              </p>
+              <a href="../anniversary-celebrations.html" class="btn-primary grid-btn">Discover More</a>
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-3">
+            <div class="service-grid-img">
+              <img src="../assets/images/services/birthday.webp"
+                alt="Themed birthday party planning and decoration services for kids and adults in Bihar"
+                loading="lazy" />
+            </div>
+            <div class="service-grid-content">
+              <h3>Birthday Parties</h3>
+              <p class="clamp-text">
+                Find the best birthday decorator in Saharsa to make your
+                celebration unforgettable. Our professional birthday
+                decoration services in Saharsa offer themed parties for kids
+                and adults with creative designs and quality execution. As
+                trusted birthday party planners in Saharsa, we handle complete
+                arrangements from decoration to entertainment, ensuring a
+                fun-filled and personalized experience that your guests will
+                remember forever.
+              </p>
+              <a href="../birthday-parties.html" class="btn-primary grid-btn">Discover More</a>
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-4">
+            <div class="service-grid-img">
+              <img src="../assets/images/services/cultural.webp"
+                alt="Cultural event planning and organization services in Saharsa Bihar" loading="lazy" />
+            </div>
+            <div class="service-grid-content">
+              <h3>Cultural Events</h3>
+              <p class="clamp-text">
+                Experience the finest cultural event decoration in Saharsa
+                with our specialized expertise. We are one of the leading
+                cultural event organizers in Saharsa, offering complete
+                planning and decoration services that honor traditions with
+                modern elegance. Our cultural event coordinators in Saharsa
+                create visually stunning celebrations that showcase the
+                richness of heritage while maintaining contemporary appeal for
+                all attendees.
+              </p>
+              <a href="../cultural-events.html" class="btn-primary grid-btn">Discover More</a>
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-5">
+            <div class="service-grid-img">
+              <img src="../assets/images/services/corporate.webp"
+                alt="Corporate event planning and organization services in Saharsa Bihar" loading="lazy" />
+            </div>
+            <div class="service-grid-content">
+              <h3>Corporate Events</h3>
+              <p class="clamp-text">
+                Professional corporate event planning in Saharsa delivered by
+                expert corporate event organizers. We provide comprehensive
+                corporate event management services in Saharsa including venue
+                coordination, decor, and logistics. As experienced corporate
+                event planners in Saharsa, we ensure your business events
+                reflect professionalism and excellence, creating impactful
+                experiences that strengthen brand reputation and client
+                relationships.
+              </p>
+              <a href="../corporate-events.html" class="btn-primary grid-btn">Discover More</a>
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-1">
+            <div class="service-grid-img">
+              <img src="../assets/images/services/religious.webp"
+                alt="Religious ceremony and puja decoration services in Saharsa Bihar" loading="lazy" />
+            </div>
+            <div class="service-grid-content">
+              <h3>Religious Ceremonies</h3>
+              <p class="clamp-text">
+                Expert religious ceremony decoration in Saharsa with deep
+                respect for traditions and spiritual values. Our religious
+                event planners in Saharsa specialize in puja coordination,
+                temple ceremonies, and spiritual celebrations with
+                professional management. We provide complete religious
+                ceremony services in Saharsa ensuring proper rituals,
+                beautiful decoration, and seamless coordination that honors
+                the sanctity and significance of your sacred occasions.
+              </p>
+              <a href="../religious-ceremonies.html" class="btn-primary grid-btn">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Section -->
+    <section class="why-choose-section" style="padding: var(--space-3xl) var(--space-lg)">
+      <div class="container">
+        <h2 class="fade-in-up" style="margin-bottom: var(--space-lg)">
+          Why Choose AR Events
+        </h2>
+        <p class="why-choose-description" style="
+              text-align: center;
+              margin-bottom: var(--space-2xl);
+              max-width: 700px;
+              margin-left: auto;
+              margin-right: auto;
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-weight: 100;
+            ">
+          We don't just plan events, we deliver complete event planning and
+          decoration solutions in Bihar that create unforgettable experiences.
+          From thoughtful design to flawless execution, every detail is
+          crafted to leave a lasting impression on your guests and reflect
+          true professionalism.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card fade-in-up" style="animation-delay: 0.1s">
+            <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>Creative Vision</h3>
+            <p>
+              Custom designs and concepts tailored to your personality and
+              preferences.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in-up" style="animation-delay: 0.2s">
+            <div class="feature-icon">
+              <i class="fas fa-check-double"></i>
+            </div>
+            <h3>Attention to Detail</h3>
+            <p>
+              Every element, from décor to timing, is meticulously coordinated
+              for perfection.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in-up" style="animation-delay: 0.3s">
+            <div class="feature-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Trusted Vendors</h3>
+            <p>
+              Partnerships with premium caterers, florists, and entertainment
+              providers.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in-up" style="animation-delay: 0.4s">
+            <div class="feature-icon"><i class="fas fa-headset"></i></div>
+            <h3>24/7 Support</h3>
+            <p>
+              Dedicated team available before, during, and after your event.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in-up" style="animation-delay: 0.5s">
+            <div class="feature-icon"><i class="fas fa-star"></i></div>
+            <h3>Premium Quality</h3>
+            <p>
+              We source the finest materials and services for an elevated
+              experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="faq-section">
+      <h2>FAQs</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can you coordinate temple ceremonies in Saharsa?</span><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes, we have established relationships with Saharsa's major
+              temples and sacred sites. Our team coordinates religious
+              ceremonies with proper protocols, respected priests, and
+              maintains the sanctity of spiritual occasions while ensuring
+              modern logistics.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What religious functions can you manage in Saharsa?</span><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We manage all types of religious ceremonies including pujas,
+              temple ceremonies, spiritual functions, ritual celebrations, and
+              sacred occasions. Our expertise covers Hindu, cultural, and
+              interfaith celebrations with complete reverence and
+              professionalism.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you provide spiritual guidance coordination for
+              events?</span><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Yes. We coordinate with experienced pandits, spiritual guides,
+              and temple authorities to ensure all rituals are performed
+              correctly and respectfully. Our team ensures that the spiritual
+              essence of your celebration is preserved throughout.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How do you handle sacred ceremonies and blessing rituals?</span><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We coordinate with priests and spiritual leaders to arrange
+              proper blessing ceremonies, ritual procedures, and sacred
+              protocols. Each celebration maintains its spiritual significance
+              while being coordinated with modern event management standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-cta">
+      <h2>Plan Your Spiritual Event</h2>
+      <a href="../contact.html?city=saharsa" class="contact-cta-btn">Book Now</a>
+    </div>
+  </div>
+  <footer class="footer-premium">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-col brand-address">
+          <h3>AR Events & Wedding Planner</h3>
+          <p class="brand-tagline">
+            Where Your Love Story Becomes a Grand Celebration
+          </p>
+
+          <div class="address-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Muzaffarpur, Bihar, India</p>
+          </div>
+
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com/arevents" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/arevents" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918873268474" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com/@areventandweddingplanner33" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="wedding-planning.html">Wedding Planning</a></li>
+            <li>
+              <a href="anniversary-celebrations.html">Anniversary Celebrations</a>
+            </li>
+            <li><a href="corporate-events.html">Corporate Events</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
+            <li><a href="cultural-events.html">Cultural Events</a></li>
+            <li>
+              <a href="religious-ceremonies.html">Religious Ceremonies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col touch-section">
+          <h4>Get In Touch</h4>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114856.28434771508!2d85.31174624792613!3d26.12056143521361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10e60803ee71%3A0xc00f1262d3a3d5e6!2sMuzaffarpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712192000000!5m2!1sen!2sin"
+              width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+          <div class="contact-details">
+            <p><i class="fas fa-envelope"></i> areventsol@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> +91-9006532324</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-premium">
+        <p>
+          &copy; 2026 AR Events & Wedding Planner. All rights reserved.
+          Developed by
+          <a href="https://www.pixelatenest.com" target="_blank">Pixelate Nest</a>
+        </p>
+        <div class="legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts.js"></script>
+  <script>
+    document.querySelectorAll(".faq-question").forEach((b) => {
+      b.addEventListener("click", () => {
+        b.parentElement.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+
+</html>

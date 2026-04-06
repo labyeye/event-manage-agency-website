@@ -11,7 +11,7 @@ const twilio = require("twilio");
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Twilio Setup
+
 const twilioClient = twilio(
   process.env.TWILIO_ACCOUNT_SID,
   process.env.TWILIO_AUTH_TOKEN
@@ -81,7 +81,7 @@ function isAuthenticated(req, res, next) {
   res.redirect("/admin/login");
 }
 
-// Utility function to get booking statistics
+
 async function getBookingStats() {
   const total = await Booking.countDocuments();
   const approved = await Booking.countDocuments({ status: "Approved" });
@@ -138,7 +138,7 @@ app.get("/admin/dashboard", isAuthenticated, async (req, res) => {
   }
 });
 
-// API endpoint for stats (can be used for AJAX updates)
+
 app.get("/api/dashboard-stats", isAuthenticated, async (req, res) => {
   try {
     const stats = await getBookingStats();

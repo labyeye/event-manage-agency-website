@@ -6,7 +6,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
     }
   });
   document.getElementById("bookingForm").addEventListener("submit", async function (e) {
-    e.preventDefault(); // Stop normal submit
+    e.preventDefault(); 
   
     const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
@@ -20,17 +20,17 @@ document.querySelector("form").addEventListener("submit", function (e) {
   
       const text = await response.text();
   
-      // Show popup
+      
       showNotification("✅ Booking query sent! Wait for approval.");
       
-      // Optional: Reset form
+      
       this.reset();
     } catch (err) {
       showNotification("❌ Something went wrong. Try again.");
     }
   });
   
-  // Toast popup
+  
   function showNotification(message) {
     const toast = document.createElement("div");
     toast.textContent = message;
@@ -48,10 +48,10 @@ document.querySelector("form").addEventListener("submit", function (e) {
   
     document.body.appendChild(toast);
   
-    setTimeout(() => (toast.style.opacity = "1"), 100); // fade in
+    setTimeout(() => (toast.style.opacity = "1"), 100); 
     setTimeout(() => {
-      toast.style.opacity = "0"; // fade out
-      setTimeout(() => toast.remove(), 400); // remove after fade
+      toast.style.opacity = "0"; 
+      setTimeout(() => toast.remove(), 400); 
     }, 4000);
   }
   

@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Locations in Bihar | AR Events & Wedding Planner</title>
+  <meta name="title" content="Our Locations in Bihar | AR Events & Wedding Planner" />
+  <meta name="description"
+    content="Explore AR Events & Wedding Planner services across all major cities in Bihar. Premium event management and wedding planning available in Patna, Muzaffarpur, Gaya, Bhagalpur, and more." />
+  <meta name="keywords"
+    content="event planner Bihar, wedding planner Bihar, locations Bihar, cities Bihar, event management services" />
+  <meta name="author" content="AR event and wedding planner" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="revisit-after" content="7 days" />
+
+  <link rel="canonical" href="https://arevents.in/locations.html" />
+
+  <meta name="geo.region" content="IN-BR" />
+  <meta name="geo.placename" content="Bihar" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arevents.in/locations.html" />
+  <meta property="og:title" content="Our Locations in Bihar | AR Events & Wedding Planner" />
+  <meta property="og:description"
+    content="Premium event management services across all major cities in Bihar. Weddings, corporate events, cultural celebrations and more." />
+  <meta property="og:image" content="https://arevents.in/assets/logo2.svg" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="AR Event and Wedding Planner" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://arevents.in/locations.html" />
+  <meta name="twitter:title" content="Locations - AR Events Bihar" />
+  <meta name="twitter:description"
+    content="Event management services across Bihar. Find us in Patna, Muzaffarpur, Gaya and more." />
+  <meta name="twitter:image" content="https://arevents.in/assets/logo2.svg" />
+
+  <link rel="icon" type="image/svg+xml" href="./assets/logo2.svg" />
+  <link rel="shortcut icon" href="./assets/logo2.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+  <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecg.woff2" as="font"
+    type="font/woff2" crossorigin />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./common.css" />
+  <link rel="stylesheet" href="./layout.css" />
+  <link rel="stylesheet" href="./components.css" />
+  <link rel="stylesheet" href="./pages.css" />
+  <link rel="stylesheet" href="./styles-premium.css" />
+
+  <style>
+    .locations-page {
+      background-color: var(--bg-dark);
+    }
+
+    .locations-container {
+      max-width: 1600px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .locations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .location-card {
+      background: white;
+      border-radius: 12px;
+      padding: 40px 30px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .location-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(209, 156, 74, 0.2);
+      border-color: #d19c4a;
+    }
+
+    .location-card-icon {
+      font-size: 3rem;
+      color: #d19c4a;
+      margin-bottom: 20px;
+    }
+
+    .location-card h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .location-card p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .services-list {
+      text-align: left;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+      font-size: 0.9rem;
+    }
+
+    .services-list li {
+      color: #000000;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      font-family: "Playfair Display", serif;
+    }
+
+    .services-list li:before {
+      content: "✓";
+      color: #d19c4a;
+      font-weight: bold;
+      margin-right: 10px;
+      margin-left: -15px;
+      font-family: "Playfair Display", serif;
+    }
+
+    .location-card-footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .location-stat {
+      text-align: center;
+    }
+
+    .location-stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #d19c4a;
+    }
+
+    .location-stat-label {
+      font-size: 0.85rem;
+      color: #999;
+      margin-top: 5px;
+    }
+
+    .cta-button {
+      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(209, 156, 74, 0.3);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .locations-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .locations-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .locations-hero {
+        padding: 100px 20px;
+        min-height: 350px;
+      }
+
+      .locations-hero p {
+        font-size: 1rem;
+      }
+
+      .section-title h2 {
+        font-size: 2rem;
+      }
+
+      .location-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body class="locations-page">
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="assets/logo2.svg" alt="AR Events & Wedding Planner Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="wedding-planning.html">Wedding Planning</a></li>
+            <li>
+              <a href="anniversary-celebrations.html">Anniversary Celebrations</a>
+            </li>
+            <li><a href="corporate-events.html">Corporate Events</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="cultural-events.html">Cultural Events</a></li>
+            <li>
+              <a href="religious-ceremonies.html">Religious Ceremonies</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="mobile-book-btn">
+          <a href="book.html" class="book-nav-link">Book Now</a>
+        </li>
+      </ul>
+
+      <a href="book.html" class="book-btn">Book Now</a>
+    </div>
+
+    <div class="hamburger-menu" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-background" style="background-image: url(&quot;./assets/images/Wedding/wed13.webp&quot;)"></div>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Locations We Serve</h1>
+      <p class="hero-tagline" style="font-family: &quot;Playfair Display&quot;">
+        From the heart of Muzaffarpur to every corner of Bihar, we bring our
+        world-class event management and wedding planning services to your
+        doorstep. Explore our presence across the state and discover how we can
+        make your celebration extraordinary, no matter where you are in Bihar.
+      </p>
+      <a href="./book.html" class="hero-btn">Plan Your Event</a>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="locations-container">
+    <div class="section-title">
+      <h1 style="color: var(--primary-gold);">Serving All Major Cities in Bihar</h1>
+      <p style="font-family: &quot;Playfair Display&quot;; color:white; font-size: 25px;">
+        With our presence across Bihar, we bring world-class event management
+        and wedding planning services to your doorstep, no matter where you
+        are in the state.
+      </p>
+    </div>
+
+    <div class="locations-grid">
+      <!-- Muzaffarpur -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h3>Muzaffarpur</h3>
+        <p>
+          Our home base! Extensive experience in creating unforgettable
+          celebrations across the city with premium venues and vendors.
+        </p>
+        <ul class="services-list">
+          <li>Wedding Decoration & Planning</li>
+          <li>Anniversary Celebrations</li>
+          <li>Birthday Party Arrangements</li>
+          <li>Corporate Event Management</li>
+          <li>Cultural Event Organization</li>
+          <li>Religious Ceremonies</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">500+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">99%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/muzaffarpur.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Patna -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-city"></i>
+        </div>
+        <h3>Patna</h3>
+        <p>
+          The capital city's premier event planners. Excellence in grand
+          weddings, corporate galas, and lavish celebrations.
+        </p>
+        <ul class="services-list">
+          <li>Luxury Wedding Planning</li>
+          <li>Corporate Conferences</li>
+          <li>Award Ceremonies</li>
+          <li>Product Launch Events</li>
+          <li>Anniversary & Birthday Celebrations</li>
+          <li>Cultural Festivals</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">100+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">98%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/patna.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Gaya -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-gopuram"></i>
+        </div>
+        <h3>Gaya</h3>
+        <p>
+          Spiritual city with rich cultural heritage. Expert in traditional
+          ceremonies and culturally-rooted celebrations.
+        </p>
+        <ul class="services-list">
+          <li>Religious Ceremony Planning</li>
+          <li>Traditional Wedding Decoration</li>
+          <li>Cultural Event Management</li>
+          <li>Marriage Anniversary Events</li>
+          <li>Temple Celebration Services</li>
+          <li>Pilgrimage Event Coordination</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">80+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">97%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/gaya.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Bhagalpur -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-water"></i>
+        </div>
+        <h3>Bhagalpur</h3>
+        <p>
+          Riverside destination events. Specializing in scenic wedding venues
+          and elegant celebrations with Ganga backdrop.
+        </p>
+        <ul class="services-list">
+          <li>Destination Wedding Planning</li>
+          <li>Riverside Event Venues</li>
+          <li>Corporate Retreats</li>
+          <li>Pre-wedding Photography Events</li>
+          <li>Anniversary Dinner Celebrations</li>
+          <li>Birthday Parties & Getaways</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">75+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">96%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/bhagalpur.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Bihar Sharif -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-mosque"></i>
+        </div>
+        <h3>Bihar Sharif</h3>
+        <p>
+          Historic city with strong religious traditions. Expert in sacred
+          ceremonies and traditional festive celebrations.
+        </p>
+        <ul class="services-list">
+          <li>Wedding Ceremony Planning</li>
+          <li>Religious Event Management</li>
+          <li>Festival Celebrations</li>
+          <li>Traditional Decoration Services</li>
+          <li>Marriage Anniversary Events</li>
+          <li>Cultural Celebrations</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">60+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">98%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/bihar-sharif.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Madhubani -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3>Madhubani</h3>
+        <p>
+          Land of Madhubani art. Unique celebrations blending traditional
+          artistic heritage with modern event planning.
+        </p>
+        <ul class="services-list">
+          <li>Art-Themed Wedding Events</li>
+          <li>Cultural Celebration Planning</li>
+          <li>Festival Events & Decorations</li>
+          <li>Traditional Art Performances</li>
+          <li>Heritage Birthday Celebrations</li>
+          <li>Anniversary Events with Art Theme</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">50+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">95%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/madhubani.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Darbhanga -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-crown"></i>
+        </div>
+        <h3>Darbhanga</h3>
+        <p>
+          Maithili culture hub. Specialists in traditional Maithili weddings
+          and culturally authentic celebrations.
+        </p>
+        <ul class="services-list">
+          <li>Traditional Maithili Wedding Planning</li>
+          <li>Cultural Ceremony Management</li>
+          <li>Language-Specific Celebration Events</li>
+          <li>Anniversary & Marriage Events</li>
+          <li>Traditional Music & Dance Programs</li>
+          <li>Festival & Holiday Celebrations</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">70+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">97%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/darbhanga.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Arrah -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-store"></i>
+        </div>
+        <h3>Arrah</h3>
+        <p>
+          Growing commercial hub. Complete event planning services for
+          business events and personal celebrations.
+        </p>
+        <ul class="services-list">
+          <li>Corporate Event Planning</li>
+          <li>Business Conference Management</li>
+          <li>Wedding & Party Planning</li>
+          <li>Birthday & Anniversary Events</li>
+          <li>Award Ceremonies</li>
+          <li>Trade Show Coordination</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">65+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">96%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/arrah.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Motihari -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3>Motihari</h3>
+        <p>
+          Indigo land with agricultural heritage. Events celebrating nature,
+          sustainability, and regional traditions.
+        </p>
+        <ul class="services-list">
+          <li>Heritage Wedding Celebrations</li>
+          <li>Agricultural Community Events</li>
+          <li>Eco-Friendly Event Planning</li>
+          <li>Anniversary & Birthday Parties</li>
+          <li>Cultural Harvest Celebrations</li>
+          <li>Farm-Based Wedding Venues</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">55+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">95%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/motihari.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Purnia -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-ring"></i>
+        </div>
+        <h3>Purnia</h3>
+        <p>
+          Eastern Bihar's emerging hub. Growing portfolio of wedding and
+          celebration events in this dynamic city.
+        </p>
+        <ul class="services-list">
+          <li>Wedding Planning Services</li>
+          <li>Birthday Party Organization</li>
+          <li>Corporate Events</li>
+          <li>Anniversary Celebrations</li>
+          <li>Cultural Event Management</li>
+          <li>Venue Coordination</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">35+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">94%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/purnia.html" class="cta-button">Get In Touch</a>
+      </div>
+
+      <!-- Saharsa -->
+      <div class="location-card">
+        <div class="location-card-icon">
+          <i class="fas fa-om"></i>
+        </div>
+        <h3>Saharsa</h3>
+        <p>
+          Sacred spiritual city. Experts in religious ceremonies, pujas, and
+          traditions celebrating spiritual heritage.
+        </p>
+        <ul class="services-list">
+          <li>Religious Ceremony Planning</li>
+          <li>Temple Event Organization</li>
+          <li>Spiritual Wedding Ceremonies</li>
+          <li>Puja & Ritual Management</li>
+          <li>Religious Festival Celebrations</li>
+          <li>Marriage Blessing Ceremonies</li>
+        </ul>
+        <div class="location-card-footer">
+          <div class="location-stat">
+            <div class="location-stat-value">30+</div>
+            <div class="location-stat-label">Events</div>
+          </div>
+          <div class="location-stat">
+            <div class="location-stat-value">95%</div>
+            <div class="location-stat-label">Satisfied</div>
+          </div>
+        </div>
+        <a href="./locations-bihar/saharsa.html" class="cta-button">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section style="
+        background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+        margin-top: 80px;
+      ">
+    <div class="locations-container">
+      <h2 style="font-size: 2.8rem; margin-bottom: 20px; font-weight: 800">
+        Can't Find Your City?
+      </h2>
+      <p style="
+            font-size: 1.15rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+          ">
+        We're rapidly expanding across Bihar! Contact our team to inquire
+        about our event services in your specific location and discover how we
+        can make your celebration extraordinary.
+      </p>
+      <a href="contact.html" class="cta-button" style="
+            background: white;
+            color: #d19c4a;
+            border: 2px solid white;
+            font-size: 1.1rem;
+            padding: 14px 40px;
+          ">Get In Touch Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="locations.html">Locations</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="wedding-planning.html">Wedding Planning</a></li>
+          <li><a href="corporate-events.html">Corporate Events</a></li>
+          <li><a href="birthday-parties.html">Birthday Parties</a></li>
+          <li><a href="cultural-events.html">Cultural Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AR Events & Wedding Planner. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
