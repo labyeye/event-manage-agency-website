@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://arevents.in/</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main Service Pages -->
+  <url>
+    <loc>https://arevents.in/wedding-planning.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/corporate-events.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/birthday-parties.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/anniversary-celebrations.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/cultural-events.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/award-ceremonies.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/religious-ceremonies.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Key Pages -->
+  <url>
+    <loc>https://arevents.in/college-festivals.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/about.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/portfolio.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/testimonials.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/pricing.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Booking & Contact -->
+  <url>
+    <loc>https://arevents.in/book.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/contact.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Event Pages -->
+  <url>
+    <loc>https://arevents.in/event.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Locations Hub -->
+  <url>
+    <loc>https://arevents.in/locations.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Bihar Location Pages (11 cities) -->
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-muzaffarpur.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-patna.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-gaya.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-bhagalpur.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-bihar-sharif.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-madhubani.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-darbhanga.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-arrah.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-motihari.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-purnia.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/locations-bihar/event-management-in-saharsa.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://arevents.in/privacy-policy.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/terms-of-service.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://arevents.in/faq.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <priority>0.5</priority>
+  </url>
+</urlset>

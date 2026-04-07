@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birthday Decoration in Gaya | AR Events & Wedding Planner</title>
+  
+  <meta name="description"
+    content="Professional birthday decoration services in Gaya, Bihar. Complete event management and planning. Make your event unforgettable with AR Events." />
+  <meta name="keywords"
+    content="birthday decoration, birthday planner, event decoration, event management, Gaya" />
+  
+  <link rel="canonical" href="https://arevents.in/birthday-bihar/birthday-decoration-in-gaya.html" />
+  
+  <meta name="geo.region" content="IN-BR" />
+  <meta name="geo.placename" content="Gaya" />
+  
+  <link rel="icon" type="image/svg+xml" href="../assets/logo2.svg" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="stylesheet" href="../common.css" />
+  <link rel="stylesheet" href="../layout.css" />
+  <link rel="stylesheet" href="../components.css" />
+  <link rel="stylesheet" href="../pages.css" />
+  <link rel="stylesheet" href="../styles-premium.css" />
+  
+  <style>
+    .city-page {
+      background-color: var(--bg-dark);
+    }
+
+    .city-hero {
+      position: relative;
+      color: white;
+      padding: 150px 20px;
+      text-align: center;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .city-hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+      z-index: 0;
+    }
+
+    .city-hero-content {
+      max-width: 800px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .city-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      font-family: "Kenao", sans-serif;
+      color: white;
+    }
+
+    .city-hero-subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      opacity: 0.95;
+      font-family: "Playfair Display", serif;
+    }
+
+    .city-container {
+      margin: 0px auto;
+      padding: 0 20px;
+    }
+
+    .services-section {
+      margin: 60px 0;
+    }
+
+    .services-section h2 {
+      font-size: 2.5rem;
+      color: #d19c4a;
+      margin-bottom: 40px;
+      text-align: center;
+      font-family: "Kenao", sans-serif;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-item {
+      background: var(--bg-dark);
+      padding: 30px;
+      border-radius: 8px;
+      border-left: 5px solid #d19c4a;
+    }
+
+    .service-item h3 {
+      color: #d19c4a;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      font-family: "Kenao", sans-serif;
+    }
+
+    .service-item p {
+      color: #ffffff;
+      line-height: 1.6;
+      font-family: "Playfair Display", serif;
+    }
+
+    .about-city {
+      background: var(--bg-dark);
+      padding: 50px;
+      border-radius: 8px;
+      margin: 60px auto;
+      max-width: 1200px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(209, 155, 74, 0.329);
+    }
+
+    .about-city h2 {
+      color: #d19c4a;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      font-family: "Kenao", sans-serif;
+    }
+
+    .about-city p {
+      color: #ffffff;
+      font-weight: 200;
+      line-height: 1.8;
+      font-size: 1.35rem;
+      font-family: "Playfair Display", serif;
+      text-align: justify;
+    }
+
+    .faq-section {
+      margin: 80px auto;
+      box-shadow: 0 0px 12px 13px rgba(209, 155, 74, 0.329);
+      max-width: 1200px;
+      border-radius: 50px;
+    }
+
+    .faq-section h2 {
+      font-size: 2.5rem;
+      color: #d19c4a;
+      margin-bottom: 40px;
+      text-align: center;
+      font-family: "Kenao", sans-serif;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .faq-question {
+      padding: 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: #333;
+      background: #fafafa;
+      border-radius: 8px 8px 0 0;
+      border: none;
+      width: 100%;
+      text-align: left;
+    }
+
+    .faq-toggle {
+      font-size: 1.5rem;
+      color: #d19c4a;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      color: #666;
+      line-height: 1.7;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding: 20px;
+    }
+
+    .why-choose {
+      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+      color: white;
+      padding: 60px 40px;
+      border-radius: 8px;
+      margin: 60px 0;
+    }
+
+    .why-choose h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      font-family: "Kenao", sans-serif;
+    }
+
+    .why-choose-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .why-choose-list li {
+      padding: 15px 0;
+      padding-left: 40px;
+      position: relative;
+      font-size: 1.05rem;
+      font-family: "Playfair Display", serif;
+    }
+
+    .why-choose-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .contact-cta {
+      background: var(--bg-dark);
+      padding: 60px 40px;
+      text-align: center;
+      border-radius: 8px;
+      margin: 60px 0;
+    }
+
+    .contact-cta h2 {
+      color: #d19c4a;
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      font-family: "Kenao", sans-serif;
+    }
+
+    .contact-cta p {
+      color: #ffffff;
+      font-size: 1.3rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Playfair Display", serif;
+    }
+
+    .contact-cta-btn {
+      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+      color: white;
+      border: none;
+      padding: 15px 50px;
+      font-size: 1.1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-cta-btn:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .city-hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .city-hero {
+        padding: 80px 20px;
+        min-height: 300px;
+      }
+
+      .about-city {
+        padding: 30px 20px;
+      }
+
+      .about-city p {
+        color: #ffffff;
+        font-weight: 200;
+        line-height: 1.8;
+        font-size: 1rem;
+        font-family: "Playfair Display", serif;
+        text-align: justify;
+      }
+    }
+  </style>
+</head>
+
+<body class="birthday-page">
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo2.svg" alt="AR Events & Wedding Planner Logo" class="logo-img" />
+        </a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="../wedding-planning.html">Wedding Planning</a></li>
+            <li><a href="../anniversary-celebrations.html">Anniversary Celebrations</a></li>
+            <li><a href="../corporate-events.html">Corporate Events</a></li>
+            <li><a href="../birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="../cultural-events.html">Cultural Events</a></li>
+            <li><a href="../religious-ceremonies.html">Religious Ceremonies</a></li>
+          </ul>
+        </li>
+        <li><a href="../portfolio.html">Portfolio</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../locations.html">Locations</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li class="mobile-book-btn">
+          <a href="../book.html" class="book-nav-link">Book Now</a>
+        </li>
+      </ul>
+      <a href="../book.html" class="book-btn">Book Now</a>
+    </div>
+    <div class="hamburger-menu" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-background" style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/Birthday Party/birth1.webp');
+    "></div>
+    <div class="hero-content">
+      <h1 class="fade-in-up" style="font-family: 'Kenao', sans-serif;">Birthday Celebrations in Gaya</h1>
+      <p class="hero-tagline" style="font-family: 'Playfair Display', serif;">Making Every Birthday Moment Unforgettable</p>
+      <p class="hero-description" style="font-family: 'Playfair Display', serif;">Creative and fun birthday celebrations for all ages, from themed parties to milestone celebrations.</p>
+      <div class="hero-cta-group">
+        <a href="../book.html" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i> Book Now
+        </a>
+        <a href="#services" class="btn btn-white">
+          <i class="fas fa-arrow-down"></i> Explore Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="city-container">
+    <div class="about-city">
+      <h2>Birthday Decoration in Gaya</h2>
+      <p>
+        Gaya is a vibrant city in Bihar known for its cultural richness and grand celebrations. AR Events & Wedding Planner is your premier choice for professional birthday services in Gaya. With extensive experience in organizing unforgettable celebrations, we specialize in creating magical moments tailored to your vision.
+        <br><br>
+        Whether you're planning an intimate gathering or a grand celebration, our team handles every detail with precision and creativity. From elegant decoration concepts to flawless execution, we ensure your birthday in Gaya becomes a cherished memory. Our expertise spans all aspects of event planning including venue selection, decoration design, catering coordination, entertainment arrangement, and complete event management.
+        <br><br>
+        With 100+ successful events organized across Gaya and surrounding areas, AR Events & Wedding Planner has established itself as a trusted name in the event management industry. We pride ourselves on understanding your unique preferences and bringing them to life with artistic excellence and professional execution.
+      </p>
+    </div>
+
+    <section class="global-section" id="services">
+      <div class="text-center" style="margin-bottom: var(--space-4xl)">
+        <h2 class="fade-in-up" style="
+          color: var(--primary-gold);
+          font-family: 'Kenao', sans-serif;
+          text-shadow: 0 2px 15px rgba(209, 156, 74, 0.2);
+        ">Our Services</h2>
+        <p style="
+          color: rgba(255, 255, 255, 0.9);
+          font-family: 'Playfair Display', serif;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto;
+        ">
+          Comprehensive birthday services designed to exceed your expectations
+        </p>
+      </div>
+
+      <div class="services-grid" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <div class="service-item">
+          <h3><i class="fas fa-birthday-cake"></i> Birthday Party Services</h3>
+          <p>Themed birthday decorations, entertainment planning, and celebration management for all age groups.</p>
+        </div>
+        <div class="service-item">
+          <h3><i class="fas fa-palette"></i> Creative Design & Decoration</h3>
+          <p>Stunning, custom-designed decorations that reflect your personality and preferences. From traditional themes to contemporary concepts.</p>
+        </div>
+        <div class="service-item">
+          <h3><i class="fas fa-star"></i> Premium Vendors & Partnerships</h3>
+          <p>Access to the finest caterers, florists, photographers, and entertainment providers in Gaya.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="why-choose">
+      <h2>Why Choose AR Events & Wedding Planner?</h2>
+      <ul class="why-choose-list">
+        <li>Expert team with 10+ years of experience in birthday organization</li>
+        <li>Personalized service tailored to your specific requirements and budget</li>
+        <li>Attention to detail in every aspect of planning and execution</li>
+        <li>Access to premium venues and trusted vendors in Gaya</li>
+        <li>Seamless coordination from conception to celebration</li>
+        <li>100% satisfaction guarantee on all our services</li>
+      </ul>
+    </div>
+
+    <div class="faq-section">
+      <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What services are included in your birthday packages?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Our comprehensive packages include venue coordination, decoration design and setup, catering liaison, entertainment arrangement, guest management, and complete event day execution. We customize packages based on your specific needs and budget.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How far in advance should we book your services?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            We recommend booking 2-3 months in advance for better availability and planning. However, we can accommodate urgent bookings based on our current commitments. Contact us for availability.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can you work within a specific budget?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Absolutely! We work with various budgets and provide customized solutions. Our team can help you maximize impact within your budget constraints while maintaining quality and elegance.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you handle all logistics and coordination?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            Yes, we handle complete coordination including venue management, vendor coordination, timeline management, and day-of supervision to ensure everything runs smoothly.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-cta">
+      <h2>Ready to Celebrate in Gaya?</h2>
+      <p>Let us create an unforgettable birthday experience for you. Contact us today for a free consultation.</p>
+      <a href="../book.html" class="contact-cta-btn">Book a Consultation</a>
+    </div>
+  </div>
+    <section style="padding: var(--space-3xl) var(--space-lg)">
+      <div class="container">
+        <div
+          style="
+            background: linear-gradient(
+              135deg,
+              rgba(209, 156, 74, 0.1) 0%,
+              rgba(81, 81, 82, 0.05) 100%
+            );
+            border-radius: var(--radius-2xl);
+            padding: var(--space-3xl);
+            text-align: center;
+          "
+        >
+          <h2
+            style="margin-bottom: var(--space-lg); color: var(--primary-gold); font-family: 'Kenao', sans-serif;"
+          >
+            View Our Portfolio
+          </h2>
+          <p
+            style="
+              color: #ffffff;
+              margin-bottom: var(--space-2xl);
+              font-size: 1.1rem;
+              max-width: 600px;
+              margin-left: auto;
+              margin-right: auto;
+              font-family: 'Playfair Display', serif;
+            "
+          >
+            Explore our stunning collection of events and celebrations. See how we bring dreams to life.
+          </p>
+
+          <div
+            style="
+              display: flex;
+              gap: var(--space-md);
+              justify-content: center;
+              flex-wrap: wrap;
+            "
+          >
+            <a href="../portfolio.html" class="btn btn-primary"
+              >View Portfolio</a
+            >
+            <a
+              href="https://wa.me/919006532324"
+              class="btn btn-white"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer class="footer-premium">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-col brand-address">
+          <h3>AR Events & Wedding Planner</h3>
+          <p class="brand-tagline">Where Your Love Story Becomes a Grand Celebration</p>
+          <div class="address-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Muzaffarpur, Bihar, India</p>
+          </div>
+          <div class="address-item">
+            <i class="fas fa-phone"></i>
+            <p><a href="tel:+919006532324">+91-9006532324</a></p>
+          </div>
+          <div class="address-item">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto:areventsol@gmail.com">areventsol@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="../wedding-planning.html">Wedding Planning</a></li>
+            <li><a href="../anniversary-celebrations.html">Anniversary</a></li>
+            <li><a href="../birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="../corporate-events.html">Corporate Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/areventsweddingplanner" target="_blank" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/areventsweddingplanner" target="_blank" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@areventandweddingplanner33" target="_blank" class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-premium">
+        <p>&copy; 2024 AR Events & Wedding Planner. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="stickyCTA">
+    <a href="https://youtube.com/@areventandweddingplanner33" class="floating-btn youtube-btn" data-tooltip="Watch on YouTube" aria-label="Watch on YouTube">
+      <i class="fa-brands fa-youtube fa-bounce" style="color: #ffffff"></i>
+    </a>
+    <a href="https://wa.me/919006532324" target="_blank" class="sticky-btn sticky-btn-whatsapp" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919006532324" class="sticky-btn sticky-btn-call" title="Call">
+      <i class="fas fa-phone"></i>
+    </a>
+  </div>
+
+  <script src="../scripts-premium.js"></script>
+
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {{
+      button.addEventListener('click', () => {{
+        const item = button.parentElement;
+        item.classList.toggle('active');
+      }});
+    }});
+
+    // Ensure active nav link
+    const links = document.querySelectorAll(".nav-links a");
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    links.forEach((link) => {{
+      if (link.getAttribute("href").includes(currentPage) || (currentPage === "" && link.getAttribute("href") === "index.html")) {{
+        link.classList.add("active");
+      }}
+    }});
+  </script>
+
+  <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AR Events & Wedding Planner",
+      "image": "https://arevents.in/assets/og-image.jpg",
+      "description": "Professional {event_type} planning and decoration services in {location_name}, Bihar",
+      "address": {{
+        "@type": "PostalAddress",
+        "streetAddress": "{location_name}",
+        "addressLocality": "{location_name}",
+        "addressRegion": "Bihar",
+        "postalCode": "842001",
+        "addressCountry": "IN"
+      }},
+      "telephone": "+91-9006532324",
+      "email": "areventsol@gmail.com",
+      "url": "https://arevents.in",
+      "sameAs": [
+        "https://www.facebook.com/areventsweddingplanner",
+        "https://www.instagram.com/areventsweddingplanner",
+        "https://www.youtube.com/@areventandweddingplanner33"
+      ],
+      "priceRange": "$$",
+      "serviceArea": {{
+        "@type": "City",
+        "name": "{location_name}, Bihar"
+      }},
+      "openingHoursSpecification": {{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "22:00"
+      }}
+    }}
+  </script>
+</body>
+
+</html>
