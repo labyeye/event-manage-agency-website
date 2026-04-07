@@ -4,10 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maithili Weddings & Events in Darbhanga | AR Events</title>
+  <title>
+    Event Planning & Religious Ceremonies in Gaya, Bihar | AR Events
+  </title>
   <meta name="description"
-    content="Traditional Maithili wedding planning in Darbhanga. Cultural events celebrating Maithili heritage and traditions." />
-  <link rel="canonical" href="https://arevents.in/locations-bihar/darbhanga.html" />
+    content="Spiritual event planning and religious ceremony coordination in Gaya, Bihar. Traditional ceremonies, pilgrimage events, and cultural celebrations." />
+  <meta name="keywords"
+    content="Event planner Gaya, religious ceremonies Gaya, temple events, pilgrimage coordination" />
+  <link rel="canonical" href="https://arevents.in/locations-bihar/event-management-in-gaya.html" />
+  <meta name="geo.placename" content="Gaya" />
   <link rel="icon" type="image/svg+xml" href="../assets/logo2.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -30,6 +35,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
 
     .city-hero::before {
@@ -40,18 +46,25 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+      z-index: 0;
     }
 
     .city-hero-content {
+      max-width: 800px;
       position: relative;
       z-index: 2;
-      max-width: 800px;
     }
 
     .city-hero h1 {
       font-size: 3.5rem;
       font-weight: 800;
       margin-bottom: 20px;
+    }
+
+    .city-hero-subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      opacity: 0.95;
     }
 
     .city-container {
@@ -83,6 +96,17 @@
       border-left: 5px solid #d19c4a;
     }
 
+    .service-item h3 {
+      color: #333;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .service-item p {
+      color: #666;
+      line-height: 1.6;
+    }
+
     .about-city {
       background: var(--bg-dark);
       padding: 50px;
@@ -95,6 +119,7 @@
 
     .about-city h2 {
       color: #d19c4a;
+      font-size: 2.2rem;
       margin-bottom: 20px;
     }
 
@@ -115,9 +140,15 @@
     }
 
     .faq-section h2 {
+      font-size: 2.5rem;
       color: #d19c4a;
       margin-bottom: 40px;
       text-align: center;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
     }
 
     .faq-item {
@@ -125,6 +156,7 @@
       border: 1px solid #ddd;
       border-radius: 8px;
       margin-bottom: 20px;
+      transition: all 0.3s ease;
     }
 
     .faq-question {
@@ -132,13 +164,17 @@
       cursor: pointer;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       font-weight: 600;
       color: #333;
       background: #fafafa;
+      border-radius: 8px 8px 0 0;
     }
 
     .faq-toggle {
+      font-size: 1.5rem;
       color: #d19c4a;
+      transition: transform 0.3s ease;
     }
 
     .faq-item.active .faq-toggle {
@@ -146,8 +182,14 @@
     }
 
     .faq-answer {
+      padding: 0 20px;
       max-height: 0;
       overflow: hidden;
+      transition:
+        max-height 0.3s ease,
+        padding 0.3s ease;
+      color: #666;
+      line-height: 1.7;
     }
 
     .faq-item.active .faq-answer {
@@ -159,29 +201,41 @@
       background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
       color: white;
       padding: 60px 40px;
+      border-radius: 8px;
       margin: 60px 0;
+    }
+
+    .why-choose h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
     }
 
     .why-choose-list {
       list-style: none;
+      padding: 0;
     }
 
     .why-choose-list li {
-      padding: 10px 0;
+      padding: 15px 0;
       padding-left: 40px;
       position: relative;
+      font-size: 1.05rem;
     }
 
     .why-choose-list li:before {
       content: "✓";
       position: absolute;
       left: 0;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.5rem;
     }
 
     .contact-cta {
       background: var(--bg-dark);
       padding: 60px 40px;
       text-align: center;
+      border-radius: 8px;
       margin: 60px 0;
     }
 
@@ -204,12 +258,18 @@
     .contact-cta-btn {
       background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
       color: white;
-      padding: 15px 50px;
       border: none;
+      padding: 15px 50px;
+      font-size: 1.1rem;
       border-radius: 25px;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-cta-btn:hover {
+      transform: scale(1.05);
     }
 
     @media (max-width: 768px) {
@@ -224,10 +284,6 @@
 
       .about-city {
         padding: 30px 20px;
-      }
-
-      .contact-cta {
-        padding: 40px 20px;
       }
 
       .about-city p {
@@ -246,7 +302,8 @@
   <header class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <a href="../index.html"><img src="../assets/logo2.svg" alt="Logo" class="logo-img" /></a>
+        <a href="../index.html"><img src="../assets/logo2.svg" alt="AR Events & Wedding Planner Logo"
+            class="logo-img" /></a>
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="../index.html">Home</a></li>
@@ -254,6 +311,9 @@
           <a href="#">Services</a>
           <ul class="dropdown-menu">
             <li><a href="../wedding-planning.html">Wedding Planning</a></li>
+            <li>
+              <a href="../anniversary-celebrations.html">Anniversary Celebrations</a>
+            </li>
             <li><a href="../corporate-events.html">Corporate Events</a></li>
             <li><a href="../birthday-parties.html">Birthday Parties</a></li>
             <li><a href="../cultural-events.html">Cultural Events</a></li>
@@ -267,7 +327,9 @@
         <li><a href="../locations.html">Locations</a></li>
         <li><a href="../pricing.html">Pricing</a></li>
         <li><a href="../contact.html">Contact</a></li>
-        <li class="mobile-book-btn"><a href="../book.html">Book Now</a></li>
+        <li class="mobile-book-btn">
+          <a href="../book.html" class="book-nav-link">Book Now</a>
+        </li>
       </ul>
       <a href="../book.html" class="book-btn">Book Now</a>
     </div>
@@ -277,20 +339,21 @@
       <div class="bar"></div>
     </div>
   </header>
-  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
   <!-- Hero Section -->
-  <section class="hero-section" style="
-        background-image:
-          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-          url(&quot;../assets/images/Corporate/corporate4.webp&quot;);
-      ">
-    <div class="hero-background"></div>
+  <section class="hero-section">
+    <div class="hero-background" style="
+          background-image:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(&quot;../assets/images/Wedding/wedd16.webp&quot;);
+        "></div>
     <div class="hero-content">
-      <h1 class="fade-in-up">Maithili Weddings in Darbhanga</h1>
-      <p class="hero-tagline">Authentic Traditions</p>
+      <h1 class="fade-in-up">Spiritual Events in Gaya</h1>
+      <p class="hero-tagline">Sacred & Cultural Ceremonies</p>
       <p class="hero-description">
-        Authentic Maithili cultural celebration expertise with ritual
-        authenticity.
+        Expert coordination for sacred city events. Traditional ceremonies
+        with spiritual authenticity and priest coordination.
       </p>
       <div class="hero-cta-group">
         <a href="../book.html" class="btn btn-primary">
@@ -302,29 +365,32 @@
       </div>
     </div>
   </section>
+
   <div class="city-container">
     <div class="about-city">
-      <h2>Maithili Event Planning in Darbhanga</h2>
+      <h2>Religious & Cultural Event Planning in Gaya</h2>
       <p>
-        The cultural hub of the Maithil tradition, Darbhanga is famous for its
-        rich traditions, language, and events. AR Events & Wedding Planner is
-        the name to rely on for expert wedding decoration services in
-        Darbhanga that promise to bring out the best of Maithili traditions.
-        AR Events & Wedding Planner specializes in the areas of Maithili
-        wedding decoration in Darbhanga, traditional wedding decoration in
-        Darbhanga, cultural event decoration in Darbhanga, and birthday
-        decoration in Darbhanga, providing an array of services that make sure
-        the celebrations retain all elements of tradition but add some modern
-        elegance. Our services include those of haldi decoration in Darbhanga,
-        mehndi decoration in Darbhanga, reception stage decoration in
-        Darbhanga, among others. Our expert wedding planners in Darbhanga
-        provide complete wedding planning services that ensure all rituals and
-        ceremonies are conducted with due respect and grace. With 70+
-        successfully managed Maithili weddings and cultural events, AR Events
-        & Wedding Planner stands tall as one of the most popular names for
-        event management in Darbhanga.
+        One of the most sacred cities of India, Gaya has been known since
+        ancient times for its religious significance and cultural heritage.
+        Here at AR Events & Wedding Planner, we have unique packages for
+        wedding decoration in Gaya, which guarantee a spiritually fulfilling
+        and culturally significant event experience. Our expertise lies in
+        decorating religious events in Gaya, temple decoration in Gaya, puja
+        ceremonies in Gaya, as well as pilgrimage related decorations in Gaya,
+        ensuring that all events happen as per their spiritual significance.
+        From wedding decoration in Gaya, haldi decoration in Gaya, mehndi
+        decoration in Gaya to just simple but elegant stage decoration in
+        Gaya, our team can provide everything with perfection and spiritual
+        significance. If you are looking for a wedding planner in Gaya, then
+        AR Events & Wedding Planner is the right choice. We offer
+        comprehensive wedding decoration services ranging from mandap
+        decoration in Gaya, traditional wedding decoration in Gaya, balloon
+        decoration in Gaya and theme based event decorations in Gaya keeping
+        religious sentiments in mind at all times. We have been trusted for
+        managing more than 80+ spiritual and cultural events in Gaya so far.
       </p>
     </div>
+
     <!-- Services Section -->
     <section class="global-section" id="services">
       <div class="container">
@@ -334,14 +400,16 @@
                 font-family: &quot;Kenao&quot;, sans-serif;
                 font-size: 3.5rem;
                 letter-spacing: 0.05em;
+                text-transform: uppercase;
               ">
             Our Services
           </h2>
           <p class="fade-in-up" style="
-                color: #ffffff;
+                color: var(--secondary-gray);
                 font-family: &quot;Playfair Display&quot;, serif;
                 font-style: italic;
                 font-size: 1.2rem;
+                margin-top: 10px;
               ">
             Bespoke event planning tailored to your unique vision
           </p>
@@ -350,46 +418,44 @@
           <div class="service-grid-card fade-in-up stagger-1">
             <div class="service-grid-img">
               <img src="../assets/images/services/wedding.webp"
-                alt="Professional Indian wedding planning and ceremony decoration in Darbhanga Bihar" loading="lazy" />
+                alt="Professional Indian wedding planning and ceremony decoration in Gaya Bihar" loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Wedding Planning</h3>
               <p class="clamp-text">
-                Experience the best wedding decoration in Darbhanga with our
-                expert planning and coordination. We specialize in creating
-                memorable ceremonies with premium wedding decoration services
-                in Darbhanga. From venue selection to flawless execution, our
-                top wedding planners in Darbhanga ensure every detail reflects
-                your vision. Trust us for professional wedding decoration,
-                staging, and complete management services tailored to make
-                your dream wedding a magical reality in Darbhanga.
+                Experience the best wedding decoration in Gaya with our expert
+                planning and coordination. We specialize in creating memorable
+                ceremonies with premium wedding decoration services in Gaya.
+                From venue selection to flawless execution, our top wedding
+                planners in Gaya ensure every detail reflects your vision.
+                Trust us for professional wedding decoration, staging, and
+                complete management services tailored to make your dream
+                wedding a magical reality in Gaya.
               </p>
               <a href="../wedding-planning.html" class="btn-primary grid-btn">Discover More</a>
             </div>
           </div>
-
           <div class="service-grid-card fade-in-up stagger-2">
             <div class="service-grid-img">
               <img src="../assets/images/services/anniversary.webp"
-                alt="Professional anniversary celebration and romantic event decoration services in Darbhanga"
+                alt="Professional anniversary celebration and romantic event decoration services in Gaya"
                 loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Anniversary Celebrations</h3>
               <p class="clamp-text">
                 Celebrate your milestone moments with the best anniversary
-                decoration in Darbhanga. Our professional anniversary event
-                planners in Darbhanga create romantic and elegant celebrations
+                decoration in Gaya. Our professional anniversary event
+                planners in Gaya create romantic and elegant celebrations
                 tailored to your preferences. From intimate dinner setups to
                 grand anniversary parties, we offer complete anniversary
-                decoration services in Darbhanga with personalized themes and
+                decoration services in Gaya with personalized themes and
                 premium decor that honors your special bond and creates
                 lasting memories.
               </p>
               <a href="../anniversary-celebrations.html" class="btn-primary grid-btn">Discover More</a>
             </div>
           </div>
-
           <div class="service-grid-card fade-in-up stagger-3">
             <div class="service-grid-img">
               <img src="../assets/images/services/birthday.webp"
@@ -399,77 +465,73 @@
             <div class="service-grid-content">
               <h3>Birthday Parties</h3>
               <p class="clamp-text">
-                Find the best birthday decorator in Darbhanga to make your
+                Find the best birthday decorator in Gaya to make your
                 celebration unforgettable. Our professional birthday
-                decoration services in Darbhanga offer themed parties for kids
-                and adults with creative designs and quality execution. As
-                trusted birthday party planners in Darbhanga, we handle
-                complete arrangements from decoration to entertainment,
-                ensuring a fun-filled and personalized experience that your
-                guests will remember forever.
+                decoration services in Gaya offer themed parties for kids and
+                adults with creative designs and quality execution. As trusted
+                birthday party planners in Gaya, we handle complete
+                arrangements from decoration to entertainment, ensuring a
+                fun-filled and personalized experience that your guests will
+                remember forever.
               </p>
               <a href="../birthday-parties.html" class="btn-primary grid-btn">Discover More</a>
             </div>
           </div>
-
           <div class="service-grid-card fade-in-up stagger-4">
             <div class="service-grid-img">
               <img src="../assets/images/services/cultural.webp"
-                alt="Cultural event planning and organization services in Darbhanga Bihar" loading="lazy" />
+                alt="Cultural event planning and organization services in Gaya Bihar" loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Cultural Events</h3>
               <p class="clamp-text">
-                Experience the finest cultural event decoration in Darbhanga
-                with our specialized expertise. We are one of the leading
-                cultural event organizers in Darbhanga, offering complete
-                planning and decoration services that honor traditions with
-                modern elegance. Our cultural event coordinators in Darbhanga
-                create visually stunning celebrations that showcase the
-                richness of heritage while maintaining contemporary appeal for
-                all attendees.
+                Experience the finest cultural event decoration in Gaya with
+                our specialized expertise. We are one of the leading cultural
+                event organizers in Gaya, offering complete planning and
+                decoration services that honor traditions with modern
+                elegance. Our cultural event coordinators in Gaya create
+                visually stunning celebrations that showcase the richness of
+                heritage while maintaining contemporary appeal for all
+                attendees.
               </p>
               <a href="../cultural-events.html" class="btn-primary grid-btn">Discover More</a>
             </div>
           </div>
-
           <div class="service-grid-card fade-in-up stagger-5">
             <div class="service-grid-img">
               <img src="../assets/images/services/corporate.webp"
-                alt="Corporate event planning and organization services in Darbhanga Bihar" loading="lazy" />
+                alt="Corporate event planning and organization services in Gaya Bihar" loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Corporate Events</h3>
               <p class="clamp-text">
-                Professional corporate event planning in Darbhanga delivered
-                by expert corporate event organizers. We provide comprehensive
-                corporate event management services in Darbhanga including
-                venue coordination, decor, and logistics. As experienced
-                corporate event planners in Darbhanga, we ensure your business
-                events reflect professionalism and excellence, creating
-                impactful experiences that strengthen brand reputation and
-                client relationships.
+                Professional corporate event planning in Gaya delivered by
+                expert corporate event organizers. We provide comprehensive
+                corporate event management services in Gaya including venue
+                coordination, decor, and logistics. As experienced corporate
+                event planners in Gaya, we ensure your business events reflect
+                professionalism and excellence, creating impactful experiences
+                that strengthen brand reputation and client relationships.
               </p>
               <a href="../corporate-events.html" class="btn-primary grid-btn">Discover More</a>
             </div>
           </div>
-
           <div class="service-grid-card fade-in-up stagger-1">
             <div class="service-grid-img">
               <img src="../assets/images/services/religious.webp"
-                alt="Religious ceremony and puja decoration services in Darbhanga Bihar" loading="lazy" />
+                alt="Religious ceremony and puja decoration services in Gaya Bihar" loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Religious Ceremonies</h3>
               <p class="clamp-text">
-                Expert religious ceremony decoration in Darbhanga with deep
-                respect for traditions and spiritual values. Our religious
-                event planners in Darbhanga specialize in puja coordination,
-                temple ceremonies, and spiritual celebrations with
-                professional management. We provide complete religious
-                ceremony services in Darbhanga ensuring proper rituals,
-                beautiful decoration, and seamless coordination that honors
-                the sanctity and significance of your sacred occasions.
+                Expert religious ceremony decoration in Gaya with deep respect
+                for traditions and spiritual values. Our religious event
+                planners in Gaya specialize in puja coordination, temple
+                ceremonies, and spiritual celebrations with professional
+                management. We provide complete religious ceremony services in
+                Gaya ensuring proper rituals, beautiful decoration, and
+                seamless coordination that honors the sanctity and
+                significance of your sacred occasions.
               </p>
               <a href="../religious-ceremonies.html" class="btn-primary grid-btn">Discover More</a>
             </div>
@@ -477,6 +539,7 @@
         </div>
       </div>
     </section>
+
     <!-- Why Choose Section -->
     <section class="why-choose-section" style="padding: var(--space-3xl) var(--space-lg)">
       <div class="container">
@@ -550,158 +613,128 @@
         </div>
       </div>
     </section>
+
     <div class="faq-section">
-      <h2>FAQs</h2>
+      <h2>Frequently Asked Questions - Gaya Events</h2>
       <div class="faq-container">
         <div class="faq-item">
           <div class="faq-question">
-            <span>Can you coordinate authentic Maithili wedding rituals?</span><span class="faq-toggle">+</span>
+            <span>Can you coordinate events at sacred temples in Gaya?</span><span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
             <p>
-              Yes — we work with experienced priests and Maithili ceremony
-              specialists to ensure rituals are performed correctly and
-              respectfully.
+              Yes, we have established relationships with major temples in
+              Gaya. We coordinate temple events, festivals, and ceremonies
+              with proper religious protocols and priest coordination. Our
+              team handles all permissions and arrangements required by temple
+              authorities.
             </p>
           </div>
         </div>
-
         <div class="faq-item">
           <div class="faq-question">
-            <span>Can you arrange traditional Maithili performers and
-              artists?</span><span class="faq-toggle">+</span>
+            <span>Do you handle large pilgrimage group events?</span><span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
             <p>
-              Absolutely. We source local Maithili artists, folk performers,
-              and musicians to bring authentic cultural elements to your
-              celebration.
+              Absolutely. We organize pilgrimages accommodating groups of any
+              size. We manage accommodations, meals, transportation,
+              guidances, and spiritual coordination to ensure a meaningful
+              pilgrimage experience.
             </p>
           </div>
         </div>
-
         <div class="faq-item">
           <div class="faq-question">
-            <span>Do you manage outdoor or temple-based ceremonies?</span><span class="faq-toggle">+</span>
+            <span>How far in advance should religious events be booked?</span><span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
             <p>
-              Yes. We arrange outdoor or temple ceremonies in Darbhanga with
-              proper permissions, weather contingencies, and full logistics
-              support.
-            </p>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>How can I get a quote for my Maithili wedding?</span><span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Contact us through the booking form or phone. We provide a
-              consultation and a detailed proposal including timelines and
-              cost estimates.
+              For major ceremonies and temple events, we recommend booking 2-3
+              months in advance to coordinate with priests and secure temple
+              timings. Smaller puja events can often be arranged with 2-4
+              weeks notice, depending on priest availability and auspicious
+              dates.
             </p>
           </div>
         </div>
       </div>
     </div>
+
     <div class="contact-cta">
-      <h2>Plan Your Maithili Wedding</h2>
-      <p>Create an authentic celebration of Maithili traditions.</p>
-      <a href="../contact.html?city=darbhanga" class="contact-cta-btn">Book Now</a>
+      <h2>Plan Your Spiritual Event in Gaya</h2>
+      <p>
+        Let us coordinate your religious ceremony with utmost reverence and
+        authenticity. Contact us for consultation on spiritual events.
+      </p>
+      <a href="../contact.html?city=gaya" class="contact-cta-btn">Schedule Consultation</a>
     </div>
   </div>
-  <footer class="footer-premium">
-    <div class="container">
-      <div class="footer-main-grid">
-        <div class="footer-col brand-address">
-          <h3>AR Events & Wedding Planner</h3>
-          <p class="brand-tagline">
-            Where Your Love Story Becomes a Grand Celebration
-          </p>
 
-          <div class="address-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Muzaffarpur, Bihar, India</p>
-          </div>
-
-          <div class="footer-social-icons">
-            <a href="https://www.facebook.com/arevents" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/arevents" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/918873268474" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
-                class="fab fa-whatsapp"></i></a>
-            <a href="https://youtube.com/@areventandweddingplanner33" target="_blank" rel="noopener noreferrer"
-              aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul class="footer-links">
-            <li><a href="wedding-planning.html">Wedding Planning</a></li>
-            <li>
-              <a href="anniversary-celebrations.html">Anniversary Celebrations</a>
-            </li>
-            <li><a href="corporate-events.html">Corporate Events</a></li>
-            <li><a href="birthday-parties.html">Birthday Parties</a></li>
-            <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
-            <li><a href="cultural-events.html">Cultural Events</a></li>
-            <li>
-              <a href="religious-ceremonies.html">Religious Ceremonies</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="locations.html">Locations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col touch-section">
-          <h4>Get In Touch</h4>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114856.28434771508!2d85.31174624792613!3d26.12056143521361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10e60803ee71%3A0xc00f1262d3a3d5e6!2sMuzaffarpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712192000000!5m2!1sen!2sin"
-              width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy">
-            </iframe>
-          </div>
-          <div class="contact-details">
-            <p><i class="fas fa-envelope"></i> areventsol@gmail.com</p>
-            <p><i class="fas fa-phone-alt"></i> +91-9006532324</p>
-          </div>
-        </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../pricing.html">Pricing</a></li>
+          <li><a href="../locations.html">Locations</a></li>
+        </ul>
       </div>
-
-      <div class="footer-bottom-premium">
-        <p>
-          &copy; 2026 AR Events & Wedding Planner. All rights reserved.
-          Developed by
-          <a href="https://www.pixelatenest.com" target="_blank">Pixelate Nest</a>
-        </p>
-        <div class="legal-links">
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="terms-of-service.html">Terms of Service</a>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="../wedding-planning.html">Wedding Planning</a></li>
+          <li><a href="../corporate-events.html">Corporate Events</a></li>
+          <li><a href="../birthday-parties.html">Birthday Parties</a></li>
+          <li><a href="../cultural-events.html">Cultural Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="../terms-of-service.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a><a
+            href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a><a
+            href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
         </div>
       </div>
     </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AR Events & Wedding Planner. All rights reserved.</p>
+    </div>
   </footer>
+
   <script src="../scripts.js"></script>
   <script>
-    document.querySelectorAll(".faq-question").forEach((b) => {
-      b.addEventListener("click", () => {
-        b.parentElement.classList.toggle("active");
+    document.querySelectorAll(".faq-question").forEach((button) => {
+      button.addEventListener("click", () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle("active");
       });
     });
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+    const navLinks = document.getElementById("navLinks");
+    if (hamburger) {
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileMenuOverlay.classList.toggle("active");
+      });
+      mobileMenuOverlay.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        mobileMenuOverlay.classList.remove("active");
+      });
+    }
   </script>
 </body>
 

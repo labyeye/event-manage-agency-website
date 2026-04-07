@@ -4,18 +4,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Art & Cultural Events in Madhubani | AR Events</title>
+  <title>
+    Event Planning & Wedding Services in Muzaffarpur, Bihar | AR Events
+  </title>
   <meta name="description"
-    content="Art-themed events and cultural celebrations in Madhubani. Events celebrating Madhubani painting heritage and artistic traditions." />
-  <link rel="canonical" href="https://arevents.in/locations-bihar/madhubani.html" />
+    content="Premium event planning and wedding services in Muzaffarpur, Bihar. AR Events offers wedding decoration, corporate events, birthdays, and cultural celebrations." />
+  <meta name="keywords"
+    content="Event planner Muzaffarpur, wedding planner Muzaffarpur, event management Muzaffarpur, corporate events Muzaffarpur" />
+  <meta name="author" content="AR event and wedding planner" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://arevents.in/locations-bihar/event-management-in-muzaffarpur.html" />
+
+  <meta name="geo.region" content="IN-BR" />
+  <meta name="geo.placename" content="Muzaffarpur" />
+  <meta name="geo.position" content="26.1205614;85.3861014" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Event Planning in Muzaffarpur | AR Events" />
+  <meta property="og:description" content="Premium event planning and wedding services in Muzaffarpur, Bihar" />
+  <meta property="og:image" content="https://arevents.in/assets/logo2.svg" />
+  <meta property="og:locale" content="en_IN" />
+
   <link rel="icon" type="image/svg+xml" href="../assets/logo2.svg" />
+  <link rel="shortcut icon" href="../assets/logo2.svg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="../common.css" />
   <link rel="stylesheet" href="../layout.css" />
   <link rel="stylesheet" href="../components.css" />
   <link rel="stylesheet" href="../pages.css" />
   <link rel="stylesheet" href="../styles-premium.css" />
+
   <style>
     .city-page {
       background-color: var(--bg-dark);
@@ -30,6 +53,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
 
     .city-hero::before {
@@ -40,18 +64,25 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+      z-index: 0;
     }
 
     .city-hero-content {
+      max-width: 800px;
       position: relative;
       z-index: 2;
-      max-width: 800px;
     }
 
     .city-hero h1 {
       font-size: 3.5rem;
       font-weight: 800;
       margin-bottom: 20px;
+    }
+
+    .city-hero-subtitle {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      opacity: 0.95;
     }
 
     .city-container {
@@ -86,6 +117,12 @@
     .service-item h3 {
       color: #333;
       margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .service-item p {
+      color: #666;
+      line-height: 1.6;
     }
 
     .about-city {
@@ -120,9 +157,14 @@
     }
 
     .faq-section h2 {
+      font-size: 2.5rem;
       color: #d19c4a;
       margin-bottom: 40px;
       text-align: center;
+    }
+
+    .faq-container {
+      margin: 0 auto;
     }
 
     .faq-item {
@@ -130,6 +172,11 @@
       border: 1px solid #ddd;
       border-radius: 8px;
       margin-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: 0 4px 12px rgba(209, 156, 74, 0.15);
     }
 
     .faq-question {
@@ -137,13 +184,21 @@
       cursor: pointer;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       font-weight: 600;
       color: #333;
       background: #fafafa;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .faq-question:hover {
+      background: #f0f0f0;
     }
 
     .faq-toggle {
+      font-size: 1.5rem;
       color: #d19c4a;
+      transition: transform 0.3s ease;
     }
 
     .faq-item.active .faq-toggle {
@@ -151,8 +206,14 @@
     }
 
     .faq-answer {
+      padding: 0 20px;
       max-height: 0;
       overflow: hidden;
+      transition:
+        max-height 0.3s ease,
+        padding 0.3s ease;
+      color: #666;
+      line-height: 1.7;
     }
 
     .faq-item.active .faq-answer {
@@ -164,29 +225,41 @@
       background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
       color: white;
       padding: 60px 40px;
+      border-radius: 8px;
       margin: 60px 0;
+    }
+
+    .why-choose h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
     }
 
     .why-choose-list {
       list-style: none;
+      padding: 0;
     }
 
     .why-choose-list li {
-      padding: 10px 0;
+      padding: 15px 0;
       padding-left: 40px;
       position: relative;
+      font-size: 1.05rem;
     }
 
     .why-choose-list li:before {
       content: "✓";
       position: absolute;
       left: 0;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.5rem;
     }
 
     .contact-cta {
       background: var(--bg-dark);
       padding: 60px 40px;
       text-align: center;
+      border-radius: 8px;
       margin: 60px 0;
     }
 
@@ -209,12 +282,18 @@
     .contact-cta-btn {
       background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
       color: white;
-      padding: 15px 50px;
       border: none;
+      padding: 15px 50px;
+      font-size: 1.1rem;
       border-radius: 25px;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-cta-btn:hover {
+      transform: scale(1.05);
     }
 
     @media (max-width: 768px) {
@@ -248,17 +327,24 @@
 </head>
 
 <body class="city-page">
+  <!-- Navbar -->
   <header class="navbar">
     <div class="nav-container">
       <div class="logo">
-        <a href="../index.html"><img src="../assets/logo2.svg" alt="Logo" class="logo-img" /></a>
+        <a href="../index.html">
+          <img src="../assets/logo2.svg" alt="AR Events & Wedding Planner Logo" class="logo-img" />
+        </a>
       </div>
+
       <ul class="nav-links" id="navLinks">
         <li><a href="../index.html">Home</a></li>
         <li class="dropdown">
           <a href="#">Services</a>
           <ul class="dropdown-menu">
             <li><a href="../wedding-planning.html">Wedding Planning</a></li>
+            <li>
+              <a href="../anniversary-celebrations.html">Anniversary Celebrations</a>
+            </li>
             <li><a href="../corporate-events.html">Corporate Events</a></li>
             <li><a href="../birthday-parties.html">Birthday Parties</a></li>
             <li><a href="../cultural-events.html">Cultural Events</a></li>
@@ -272,30 +358,37 @@
         <li><a href="../locations.html">Locations</a></li>
         <li><a href="../pricing.html">Pricing</a></li>
         <li><a href="../contact.html">Contact</a></li>
-        <li class="mobile-book-btn"><a href="../book.html">Book Now</a></li>
+        <li class="mobile-book-btn">
+          <a href="../book.html" class="book-nav-link">Book Now</a>
+        </li>
       </ul>
+
       <a href="../book.html" class="book-btn">Book Now</a>
     </div>
+
     <div class="hamburger-menu" id="hamburger">
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
     </div>
   </header>
-  <div class="mobile-menu-overlay"></div>
+
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
   <!-- Hero Section -->
   <section class="hero-section">
     <div class="hero-background" style="
           background-image:
             linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url(&quot;../assets/images/Cultural/cult4.webp&quot;);
+            url(&quot;../assets/images/Wedding/wedd15.webp&quot;);
         "></div>
     <div class="hero-content">
-      <h1 class="fade-in-up">Art & Cultural Events in Madhubani</h1>
-      <p class="hero-tagline">Artistic Celebrations</p>
+      <h1 class="fade-in-up">Event Planning in Muzaffarpur</h1>
+      <p class="hero-tagline">Premium Celebrations for Every Occasion</p>
       <p class="hero-description">
-        Events celebrating Madhubani painting heritage with artistic
-        integration.
+        Your trusted partner for unforgettable events. From intimate
+        gatherings to grand celebrations, we blend traditional values with
+        contemporary elegance.
       </p>
       <div class="hero-cta-group">
         <a href="../book.html" class="btn btn-primary">
@@ -307,30 +400,35 @@
       </div>
     </div>
   </section>
+
+  <!-- Main Content -->
   <div class="city-container">
+    <!-- About City -->
     <div class="about-city">
-      <h2>Art-Themed Events in Madhubani</h2>
+      <h2>About Event Planning in Muzaffarpur</h2>
       <p>
-        Renowned throughout the world as one of the most famous cities in
-        terms of magnificent paintings and rich heritage in arts, Madhubani
-        has been associated with celebration of creativity and tradition since
-        time immemorial. AR Events & Wedding Planner offers you the best
-        services in wedding decorations for the bride and groom in their
-        weddings held in Madhubani. We have the ability and expertise to
-        provide theme based wedding decoration, Madhubani art wedding
-        decoration, birthday decoration, and cultural event decoration in
-        Madhubani. Our designs and themes revolve around the culture of the
-        city and are specifically customized according to the needs and
-        requirements of our customers. AR Events & Wedding Planner also acts
-        as the perfect creative wedding planner and provider of various
-        services such as mandap decoration, wedding stage decoration, balloon
-        decoration, and art themed event decoration in Madhubani. We ensure to
-        blend in all the aspects of traditional art into the modern
-        celebrations of our clients. Having completed more than 50 art themed
-        events in Madhubani successfully, AR Events & Wedding Planner is a
-        name that stands out among other event managers in Madhubani.
+        The center of North Bihar, Muzaffarpur, is popular for hosting
+        lavished functions and a culturally enriched city. At AR Events &
+        Wedding Planner, we specialize in providing wedding decoration service
+        in Muzaffarpur and give excellent event management services tailored
+        for all occasions. We arrange exclusive themes and decorations for any
+        type of event including birthday decoration in Muzaffarpur,
+        anniversary decoration in Muzaffarpur, engagement decoration in
+        Muzaffarpur and much more. Our dedicated team makes sure that the
+        haldi decoration in Muzaffarpur, mehndi decoration in Muzaffarpur, and
+        reception stage decoration in Muzaffarpur meets your demands. We are
+        amongst the best wedding decorators in Muzaffarpur providing total
+        facilities in wedding decorations of any type in Muzaffarpur, which
+        consists of wedding stage decoration in Muzaffarpur, Mandap decoration
+        in Muzaffarpur, Balloon decoration in Muzaffarpur, and Theme based
+        decoration in Muzaffarpur. Our decorators ensure to consider all
+        details and decorate your event with luxury themes exclusively
+        designed for different occasions. You can rely on us for all the
+        decoration needs whether it comes to celebrating a function at home or
+        venue decoration.
       </p>
     </div>
+
     <!-- Services Section -->
     <section class="global-section" id="services">
       <div class="container">
@@ -356,19 +454,20 @@
           <div class="service-grid-card fade-in-up stagger-1">
             <div class="service-grid-img">
               <img src="../assets/images/services/wedding.webp"
-                alt="Professional Indian wedding planning and ceremony decoration in Madhubani Bihar" loading="lazy" />
+                alt="Professional Indian wedding planning and ceremony decoration in Muzaffarpur Bihar"
+                loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Wedding Planning</h3>
               <p class="clamp-text">
-                Experience the best wedding decoration in Madhubani with our
+                Experience the best wedding decoration in Muzaffarpur with our
                 expert planning and coordination. We specialize in creating
                 memorable ceremonies with premium wedding decoration services
-                in Madhubani. From venue selection to flawless execution, our
-                top wedding planners in Madhubani ensure every detail reflects
-                your vision. Trust us for professional wedding decoration,
-                staging, and complete management services tailored to make
-                your dream wedding a magical reality in Madhubani.
+                in Muzaffarpur. From venue selection to flawless execution,
+                our top wedding planners in Muzaffarpur ensure every detail
+                reflects your vision. Trust us for professional wedding
+                decoration, staging, and complete management services tailored
+                to make your dream wedding a magical reality in Muzaffarpur.
               </p>
               <a href="../wedding-planning.html" class="btn-primary grid-btn">Discover More</a>
             </div>
@@ -377,20 +476,20 @@
           <div class="service-grid-card fade-in-up stagger-2">
             <div class="service-grid-img">
               <img src="../assets/images/services/anniversary.webp"
-                alt="Professional anniversary celebration and romantic event decoration services in Madhubani"
+                alt="Professional anniversary celebration and romantic event decoration services in Muzaffarpur"
                 loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Anniversary Celebrations</h3>
               <p class="clamp-text">
                 Celebrate your milestone moments with the best anniversary
-                decoration in Madhubani. Our professional anniversary event
-                planners in Madhubani create romantic and elegant celebrations
-                tailored to your preferences. From intimate dinner setups to
-                grand anniversary parties, we offer complete anniversary
-                decoration services in Madhubani with personalized themes and
-                premium decor that honors your special bond and creates
-                lasting memories.
+                decoration in Muzaffarpur. Our professional anniversary event
+                planners in Muzaffarpur create romantic and elegant
+                celebrations tailored to your preferences. From intimate
+                dinner setups to grand anniversary parties, we offer complete
+                anniversary decoration services in Muzaffarpur with
+                personalized themes and premium decor that honors your special
+                bond and creates lasting memories.
               </p>
               <a href="../anniversary-celebrations.html" class="btn-primary grid-btn">Discover More</a>
             </div>
@@ -405,11 +504,11 @@
             <div class="service-grid-content">
               <h3>Birthday Parties</h3>
               <p class="clamp-text">
-                Find the best birthday decorator in Madhubani to make your
+                Find the best birthday decorator in Muzaffarpur to make your
                 celebration unforgettable. Our professional birthday
-                decoration services in Madhubani offer themed parties for kids
-                and adults with creative designs and quality execution. As
-                trusted birthday party planners in Madhubani, we handle
+                decoration services in Muzaffarpur offer themed parties for
+                kids and adults with creative designs and quality execution.
+                As trusted birthday party planners in Muzaffarpur, we handle
                 complete arrangements from decoration to entertainment,
                 ensuring a fun-filled and personalized experience that your
                 guests will remember forever.
@@ -421,19 +520,19 @@
           <div class="service-grid-card fade-in-up stagger-4">
             <div class="service-grid-img">
               <img src="../assets/images/services/cultural.webp"
-                alt="Cultural event planning and organization services in Madhubani Bihar" loading="lazy" />
+                alt="Cultural event planning and organization services in Muzaffarpur Bihar" loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Cultural Events</h3>
               <p class="clamp-text">
-                Experience the finest cultural event decoration in Madhubani
+                Experience the finest cultural event decoration in Muzaffarpur
                 with our specialized expertise. We are one of the leading
-                cultural event organizers in Madhubani, offering complete
+                cultural event organizers in Muzaffarpur, offering complete
                 planning and decoration services that honor traditions with
-                modern elegance. Our cultural event coordinators in Madhubani
-                create visually stunning celebrations that showcase the
-                richness of heritage while maintaining contemporary appeal for
-                all attendees.
+                modern elegance. Our cultural event coordinators in
+                Muzaffarpur create visually stunning celebrations that
+                showcase the richness of heritage while maintaining
+                contemporary appeal for all attendees.
               </p>
               <a href="../cultural-events.html" class="btn-primary grid-btn">Discover More</a>
             </div>
@@ -442,19 +541,19 @@
           <div class="service-grid-card fade-in-up stagger-5">
             <div class="service-grid-img">
               <img src="../assets/images/services/corporate.webp"
-                alt="Corporate event planning and organization services in Madhubani Bihar" loading="lazy" />
+                alt="Corporate event planning and organization services in Muzaffarpur Bihar" loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Corporate Events</h3>
               <p class="clamp-text">
-                Professional corporate event planning in Madhubani delivered
+                Professional corporate event planning in Muzaffarpur delivered
                 by expert corporate event organizers. We provide comprehensive
-                corporate event management services in Madhubani including
+                corporate event management services in Muzaffarpur including
                 venue coordination, decor, and logistics. As experienced
-                corporate event planners in Madhubani, we ensure your business
-                events reflect professionalism and excellence, creating
-                impactful experiences that strengthen brand reputation and
-                client relationships.
+                corporate event planners in Muzaffarpur, we ensure your
+                business events reflect professionalism and excellence,
+                creating impactful experiences that strengthen brand
+                reputation and client relationships.
               </p>
               <a href="../corporate-events.html" class="btn-primary grid-btn">Discover More</a>
             </div>
@@ -463,17 +562,17 @@
           <div class="service-grid-card fade-in-up stagger-1">
             <div class="service-grid-img">
               <img src="../assets/images/services/religious.webp"
-                alt="Religious ceremony and puja decoration services in Madhubani Bihar" loading="lazy" />
+                alt="Religious ceremony and puja decoration services in Muzaffarpur Bihar" loading="lazy" />
             </div>
             <div class="service-grid-content">
               <h3>Religious Ceremonies</h3>
               <p class="clamp-text">
-                Expert religious ceremony decoration in Madhubani with deep
+                Expert religious ceremony decoration in Muzaffarpur with deep
                 respect for traditions and spiritual values. Our religious
-                event planners in Madhubani specialize in puja coordination,
+                event planners in Muzaffarpur specialize in puja coordination,
                 temple ceremonies, and spiritual celebrations with
                 professional management. We provide complete religious
-                ceremony services in Madhubani ensuring proper rituals,
+                ceremony services in Muzaffarpur ensuring proper rituals,
                 beautiful decoration, and seamless coordination that honors
                 the sanctity and significance of your sacred occasions.
               </p>
@@ -483,6 +582,7 @@
         </div>
       </div>
     </section>
+
     <!-- Why Choose Section -->
     <section class="why-choose-section" style="padding: var(--space-3xl) var(--space-lg)">
       <div class="container">
@@ -556,109 +656,233 @@
         </div>
       </div>
     </section>
+
+    <!-- FAQ Section -->
     <div class="faq-section">
-      <h2>FAQs</h2>
+      <h2>Frequently Asked Questions</h2>
       <div class="faq-container">
         <div class="faq-item">
           <div class="faq-question">
-            <span>Can we feature local artists in our event?</span><span class="faq-toggle">+</span>
+            <span>How far in advance should we book your services for events in
+              Muzaffarpur?</span>
+            <span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
             <p>
-              Absolutely! We have direct partnerships with Madhubani's master
-              artists and can arrange live art demonstrations, performances,
-              and art installations for your events.
+              For weddings and large events, we recommend booking 6-8 months
+              in advance to secure the best venues and vendors. For smaller
+              celebrations and corporate events, a 4-6 week notice is usually
+              sufficient. However, we can accommodate last-minute bookings
+              based on availability.
             </p>
           </div>
         </div>
+
         <div class="faq-item">
           <div class="faq-question">
-            <span>How can we incorporate Madhubani art into our wedding?</span><span class="faq-toggle">+</span>
+            <span>Do you provide decoration for both indoor and outdoor venues in
+              Muzaffarpur?</span>
+            <span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
             <p>
-              We offer multiple options: commissioned art installations,
-              traditional art backdrops, artist performances, art-themed
-              invitations, and trained artist coordination throughout your
-              celebration.
+              Yes, we handle decoration for both indoor and outdoor venues
+              across Muzaffarpur. Whether it's a banquet hall, farmhouse,
+              garden, or traditional pandal, our experienced team creates
+              stunning setups that match your theme and vision perfectly.
             </p>
           </div>
         </div>
+
         <div class="faq-item">
           <div class="faq-question">
-            <span>What is Madhubani painting and how does it enhance
-              events?</span><span class="faq-toggle">+</span>
+            <span>Can we customize the service packages according to our
+              budget?</span>
+            <span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
             <p>
-              Madhubani painting is a famous folk art form with intricate
-              designs, vibrant colors, and deep cultural significance. We
-              incorporate it through decorative backdrops, wall paintings,
-              table designs, and live artist demonstrations that add authentic
-              cultural elegance to your celebration.
+              Absolutely! Every event is unique, and so are our customized
+              packages. Whether you're looking for budget-friendly options or
+              premium services, we can tailor our offerings to match your
+              specific requirements and financial constraints without
+              compromising on quality.
             </p>
           </div>
         </div>
+
         <div class="faq-item">
           <div class="faq-question">
-            <span>Can you provide Madhubani art training or workshops at
-              events?</span><span class="faq-toggle">+</span>
+            <span>Do you provide on-the-day coordination?</span>
+            <span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
             <p>
-              Yes! We arrange interactive Madhubani art sessions where guest
-              can learn basic techniques from expert artists. This adds a
-              unique, engaging activity that celebrates the region's artistic
-              heritage while creating memorable experiences for your guests.
+              Yes, comprehensive on-the-day coordination is included in our
+              full-service planning packages. Our dedicated coordinators will
+              be present throughout your event to manage vendors, oversee the
+              timeline, handle any issues, and ensure everything runs smoothly
+              while you enjoy your celebration.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What areas of Muzaffarpur do you serve?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We serve all areas of Muzaffarpur and surrounding regions. Our
+              extensive network of venues and vendor partners covers the
+              entire city, including popular areas and residential
+              communities. Just let us know your preferred location, and we'll
+              arrange everything accordingly.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What payment options do you offer?</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              We offer flexible payment options including cash, bank
+              transfers, online payments, and installment plans. A small
+              advance is required to confirm your booking, with the remaining
+              balance due before the event. We ensure transparent pricing with
+              a detailed quotation provided upfront.
             </p>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Contact CTA -->
     <div class="contact-cta">
-      <h2>Plan Your Art-Themed Event</h2>
-      <p>Create a celebration celebrating Madhubani's artistic traditions.</p>
-      <a href="../contact.html?city=madhubani" class="contact-cta-btn">Book Now</a>
+      <h2>Ready to Plan Your Event in Muzaffarpur?</h2>
+      <p>
+        Let's create unforgettable memories together. Contact our team today
+        to discuss your event ideas, get a free consultation, and receive a
+        customized quote.
+      </p>
+      <a href="../contact.html?city=muzaffarpur" class="contact-cta-btn">Book a Consultation</a>
     </div>
   </div>
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Links</h4>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../portfolio.html">Portfolio</a></li>
-          <li><a href="../locations.html">Locations</a></li>
-        </ul>
+
+  <!-- Footer -->
+  <footer class="footer-premium">
+    <div class="container">
+      <div class="footer-main-grid">
+        <div class="footer-col brand-address">
+          <h3>AR Events & Wedding Planner</h3>
+          <p class="brand-tagline">
+            Where Your Love Story Becomes a Grand Celebration
+          </p>
+
+          <div class="address-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Muzaffarpur, Bihar, India</p>
+          </div>
+
+          <div class="footer-social-icons">
+            <a href="https://www.facebook.com/arevents" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/arevents" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918873268474" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://youtube.com/@areventandweddingplanner33" target="_blank" rel="noopener noreferrer"
+              aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="wedding-planning.html">Wedding Planning</a></li>
+            <li>
+              <a href="anniversary-celebrations.html">Anniversary Celebrations</a>
+            </li>
+            <li><a href="corporate-events.html">Corporate Events</a></li>
+            <li><a href="birthday-parties.html">Birthday Parties</a></li>
+            <li><a href="award-ceremonies.html">Award Ceremonies</a></li>
+            <li><a href="cultural-events.html">Cultural Events</a></li>
+            <li>
+              <a href="religious-ceremonies.html">Religious Ceremonies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col touch-section">
+          <h4>Get In Touch</h4>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114856.28434771508!2d85.31174624792613!3d26.12056143521361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10e60803ee71%3A0xc00f1262d3a3d5e6!2sMuzaffarpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712192000000!5m2!1sen!2sin"
+              width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+          <div class="contact-details">
+            <p><i class="fas fa-envelope"></i> areventsol@gmail.com</p>
+            <p><i class="fas fa-phone-alt"></i> +91-9006532324</p>
+          </div>
+        </div>
       </div>
-      <div class="footer-section">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="../wedding-planning.html">Weddings</a></li>
-          <li><a href="../corporate-events.html">Corporate</a></li>
-          <li><a href="../birthday-parties.html">Birthdays</a></li>
-        </ul>
+
+      <div class="footer-bottom-premium">
+        <p>
+          &copy; 2026 AR Events & Wedding Planner. All rights reserved.
+          Developed by
+          <a href="https://www.pixelatenest.com" target="_blank">Pixelate Nest</a>
+        </p>
+        <div class="legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+        </div>
       </div>
-      <div class="footer-section">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-          <li><a href="../privacy-policy.html">Privacy</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 AR Events & Wedding Planner.</p>
     </div>
   </footer>
+
   <script src="../scripts.js"></script>
   <script>
-    document.querySelectorAll(".faq-question").forEach((b) => {
-      b.addEventListener("click", () => {
-        b.parentElement.classList.toggle("active");
+    // FAQ Toggle Functionality
+    document.querySelectorAll(".faq-question").forEach((button) => {
+      button.addEventListener("click", () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle("active");
       });
     });
+
+    // Mobile Menu Toggle
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+    const navLinks = document.getElementById("navLinks");
+
+    if (hamburger) {
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileMenuOverlay.classList.toggle("active");
+      });
+
+      mobileMenuOverlay.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        mobileMenuOverlay.classList.remove("active");
+      });
+    }
   </script>
 </body>
 
