@@ -1,59 +1,81 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR Events & Wedding Planner - Bihar's Best Event Planners</title>
+    <meta
+      name="description"
+      content="Premium event planning & wedding services in Muzaffarpur, Bihar. Transform your special moments into unforgettable celebrations."
+    />
+    <meta
+      name="keywords"
+      content="wedding planner, event management, corporate events, birthday parties, award ceremonies, cultural events, Muzaffarpur, Bihar"
+    />
+    <meta name="theme-color" content="#D19C4A" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AR Events & Wedding Planner - Bihar's Best Event Planners</title>
-  <meta name="description"
-    content="Premium event planning & wedding services in Muzaffarpur, Bihar. Transform your special moments into unforgettable celebrations." />
-  <meta name="keywords"
-    content="wedding planner, event management, corporate events, birthday parties, award ceremonies, cultural events, Muzaffarpur, Bihar" />
-  <meta name="theme-color" content="#D19C4A" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AR Events & Wedding Planner" />
+    <meta
+      property="og:description"
+      content="Where Your Love Story Becomes a Grand Celebration"
+    />
+    <meta property="og:site_name" content="AR Events & Wedding Planner" />
+    <meta
+      property="og:image"
+      content="https://arevents.in/assets/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://arevents.in/" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="AR Events & Wedding Planner" />
-  <meta property="og:description" content="Where Your Love Story Becomes a Grand Celebration" />
-  <meta property="og:site_name" content="AR Events & Wedding Planner" />
-  <meta property="og:image" content="https://arevents.in/assets/og-image.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://arevents.in/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AR Events & Wedding Planner - Premium Event Planning in Muzaffarpur"
+    />
+    <meta
+      name="twitter:description"
+      content="Premium event planning & wedding services in Muzaffarpur, Bihar. Transform your events into unforgettable experiences with AR Events."
+    />
+    <meta
+      name="twitter:image"
+      content="https://arevents.in/assets/og-image.jpg"
+    />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AR Events & Wedding Planner - Premium Event Planning in Muzaffarpur" />
-  <meta name="twitter:description"
-    content="Premium event planning & wedding services in Muzaffarpur, Bihar. Transform your events into unforgettable experiences with AR Events." />
-  <meta name="twitter:image" content="https://arevents.in/assets/og-image.jpg" />
+    <link rel="canonical" href="https://arevents.in/" />
 
-  <link rel="canonical" href="https://arevents.in/" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="./assets/logo2.svg" />
+    <link rel="shortcut icon" href="./assets/logo2.svg" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./layout.css" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./pages.css" />
+    <link rel="stylesheet" href="./styles-premium.css" />
 
-  <link rel="icon" type="image/svg+xml" href="./assets/logo2.svg" />
-  <link rel="shortcut icon" href="./assets/logo2.svg" />
-
-  <link rel="stylesheet" href="./common.css" />
-  <link rel="stylesheet" href="./layout.css" />
-  <link rel="stylesheet" href="./components.css" />
-  <link rel="stylesheet" href="./pages.css" />
-  <link rel="stylesheet" href="./styles-premium.css" />
-
-  <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "EventPlanner",
         "@id": "https://arevents.in/",
         "name": "AR Events & Wedding Planner",
-        "image": "https://arevents.in/assets/logo2.svg",
+        "image": "https://arevents.in/assets/og-image.jpg",
         "description": "Premium event planning and wedding services in Muzaffarpur, Bihar providing wedding planning, corporate events, birthday parties, award ceremonies, cultural events, anniversary celebrations, and religious ceremonies since 2013.",
         "url": "https://arevents.in/",
         "telephone": "+918873268474",
@@ -79,7 +101,15 @@
         ],
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
           "opens": "09:00",
           "closes": "21:00"
         },
@@ -93,10 +123,11 @@
       }
     </script>
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://arevents.in/#organization",
         "name": "AR Events & Wedding Planner",
         "url": "https://arevents.in/",
         "logo": "https://arevents.in/assets/logo2.svg",
@@ -109,7 +140,7 @@
           "telephone": "+918873268474",
           "email": "areventsol.2013@gmail.com",
           "areaServed": "IN",
-          "availableLanguage": ["en", "hi"]
+          "availableLanguage": ["en"]
         },
         "sameAs": [
           "https://www.facebook.com/arevents",
@@ -119,21 +150,16 @@
       }
     </script>
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "AR Events & Wedding Planner",
-        "url": "https://arevents.in/",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://arevents.in/?s={search_term_string}",
-          "query-input": "required name=search_term_string"
-        }
+        "url": "https://arevents.in/"
       }
     </script>
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -145,9 +171,22 @@
             "name": "Wedding Planning",
             "description": "Complete wedding planning and decoration services in Muzaffarpur, Bihar including venue selection, catering, photography, and styling.",
             "url": "https://arevents.in/wedding-planning.html",
-            "provider": { "@type": "LocalBusiness", "name": "AR Events & Wedding Planner" },
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "AR Events & Wedding Planner"
+            },
             "areaServed": { "@type": "State", "name": "Bihar" },
-            "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "85000", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "INR", "price": "85000", "description": "Starting from" } }
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": "85000",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "priceCurrency": "INR",
+                "price": "85000",
+                "description": "Starting from"
+              }
+            }
           },
           {
             "@type": "Service",
@@ -155,9 +194,16 @@
             "name": "Anniversary Celebrations",
             "description": "Professional anniversary celebration planning and decoration services in Bihar including theme customization, photography, and entertainment.",
             "url": "https://arevents.in/anniversary-celebrations.html",
-            "provider": { "@type": "LocalBusiness", "name": "AR Events & Wedding Planner" },
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "AR Events & Wedding Planner"
+            },
             "areaServed": { "@type": "State", "name": "Bihar" },
-            "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "25000" }
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": "25000"
+            }
           },
           {
             "@type": "Service",
@@ -165,9 +211,16 @@
             "name": "Corporate Events",
             "description": "Professional corporate event management services in Muzaffarpur including stage setup, AV management, branding, and logistics.",
             "url": "https://arevents.in/corporate-events.html",
-            "provider": { "@type": "LocalBusiness", "name": "AR Events & Wedding Planner" },
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "AR Events & Wedding Planner"
+            },
             "areaServed": { "@type": "State", "name": "Bihar" },
-            "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "45000" }
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": "45000"
+            }
           },
           {
             "@type": "Service",
@@ -175,9 +228,16 @@
             "name": "Birthday Parties",
             "description": "Creative birthday party planning and decoration services for kids and adults in Bihar including themes, entertainment, and catering.",
             "url": "https://arevents.in/birthday-parties.html",
-            "provider": { "@type": "LocalBusiness", "name": "AR Events & Wedding Planner" },
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "AR Events & Wedding Planner"
+            },
             "areaServed": { "@type": "State", "name": "Bihar" },
-            "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "35000" }
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": "35000"
+            }
           },
           {
             "@type": "Service",
@@ -185,9 +245,16 @@
             "name": "Cultural Events",
             "description": "Cultural event planning and organization services in Muzaffarpur, Bihar including traditional decorations, artist management, and stage design.",
             "url": "https://arevents.in/cultural-events.html",
-            "provider": { "@type": "LocalBusiness", "name": "AR Events & Wedding Planner" },
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "AR Events & Wedding Planner"
+            },
             "areaServed": { "@type": "State", "name": "Bihar" },
-            "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "55000" }
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": "55000"
+            }
           },
           {
             "@type": "Service",
@@ -195,15 +262,22 @@
             "name": "Religious Ceremonies",
             "description": "Religious ceremony and puja planning services in Bihar including priest coordination, sacred ritual management, and ceremonial decorations.",
             "url": "https://arevents.in/religious-ceremonies.html",
-            "provider": { "@type": "LocalBusiness", "name": "AR Events & Wedding Planner" },
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "AR Events & Wedding Planner"
+            },
             "areaServed": { "@type": "State", "name": "Bihar" },
-            "offers": { "@type": "Offer", "priceCurrency": "INR", "price": "40000" }
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "INR",
+              "price": "40000"
+            }
           }
         ]
       }
     </script>
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -247,302 +321,370 @@
         ]
       }
     </script>
-</head>
+  </head>
 
-<body class="home-page">
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <a href="/">
-          <img src="assets/images/arlogo.png" alt="AR Events & Wedding Planner Logo" class="logo-img" />
-        </a>
+  <body class="home-page">
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="assets/logo2.svg"
+              alt="AR Events & Wedding Planner Logo"
+              class="logo-img"
+              width="160"
+              height="50"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="wedding-planning">Wedding Planning</a></li>
+              <li>
+                <a href="anniversary-celebrations">Anniversary Celebrations</a>
+              </li>
+              <li><a href="corporate-events">Corporate Events</a></li>
+              <li><a href="birthday-parties">Birthday Parties</a></li>
+              <li><a href="cultural-events">Cultural Events</a></li>
+
+              <li>
+                <a href="religious-ceremonies">Religious Ceremonies</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="portfolio">Portfolio</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="pricing">Pricing</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li class="mobile-book-btn">
+            <a href="book" class="book-nav-link">Book Now</a>
+          </li>
+        </ul>
+
+        <a href="book" class="book-btn">Book Now</a>
       </div>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="/">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="wedding-planning">Wedding Planning</a></li>
-            <li>
-              <a href="anniversary-celebrations">Anniversary Celebrations</a>
-            </li>
-            <li><a href="corporate-events">Corporate Events</a></li>
-            <li><a href="birthday-parties">Birthday Parties</a></li>
-            <li><a href="cultural-events">Cultural Events</a></li>
-
-            <li>
-              <a href="religious-ceremonies">Religious Ceremonies</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="portfolio">Portfolio</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="pricing">Pricing</a></li>
-        <li><a href="contact">Contact</a></li>
-        <li class="mobile-book-btn">
-          <a href="book" class="book-nav-link">Book Now</a>
-        </li>
-      </ul>
-
-      <a href="book" class="book-btn">Book Now</a>
-    </div>
-
-    <div class="hamburger-menu" id="hamburger">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </header>
-
-  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-
-  <section class="hero-section" id="home">
-    <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
-      <source src="assets/videos/video1.mp4" type="video/mp4" />
-    </video>
-
-    <div class="hero-overlay"></div>
-
-    <div class="hero-content">
-      <h1 class="fade-in-up">Turning Moments Into Magic</h1>
-      <p class="hero-tagline">
-        Where Your Love Story Becomes a Grand Celebration
-      </p>
-      <p class="hero-description">
-        Transform your vision into reality with premium event planning and
-        design that captures emotion, tells stories, and creates unforgettable
-        memories.
-      </p>
-
-      <div class="hero-cta-group">
-        <a href="book" class="btn btn-primary">
-          <i class="fas fa-calendar-check"></i> Book Your Event
-        </a>
-        <a href="#services" class="btn btn-white">
-          <i class="fas fa-arrow-down"></i> Explore Services
-        </a>
+      <div class="hamburger-menu" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
-    </div>
+    </header>
 
-    <div class="scroll-indicator">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <polyline points="6 9 12 15 18 9"></polyline>
-      </svg>
-    </div>
-  </section>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
-  <section class="global-section" id="services">
-    <div class="container">
-      <div class="text-center" style="margin-bottom: var(--space-4xl)">
-        <h2 class="fade-in-up" style="
+    <section class="hero-section" id="home">
+      <video
+        class="hero-video"
+        id="heroVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="assets/images/hero-poster.webp"
+      >
+        <source src="assets/videos/video1.mp4" type="video/mp4" />
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-trust-bar">
+          <span>&#9733; 4.8 Rating</span>
+          <span class="trust-divider">·</span>
+          <span>150+ Events</span>
+          <span class="trust-divider">·</span>
+          <span>Since 2013</span>
+        </div>
+        <h1 class="fade-in-up">Turning Moments Into Magic</h1>
+        <p class="hero-tagline">
+          Muzaffarpur's Trusted Wedding &amp; Event Planners — Bihar
+        </p>
+        <p class="hero-description">
+          Transform your vision into reality with premium event planning and
+          design that captures emotion, tells stories, and creates unforgettable
+          memories.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="book" class="btn btn-primary">
+            <i class="fas fa-calendar-check"></i> Book Your Event
+          </a>
+          <a href="https://wa.me/918873268474" class="btn btn-white" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i> WhatsApp Us Now
+          </a>
+          <a href="#portfolio" class="btn btn-outline">
+            View Our Work &rarr;
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <section class="global-section" id="services">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: var(--space-4xl)">
+          <h2
+            class="fade-in-up"
+            style="
               color: var(--primary-gold);
               font-family: &quot;Kenao&quot;, sans-serif;
               font-size: 3.5rem;
               letter-spacing: 0.05em;
               text-transform: uppercase;
-            ">
-          Our Services
-        </h2>
-        <p class="fade-in-up" style="
+            "
+          >
+            Our Services
+          </h2>
+          <p
+            class="fade-in-up"
+            style="
               color: var(--secondary-gray);
               font-family: &quot;Playfair Display&quot;, serif;
               font-style: italic;
               font-size: 1.2rem;
               margin-top: 10px;
-            ">
-          Bespoke event planning tailored to your unique vision
-        </p>
+            "
+          >
+            Bespoke event planning tailored to your unique vision
+          </p>
+        </div>
+        <div class="services-modern-grid">
+          <div class="service-grid-card fade-in-up stagger-1">
+            <div class="service-grid-img">
+              <img
+                src="./assets/images/services/wedding.webp"
+                alt="Professional Indian wedding planning and ceremony decoration in Muzaffarpur Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Wedding Planning</h3>
+              <p class="clamp-text">
+                Certainly, planning for your wedding will turn out to be one of
+                the most romantic and satisfying experiences in your life,
+                although it may be a rather challenging task for you. Selecting
+                an ideal venue, working out arrangements with caterers, wedding
+                decorators, photographers, managing guests, and so forth have to
+                be taken care of. And here comes our help. As the top wedding
+                planning firm in Muzaffarpur, our company also offers exclusive
+                wedding decoration services in Bihar as well as wedding styling
+                and total wedding management services. Our ultimate aim is to
+                make sure that your dreams of getting married come true in an
+                extremely magical manner. Whether it is an Indian traditional
+                marriage ceremony or even just a family get-together with all
+                your near and dear ones, our specialists would take care of
+                everything for you without any hitches.
+              </p>
+              <a href="wedding-planning" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-2">
+            <div class="service-grid-img">
+              <img
+                src="./assets/images/services/anniversary.webp"
+                alt="Professional anniversary celebration and romantic event decoration services in Muzaffarpur"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Anniversary Celebrations</h3>
+              <p class="clamp-text">
+                Celebrating an anniversary means recreating those fond memories
+                along with creating newer ones with the people closest to you.
+                However, organizing the perfect anniversary party involves
+                several elements like finding the right place, decorating it,
+                and other such things which can be difficult for many of us.
+                Here, we can help! We offer anniversary party planning services
+                in Bihar, providing you with the best of experiences through our
+                services. Be it a simple anniversary, a silver anniversary or
+                any grand celebrations, you will find everything arranged by our
+                professionals in the best possible manner. Starting from
+                beautiful decoration of your anniversary party in Muzaffarpur to
+                the right theme setup, flowers decorations, lighting
+                decorations, customized backdrop designs - we provide the
+                complete decoration of your anniversaries. We use our vast
+                experience in anniversary decoration in Bihar to provide you
+                with everything needed. Our professional services in planning an
+                anniversary event in Bihar include taking care of venue decor
+                and arrangements, arranging food, providing entertainment
+                facilities, photography, guests arrangements, and other similar
+                things for you!
+              </p>
+              <a href="anniversary-celebrations" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-3">
+            <div class="service-grid-img">
+              <img
+                src="./assets/images/services/birthday.webp"
+                alt="Themed birthday party planning and decoration services for kids and adults in Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Birthday Parties</h3>
+              <p class="clamp-text">
+                A birthday party should be fun to plan, but then again, once the
+                factors like theme, decorations, suppliers, and invitees begin
+                to complicate matters, one may begin to question their
+                decisions. But whether it is a party for a child or an adult, it
+                really doesn't matter because we take care of everything. Our
+                services include professional party planning in Bihar for a
+                fun-filled and unique experience for you and your guests.
+                Birthday decoration in Muzaffarpur is just one of the many
+                services we offer for any kind of celebration. Birthday Party
+                Decoration in Bihar is our specialty. We offer different kinds
+                of decoration services for various types of birthdays based on
+                the client's wishes. From cartoon-themed parties for children to
+                sophisticated parties for grown-ups and even surprise parties,
+                we offer a range of services. We attend to all your
+                requirements, including decoration of the place and organizing
+                the entire party for you. Our party planners in Bihar will make
+                sure that all your dreams come true.
+              </p>
+              <a href="birthday-parties" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-4">
+            <div class="service-grid-img">
+              <img
+                src="./assets/images/services/cultural.webp"
+                alt="Cultural event planning and organization services in Muzaffarpur Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Cultural Events</h3>
+              <p class="clamp-text">
+                Celebration, tradition, and creativity are the key aspects of
+                any cultural events. Whether this is a social event or an event
+                in school or any other cultural event, everything will require
+                creativity in order to make the event happen properly. In case
+                of any show or decorations or any other activities, let us
+                manage it! We are experts in organizing cultural events in Bihar
+                in an organized and visual way that showcases all traditions
+                with flair and precision. Our company has experience in managing
+                events in Muzaffarpur in an organized fashion without a hitch.
+                Whether it is decorating, designing the stage, lightings, sound,
+                artist management, audience management, etc., everything from
+                traditional decorations for cultural events in Bihar to stage
+                management is handled by our company with great precision and
+                creativity.
+              </p>
+              <a href="cultural-events" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-5">
+            <div class="service-grid-img">
+              <img
+                src="./assets/images/services/corporate.webp"
+                alt="Corporate event planning and organization services in Muzaffarpur Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Corporate Events</h3>
+              <p class="clamp-text">
+                Corporate Events have to be meticulously planned and
+                professionally executed. The selection of venues in Muzaffarpur
+                to all other issues like logistics, vendors coordination, guests
+                management, and more – all convey a message about your brand
+                reputation. It is bound to leave you perplexed at times, but we
+                can take care of these events for you hassle-free! We are well
+                known for our capabilities to manage corporate events in Bihar.
+                Our company offers you a variety of services in the field of
+                managing corporate events in Muzaffarpur so that your events
+                will be conducted smoothly. Whether it be the decoration of your
+                corporate event in Bihar, stage arrangements, branding and AV
+                arrangements, catering and guest relations, all of these can be
+                taken care of by us. Whether it is a formal business conference
+                or a lively corporate event celebration, our team can deliver
+                exceptional results for you.
+              </p>
+              <a href="corporate-events" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
+
+          <div class="service-grid-card fade-in-up stagger-1">
+            <div class="service-grid-img">
+              <img
+                src="./assets/images/services/religious.webp"
+                alt="Religious ceremony and puja decoration services in Muzaffarpur Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Religious Ceremonies</h3>
+              <p class="clamp-text">
+                Religious ceremonies are full of meanings that bring people
+                closer with the spirit of faith and devotion. Arranging such
+                functions from the décor, guests, and rituals can indeed become
+                an overwhelming task to handle, but with us at your service,
+                things will be easier for sure. We take pride in being expert
+                planners for religious ceremonies in Bihar, helping arrange such
+                ceremonies in a perfect manner in all respects. With years of
+                experience in managing religious ceremonies in Muzaffarpur, our
+                team members know how to manage traditions, rituals, and
+                cultural values of the occasion. From the traditional decoration
+                of religious ceremonies, flower arrangements, mandap
+                decorations, and lighting services to sound system and seating
+                arrangement services – we do it all with dedication and
+                professionalism. No matter whether you have to arrange a family
+                puja or any other religious ceremony on a bigger scale, our team
+                members make it happen for you. If you are looking forward to
+                event planners who can take complete responsibility of arranging
+                religious ceremonies in a smooth and stress-free manner, you
+                know whom to get in touch with now!
+              </p>
+              <a href="religious-ceremonies" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="services-modern-grid">
-        <div class="service-grid-card fade-in-up stagger-1">
-          <div class="service-grid-img">
-            <img src="./assets/images/services/wedding.webp"
-              alt="Professional Indian wedding planning and ceremony decoration in Muzaffarpur Bihar" loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Wedding Planning</h3>
-            <p class="clamp-text">
-              Certainly, planning for your wedding will turn out to be one of
-              the most romantic and satisfying experiences in your life,
-              although it may be a rather challenging task for you. Selecting
-              an ideal venue, working out arrangements with caterers, wedding
-              decorators, photographers, managing guests, and so forth have to
-              be taken care of. And here comes our help. As the top wedding
-              planning firm in Muzaffarpur, our company also offers exclusive
-              wedding decoration services in Bihar as well as wedding styling
-              and total wedding management services. Our ultimate aim is to
-              make sure that your dreams of getting married come true in an
-              extremely magical manner. Whether it is an Indian traditional
-              marriage ceremony or even just a family get-together with all
-              your near and dear ones, our specialists would take care of
-              everything for you without any hitches.
-            </p>
-            <a href="wedding-planning" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
+    </section>
 
-        <div class="service-grid-card fade-in-up stagger-2">
-          <div class="service-grid-img">
-            <img src="./assets/images/services/anniversary.webp"
-              alt="Professional anniversary celebration and romantic event decoration services in Muzaffarpur"
-              loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Anniversary Celebrations</h3>
-            <p class="clamp-text">
-              Celebrating an anniversary means recreating those fond memories
-              along with creating newer ones with the people closest to you.
-              However, organizing the perfect anniversary party involves
-              several elements like finding the right place, decorating it,
-              and other such things which can be difficult for many of us.
-              Here, we can help! We offer anniversary party planning services
-              in Bihar, providing you with the best of experiences through our
-              services. Be it a simple anniversary, a silver anniversary or
-              any grand celebrations, you will find everything arranged by our
-              professionals in the best possible manner. Starting from
-              beautiful decoration of your anniversary party in Muzaffarpur to
-              the right theme setup, flowers decorations, lighting
-              decorations, customized backdrop designs - we provide the
-              complete decoration of your anniversaries. We use our vast
-              experience in anniversary decoration in Bihar to provide you
-              with everything needed. Our professional services in planning an
-              anniversary event in Bihar include taking care of venue decor
-              and arrangements, arranging food, providing entertainment
-              facilities, photography, guests arrangements, and other similar
-              things for you!
-            </p>
-            <a href="anniversary-celebrations" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
-
-        <div class="service-grid-card fade-in-up stagger-3">
-          <div class="service-grid-img">
-            <img src="./assets/images/services/birthday.webp"
-              alt="Themed birthday party planning and decoration services for kids and adults in Bihar"
-              loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Birthday Parties</h3>
-            <p class="clamp-text">
-              A birthday party should be fun to plan, but then again, once the
-              factors like theme, decorations, suppliers, and invitees begin
-              to complicate matters, one may begin to question their
-              decisions. But whether it is a party for a child or an adult, it
-              really doesn't matter because we take care of everything. Our
-              services include professional party planning in Bihar for a
-              fun-filled and unique experience for you and your guests.
-              Birthday decoration in Muzaffarpur is just one of the many
-              services we offer for any kind of celebration. Birthday Party
-              Decoration in Bihar is our specialty. We offer different kinds
-              of decoration services for various types of birthdays based on
-              the client's wishes. From cartoon-themed parties for children to
-              sophisticated parties for grown-ups and even surprise parties,
-              we offer a range of services. We attend to all your
-              requirements, including decoration of the place and organizing
-              the entire party for you. Our party planners in Bihar will make
-              sure that all your dreams come true.
-            </p>
-            <a href="birthday-parties" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
-
-        <div class="service-grid-card fade-in-up stagger-4">
-          <div class="service-grid-img">
-            <img src="./assets/images/services/cultural.webp"
-              alt="Cultural event planning and organization services in Muzaffarpur Bihar" loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Cultural Events</h3>
-            <p class="clamp-text">
-              Celebration, tradition, and creativity are the key aspects of
-              any cultural events. Whether this is a social event or an event
-              in school or any other cultural event, everything will require
-              creativity in order to make the event happen properly. In case
-              of any show or decorations or any other activities, let us
-              manage it! We are experts in organizing cultural events in Bihar
-              in an organized and visual way that showcases all traditions
-              with flair and precision. Our company has experience in managing
-              events in Muzaffarpur in an organized fashion without a hitch.
-              Whether it is decorating, designing the stage, lightings, sound,
-              artist management, audience management, etc., everything from
-              traditional decorations for cultural events in Bihar to stage
-              management is handled by our company with great precision and
-              creativity.
-            </p>
-            <a href="cultural-events" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
-
-        <div class="service-grid-card fade-in-up stagger-5">
-          <div class="service-grid-img">
-            <img src="./assets/images/services/corporate.webp"
-              alt="Corporate event planning and organization services in Muzaffarpur Bihar" loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Corporate Events</h3>
-            <p class="clamp-text">
-              Corporate Events have to be meticulously planned and
-              professionally executed. The selection of venues in Muzaffarpur
-              to all other issues like logistics, vendors coordination, guests
-              management, and more – all convey a message about your brand
-              reputation. It is bound to leave you perplexed at times, but we
-              can take care of these events for you hassle-free! We are well
-              known for our capabilities to manage corporate events in Bihar.
-              Our company offers you a variety of services in the field of
-              managing corporate events in Muzaffarpur so that your events
-              will be conducted smoothly. Whether it be the decoration of your
-              corporate event in Bihar, stage arrangements, branding and AV
-              arrangements, catering and guest relations, all of these can be
-              taken care of by us. Whether it is a formal business conference
-              or a lively corporate event celebration, our team can deliver
-              exceptional results for you.
-            </p>
-            <a href="corporate-events" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
-
-        <div class="service-grid-card fade-in-up stagger-1">
-          <div class="service-grid-img">
-            <img src="./assets/images/services/religious.webp"
-              alt="Religious ceremony and puja decoration services in Muzaffarpur Bihar" loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Religious Ceremonies</h3>
-            <p class="clamp-text">
-              Religious ceremonies are full of meanings that bring people
-              closer with the spirit of faith and devotion. Arranging such
-              functions from the décor, guests, and rituals can indeed become
-              an overwhelming task to handle, but with us at your service,
-              things will be easier for sure. We take pride in being expert
-              planners for religious ceremonies in Bihar, helping arrange such
-              ceremonies in a perfect manner in all respects. With years of
-              experience in managing religious ceremonies in Muzaffarpur, our
-              team members know how to manage traditions, rituals, and
-              cultural values of the occasion. From the traditional decoration
-              of religious ceremonies, flower arrangements, mandap
-              decorations, and lighting services to sound system and seating
-              arrangement services – we do it all with dedication and
-              professionalism. No matter whether you have to arrange a family
-              puja or any other religious ceremony on a bigger scale, our team
-              members make it happen for you. If you are looking forward to
-              event planners who can take complete responsibility of arranging
-              religious ceremonies in a smooth and stress-free manner, you
-              know whom to get in touch with now!
-            </p>
-            <a href="religious-ceremonies" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="why-choose-section" style="padding: var(--space-3xl) var(--space-lg)">
-    <div class="container">
-      <h2 class="fade-in-up" style="margin-bottom: var(--space-lg)">
-        Why Choose AR Events
-      </h2>
-      <p class="why-choose-description" style="
+    <section
+      class="why-choose-section"
+      style="padding: var(--space-3xl) var(--space-lg)"
+    >
+      <div class="container">
+        <h2 class="fade-in-up" style="margin-bottom: var(--space-lg)">
+          Why Choose AR Events
+        </h2>
+        <p
+          class="why-choose-description"
+          style="
             text-align: center;
             margin-bottom: var(--space-2xl);
             max-width: 700px;
@@ -550,140 +692,148 @@
             margin-right: auto;
             font-family: &quot;Playfair Display&quot;, serif;
             font-weight: 100;
-          ">
-        We don’t just plan events, we deliver complete event planning and
-        decoration solutions in Bihar that create unforgettable experiences.
-        From thoughtful design to flawless execution, every detail is crafted
-        to leave a lasting impression on your guests and reflect true
-        professionalism.
-      </p>
+          "
+        >
+          We don’t just plan events, we deliver complete event planning and
+          decoration solutions in Bihar that create unforgettable experiences.
+          From thoughtful design to flawless execution, every detail is crafted
+          to leave a lasting impression on your guests and reflect true
+          professionalism.
+        </p>
 
-      <div class="features-grid">
-        <div class="feature-card fade-in-up" style="animation-delay: 0.1s">
-          <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
-          <h3>Creative Vision</h3>
-          <p>
-            Custom designs and concepts tailored to your personality and
-            preferences.
-          </p>
-        </div>
+        <div class="features-grid">
+          <div class="feature-card fade-in-up" style="animation-delay: 0.1s">
+            <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>Creative Vision</h3>
+            <p>
+              Custom designs and concepts tailored to your personality and
+              preferences.
+            </p>
+          </div>
 
-        <div class="feature-card fade-in-up" style="animation-delay: 0.2s">
-          <div class="feature-icon"><i class="fas fa-check-double"></i></div>
-          <h3>Attention to Detail</h3>
-          <p>
-            Every element, from décor to timing, is meticulously coordinated
-            for perfection.
-          </p>
-        </div>
+          <div class="feature-card fade-in-up" style="animation-delay: 0.2s">
+            <div class="feature-icon"><i class="fas fa-check-double"></i></div>
+            <h3>Attention to Detail</h3>
+            <p>
+              Every element, from décor to timing, is meticulously coordinated
+              for perfection.
+            </p>
+          </div>
 
-        <div class="feature-card fade-in-up" style="animation-delay: 0.3s">
-          <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
-          <h3>Trusted Vendors</h3>
-          <p>
-            Partnerships with premium caterers, florists, and entertainment
-            providers.
-          </p>
-        </div>
+          <div class="feature-card fade-in-up" style="animation-delay: 0.3s">
+            <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>Trusted Vendors</h3>
+            <p>
+              Partnerships with premium caterers, florists, and entertainment
+              providers.
+            </p>
+          </div>
 
-        <div class="feature-card fade-in-up" style="animation-delay: 0.4s">
-          <div class="feature-icon"><i class="fas fa-headset"></i></div>
-          <h3>24/7 Support</h3>
-          <p>
-            Dedicated team available before, during, and after your event.
-          </p>
-        </div>
+          <div class="feature-card fade-in-up" style="animation-delay: 0.4s">
+            <div class="feature-icon"><i class="fas fa-headset"></i></div>
+            <h3>24/7 Support</h3>
+            <p>
+              Dedicated team available before, during, and after your event.
+            </p>
+          </div>
 
-        <div class="feature-card fade-in-up" style="animation-delay: 0.5s">
-          <div class="feature-icon"><i class="fas fa-star"></i></div>
-          <h3>Premium Quality</h3>
-          <p>
-            We source the finest materials and services for an elevated
-            experience.
-          </p>
+          <div class="feature-card fade-in-up" style="animation-delay: 0.5s">
+            <div class="feature-icon"><i class="fas fa-star"></i></div>
+            <h3>Premium Quality</h3>
+            <p>
+              We source the finest materials and services for an elevated
+              experience.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="process-section" style="
+    <section
+      class="process-section"
+      style="
         padding: var(--space-3xl) var(--space-lg);
         background-color: var(--bg-dark);
-      ">
-    <div class="container">
-      <h2 class="fade-in-up">Our Planning Process</h2>
-      <p class="process-description fade-in-up" style="animation-delay: 0.1s">
-        We pride ourselves on the planning process that is based on integrity,
-        transparency, and effectiveness, which are traits that our clients
-        have come to know and appreciate us for.
-      </p>
+      "
+    >
+      <div class="container">
+        <h2 class="fade-in-up">Our Planning Process</h2>
+        <p class="process-description fade-in-up" style="animation-delay: 0.1s">
+          We pride ourselves on the planning process that is based on integrity,
+          transparency, and effectiveness, which are traits that our clients
+          have come to know and appreciate us for.
+        </p>
 
-      <div class="process-grid">
-        <div class="process-card fade-in-up" style="animation-delay: 0.1s">
-          <div class="process-card-number">01</div>
-          <div class="process-card-icon">
-            <i class="fas fa-comments"></i>
+        <div class="process-grid">
+          <div class="process-card fade-in-up" style="animation-delay: 0.1s">
+            <div class="process-card-number">01</div>
+            <div class="process-card-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Consultation</h3>
+            <p>
+              We meet to understand your vision, budget, timeline, and
+              preferences. Your ideas are our starting point.
+            </p>
+            <div class="process-card-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
-          <h3>Consultation</h3>
-          <p>
-            We meet to understand your vision, budget, timeline, and
-            preferences. Your ideas are our starting point.
-          </p>
-          <div class="process-card-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
 
-        <div class="process-card fade-in-up" style="animation-delay: 0.2s">
-          <div class="process-card-number">02</div>
-          <div class="process-card-icon">
-            <i class="fas fa-pencil-ruler"></i>
+          <div class="process-card fade-in-up" style="animation-delay: 0.2s">
+            <div class="process-card-number">02</div>
+            <div class="process-card-icon">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <h3>Planning & Design</h3>
+            <p>
+              Our team creates detailed plans, selects venues, vendors, and
+              designs your event's visual identity.
+            </p>
+            <div class="process-card-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
-          <h3>Planning & Design</h3>
-          <p>
-            Our team creates detailed plans, selects venues, vendors, and
-            designs your event's visual identity.
-          </p>
-          <div class="process-card-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
 
-        <div class="process-card fade-in-up" style="animation-delay: 0.3s">
-          <div class="process-card-number">03</div>
-          <div class="process-card-icon">
-            <i class="fas fa-tasks"></i>
+          <div class="process-card fade-in-up" style="animation-delay: 0.3s">
+            <div class="process-card-number">03</div>
+            <div class="process-card-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <h3>Coordination</h3>
+            <p>
+              Finalizations, confirmations, and ensuring everything is perfect.
+              We manage every detail with precision.
+            </p>
+            <div class="process-card-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </div>
           </div>
-          <h3>Coordination</h3>
-          <p>
-            Finalizations, confirmations, and ensuring everything is perfect.
-            We manage every detail with precision.
-          </p>
-          <div class="process-card-arrow">
-            <i class="fas fa-arrow-right"></i>
-          </div>
-        </div>
 
-        <div class="process-card fade-in-up" style="animation-delay: 0.4s">
-          <div class="process-card-number">04</div>
-          <div class="process-card-icon">
-            <i class="fas fa-star"></i>
+          <div class="process-card fade-in-up" style="animation-delay: 0.4s">
+            <div class="process-card-number">04</div>
+            <div class="process-card-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Execution</h3>
+            <p>
+              We manage everything so you enjoy your special day stress-free.
+              Your happiness is our ultimate goal.
+            </p>
           </div>
-          <h3>Execution</h3>
-          <p>
-            We manage everything so you enjoy your special day stress-free.
-            Your happiness is our ultimate goal.
-          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container" style="padding: var(--space-3xl) var(--space-lg); max-width: 95%">
-    <div class="story" style="animation: fadeInUp 0.8s ease-out">
-      <div class="story-content fade-in-left">
-        <h2 data-animate="fade-in-left">Our Story</h2>
-        <p style="
+    <section
+      class="container"
+      style="padding: var(--space-3xl) var(--space-lg); max-width: 95%"
+    >
+      <div class="story" style="animation: fadeInUp 0.8s ease-out">
+        <div class="story-content fade-in-left">
+          <h2 data-animate="fade-in-left">Our Story</h2>
+          <p
+            style="
               text-align: center;
               color: rgba(255, 255, 255, 0.9);
               margin-bottom: var(--space-2xl);
@@ -692,13 +842,15 @@
               font-family: &quot;Playfair Display&quot;, serif;
               font-weight: 100;
               font-size: 1rem;
-            ">
-          For over a decade, AR Events & Wedding Planner has been at the heart
-          of Muzaffarpur's most spectacular celebrations. We believe that
-          every event tells a unique story—and we're passionate about making
-          yours unforgettable.
-        </p>
-        <p style="
+            "
+          >
+            For over a decade, AR Events & Wedding Planner has been at the heart
+            of Muzaffarpur's most spectacular celebrations. We believe that
+            every event tells a unique story—and we're passionate about making
+            yours unforgettable.
+          </p>
+          <p
+            style="
               text-align: center;
               color: rgba(255, 255, 255, 0.9);
               margin-bottom: var(--space-2xl);
@@ -707,70 +859,83 @@
               font-family: &quot;Playfair Display&quot;, serif;
               font-weight: 100;
               font-size: 1rem;
-            ">
-          From intimate ceremonies to grand galas, we combine artistic vision
-          with meticulous planning to create experiences that transcend
-          expectations. Our team of designers, coordinators, and creative
-          strategists work together to ensure every detail reflects your
-          dreams.
-        </p>
+            "
+          >
+            From intimate ceremonies to grand galas, we combine artistic vision
+            with meticulous planning to create experiences that transcend
+            expectations. Our team of designers, coordinators, and creative
+            strategists work together to ensure every detail reflects your
+            dreams.
+          </p>
 
-        <div class="story-highlights" style="flex-wrap: wrap">
-          <div class="highlight fade-in-left" style="animation-delay: 0.2s">
-            <div class="highlight-icon">
-              <i class="fas fa-check-circle"></i>
+          <div class="story-highlights" style="flex-wrap: wrap">
+            <div class="highlight fade-in-left" style="animation-delay: 0.2s">
+              <div class="highlight-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div style="width: 100%">
+                <h3>150+ Successful Events</h3>
+                <p>
+                  Weddings, corporate functions, celebrations, and everything in
+                  between.
+                </p>
+              </div>
             </div>
-            <div style="width: 100%">
-              <h3>150+ Successful Events</h3>
-              <p>
-                Weddings, corporate functions, celebrations, and everything in
-                between.
-              </p>
+            <div class="highlight fade-in-left" style="animation-delay: 0.4s">
+              <div class="highlight-icon"><i class="fas fa-award"></i></div>
+              <div style="width: 100%">
+                <h3>Award-Winning Team</h3>
+                <p>
+                  Recognized for excellence in creativity, execution, and client
+                  satisfaction.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="highlight fade-in-left" style="animation-delay: 0.4s">
-            <div class="highlight-icon"><i class="fas fa-award"></i></div>
-            <div style="width: 100%">
-              <h3>Award-Winning Team</h3>
-              <p>
-                Recognized for excellence in creativity, execution, and client
-                satisfaction.
-              </p>
-            </div>
-          </div>
-          <div class="highlight fade-in-left" style="animation-delay: 0.6s">
-            <div class="highlight-icon"><i class="fas fa-handshake"></i></div>
-            <div style="width: 100%">
-              <h3>100% Satisfaction Guaranteed</h3>
-              <p>
-                Your vision is our mission. We commit to excellence at every
-                stage.
-              </p>
+            <div class="highlight fade-in-left" style="animation-delay: 0.6s">
+              <div class="highlight-icon"><i class="fas fa-handshake"></i></div>
+              <div style="width: 100%">
+                <h3>100% Satisfaction Guaranteed</h3>
+                <p>
+                  Your vision is our mission. We commit to excellence at every
+                  stage.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="story-image fade-in-right image-depth overlay-dark" data-parallax>
-        <img src="./assets/images/a.webp"
-          alt="AR Events Team at professional wedding and event planning office in Muzaffarpur Bihar" loading="lazy" />
+        <div
+          class="story-image fade-in-right image-depth overlay-dark"
+          data-parallax
+        >
+          <img
+            src="./assets/images/a.webp"
+            alt="AR Events Team at professional wedding and event planning office in Muzaffarpur Bihar"
+            loading="lazy"
+          />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section style="
+    <section
+      style="
         background-color: var(--bg-dark);
         padding: var(--space-3xl) var(--space-lg);
-      ">
-    <div class="container">
-      <h2 class="fade-in-up" style="
+      "
+    >
+      <div class="container">
+        <h2
+          class="fade-in-up"
+          style="
             text-align: center;
             margin-bottom: var(--space-xl);
             color: var(--primary-gold);
-          ">
-        Our Portfolio
-      </h2>
-      <p style="
+          "
+        >
+          Our Portfolio
+        </h2>
+        <p
+          style="
             text-align: center;
             color: rgba(255, 255, 255, 0.9);
             margin-bottom: var(--space-2xl);
@@ -780,110 +945,175 @@
             font-family: &quot;Playfair Display&quot;, serif;
             font-weight: 100;
             font-size: 1rem;
-          ">
-        A glimpse of the beautiful moments we’ve crafted through our expertly
-        planned events and stunning decoration across Bihar each celebration
-        designed to be truly unforgettable.
-      </p>
+          "
+        >
+          A glimpse of the beautiful moments we’ve crafted through our expertly
+          planned events and stunning decoration across Bihar each celebration
+          designed to be truly unforgettable.
+        </p>
 
-      <div class="slider-container" style="margin-bottom: var(--space-2xl)">
-        <div class="slider-track">
-          <div class="portfolio-item tilt-on-hover lightbox-trigger" data-alt="Event Showcase 1">
-            <img src="./assets/images/Wedding/475159695_1097850219043563_871709032766323656_n.webp"
-              alt="Event Showcase 1" class="portfolio-item-image" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <div class="portfolio-item-info">
-                <h3>Event 1</h3>
-                <p><i class="fas fa-search-plus"></i> Wedding</p>
+        <div class="slider-container" style="margin-bottom: var(--space-2xl)">
+          <div class="slider-track">
+            <div
+              class="portfolio-item tilt-on-hover lightbox-trigger"
+              data-alt="Event Showcase 1"
+            >
+              <img
+                src="./assets/images/Wedding/475159695_1097850219043563_871709032766323656_n.webp"
+                alt="Event Showcase 1"
+                class="portfolio-item-image"
+                loading="lazy"
+              />
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-info">
+                  <h3>Event 1</h3>
+                  <p><i class="fas fa-search-plus"></i> Wedding</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="portfolio-item tilt-on-hover lightbox-trigger" data-alt="Event Showcase 2">
-            <img src="./assets/images/Wedding/474687434_1095392799289305_5414725815205043615_n.webp"
-              alt="Event Showcase 2" class="portfolio-item-image" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <div class="portfolio-item-info">
-                <h3>Event 2</h3>
-                <p><i class="fas fa-search-plus"></i> Wedding</p>
+            <div
+              class="portfolio-item tilt-on-hover lightbox-trigger"
+              data-alt="Event Showcase 2"
+            >
+              <img
+                src="./assets/images/Wedding/474687434_1095392799289305_5414725815205043615_n.webp"
+                alt="Event Showcase 2"
+                class="portfolio-item-image"
+                loading="lazy"
+              />
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-info">
+                  <h3>Event 2</h3>
+                  <p><i class="fas fa-search-plus"></i> Wedding</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="portfolio-item tilt-on-hover lightbox-trigger" data-alt="Event Showcase 3">
-            <img src="./assets/images/Wedding/474704237_1095392699289315_5300054725633379556_n.webp"
-              alt="Event Showcase 3" class="portfolio-item-image" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <div class="portfolio-item-info">
-                <h3>Event 3</h3>
-                <p><i class="fas fa-search-plus"></i> Wedding</p>
+            <div
+              class="portfolio-item tilt-on-hover lightbox-trigger"
+              data-alt="Event Showcase 3"
+            >
+              <img
+                src="./assets/images/Wedding/474704237_1095392699289315_5300054725633379556_n.webp"
+                alt="Event Showcase 3"
+                class="portfolio-item-image"
+                loading="lazy"
+              />
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-info">
+                  <h3>Event 3</h3>
+                  <p><i class="fas fa-search-plus"></i> Wedding</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="portfolio-item tilt-on-hover lightbox-trigger" data-alt="Event Showcase 4">
-            <img src="./assets/images/Wedding/475371625_1097849975710254_5933682938701390008_n.webp"
-              alt="Event Showcase 4" class="portfolio-item-image" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <div class="portfolio-item-info">
-                <h3>Event 4</h3>
-                <p><i class="fas fa-search-plus"></i> Wedding</p>
+            <div
+              class="portfolio-item tilt-on-hover lightbox-trigger"
+              data-alt="Event Showcase 4"
+            >
+              <img
+                src="./assets/images/Wedding/475371625_1097849975710254_5933682938701390008_n.webp"
+                alt="Event Showcase 4"
+                class="portfolio-item-image"
+                loading="lazy"
+              />
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-info">
+                  <h3>Event 4</h3>
+                  <p><i class="fas fa-search-plus"></i> Wedding</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="portfolio-item tilt-on-hover lightbox-trigger" data-alt="Event Showcase 1">
-            <img src="./assets/images/Wedding/475159695_1097850219043563_871709032766323656_n.webp"
-              alt="Event Showcase 1" class="portfolio-item-image" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <div class="portfolio-item-info">
-                <h3>Event 1</h3>
-                <p><i class="fas fa-search-plus"></i> Wedding</p>
+            <div
+              class="portfolio-item tilt-on-hover lightbox-trigger"
+              data-alt="Event Showcase 1"
+            >
+              <img
+                src="./assets/images/Wedding/475159695_1097850219043563_871709032766323656_n.webp"
+                alt="Event Showcase 1"
+                class="portfolio-item-image"
+                loading="lazy"
+              />
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-info">
+                  <h3>Event 1</h3>
+                  <p><i class="fas fa-search-plus"></i> Wedding</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="portfolio-item tilt-on-hover lightbox-trigger" data-alt="Event Showcase 2">
-            <img src="./assets/images/Wedding/474687434_1095392799289305_5414725815205043615_n.webp"
-              alt="Event Showcase 2" class="portfolio-item-image" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <div class="portfolio-item-info">
-                <h3>Event 2</h3>
-                <p><i class="fas fa-search-plus"></i> Wedding</p>
+            <div
+              class="portfolio-item tilt-on-hover lightbox-trigger"
+              data-alt="Event Showcase 2"
+            >
+              <img
+                src="./assets/images/Wedding/474687434_1095392799289305_5414725815205043615_n.webp"
+                alt="Event Showcase 2"
+                class="portfolio-item-image"
+                loading="lazy"
+              />
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-info">
+                  <h3>Event 2</h3>
+                  <p><i class="fas fa-search-plus"></i> Wedding</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="portfolio-item tilt-on-hover lightbox-trigger" data-alt="Event Showcase 3">
-            <img src="./assets/images/Wedding/474704237_1095392699289315_5300054725633379556_n.webp"
-              alt="Event Showcase 3" class="portfolio-item-image" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <div class="portfolio-item-info">
-                <h3>Event 3</h3>
-                <p><i class="fas fa-search-plus"></i> Wedding</p>
+            <div
+              class="portfolio-item tilt-on-hover lightbox-trigger"
+              data-alt="Event Showcase 3"
+            >
+              <img
+                src="./assets/images/Wedding/474704237_1095392699289315_5300054725633379556_n.webp"
+                alt="Event Showcase 3"
+                class="portfolio-item-image"
+                loading="lazy"
+              />
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-info">
+                  <h3>Event 3</h3>
+                  <p><i class="fas fa-search-plus"></i> Wedding</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="portfolio-item tilt-on-hover lightbox-trigger" data-alt="Event Showcase 4">
-            <img src="./assets/images/Wedding/475371625_1097849975710254_5933682938701390008_n.webp"
-              alt="Event Showcase 4" class="portfolio-item-image" loading="lazy" />
-            <div class="portfolio-item-overlay">
-              <div class="portfolio-item-info">
-                <h3>Event 4</h3>
-                <p><i class="fas fa-search-plus"></i> Wedding</p>
+            <div
+              class="portfolio-item tilt-on-hover lightbox-trigger"
+              data-alt="Event Showcase 4"
+            >
+              <img
+                src="./assets/images/Wedding/475371625_1097849975710254_5933682938701390008_n.webp"
+                alt="Event Showcase 4"
+                class="portfolio-item-image"
+                loading="lazy"
+              />
+              <div class="portfolio-item-overlay">
+                <div class="portfolio-item-info">
+                  <h3>Event 4</h3>
+                  <p><i class="fas fa-search-plus"></i> Wedding</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="what-clients-say-section" style="padding: var(--space-3xl) var(--space-lg)">
-    <div class="container">
-      <h2 class="fade-in-up" style="
+    <section
+      class="what-clients-say-section"
+      style="padding: var(--space-3xl) var(--space-lg)"
+    >
+      <div class="container">
+        <h2
+          class="fade-in-up"
+          style="
             color: var(--primary-gold);
             font-family: &quot;Kenao&quot;, sans-serif;
             text-shadow: 0 2px 15px rgba(209, 156, 74, 0.2);
-          ">
-        What Our Clients Say
-      </h2>
-      <p class="what-clients-description" style="
+          "
+        >
+          What Our Clients Say
+        </h2>
+        <p
+          class="what-clients-description"
+          style="
             text-align: center;
             color: rgba(255, 255, 255, 0.9);
             margin-bottom: var(--space-2xl);
@@ -893,299 +1123,357 @@
             font-family: &quot;Playfair Display&quot;, serif;
             font-weight: 100;
             font-size: 1rem;
-          ">
-        Real stories from couples and families who trusted us with their most
-        special moments.
-      </p>
+          "
+        >
+          Real stories from couples and families who trusted us with their most
+          special moments.
+        </p>
 
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-in-up" style="animation-delay: 0.1s">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">
-            "AR Events transformed our wedding into a fairy tale. Every detail
-            was perfect, and the team's creativity exceeded our wildest
-            expectations. Truly magical!"
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">RK</div>
-            <div class="testimonial-author-info">
-              <h4>Rajesh & Kavya</h4>
-              <p>Wedding, 2024</p>
+        <div class="testimonials-grid">
+          <div
+            class="testimonial-card fade-in-up"
+            style="animation-delay: 0.1s"
+          >
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "AR Events transformed our wedding into a fairy tale. Every detail
+              was perfect, and the team's creativity exceeded our wildest
+              expectations. Truly magical!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">RK</div>
+              <div class="testimonial-author-info">
+                <h4>Rajesh & Kavya</h4>
+                <p>Wedding, 2024</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card fade-in-up" style="animation-delay: 0.2s">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">
-            "Our corporate gala was a huge success thanks to AR Events.
-            Professional, organized, and delivered beyond expectations. Highly
-            recommended!"
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">SP</div>
-            <div class="testimonial-author-info">
-              <h4>Sunita Patel</h4>
-              <p>Corporate Event Director</p>
+          <div
+            class="testimonial-card fade-in-up"
+            style="animation-delay: 0.2s"
+          >
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Our corporate gala was a huge success thanks to AR Events.
+              Professional, organized, and delivered beyond expectations. Highly
+              recommended!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">SP</div>
+              <div class="testimonial-author-info">
+                <h4>Sunita Patel</h4>
+                <p>Corporate Event Director</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="testimonial-card fade-in-up" style="animation-delay: 0.3s">
-          <div class="testimonial-rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">
-            "Best birthday party ever! The decorations, entertainment, and
-            attention to detail made my daughter's day unforgettable. Thank
-            you, AR Events!"
-          </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MP</div>
-            <div class="testimonial-author-info">
-              <h4>Madhav Sharma</h4>
-              <p>Parent, 2024</p>
+          <div
+            class="testimonial-card fade-in-up"
+            style="animation-delay: 0.3s"
+          >
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">
+              "Best birthday party ever! The decorations, entertainment, and
+              attention to detail made my daughter's day unforgettable. Thank
+              you, AR Events!"
+            </p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">MP</div>
+              <div class="testimonial-author-info">
+                <h4>Madhav Sharma</h4>
+                <p>Parent, 2024</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="global-section faq-section" style="
+    <section
+      class="global-section faq-section"
+      style="
         background-color: var(--bg-dark);
         padding: var(--space-3xl) var(--space-lg);
-      ">
-    <div class="container" style="max-width: 900px">
-      <div class="text-center" style="margin-bottom: var(--space-2xl)">
-        <h2 class="fade-in-up" style="
+      "
+    >
+      <div class="container" style="max-width: 900px">
+        <div class="text-center" style="margin-bottom: var(--space-2xl)">
+          <h2
+            class="fade-in-up"
+            style="
               color: var(--primary-gold);
               font-family: &quot;Kenao&quot;, sans-serif;
               text-shadow: 0 2px 15px rgba(209, 156, 74, 0.2);
-            ">
-          Frequently Asked Questions
-        </h2>
-        <p class="fade-in-up" style="
+            "
+          >
+            Frequently Asked Questions
+          </h2>
+          <p
+            class="fade-in-up"
+            style="
               color: var(--secondary-light);
               font-family: &quot;Playfair Display&quot;, serif;
               font-style: italic;
               font-size: 1.2rem;
               animation-delay: 0.2s;
-            ">
-          Everything you need to know about our luxury event planning process.
-        </p>
-      </div>
-
-      <div class="faq-wrapper fade-in-up" style="animation-delay: 0.4s">
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>How far in advance should we book your services?</span>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer-wrapper">
-            <div class="faq-answer">
-              <p>
-                For weddings and large corporate galas, we highly recommend
-                booking 6 to 8 months in advance to ensure the availability of
-                premium venues and our trusted artisans. For more intimate
-                gatherings, a 4 to 6-week notice is usually sufficient.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Do you handle destination weddings outside of Bihar?</span>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer-wrapper">
-            <div class="faq-answer">
-              <p>
-                Absolutely. While our roots are in Muzaffarpur, our team is
-                equipped to plan and execute luxurious destination weddings
-                and corporate retreats across India. We manage all logistics,
-                travel, and on-ground coordination.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Can we customize the service packages?</span>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer-wrapper">
-            <div class="faq-answer">
-              <p>
-                Yes. Every event is a unique story waiting to unfold. Whether
-                you are looking at our Silver, Gold, or Platinum tiers, we
-                offer bespoke customization to ensure the package aligns
-                perfectly with your specific vision and requirements.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Do you provide on-the-day coordination?</span>
-            <i class="fas fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer-wrapper">
-            <div class="faq-answer">
-              <p>
-                Yes, comprehensive on-the-day coordination is included in our
-                full-service planning packages. Our dedicated team will be
-                on-site to manage vendors, oversee the timeline, and handle
-                any unforeseen details so you can fully immerse yourself in
-                the celebration.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section" style="margin: var(--space-2xl)">
-    <div class="container">
-      <h2 class="fade-in-up" style="color: var(--primary-white)">
-        Ready to Create Your Magic?
-      </h2>
-      <p class="cta-description fade-in-up" style="animation-delay: 0.2s">
-        Let's start planning your unforgettable event. Our team is ready to
-        bring your vision to life with creativity, expertise, and passion.
-      </p>
-      <div class="cta-buttons fade-in-up" style="animation-delay: 0.4s">
-        <a href="book" class="btn btn-primary">
-          <i class="fas fa-calendar-alt"></i> Start Booking
-        </a>
-        <a href="contact" class="btn btn-white">
-          <i class="fas fa-envelope"></i> Contact Us
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer-premium">
-    <div class="container">
-      <div class="footer-main-grid">
-        <div class="footer-col brand-address">
-          <h3>AR Events & Wedding Planner</h3>
-          <p class="brand-tagline">
-            Where Your Love Story Becomes a Grand Celebration
+            "
+          >
+            Everything you need to know about our luxury event planning process.
           </p>
-
-          <div class="address-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Muzaffarpur, Bihar, India</p>
-          </div>
-          <div class="address-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>
-              Nx One T3 A1601 Gaur Chowk, Plot No. 17, Greater Noida, UP
-              201318 (Service Area)
-            </p>
-          </div>
-
-          <div class="footer-social-icons">
-            <a href="https://www.facebook.com/arevents" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/arevents" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/918873268474" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
-                class="fab fa-whatsapp"></i></a>
-            <a href="https://youtube.com/@areventandweddingplanner33" target="_blank" rel="noopener noreferrer"
-              aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-          </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Services</h4>
-          <ul class="footer-links">
-            <li><a href="wedding-planning">Wedding Planning</a></li>
-            <li>
-              <a href="anniversary-celebrations">Anniversary Celebrations</a>
-            </li>
-            <li><a href="corporate-events">Corporate Events</a></li>
-            <li><a href="birthday-parties">Birthday Parties</a></li>
-
-            <li><a href="cultural-events">Cultural Events</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul class="footer-links">
-            <li><a href="about">About Us</a></li>
-            <li><a href="portfolio">Portfolio</a></li>
-            <li><a href="pricing">Pricing</a></li>
-            <li><a href="locations">Locations</a></li>
-            <li><a href="contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col touch-section">
-          <h4>Get In Touch</h4>
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114856.28434771508!2d85.31174624792613!3d26.12056143521361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10e60803ee71%3A0xc00f1262d3a3d5e6!2sMuzaffarpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712192000000!5m2!1sen!2sin"
-              width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy">
-            </iframe>
+        <div class="faq-wrapper fade-in-up" style="animation-delay: 0.4s">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How far in advance should we book your services?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>
+                  For weddings and large corporate galas, we highly recommend
+                  booking 6 to 8 months in advance to ensure the availability of
+                  premium venues and our trusted artisans. For more intimate
+                  gatherings, a 4 to 6-week notice is usually sufficient.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="contact-details">
-            <p><i class="fas fa-envelope"></i> areventsol.2013@gmail.com</p>
-            <p><i class="fas fa-phone-alt"></i> +91 88732 68474</p>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you handle destination weddings outside of Bihar?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>
+                  Absolutely. While our roots are in Muzaffarpur, our team is
+                  equipped to plan and execute luxurious destination weddings
+                  and corporate retreats across India. We manage all logistics,
+                  travel, and on-ground coordination.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can we customize the service packages?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>
+                  Yes. Every event is a unique story waiting to unfold. Whether
+                  you are looking at our Silver, Gold, or Platinum tiers, we
+                  offer bespoke customization to ensure the package aligns
+                  perfectly with your specific vision and requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you provide on-the-day coordination?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer-wrapper">
+              <div class="faq-answer">
+                <p>
+                  Yes, comprehensive on-the-day coordination is included in our
+                  full-service planning packages. Our dedicated team will be
+                  on-site to manage vendors, oversee the timeline, and handle
+                  any unforeseen details so you can fully immerse yourself in
+                  the celebration.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="footer-bottom-premium">
-        <p>
-          &copy; 2026 AR Events & Wedding Planner. All rights reserved.
-          Developed by
-          <a href="https://www.pixelatenest.com" target="_blank">Pixelate Nest</a>
+    <section class="cta-section" style="margin: var(--space-2xl)">
+      <div class="container">
+        <h2 class="fade-in-up" style="color: var(--primary-white)">
+          Ready to Create Your Magic?
+        </h2>
+        <p class="cta-description fade-in-up" style="animation-delay: 0.2s">
+          Let's start planning your unforgettable event. Our team is ready to
+          bring your vision to life with creativity, expertise, and passion.
         </p>
-        <div class="legal-links">
-          <a href="privacy-policy">Privacy Policy</a>
-          <a href="terms-of-service">Terms of Service</a>
+        <div class="cta-buttons fade-in-up" style="animation-delay: 0.4s">
+          <a href="book" class="btn btn-primary">
+            <i class="fas fa-calendar-alt"></i> Start Booking
+          </a>
+          <a href="contact" class="btn btn-white">
+            <i class="fas fa-envelope"></i> Contact Us
+          </a>
         </div>
       </div>
+    </section>
+
+    <footer class="footer-premium">
+      <div class="container">
+        <div class="footer-main-grid">
+          <div class="footer-col brand-address">
+            <h3>AR Events & Wedding Planner</h3>
+            <p class="brand-tagline">
+              Where Your Love Story Becomes a Grand Celebration
+            </p>
+
+            <div class="address-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Muzaffarpur, Bihar, India</p>
+            </div>
+            <div class="address-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>
+                Nx One T3 A1601 Gaur Chowk, Plot No. 17, Greater Noida, UP
+                201318 (Service Area)
+              </p>
+            </div>
+
+            <div class="footer-social-icons">
+              <a
+                href="https://www.facebook.com/arevents"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/arevents"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://wa.me/918873268474"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://youtube.com/@areventandweddingplanner33"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="wedding-planning">Wedding Planning</a></li>
+              <li>
+                <a href="anniversary-celebrations">Anniversary Celebrations</a>
+              </li>
+              <li><a href="corporate-events">Corporate Events</a></li>
+              <li><a href="birthday-parties">Birthday Parties</a></li>
+
+              <li><a href="cultural-events">Cultural Events</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul class="footer-links">
+              <li><a href="about">About Us</a></li>
+              <li><a href="portfolio">Portfolio</a></li>
+              <li><a href="pricing">Pricing</a></li>
+              <li><a href="locations">Locations</a></li>
+              <li><a href="contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col touch-section">
+            <h4>Get In Touch</h4>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114856.28434771508!2d85.31174624792613!3d26.12056143521361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10e60803ee71%3A0xc00f1262d3a3d5e6!2sMuzaffarpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712192000000!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+            <div class="contact-details">
+              <p><i class="fas fa-envelope"></i> areventsol.2013@gmail.com</p>
+              <p><i class="fas fa-phone-alt"></i> +91 88732 68474</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-premium">
+          <p>
+            &copy; 2026 AR Events & Wedding Planner. All rights reserved.
+            Developed by
+            <a href="https://www.pixelatenest.com" target="_blank"
+              >Pixelate Nest</a
+            >
+          </p>
+          <div class="legal-links">
+            <a href="privacy-policy">Privacy Policy</a>
+            <a href="terms-of-service">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="sticky-cta" id="stickyCTA">
+      <a
+        href="https://youtube.com/@areventandweddingplanner33?si=FHitkPhgihv9jRJK"
+        class="floating-btn youtube-btn"
+        data-tooltip="Watch on YouTube"
+        aria-label="Watch on YouTube"
+      >
+        <i class="fa-brands fa-youtube fa-bounce" style="color: #ffffff"></i>
+      </a>
+      <a
+        href="https://wa.me/918873268474"
+        target="_blank"
+        class="sticky-btn sticky-btn-whatsapp"
+        title="WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a
+        href="tel:+918873268474"
+        class="sticky-btn sticky-btn-call"
+        title="Call"
+      >
+        <i class="fas fa-phone"></i>
+      </a>
     </div>
-  </footer>
 
-  <div class="sticky-cta" id="stickyCTA">
-    <a href="https://youtube.com/@areventandweddingplanner33?si=FHitkPhgihv9jRJK" class="floating-btn youtube-btn"
-      data-tooltip="Watch on YouTube" aria-label="Watch on YouTube">
-      <i class="fa-brands fa-youtube fa-bounce" style="color: #ffffff"></i>
-    </a>
-    <a href="https://wa.me/918873268474" target="_blank" class="sticky-btn sticky-btn-whatsapp" title="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="tel:+918873268474" class="sticky-btn sticky-btn-call" title="Call">
-      <i class="fas fa-phone"></i>
-    </a>
-  </div>
-
-  <script src="scripts-premium.js"></script>
-</body>
-
+    <script src="scripts-premium.js" defer></script>
+  </body>
 </html>

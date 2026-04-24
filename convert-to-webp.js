@@ -4,10 +4,10 @@ const path = require('path');
 
 const targetDir = path.join(__dirname, 'assets', 'images');
 
-/**
- * Recursively find and convert JPG images to WebP.
- * @param {string} directory 
- */
+
+
+
+
 async function processDirectory(directory) {
   const files = fs.readdirSync(directory);
 

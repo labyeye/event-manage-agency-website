@@ -585,13 +585,30 @@ class BookingForm {
   }
 
   sendToBackend() {
-    fetch("/api/bookings", {
+    const formspreeEndpoint =
+      "https://formspree.io/f/areventsol.2013@gmail.com";
+    const payload = new FormData();
+    Object.entries(this.formData).forEach(([key, value]) => {
+      payload.append(key, value);
+    });
+
+    fetch(formspreeEndpoint, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(this.formData),
-    }).catch((err) => console.log("API call would be made here:", err));
+      body: payload,
+      headers: { Accept: "application/json" },
+    })
+      .then((res) => {
+        if (!res.ok) {
+          console.warn(
+            "Booking submission failed. Please contact us directly at +91 8873268474.",
+          );
+        }
+      })
+      .catch(() => {
+        console.warn(
+          "Booking submission failed. Please contact us directly at +91 8873268474.",
+        );
+      });
   }
 }
 
@@ -672,14 +689,14 @@ function setupLightbox() {
     trigger.style.cursor = "pointer";
   });
 }
-document.addEventListener('DOMContentLoaded', () => {
-  const navbar = document.querySelector('.navbar');
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar");
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
-      navbar.classList.add('scroll-active');
+      navbar.classList.add("scroll-active");
     } else {
-      navbar.classList.remove('scroll-active');
+      navbar.classList.remove("scroll-active");
     }
   });
 });
@@ -1116,9 +1133,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 (function () {
   function setupClamps() {
-    
     const selectors = [
-      ".clamp-text", 
+      ".clamp-text",
       ".zigzag-desc",
       ".testimonial-text",
       ".feature-card p",
@@ -1130,30 +1146,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     selectors.forEach((sel) => {
       document.querySelectorAll(sel).forEach((el) => {
-        
         const next = el.nextElementSibling;
         if (next && next.classList && next.classList.contains("clamp-toggle")) {
           next.remove();
         }
 
-        
         el.classList.add("universal-clamp");
         el.classList.remove("expanded");
 
-        
         requestAnimationFrame(() => {
-          const isTruncated = el.scrollHeight > el.clientHeight + 2; 
+          const isTruncated = el.scrollHeight > el.clientHeight + 2;
           if (isTruncated) {
             const toggle = document.createElement("button");
             toggle.type = "button";
             toggle.className = "clamp-toggle";
             toggle.innerText = "View more";
-            
+
             toggle.addEventListener("click", () => {
               const expanded = el.classList.toggle("expanded");
               toggle.innerText = expanded ? "View less" : "View more";
             });
-            
+
             el.insertAdjacentElement("afterend", toggle);
           }
         });
@@ -1161,11 +1174,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  
   document.addEventListener("DOMContentLoaded", () => {
     setupClamps();
     window.addEventListener("orientationchange", setupClamps);
-    
+
     window.addEventListener("resize", debounce(setupClamps, 150));
   });
 })();

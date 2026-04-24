@@ -434,6 +434,43 @@ nav {
   will-change: transform;
 }
 
+.hero-trust-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(209, 156, 74, 0.15);
+  border: 1px solid rgba(209, 156, 74, 0.4);
+  color: #D19C4A;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+.trust-divider {
+  opacity: 0.5;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 2px solid rgba(255,255,255,0.7);
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-outline:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: #fff;
+}
+
 .hero-content {
   position: relative;
   z-index: 10;
