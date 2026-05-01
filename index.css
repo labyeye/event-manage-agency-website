@@ -40,7 +40,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 *,
 *::before,
 *::after {
@@ -236,14 +235,14 @@ html {
 }
 .hero-section {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("./assets/images/Background/wedding-decorator-style-budget-hero-scaled.webp")
     center center/cover no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -251,13 +250,13 @@ html {
 }
 .hero-section-gallery {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("./assets/images/4.webp") center center/cover no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -265,14 +264,14 @@ html {
 }
 .hero-section-about {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("https://www.theknot.com/tk-media/images/72241d24-e14d-4cca-98a6-9af1d06b95cf.webp")
     center center/cover no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -280,14 +279,14 @@ html {
 }
 .hero-section-pricing {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("./assets/images/Background/birthday-party.webp") center
     center/cover no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -295,14 +294,14 @@ html {
 }
 .hero-section-contact {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("./assets/images/Background/award.webp") center center/cover
     no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -310,14 +309,14 @@ html {
 }
 .hero-section-services {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("https://luxaus.au/wp-content/uploads/2024/04/OP8_1807-1024x683.webp")
     center center/cover no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -325,14 +324,14 @@ html {
 }
 .hero-section-book {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("https://www.shaadidukaan.com/vogue/wp-content/uploads/2025/02/south-indian-wedding-3-6.webp")
     center center/cover no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -340,14 +339,14 @@ html {
 }
 .hero-section-birthday-party {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("./assets/images/Background/birthday-party.webp") center
     center/cover no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -355,14 +354,14 @@ html {
 }
 .hero-section-award-ceremonies {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background: url("./assets/images/Background/award.webp") center center/cover
     no-repeat;
   position: relative;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: rgb(0, 0, 0);
   overflow: hidden;
@@ -374,18 +373,18 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff4e9; 
+  background: #fff4e9;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; 
+  z-index: 9999;
   transition: opacity 0.5s ease;
 }
 
 .loader-text {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #5c0469; 
+  color: #5c0469;
   animation: fadeText 1.5s ease-in-out infinite alternate;
   text-align: center;
 }
@@ -417,8 +416,8 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: 1; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .hero-content h1 {
@@ -466,7 +465,6 @@ html {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .hero-content h1 {
     font-size: 9vw;
@@ -484,11 +482,10 @@ html {
     padding: 0 15px;
   }
 
-  
   .hero-btn {
     font-size: 1rem;
     padding: 12px 30px;
-    margin-top: 20px; 
+    margin-top: 20px;
   }
 }
 
@@ -604,9 +601,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   align-items: center;
-  
+
   color: white;
   text-align: center;
   transition: all 0.4s ease;
@@ -635,7 +632,6 @@ html {
   word-wrap: break-word;
 }
 
-
 .service-card:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
@@ -650,7 +646,6 @@ html {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 @media screen and (max-width: 768px) {
   .services-grid {
@@ -701,7 +696,6 @@ html {
   transform: scale(1.1);
 }
 
-
 .card-top-left {
   top: 10%;
   left: 5%;
@@ -726,7 +720,6 @@ html {
   animation-delay: 3s;
 }
 
-
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -740,7 +733,6 @@ html {
     transform: translateY(0px);
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .photo-card {
@@ -787,7 +779,6 @@ html {
   }
 }
 
-
 .testimonials {
   display: flex;
   justify-content: center;
@@ -814,7 +805,6 @@ html {
   font-style: italic;
 }
 
-
 .why-us .reasons {
   display: flex;
   justify-content: center;
@@ -838,7 +828,6 @@ html {
   background: #f4b86f;
   color: white;
 }
-
 
 .cta-section {
   text-align: center;
@@ -866,7 +855,6 @@ html {
   background: #5c0469;
   color: white;
 }
-
 
 @keyframes fadeInDown {
   0% {
@@ -979,7 +967,6 @@ html {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
-
 @keyframes fadeLeft {
   from {
     opacity: 0;
@@ -1003,7 +990,6 @@ html {
     transform: translateX(0px);
   }
 }
-
 
 @media (max-width: 768px) {
   .about-section {
@@ -1377,16 +1363,14 @@ html {
   from {
     filter: blur(100px);
     transform: scale(0.8);
-    
+
     margin-top: 0;
-    
   }
 
   to {
     filter: blur(0);
     transform: scale(1);
     margin-top: 1.5vw;
-    
   }
 }
 
@@ -1394,17 +1378,15 @@ html {
   from {
     filter: blur(100px);
     transform: scale(1.1);
-    
+
     margin-top: -23.5vw;
-    
   }
 
   to {
     filter: blur(0);
     transform: scale(1);
-    
+
     margin-top: -31vw;
-    
   }
 }
 

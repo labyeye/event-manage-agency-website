@@ -1,550 +1,614 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Event Planning & Wedding Services in Patna, Bihar | AR Events</title>
-  <meta name="description"
-    content="Premium event planning and wedding services in Patna, Bihar. AR Events offers luxury weddings, corporate events, and grand celebrations in the capital city." />
-  <meta name="keywords"
-    content="Event planner Patna, wedding planner Patna, corporate events Patna, event management Patna" />
-  <link rel="canonical" href="https://arevents.in/locations-bihar/event-management-in-patna" />
-  <meta name="geo.region" content="IN-BR" />
-  <meta name="geo.placename" content="Patna" />
-  <link rel="icon" type="image/svg+xml" href="../assets/logo2.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link rel="stylesheet" href="../common.css" />
-  <link rel="stylesheet" href="../layout.css" />
-  <link rel="stylesheet" href="../components.css" />
-  <link rel="stylesheet" href="../pages.css" />
-  <link rel="stylesheet" href="../styles-premium.css" />
-  <style>
-    .city-page {
-      background-color: var(--bg-dark);
-    }
-
-    .city-hero {
-      position: relative;
-      color: white;
-      padding: 150px 20px;
-      text-align: center;
-      min-height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .city-hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
-      z-index: 0;
-    }
-
-    .city-hero-content {
-      max-width: 800px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .city-hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-
-    .city-hero-subtitle {
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-      opacity: 0.95;
-    }
-
-    .city-container {
-      margin: 0px auto;
-      padding: 0 20px;
-    }
-
-    .services-section {
-      margin: 60px 0;
-    }
-
-    .services-section h2 {
-      font-size: 2.5rem;
-      color: #d19c4a;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .service-item {
-      background: var(--bg-dark);
-      padding: 30px;
-      border-radius: 8px;
-      border-left: 5px solid #d19c4a;
-    }
-
-    .service-item h3 {
-      color: #333;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
-    }
-
-    .service-item p {
-      color: #666;
-      line-height: 1.6;
-    }
-
-    .about-city {
-      background: var(--bg-dark);
-      padding: 50px;
-      border-radius: 8px;
-      margin: 60px auto;
-      max-width: 1200px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(209, 155, 74, 0.329);
-    }
-
-    .about-city h2 {
-      color: #d19c4a;
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-    }
-
-    .about-city p {
-      color: #ffffff;
-      font-weight: 200;
-      line-height: 1.8;
-      font-size: 1.35rem;
-      font-family: "Playfair Display", serif;
-      text-align: justify;
-    }
-
-    .faq-section {
-      margin: 80px auto;
-      box-shadow: 0 0px 12px 13px rgba(209, 155, 74, 0.329);
-      max-width: 1200px;
-      border-radius: 50px;
-    }
-
-    .faq-section h2 {
-      font-size: 2.5rem;
-      color: #d19c4a;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    .faq-container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .faq-item {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      transition: all 0.3s ease;
-    }
-
-    .faq-question {
-      padding: 20px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 600;
-      color: #333;
-      background: #fafafa;
-      border-radius: 8px 8px 0 0;
-    }
-
-    .faq-toggle {
-      font-size: 1.5rem;
-      color: #d19c4a;
-      transition: transform 0.3s ease;
-    }
-
-    .faq-item.active .faq-toggle {
-      transform: rotate(45deg);
-    }
-
-    .faq-answer {
-      padding: 0 20px;
-      max-height: 0;
-      overflow: hidden;
-      transition:
-        max-height 0.3s ease,
-        padding 0.3s ease;
-      color: #666;
-      line-height: 1.7;
-    }
-
-    .faq-item.active .faq-answer {
-      max-height: 500px;
-      padding: 20px;
-    }
-
-    .why-choose {
-      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
-      color: white;
-      padding: 60px 40px;
-      border-radius: 8px;
-      margin: 60px 0;
-    }
-
-    .why-choose h2 {
-      font-size: 2.2rem;
-      margin-bottom: 30px;
-    }
-
-    .why-choose-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .why-choose-list li {
-      padding: 15px 0;
-      padding-left: 40px;
-      position: relative;
-      font-size: 1.05rem;
-    }
-
-    .why-choose-list li:before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #fff;
-      font-weight: bold;
-      font-size: 1.5rem;
-    }
-
-    .contact-cta {
-      background: var(--bg-dark);
-      padding: 60px 40px;
-      text-align: center;
-      border-radius: 8px;
-      margin: 60px 0;
-    }
-
-    .contact-cta h2 {
-      color: #d19c4a;
-      font-size: 2.3rem;
-      margin-bottom: 20px;
-    }
-
-    .contact-cta p {
-      color: #ffffff;
-      font-size: 1.3rem;
-      margin-bottom: 30px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-      font-family: "Playfair Display", serif;
-    }
-
-    .contact-cta-btn {
-      background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
-      color: white;
-      border: none;
-      padding: 15px 50px;
-      font-size: 1.1rem;
-      border-radius: 25px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      transition: transform 0.3s ease;
-    }
-
-    .contact-cta-btn:hover {
-      transform: scale(1.05);
-    }
-
-    @media (max-width: 768px) {
-      .city-hero h1 {
-        font-size: 2.2rem;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Planning & Wedding Services in Patna, Bihar | AR Events</title>
+    <meta
+      name="description"
+      content="Premium event planning and wedding services in Patna, Bihar. AR Events offers luxury weddings, corporate events, and grand celebrations in the capital city."
+    />
+    <meta
+      name="keywords"
+      content="Event planner Patna, wedding planner Patna, corporate events Patna, event management Patna"
+    />
+    <link
+      rel="canonical"
+      href="https://arevents.in/locations-bihar/event-management-in-patna"
+    />
+    <meta name="geo.region" content="IN-BR" />
+    <meta name="geo.placename" content="Patna" />
+    <link rel="icon" type="image/svg+xml" href="../assets/logo2.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      as="style"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" href="../components.css" />
+    <link rel="stylesheet" href="../pages.css" />
+    <link rel="stylesheet" href="../styles-premium.css" />
+    <style>
+      .city-page {
+        background-color: var(--bg-dark);
       }
 
       .city-hero {
-        padding: 80px 20px;
-        min-height: 300px;
+        position: relative;
+        color: white;
+        padding: 150px 20px;
+        text-align: center;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+
+      .city-hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+        z-index: 0;
+      }
+
+      .city-hero-content {
+        max-width: 800px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .city-hero h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+
+      .city-hero-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        opacity: 0.95;
+      }
+
+      .city-container {
+        margin: 0px auto;
+        padding: 0 20px;
+      }
+
+      .services-section {
+        margin: 60px 0;
+      }
+
+      .services-section h2 {
+        font-size: 2.5rem;
+        color: #d19c4a;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+      }
+
+      .service-item {
+        background: var(--bg-dark);
+        padding: 30px;
+        border-radius: 8px;
+        border-left: 5px solid #d19c4a;
+      }
+
+      .service-item h3 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+      }
+
+      .service-item p {
+        color: #666;
+        line-height: 1.6;
       }
 
       .about-city {
-        padding: 30px 20px;
+        background: var(--bg-dark);
+        padding: 50px;
+        border-radius: 8px;
+        margin: 60px auto;
+        max-width: 1200px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(209, 155, 74, 0.329);
+      }
+
+      .about-city h2 {
+        color: #d19c4a;
+        font-size: 2.2rem;
+        margin-bottom: 20px;
       }
 
       .about-city p {
         color: #ffffff;
         font-weight: 200;
         line-height: 1.8;
-        font-size: 1rem;
+        font-size: 1.35rem;
         font-family: "Playfair Display", serif;
         text-align: justify;
       }
-    }
-  </style>
-</head>
 
-<body class="city-page">
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <a href="../">
-          <img src="../assets/logo2.svg" alt="AR Events & Wedding Planner Logo" class="logo-img" />
-        </a>
+      .faq-section {
+        margin: 80px auto;
+        box-shadow: 0 0px 12px 13px rgba(209, 155, 74, 0.329);
+        max-width: 1200px;
+        border-radius: 50px;
+      }
+
+      .faq-section h2 {
+        font-size: 2.5rem;
+        color: #d19c4a;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .faq-item {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .faq-question {
+        padding: 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        color: #333;
+        background: #fafafa;
+        border-radius: 8px 8px 0 0;
+      }
+
+      .faq-toggle {
+        font-size: 1.5rem;
+        color: #d19c4a;
+        transition: transform 0.3s ease;
+      }
+
+      .faq-item.active .faq-toggle {
+        transform: rotate(45deg);
+      }
+
+      .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition:
+          max-height 0.3s ease,
+          padding 0.3s ease;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 500px;
+        padding: 20px;
+      }
+
+      .why-choose {
+        background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+        color: white;
+        padding: 60px 40px;
+        border-radius: 8px;
+        margin: 60px 0;
+      }
+
+      .why-choose h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+      }
+
+      .why-choose-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .why-choose-list li {
+        padding: 15px 0;
+        padding-left: 40px;
+        position: relative;
+        font-size: 1.05rem;
+      }
+
+      .why-choose-list li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .contact-cta {
+        background: var(--bg-dark);
+        padding: 60px 40px;
+        text-align: center;
+        border-radius: 8px;
+        margin: 60px 0;
+      }
+
+      .contact-cta h2 {
+        color: #d19c4a;
+        font-size: 2.3rem;
+        margin-bottom: 20px;
+      }
+
+      .contact-cta p {
+        color: #ffffff;
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "Playfair Display", serif;
+      }
+
+      .contact-cta-btn {
+        background: linear-gradient(135deg, #d19c4a 0%, #8b6f47 100%);
+        color: white;
+        border: none;
+        padding: 15px 50px;
+        font-size: 1.1rem;
+        border-radius: 25px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: transform 0.3s ease;
+      }
+
+      .contact-cta-btn:hover {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 768px) {
+        .city-hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .city-hero {
+          padding: 80px 20px;
+          min-height: 300px;
+        }
+
+        .about-city {
+          padding: 30px 20px;
+        }
+
+        .about-city p {
+          color: #ffffff;
+          font-weight: 200;
+          line-height: 1.8;
+          font-size: 1rem;
+          font-family: "Playfair Display", serif;
+          text-align: justify;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="city-page">
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="../">
+            <img
+              src="../assets/logo2.svg"
+              alt="AR Events & Wedding Planner Logo"
+              class="logo-img"
+            />
+          </a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="../wedding-planning">Wedding Planning</a></li>
+              <li>
+                <a href="../anniversary-celebrations"
+                  >Anniversary Celebrations</a
+                >
+              </li>
+              <li><a href="../corporate-events">Corporate Events</a></li>
+              <li><a href="../birthday-parties">Birthday Parties</a></li>
+              <li><a href="../cultural-events">Cultural Events</a></li>
+              <li>
+                <a href="../religious-ceremonies">Religious Ceremonies</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="../portfolio">Portfolio</a></li>
+          <li><a href="../about">About</a></li>
+          <li><a href="../locations">Locations</a></li>
+          <li><a href="../pricing">Pricing</a></li>
+          <li><a href="../contact">Contact</a></li>
+          <li class="mobile-book-btn">
+            <a href="../book" class="book-nav-link">Book Now</a>
+          </li>
+        </ul>
+        <a href="../book" class="book-btn">Book Now</a>
       </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="../">Home</a></li>
-        <li class="dropdown">
-          <a href="#">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="../wedding-planning">Wedding Planning</a></li>
-            <li>
-              <a href="../anniversary-celebrations">Anniversary Celebrations</a>
-            </li>
-            <li><a href="../corporate-events">Corporate Events</a></li>
-            <li><a href="../birthday-parties">Birthday Parties</a></li>
-            <li><a href="../cultural-events">Cultural Events</a></li>
-            <li>
-              <a href="../religious-ceremonies">Religious Ceremonies</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="../portfolio">Portfolio</a></li>
-        <li><a href="../about">About</a></li>
-        <li><a href="../locations">Locations</a></li>
-        <li><a href="../pricing">Pricing</a></li>
-        <li><a href="../contact">Contact</a></li>
-        <li class="mobile-book-btn">
-          <a href="../book" class="book-nav-link">Book Now</a>
-        </li>
-      </ul>
-      <a href="../book" class="book-btn">Book Now</a>
-    </div>
-    <div class="hamburger-menu" id="hamburger">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </header>
-  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+      <div class="hamburger-menu" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
 
-  
-  <section class="hero-section">
-    <div class="hero-background" style="
+    <section class="hero-section">
+      <div
+        class="hero-background"
+        style="
           background-image:
             linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
             url(&quot;../assets/images/Wedding/wedd16.webp&quot;);
-        "></div>
-    <div class="hero-content">
-      <h1 class="fade-in-up">Luxury Events in Patna</h1>
-      <p class="hero-tagline">Capital City Celebrations</p>
-      <p class="hero-description">
-        Premium event planning and wedding services in Bihar's capital city.
-        Grand celebrations with luxury venues and flawless execution.
-      </p>
-      <div class="hero-cta-group">
-        <a href="../book" class="btn btn-primary">
-          <i class="fas fa-calendar-check"></i> Plan Your Event
-        </a>
-        <a href="#services" class="btn btn-white">
-          <i class="fas fa-arrow-down"></i> Explore Services
-        </a>
+        "
+      ></div>
+      <div class="hero-content">
+        <h1 class="fade-in-up">Luxury Events in Patna</h1>
+        <p class="hero-tagline">Capital City Celebrations</p>
+        <p class="hero-description">
+          Premium event planning and wedding services in Bihar's capital city.
+          Grand celebrations with luxury venues and flawless execution.
+        </p>
+        <div class="hero-cta-group">
+          <a href="../book" class="btn btn-primary">
+            <i class="fas fa-calendar-check"></i> Plan Your Event
+          </a>
+          <a href="#services" class="btn btn-white">
+            <i class="fas fa-arrow-down"></i> Explore Services
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="city-container">
-    <div class="about-city">
-      <h2>Event Planning Excellence in Patna</h2>
-      <p>
-        Patna is the capital and the biggest city of the state of Bihar and
-        known for its opulence, luxury functions, and parties. AR Events &
-        Wedding Planner is the best choice for you for wedding decoration in
-        Patna. With our experience, we promise you the world's best party
-        decoration experience in Patna. We excel at luxury wedding decoration
-        in Patna, luxury birthday decoration in Patna, luxury anniversary
-        decoration in Patna, and luxury corporate event decoration in Patna,
-        providing you with the finest theme-based decorations. Be it Haldi
-        decoration in Patna, mehndi decoration in Patna, or any kind of
-        reception stage decoration in Patna, we assure you perfect decoration
-        ideas. As the best wedding planner in Patna, we provide all kinds of
-        wedding event decoration in Patna like wedding stage decoration in
-        Patna, wedding mandap decoration in Patna, wedding balloon decoration
-        in Patna, and wedding theme-based event decoration in Patna. Whatever
-        you need for your wedding or other luxury party, we provide
-        everything. Having 100+ successful grand events, AR Events & Wedding
-        Planner have emerged as the best event management in Patna with
-        expertise in organizing high-profile events like wedding, birthday
-        parties, corporate parties, and much more.
-      </p>
-    </div>
+    <div class="city-container">
+      <div class="about-city">
+        <h2>Event Planning Excellence in Patna</h2>
+        <p>
+          Patna is the capital and the biggest city of the state of Bihar and
+          known for its opulence, luxury functions, and parties. AR Events &
+          Wedding Planner is the best choice for you for wedding decoration in
+          Patna. With our experience, we promise you the world's best party
+          decoration experience in Patna. We excel at luxury wedding decoration
+          in Patna, luxury birthday decoration in Patna, luxury anniversary
+          decoration in Patna, and luxury corporate event decoration in Patna,
+          providing you with the finest theme-based decorations. Be it Haldi
+          decoration in Patna, mehndi decoration in Patna, or any kind of
+          reception stage decoration in Patna, we assure you perfect decoration
+          ideas. As the best wedding planner in Patna, we provide all kinds of
+          wedding event decoration in Patna like wedding stage decoration in
+          Patna, wedding mandap decoration in Patna, wedding balloon decoration
+          in Patna, and wedding theme-based event decoration in Patna. Whatever
+          you need for your wedding or other luxury party, we provide
+          everything. Having 100+ successful grand events, AR Events & Wedding
+          Planner have emerged as the best event management in Patna with
+          expertise in organizing high-profile events like wedding, birthday
+          parties, corporate parties, and much more.
+        </p>
+      </div>
 
-    <section class="global-section" id="services">
-      <div class="text-center" style="margin-bottom: var(--space-4xl)">
-        <h2 class="fade-in-up" style="
+      <section class="global-section" id="services">
+        <div class="text-center" style="margin-bottom: var(--space-4xl)">
+          <h2
+            class="fade-in-up"
+            style="
               color: var(--primary-gold);
               font-family: &quot;Kenao&quot;, sans-serif;
               font-size: 3.5rem;
               letter-spacing: 0.05em;
-            ">
-          Our Services
-        </h2>
-        <p class="fade-in-up" style="
+            "
+          >
+            Our Services
+          </h2>
+          <p
+            class="fade-in-up"
+            style="
               color: var(--secondary-gray);
               font-family: &quot;Playfair Display&quot;, serif;
               font-style: italic;
               font-size: 1.2rem;
               margin-top: 10px;
-            ">
-          Bespoke event planning tailored to your unique vision
-        </p>
-      </div>
-      <div class="services-modern-grid">
-        <div class="service-grid-card fade-in-up stagger-1">
-          <div class="service-grid-img">
-            <img src="../assets/images/services/wedding.webp"
-              alt="Professional Indian wedding planning and ceremony decoration in Patna Bihar" loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Wedding Planning</h3>
-            <p class="clamp-text">
-              Experience the best wedding decoration in Patna with our expert
-              planning and coordination. We specialize in creating memorable
-              ceremonies with premium wedding decoration services in Patna.
-              From venue selection to flawless execution, our top wedding
-              planners in Patna ensure every detail reflects your vision.
-              Trust us for professional wedding decoration, staging, and
-              complete management services tailored to make your dream wedding
-              a magical reality in Patna.
-            </p>
-            <a href="../wedding-planning" class="btn-primary grid-btn">Discover More</a>
-          </div>
+            "
+          >
+            Bespoke event planning tailored to your unique vision
+          </p>
         </div>
+        <div class="services-modern-grid">
+          <div class="service-grid-card fade-in-up stagger-1">
+            <div class="service-grid-img">
+              <img
+                src="../assets/images/services/wedding.webp"
+                alt="Professional Indian wedding planning and ceremony decoration in Patna Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Wedding Planning</h3>
+              <p class="clamp-text">
+                Experience the best wedding decoration in Patna with our expert
+                planning and coordination. We specialize in creating memorable
+                ceremonies with premium wedding decoration services in Patna.
+                From venue selection to flawless execution, our top wedding
+                planners in Patna ensure every detail reflects your vision.
+                Trust us for professional wedding decoration, staging, and
+                complete management services tailored to make your dream wedding
+                a magical reality in Patna.
+              </p>
+              <a href="../wedding-planning" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
 
-        <div class="service-grid-card fade-in-up stagger-2">
-          <div class="service-grid-img">
-            <img src="../assets/images/services/anniversary.webp"
-              alt="Professional anniversary celebration and romantic event decoration services in Patna"
-              loading="lazy" />
+          <div class="service-grid-card fade-in-up stagger-2">
+            <div class="service-grid-img">
+              <img
+                src="../assets/images/services/anniversary.webp"
+                alt="Professional anniversary celebration and romantic event decoration services in Patna"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Anniversary Celebrations</h3>
+              <p class="clamp-text">
+                Celebrate your milestone moments with the best anniversary
+                decoration in Patna. Our professional anniversary event planners
+                in Patna create romantic and elegant celebrations tailored to
+                your preferences. From intimate dinner setups to grand
+                anniversary parties, we offer complete anniversary decoration
+                services in Patna with personalized themes and premium decor
+                that honors your special bond and creates lasting memories.
+              </p>
+              <a href="../anniversary-celebrations" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
           </div>
-          <div class="service-grid-content">
-            <h3>Anniversary Celebrations</h3>
-            <p class="clamp-text">
-              Celebrate your milestone moments with the best anniversary
-              decoration in Patna. Our professional anniversary event planners
-              in Patna create romantic and elegant celebrations tailored to
-              your preferences. From intimate dinner setups to grand
-              anniversary parties, we offer complete anniversary decoration
-              services in Patna with personalized themes and premium decor
-              that honors your special bond and creates lasting memories.
-            </p>
-            <a href="../anniversary-celebrations" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
 
-        <div class="service-grid-card fade-in-up stagger-3">
-          <div class="service-grid-img">
-            <img src="../assets/images/services/birthday.webp"
-              alt="Themed birthday party planning and decoration services for kids and adults in Bihar"
-              loading="lazy" />
+          <div class="service-grid-card fade-in-up stagger-3">
+            <div class="service-grid-img">
+              <img
+                src="../assets/images/services/birthday.webp"
+                alt="Themed birthday party planning and decoration services for kids and adults in Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Birthday Parties</h3>
+              <p class="clamp-text">
+                A birthday party should be fun to plan, but then again, once the
+                factors like theme, decorations, suppliers, and invitees begin
+                to complicate matters, one may begin to question their
+                decisions. But whether it is a party for a child or an adult, it
+                really doesn't matter because we take care of everything. Our
+                services include professional party planning in Bihar for a
+                fun-filled and unique experience for you and your guests.
+                Birthday decoration in Patna is just one of the many services we
+                offer for any kind of celebration.
+              </p>
+              <a href="../birthday-parties" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
           </div>
-          <div class="service-grid-content">
-            <h3>Birthday Parties</h3>
-            <p class="clamp-text">
-              A birthday party should be fun to plan, but then again, once the
-              factors like theme, decorations, suppliers, and invitees begin
-              to complicate matters, one may begin to question their
-              decisions. But whether it is a party for a child or an adult, it
-              really doesn't matter because we take care of everything. Our
-              services include professional party planning in Bihar for a
-              fun-filled and unique experience for you and your guests.
-              Birthday decoration in Patna is just one of the many services we
-              offer for any kind of celebration.
-            </p>
-            <a href="../birthday-parties" class="btn-primary grid-btn">Discover More</a>
+          <div class="service-grid-card fade-in-up stagger-3">
+            <div class="service-grid-img">
+              <img
+                src="../assets/images/services/cultural.webp"
+                alt="Cultural event planning and organization services in Patna Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Cultural Events</h3>
+              <p class="clamp-text">
+                Celebration, tradition, and creativity are the key aspects of
+                any cultural events. Whether this is a social event or an event
+                in school or any other cultural event, everything will require
+                creativity in order to make the event happen properly. In case
+                of any show or decorations or any other activities, let us
+                manage it! We are experts in organizing cultural events in Bihar
+                in an organized and visual way that showcases all traditions
+                with flair and precision.
+              </p>
+              <a href="../cultural-events" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
+          <div class="service-grid-card fade-in-up stagger-3">
+            <div class="service-grid-img">
+              <img
+                src="../assets/images/services/corporate.webp"
+                alt="Corporate event planning and organization services in Patna Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Corporate Events</h3>
+              <p class="clamp-text">
+                Professional corporate event planning in Patna delivered by
+                expert corporate event organizers. We provide comprehensive
+                corporate event management services in Patna including venue
+                coordination, decor, and logistics. As experienced corporate
+                event planners in Patna, we ensure your business events reflect
+                professionalism and excellence, creating impactful experiences
+                that strengthen brand reputation and client relationships.
+              </p>
+              <a href="../corporate-events" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
+          </div>
+          <div class="service-grid-card fade-in-up stagger-1">
+            <div class="service-grid-img">
+              <img
+                src="../assets/images/services/religious.webp"
+                alt="Corporate event planning and organization services in Patna Bihar"
+                loading="lazy"
+              />
+            </div>
+            <div class="service-grid-content">
+              <h3>Religious Ceremonies</h3>
+              <p class="clamp-text">
+                Expert religious ceremony decoration in Patna with deep respect
+                for traditions and spiritual values. Our religious event
+                planners in Patna specialize in puja coordination, temple
+                ceremonies, and spiritual celebrations with professional
+                management. We provide complete religious ceremony services in
+                Patna ensuring proper rituals, beautiful decoration, and
+                seamless coordination that honors the sanctity and significance
+                of your sacred occasions.
+              </p>
+              <a href="../religious-ceremonies" class="btn-primary grid-btn"
+                >Discover More</a
+              >
+            </div>
           </div>
         </div>
-        <div class="service-grid-card fade-in-up stagger-3">
-          <div class="service-grid-img">
-            <img src="../assets/images/services/cultural.webp"
-              alt="Cultural event planning and organization services in Patna Bihar" loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Cultural Events</h3>
-            <p class="clamp-text">
-              Celebration, tradition, and creativity are the key aspects of
-              any cultural events. Whether this is a social event or an event
-              in school or any other cultural event, everything will require
-              creativity in order to make the event happen properly. In case
-              of any show or decorations or any other activities, let us
-              manage it! We are experts in organizing cultural events in Bihar
-              in an organized and visual way that showcases all traditions
-              with flair and precision.
-            </p>
-            <a href="../cultural-events" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
-        <div class="service-grid-card fade-in-up stagger-3">
-          <div class="service-grid-img">
-            <img src="../assets/images/services/corporate.webp"
-              alt="Corporate event planning and organization services in Patna Bihar" loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Corporate Events</h3>
-            <p class="clamp-text">
-              Professional corporate event planning in Patna delivered by
-              expert corporate event organizers. We provide comprehensive
-              corporate event management services in Patna including venue
-              coordination, decor, and logistics. As experienced corporate
-              event planners in Patna, we ensure your business events reflect
-              professionalism and excellence, creating impactful experiences
-              that strengthen brand reputation and client relationships.
-            </p>
-            <a href="../corporate-events" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
-        <div class="service-grid-card fade-in-up stagger-1">
-          <div class="service-grid-img">
-            <img src="../assets/images/services/religious.webp"
-              alt="Corporate event planning and organization services in Patna Bihar" loading="lazy" />
-          </div>
-          <div class="service-grid-content">
-            <h3>Religious Ceremonies</h3>
-            <p class="clamp-text">
-              Expert religious ceremony decoration in Patna with deep respect
-              for traditions and spiritual values. Our religious event
-              planners in Patna specialize in puja coordination, temple
-              ceremonies, and spiritual celebrations with professional
-              management. We provide complete religious ceremony services in
-              Patna ensuring proper rituals, beautiful decoration, and
-              seamless coordination that honors the sanctity and significance
-              of your sacred occasions.
-            </p>
-            <a href="../religious-ceremonies" class="btn-primary grid-btn">Discover More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="why-choose-section" style="padding: var(--space-3xl) var(--space-lg)">
-      <div class="container">
-        <h2 class="fade-in-up" style="margin-bottom: var(--space-lg)">
-          Why Choose AR Events
-        </h2>
-        <p class="why-choose-description" style="
+      </section>
+      <section
+        class="why-choose-section"
+        style="padding: var(--space-3xl) var(--space-lg)"
+      >
+        <div class="container">
+          <h2 class="fade-in-up" style="margin-bottom: var(--space-lg)">
+            Why Choose AR Events
+          </h2>
+          <p
+            class="why-choose-description"
+            style="
               text-align: center;
               margin-bottom: var(--space-2xl);
               max-width: 700px;
@@ -552,290 +616,331 @@
               margin-right: auto;
               font-family: &quot;Playfair Display&quot;, serif;
               font-weight: 100;
-            ">
-          We don't just plan events, we deliver complete event planning and
-          decoration solutions in Bihar that create unforgettable experiences.
-          From thoughtful design to flawless execution, every detail is
-          crafted to leave a lasting impression on your guests and reflect
-          true professionalism.
-        </p>
-
-        <div class="features-grid">
-          <div class="feature-card fade-in-up" style="animation-delay: 0.1s">
-            <div class="feature-icon">
-              <i class="fas fa-paint-brush"></i>
-            </div>
-            <h3>Creative Vision</h3>
-            <p>
-              Custom designs and concepts tailored to your personality and
-              preferences.
-            </p>
-          </div>
-
-          <div class="feature-card fade-in-up" style="animation-delay: 0.2s">
-            <div class="feature-icon">
-              <i class="fas fa-check-double"></i>
-            </div>
-            <h3>Attention to Detail</h3>
-            <p>
-              Every element, from décor to timing, is meticulously coordinated
-              for perfection.
-            </p>
-          </div>
-
-          <div class="feature-card fade-in-up" style="animation-delay: 0.3s">
-            <div class="feature-icon">
-              <i class="fas fa-network-wired"></i>
-            </div>
-            <h3>Trusted Vendors</h3>
-            <p>
-              Partnerships with premium caterers, florists, and entertainment
-              providers.
-            </p>
-          </div>
-
-          <div class="feature-card fade-in-up" style="animation-delay: 0.4s">
-            <div class="feature-icon"><i class="fas fa-headset"></i></div>
-            <h3>24/7 Support</h3>
-            <p>
-              Dedicated team available before, during, and after your event.
-            </p>
-          </div>
-
-          <div class="feature-card fade-in-up" style="animation-delay: 0.5s">
-            <div class="feature-icon"><i class="fas fa-star"></i></div>
-            <h3>Premium Quality</h3>
-            <p>
-              We source the finest materials and services for an elevated
-              experience.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="faq-section">
-      <h2>Frequently Asked Questions - Patna Events</h2>
-      <div class="faq-container">
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>Which are the top venues in Patna for grand weddings?</span>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Patna has several premium venues including luxury hotels,
-              private clubs, farmhouses, and heritage properties. We have
-              exclusive partnerships with Patna's best venues and can
-              recommend options based on your guest count, theme preferences,
-              and budget. Our team can arrange site visits and negotiate the
-              best rates.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>Do you handle international delegation for Patna events?</span>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Yes, we have experience coordinating events with international
-              guests. We manage visa logistics, hotel arrangements, airport
-              transportation, and special accommodations. Our multilingual
-              team ensures smooth communication and hospitality for foreign
-              dignitaries and guests.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>Can you manage media coverage and photography for corporate
-              events?</span>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Absolutely. We coordinate professional photography, videography,
-              live streaming, and media coverage for corporate events. Our
-              network includes experienced event photographers and media
-              partners who ensure comprehensive documentation of your event.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>How do you handle traffic and logistics in Patna's busy
-              areas?</span>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Our team has years of experience managing events across Patna.
-              We coordinate with local authorities for traffic management,
-              arrange guest parking, organize shuttle services, and plan
-              arrival/departure logistics to ensure smooth guest experience
-              despite city traffic.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>What's the minimum lead time for booking events in Patna?</span>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>
-              For grand events, we recommend 6-8 months advance booking. For
-              corporate events and smaller celebrations, 4-6 weeks is usually
-              sufficient. However, we can accommodate rush bookings based on
-              venue availability and our team's capacity.
-            </p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">
-            <span>Do you provide customized menu planning for Patna events?</span>
-            <span class="faq-toggle">+</span>
-          </div>
-          <div class="faq-answer">
-            <p>
-              Yes, we coordinate with Patna's best caterers and chefs to
-              create customized menus reflecting your preferences. Whether you
-              want traditional Bihar cuisine, international dishes, or fusion
-              concepts, we ensure culinary excellence that matches your
-              event's caliber.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-cta">
-      <h2>Plan Your Grand Event in Patna</h2>
-      <p>
-        Let's create a celebration that Patna will remember. Contact us for an
-        exclusive consultation and custom proposal for your event.
-      </p>
-      <a href="../contact?city=patna" class="contact-cta-btn">Schedule Consultation</a>
-    </div>
-
-    <footer class="footer-premium">
-      <div class="container">
-        <div class="footer-main-grid">
-          <div class="footer-col brand-address">
-            <h3>AR Events & Wedding Planner</h3>
-            <p class="brand-tagline">
-              Where Your Love Story Becomes a Grand Celebration
-            </p>
-
-            <div class="address-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <p>Muzaffarpur, Bihar, India</p>
-            </div>
-
-            <div class="footer-social-icons">
-              <a href="https://www.facebook.com/arevents" target="_blank" rel="noopener noreferrer"
-                aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.instagram.com/arevents" target="_blank" rel="noopener noreferrer"
-                aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="https://wa.me/918873268474" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
-                  class="fab fa-whatsapp"></i></a>
-              <a href="https://youtube.com/@areventandweddingplanner33" target="_blank" rel="noopener noreferrer"
-                aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            </div>
-          </div>
-
-          <div class="footer-col">
-            <h4>Services</h4>
-            <ul class="footer-links">
-              <li>
-                <a href="../wedding-planning">Wedding Planning</a>
-              </li>
-              <li>
-                <a href="../anniversary-celebrations">Anniversary Celebrations</a>
-              </li>
-              <li>
-                <a href="../corporate-events">Corporate Events</a>
-              </li>
-              <li>
-                <a href="../birthday-parties">Birthday Parties</a>
-              </li>
-              <li>
-                <a href="../award-ceremonies">Award Ceremonies</a>
-              </li>
-              <li><a href="../cultural-events">Cultural Events</a></li>
-              <li>
-                <a href="../religious-ceremonies">Religious Ceremonies</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4>Company</h4>
-            <ul class="footer-links">
-              <li><a href="../about">About Us</a></li>
-              <li><a href="../portfolio">Portfolio</a></li>
-              <li><a href="../pricing">Pricing</a></li>
-              <li><a href="../locations">Locations</a></li>
-              <li><a href="../contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col touch-section">
-            <h4>Get In Touch</h4>
-            <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114856.28434771508!2d85.31174624792613!3d26.12056143521361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10e60803ee71%3A0xc00f1262d3a3d5e6!2sMuzaffarpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712192000000!5m2!1sen!2sin"
-                width="100%" height="150" style="border: 0" allowfullscreen="" loading="lazy">
-              </iframe>
-            </div>
-            <div class="contact-details">
-              <p><i class="fas fa-envelope"></i> areventsol@gmail.com</p>
-              <p><i class="fas fa-phone-alt"></i> +91-8873268474</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-bottom-premium">
-          <p>
-            &copy; 2026 AR Events & Wedding Planner. All rights reserved.
-            Developed by
-            <a href="https://www.pixelatenest.com" target="_blank">Pixelate Nest</a>
+            "
+          >
+            We don't just plan events, we deliver complete event planning and
+            decoration solutions in Bihar that create unforgettable experiences.
+            From thoughtful design to flawless execution, every detail is
+            crafted to leave a lasting impression on your guests and reflect
+            true professionalism.
           </p>
-          <div class="legal-links">
-            <a href="../privacy-policy">Privacy Policy</a>
-            <a href="../terms-of-service">Terms of Service</a>
+
+          <div class="features-grid">
+            <div class="feature-card fade-in-up" style="animation-delay: 0.1s">
+              <div class="feature-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3>Creative Vision</h3>
+              <p>
+                Custom designs and concepts tailored to your personality and
+                preferences.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in-up" style="animation-delay: 0.2s">
+              <div class="feature-icon">
+                <i class="fas fa-check-double"></i>
+              </div>
+              <h3>Attention to Detail</h3>
+              <p>
+                Every element, from décor to timing, is meticulously coordinated
+                for perfection.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in-up" style="animation-delay: 0.3s">
+              <div class="feature-icon">
+                <i class="fas fa-network-wired"></i>
+              </div>
+              <h3>Trusted Vendors</h3>
+              <p>
+                Partnerships with premium caterers, florists, and entertainment
+                providers.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in-up" style="animation-delay: 0.4s">
+              <div class="feature-icon"><i class="fas fa-headset"></i></div>
+              <h3>24/7 Support</h3>
+              <p>
+                Dedicated team available before, during, and after your event.
+              </p>
+            </div>
+
+            <div class="feature-card fade-in-up" style="animation-delay: 0.5s">
+              <div class="feature-icon"><i class="fas fa-star"></i></div>
+              <h3>Premium Quality</h3>
+              <p>
+                We source the finest materials and services for an elevated
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="faq-section">
+        <h2>Frequently Asked Questions - Patna Events</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Which are the top venues in Patna for grand weddings?</span>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Patna has several premium venues including luxury hotels,
+                private clubs, farmhouses, and heritage properties. We have
+                exclusive partnerships with Patna's best venues and can
+                recommend options based on your guest count, theme preferences,
+                and budget. Our team can arrange site visits and negotiate the
+                best rates.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >Do you handle international delegation for Patna events?</span
+              >
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we have experience coordinating events with international
+                guests. We manage visa logistics, hotel arrangements, airport
+                transportation, and special accommodations. Our multilingual
+                team ensures smooth communication and hospitality for foreign
+                dignitaries and guests.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >Can you manage media coverage and photography for corporate
+                events?</span
+              >
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Absolutely. We coordinate professional photography, videography,
+                live streaming, and media coverage for corporate events. Our
+                network includes experienced event photographers and media
+                partners who ensure comprehensive documentation of your event.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >How do you handle traffic and logistics in Patna's busy
+                areas?</span
+              >
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our team has years of experience managing events across Patna.
+                We coordinate with local authorities for traffic management,
+                arrange guest parking, organize shuttle services, and plan
+                arrival/departure logistics to ensure smooth guest experience
+                despite city traffic.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >What's the minimum lead time for booking events in Patna?</span
+              >
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                For grand events, we recommend 6-8 months advance booking. For
+                corporate events and smaller celebrations, 4-6 weeks is usually
+                sufficient. However, we can accommodate rush bookings based on
+                venue availability and our team's capacity.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span
+                >Do you provide customized menu planning for Patna events?</span
+              >
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, we coordinate with Patna's best caterers and chefs to
+                create customized menus reflecting your preferences. Whether you
+                want traditional Bihar cuisine, international dishes, or fusion
+                concepts, we ensure culinary excellence that matches your
+                event's caliber.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
 
-    <script src="../scripts.js" defer></script>
-    <script>
-      document.querySelectorAll(".faq-question").forEach((button) => {
-        button.addEventListener("click", () => {
-          const faqItem = button.parentElement;
-          faqItem.classList.toggle("active");
+      <div class="contact-cta">
+        <h2>Plan Your Grand Event in Patna</h2>
+        <p>
+          Let's create a celebration that Patna will remember. Contact us for an
+          exclusive consultation and custom proposal for your event.
+        </p>
+        <a href="../contact?city=patna" class="contact-cta-btn"
+          >Schedule Consultation</a
+        >
+      </div>
+
+      <footer class="footer-premium">
+        <div class="container">
+          <div class="footer-main-grid">
+            <div class="footer-col brand-address">
+              <h3>AR Events & Wedding Planner</h3>
+              <p class="brand-tagline">
+                Where Your Love Story Becomes a Grand Celebration
+              </p>
+
+              <div class="address-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Muzaffarpur, Bihar, India</p>
+              </div>
+
+              <div class="footer-social-icons">
+                <a
+                  href="https://www.facebook.com/arevents"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/arevents"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://wa.me/918873268474"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+                <a
+                  href="https://youtube.com/@areventandweddingplanner33"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul class="footer-links">
+                <li>
+                  <a href="../wedding-planning">Wedding Planning</a>
+                </li>
+                <li>
+                  <a href="../anniversary-celebrations"
+                    >Anniversary Celebrations</a
+                  >
+                </li>
+                <li>
+                  <a href="../corporate-events">Corporate Events</a>
+                </li>
+                <li>
+                  <a href="../birthday-parties">Birthday Parties</a>
+                </li>
+                <li>
+                  <a href="../award-ceremonies">Award Ceremonies</a>
+                </li>
+                <li><a href="../cultural-events">Cultural Events</a></li>
+                <li>
+                  <a href="../religious-ceremonies">Religious Ceremonies</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul class="footer-links">
+                <li><a href="../about">About Us</a></li>
+                <li><a href="../portfolio">Portfolio</a></li>
+                <li><a href="../pricing">Pricing</a></li>
+                <li><a href="../locations">Locations</a></li>
+                <li><a href="../contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col touch-section">
+              <h4>Get In Touch</h4>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114856.28434771508!2d85.31174624792613!3d26.12056143521361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed10e60803ee71%3A0xc00f1262d3a3d5e6!2sMuzaffarpur%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712192000000!5m2!1sen!2sin"
+                  width="100%"
+                  height="150"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                >
+                </iframe>
+              </div>
+              <div class="contact-details">
+                <p><i class="fas fa-envelope"></i> areventsol@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +91-8873268474</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom-premium">
+            <p>
+              &copy; 2026 AR Events & Wedding Planner. All rights reserved.
+              Developed by
+              <a href="https://www.pixelatenest.com" target="_blank"
+                >Pixelate Nest</a
+              >
+            </p>
+            <div class="legal-links">
+              <a href="../privacy-policy">Privacy Policy</a>
+              <a href="../terms-of-service">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script src="../scripts.js" defer></script>
+      <script>
+        document.querySelectorAll(".faq-question").forEach((button) => {
+          button.addEventListener("click", () => {
+            const faqItem = button.parentElement;
+            faqItem.classList.toggle("active");
+          });
         });
-      });
 
-      const hamburger = document.getElementById("hamburger");
-      const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
-      const navLinks = document.getElementById("navLinks");
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+        const navLinks = document.getElementById("navLinks");
 
-      if (hamburger) {
-        hamburger.addEventListener("click", () => {
-          navLinks.classList.toggle("active");
-          mobileMenuOverlay.classList.toggle("active");
-        });
-        mobileMenuOverlay.addEventListener("click", () => {
-          navLinks.classList.remove("active");
-          mobileMenuOverlay.classList.remove("active");
-        });
-      }
-    </script>
-  </div>
-</body>
-
+        if (hamburger) {
+          hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            mobileMenuOverlay.classList.toggle("active");
+          });
+          mobileMenuOverlay.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            mobileMenuOverlay.classList.remove("active");
+          });
+        }
+      </script>
+    </div>
+  </body>
 </html>

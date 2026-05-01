@@ -11,10 +11,9 @@ const twilio = require("twilio");
 const app = express();
 const port = process.env.PORT || 3000;
 
-
 const twilioClient = twilio(
   process.env.TWILIO_ACCOUNT_SID,
-  process.env.TWILIO_AUTH_TOKEN
+  process.env.TWILIO_AUTH_TOKEN,
 );
 
 mongoose
@@ -37,7 +36,7 @@ app.use(
     resave: false,
     saveUninitialized: true,
     cookie: { maxAge: 3600000 },
-  })
+  }),
 );
 
 app.use(express.static(path.join(__dirname, "../")));
@@ -81,13 +80,12 @@ function isAuthenticated(req, res, next) {
   res.redirect("/admin/login");
 }
 
-
 async function getBookingStats() {
   const total = await Booking.countDocuments();
   const approved = await Booking.countDocuments({ status: "Approved" });
   const pending = await Booking.countDocuments({ status: "Pending" });
   const rejected = await Booking.countDocuments({ status: "Rejected" });
-  
+
   return { total, approved, pending, rejected };
 }
 
@@ -107,7 +105,8 @@ app.get("/admin/login", (req, res) => {
 
 app.post("/admin/login", async (req, res) => {
   const user = await User.findOne({ username: req.body.username });
-  const valid = user && (await bcrypt.compare(req.body.password, user.password));
+  const valid =
+    user && (await bcrypt.compare(req.body.password, user.password));
   if (!valid) return res.render("login", { error: "Invalid credentials" });
   req.session.isAuthenticated = true;
   res.redirect("/admin/dashboard");
@@ -122,22 +121,21 @@ app.get("/admin/dashboard", isAuthenticated, async (req, res) => {
   try {
     const bookings = await Booking.find().sort({ createdAt: -1 });
     const stats = await getBookingStats();
-    
-    res.render("dashboard", { 
+
+    res.render("dashboard", {
       bookings,
       stats: {
         total: stats.total,
         approved: stats.approved,
         pending: stats.pending,
-        rejected: stats.rejected
-      }
+        rejected: stats.rejected,
+      },
     });
   } catch (err) {
     console.error("Error fetching dashboard data:", err);
     res.status(500).send("Error loading dashboard");
   }
 });
-
 
 app.get("/api/dashboard-stats", isAuthenticated, async (req, res) => {
   try {
@@ -152,7 +150,7 @@ app.post("/admin/booking/status/:id", isAuthenticated, async (req, res) => {
   try {
     const booking = await Booking.findById(req.params.id);
     if (!booking) return res.status(404).send("Booking not found");
-    
+
     await Booking.findByIdAndUpdate(req.params.id, { status: req.body.status });
 
     if (req.body.status === "Approved") {

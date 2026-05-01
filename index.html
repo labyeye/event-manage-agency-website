@@ -68,37 +68,278 @@
          Full styles load asynchronously below.
     ════════════════════════════════════════════════════ -->
     <style>
-      @font-face{font-family:"Kenao";src:url("./assets/fonts/Kenao.otf") format("opentype");font-weight:normal;font-style:normal;font-display:swap}
-      :root{--primary-dark:#d19c4a;--primary-gold:#dbb172;--primary-light:#e7c99b;--primary-cream:white;--primary-white:#ffffff;--bg-dark:#0f0f0f;--text-dark:#1a1a1a;--text-light:#f5f5f5;--shadow-md:0 8px 24px rgba(0,0,0,.15);--shadow-lg:0 16px 40px rgba(0,0,0,.25);--transition-fast:0.3s ease-in-out;--space-xs:.5rem;--space-sm:1rem;--space-md:1.5rem;--space-lg:2rem;--space-xl:3rem;--space-2xl:4rem;--space-3xl:6rem;--radius-sm:.25rem;--radius-md:.5rem;--radius-lg:1rem;--radius-xl:1.5rem;--radius-2xl:2rem;--radius-full:9999px}
-      *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-      html{scroll-behavior:smooth;scroll-padding-top:80px}
-      body{font-family:"Kenao",sans-serif;background-color:var(--bg-dark);color:var(--text-dark);line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-      .container{margin:0 auto;padding:0 var(--space-lg);width:100%}
-      .navbar{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:95%;max-width:1000px;z-index:1000;background:rgba(15,15,15,.45);backdrop-filter:blur(20px);border-radius:25px;box-shadow:0 15px 50px rgba(0,0,0,.25),0 0 40px rgba(209,156,74,.15),inset 0 1px 0 rgba(255,255,255,.1);border:1px solid rgba(209,156,74,.25);transition:all var(--transition-fast)}
-      .nav-container{display:flex;align-items:center;justify-content:space-between;padding:22px 40px;border-radius:25px;gap:1rem}
-      .logo-img{height:65px;object-fit:contain}
-      .nav-links{display:flex;gap:35px;align-items:center;list-style:none;margin:0;padding:0;flex:1;justify-content:center}
-      .nav-links a{color:var(--text-light);font-weight:600;font-size:.95rem;transition:all var(--transition-fast);display:flex;align-items:center;gap:.5rem;position:relative;text-decoration:none;letter-spacing:.3px}
-      .book-btn{padding:12px 32px;background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary-gold) 100%);color:var(--primary-white);font-weight:700;border-radius:var(--radius-full);font-size:.95rem;white-space:nowrap;transition:all var(--transition-fast);text-decoration:none;display:inline-block}
-      .hero-section{position:relative;height:100vh;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:0;padding-top:120px}
-      .hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1}
-      .hero-overlay{position:absolute;inset:0;z-index:2;background:linear-gradient(to bottom,rgba(0,0,0,.75) 0%,rgba(0,0,0,.55) 40%,rgba(0,0,0,.75) 100%)}
-      .hero-content{position:relative;z-index:10;text-align:center;max-width:800px;padding:0 var(--space-lg)}
-      .hero-content h1{color:var(--primary-white);margin-bottom:var(--space-md);text-shadow:0 4px 20px rgba(0,0,0,.5)}
-      .hero-tagline{font-size:1.5rem;color:var(--primary-gold);font-style:italic;margin-bottom:var(--space-xl);text-shadow:0 2px 10px rgba(0,0,0,.5)}
-      .hero-description{color:var(--text-light);font-size:1.1rem;margin-bottom:var(--space-xl);max-width:600px;margin-left:auto;margin-right:auto}
-      .hero-cta-group{display:flex;gap:var(--space-md);justify-content:center;flex-wrap:wrap}
-      .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:var(--space-md) var(--space-lg);border:none;border-radius:var(--radius-lg);font-family:"Kenao",sans-serif;font-weight:600;font-size:1rem;cursor:pointer;transition:all var(--transition-fast);text-transform:uppercase;letter-spacing:.05em;text-decoration:none}
-      .btn-primary{background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary-gold) 100%);color:var(--primary-white);box-shadow:0 8px 24px rgba(209,156,74,.3)}
-      .btn-white{background:var(--primary-white);color:var(--primary-dark);box-shadow:var(--shadow-md)}
-      .btn-outline{background:transparent;color:var(--primary-white);border:2px solid rgba(209,156,74,.6)}
-      .scroll-indicator{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:10}
-      .scroll-indicator svg{width:40px;height:40px;stroke:var(--primary-gold);stroke-width:2;fill:none}
-      .hero-trust-bar{display:flex;align-items:center;gap:1rem;justify-content:center;margin-bottom:1.5rem;color:rgba(255,255,255,.8);font-size:.9rem}
-      .trust-divider{color:var(--primary-gold);opacity:.6}
-      .hamburger-menu{display:none;flex-direction:column;cursor:pointer;gap:5px;padding:5px}
-      @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-      .fade-in-up{animation:fadeInUp 1s ease-out .3s both}
+      @font-face {
+        font-family: "Kenao";
+        src: url("./assets/fonts/Kenao.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      :root {
+        --primary-dark: #d19c4a;
+        --primary-gold: #dbb172;
+        --primary-light: #e7c99b;
+        --primary-cream: white;
+        --primary-white: #ffffff;
+        --bg-dark: #0f0f0f;
+        --text-dark: #1a1a1a;
+        --text-light: #f5f5f5;
+        --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.15);
+        --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.25);
+        --transition-fast: 0.3s ease-in-out;
+        --space-xs: 0.5rem;
+        --space-sm: 1rem;
+        --space-md: 1.5rem;
+        --space-lg: 2rem;
+        --space-xl: 3rem;
+        --space-2xl: 4rem;
+        --space-3xl: 6rem;
+        --radius-sm: 0.25rem;
+        --radius-md: 0.5rem;
+        --radius-lg: 1rem;
+        --radius-xl: 1.5rem;
+        --radius-2xl: 2rem;
+        --radius-full: 9999px;
+      }
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+      body {
+        font-family: "Kenao", sans-serif;
+        background-color: var(--bg-dark);
+        color: var(--text-dark);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 0 var(--space-lg);
+        width: 100%;
+      }
+      .navbar {
+        position: fixed;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        max-width: 1000px;
+        z-index: 1000;
+        background: rgba(15, 15, 15, 0.45);
+        backdrop-filter: blur(20px);
+        border-radius: 25px;
+        box-shadow:
+          0 15px 50px rgba(0, 0, 0, 0.25),
+          0 0 40px rgba(209, 156, 74, 0.15),
+          inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(209, 156, 74, 0.25);
+        transition: all var(--transition-fast);
+      }
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 40px;
+        border-radius: 25px;
+        gap: 1rem;
+      }
+      .logo-img {
+        height: 65px;
+        object-fit: contain;
+      }
+      .nav-links {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        justify-content: center;
+      }
+      .nav-links a {
+        color: var(--text-light);
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all var(--transition-fast);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.3px;
+      }
+      .book-btn {
+        padding: 12px 32px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark) 0%,
+          var(--primary-gold) 100%
+        );
+        color: var(--primary-white);
+        font-weight: 700;
+        border-radius: var(--radius-full);
+        font-size: 0.95rem;
+        white-space: nowrap;
+        transition: all var(--transition-fast);
+        text-decoration: none;
+        display: inline-block;
+      }
+      .hero-section {
+        position: relative;
+        height: 100vh;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 0;
+        padding-top: 120px;
+      }
+      .hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.75) 0%,
+          rgba(0, 0, 0, 0.55) 40%,
+          rgba(0, 0, 0, 0.75) 100%
+        );
+      }
+      .hero-content {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        max-width: 800px;
+        padding: 0 var(--space-lg);
+      }
+      .hero-content h1 {
+        color: var(--primary-white);
+        margin-bottom: var(--space-md);
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      .hero-tagline {
+        font-size: 1.5rem;
+        color: var(--primary-gold);
+        font-style: italic;
+        margin-bottom: var(--space-xl);
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      }
+      .hero-description {
+        color: var(--text-light);
+        font-size: 1.1rem;
+        margin-bottom: var(--space-xl);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-cta-group {
+        display: flex;
+        gap: var(--space-md);
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: var(--space-md) var(--space-lg);
+        border: none;
+        border-radius: var(--radius-lg);
+        font-family: "Kenao", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all var(--transition-fast);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+      }
+      .btn-primary {
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark) 0%,
+          var(--primary-gold) 100%
+        );
+        color: var(--primary-white);
+        box-shadow: 0 8px 24px rgba(209, 156, 74, 0.3);
+      }
+      .btn-white {
+        background: var(--primary-white);
+        color: var(--primary-dark);
+        box-shadow: var(--shadow-md);
+      }
+      .btn-outline {
+        background: transparent;
+        color: var(--primary-white);
+        border: 2px solid rgba(209, 156, 74, 0.6);
+      }
+      .scroll-indicator {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
+      .scroll-indicator svg {
+        width: 40px;
+        height: 40px;
+        stroke: var(--primary-gold);
+        stroke-width: 2;
+        fill: none;
+      }
+      .hero-trust-bar {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.9rem;
+      }
+      .trust-divider {
+        color: var(--primary-gold);
+        opacity: 0.6;
+      }
+      .hamburger-menu {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        padding: 5px;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in-up {
+        animation: fadeInUp 1s ease-out 0.3s both;
+      }
     </style>
 
     <!-- Non-critical external CSS: lazy-loaded (no parse cost on critical path) -->
@@ -107,7 +348,10 @@
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&display=swap"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -124,7 +368,10 @@
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -140,11 +387,51 @@
     <link rel="shortcut icon" href="./assets/logo2.svg" />
 
     <!-- Full local stylesheets: lazy-loaded after critical CSS above handles first paint -->
-    <link rel="preload" href="./common.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="./layout.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="./components.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="./pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="./styles-premium.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+      rel="preload"
+      href="./common.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="./layout.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="./components.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="./pages.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="./styles-premium.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
     <noscript>
       <link rel="stylesheet" href="./common.css" />
       <link rel="stylesheet" href="./layout.css" />
@@ -498,7 +785,12 @@
           <a href="book" class="btn btn-primary">
             <i class="fas fa-calendar-check"></i> Book Your Event
           </a>
-          <a href="https://wa.me/918873268474" class="btn btn-white" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://wa.me/918873268474"
+            class="btn btn-white"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i class="fab fa-whatsapp"></i> WhatsApp Us Now
           </a>
           <a href="#portfolio" class="btn btn-outline">

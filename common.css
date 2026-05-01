@@ -169,7 +169,6 @@ p {
   transform: scale(1.1);
 }
 
-
 .logo {
   display: flex;
   align-items: center;
@@ -197,7 +196,6 @@ nav {
   margin: 0 auto;
 }
 
-
 .nav-links a:hover {
   color: var(--primary-gold);
   text-shadow: 0 0 10px rgba(209, 156, 74, 0.3);
@@ -220,9 +218,11 @@ nav {
 }
 
 .btn-book-nav {
-  background: linear-gradient(135deg,
-      var(--primary-dark) 0%,
-      var(--primary-gold) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-dark) 0%,
+    var(--primary-gold) 100%
+  );
   color: var(--primary-white);
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius-full);
@@ -244,9 +244,11 @@ nav {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle,
-      rgba(255, 255, 255, 0.2) 0%,
-      transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 70%
+  );
   transform: scale(0);
   transition: transform 0.5s ease;
 }
@@ -272,19 +274,21 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #D19C4A;
+  color: #d19c4a;
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
   padding: 6px 12px;
-  border: 1px solid #D19C4A;
+  border: 1px solid #d19c4a;
   border-radius: 4px;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .nav-phone-btn:hover {
-  background: #D19C4A;
+  background: #d19c4a;
   color: #fff;
 }
 
@@ -427,9 +431,11 @@ nav {
   right: 8px;
   top: 0;
   bottom: 0;
-  background: linear-gradient(90deg,
-      rgba(209, 156, 74, 0.12) 0%,
-      transparent 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(209, 156, 74, 0.12) 0%,
+    transparent 100%
+  );
   border-radius: 8px;
   opacity: 0;
   transition: opacity 0.2s ease-out;
@@ -490,7 +496,6 @@ nav {
 }
 
 @keyframes glowPulse {
-
   0%,
   100% {
     box-shadow: 0 0 20px rgba(209, 156, 74, 0.3);
@@ -502,7 +507,6 @@ nav {
 }
 
 @keyframes navbarGlow {
-
   0%,
   100% {
     box-shadow:
@@ -612,7 +616,6 @@ nav {
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     opacity: 1;
@@ -636,7 +639,6 @@ nav {
 }
 
 @keyframes bounce {
-
   0%,
   100% {
     transform: translateX(-50%) translateY(0);
@@ -684,7 +686,6 @@ nav {
 }
 
 @keyframes tilt {
-
   0%,
   100% {
     transform: rotateX(0deg) rotateY(0deg);
@@ -857,7 +858,7 @@ footer .container {
   margin: 0;
 }
 
-.footer-bottom>div {
+.footer-bottom > div {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -1057,9 +1058,11 @@ footer .container {
     width: 100%;
     max-width: 350px;
     height: 100vh;
-    background: linear-gradient(135deg,
-        rgba(15, 15, 15, 0.98) 0%,
-        rgba(81, 81, 82, 0.95) 100%);
+    background: linear-gradient(
+      135deg,
+      rgba(15, 15, 15, 0.98) 0%,
+      rgba(81, 81, 82, 0.95) 100%
+    );
     backdrop-filter: blur(20px);
 
     border-left: 2px solid rgba(209, 156, 74, 0.3);
@@ -1137,7 +1140,7 @@ footer .container {
     gap: var(--space-md);
   }
 
-  .footer-bottom>div {
+  .footer-bottom > div {
     flex-direction: column;
     gap: var(--space-md);
   }

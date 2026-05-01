@@ -1,4 +1,4 @@
-    import { PurgeCSS } from "purgecss";
+import { PurgeCSS } from "purgecss";
 import fs from "fs";
 
 async function runPurge() {
@@ -8,12 +8,11 @@ async function runPurge() {
       "./styles-premium.css",
       "./components.css",
       "./pages.css",
-      "./layout.css"
+      "./layout.css",
     ],
-    safelist: [/^active/, /^show/, /^open/, /^fade/]
+    safelist: [/^active/, /^show/, /^open/, /^fade/],
   });
 
-  
   if (!fs.existsSync("purged-css")) {
     fs.mkdirSync("purged-css");
   }

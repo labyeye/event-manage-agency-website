@@ -52,23 +52,121 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
     <!-- Preload: custom body font -->
-    <link rel="preload" href="./assets/fonts/Kenao.otf" as="font" type="font/otf" crossorigin />
+    <link
+      rel="preload"
+      href="./assets/fonts/Kenao.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
 
     <!-- Critical CSS — navbar + body reset -->
     <style>
-      @font-face{font-family:"Kenao";src:url("./assets/fonts/Kenao.otf") format("opentype");font-weight:normal;font-style:normal;font-display:swap}
-      :root{--primary-dark:#d19c4a;--primary-gold:#dbb172;--primary-white:#ffffff;--bg-dark:#0f0f0f;--text-dark:#1a1a1a;--text-light:#f5f5f5;--transition-fast:0.3s ease-in-out;--space-lg:2rem;--radius-full:9999px}
-      *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-      html{scroll-behavior:smooth;scroll-padding-top:80px}
-      body{font-family:"Kenao",sans-serif;background-color:var(--bg-dark);color:var(--text-dark);line-height:1.6;-webkit-font-smoothing:antialiased}
-      .container{margin:0 auto;padding:0 var(--space-lg);width:100%}
-      .navbar{position:fixed;top:12px;left:50%;transform:translateX(-50%);width:95%;max-width:1000px;z-index:1000;background:rgba(15,15,15,.45);backdrop-filter:blur(20px);border-radius:25px;box-shadow:0 15px 50px rgba(0,0,0,.25),0 0 40px rgba(209,156,74,.15),inset 0 1px 0 rgba(255,255,255,.1);border:1px solid rgba(209,156,74,.25)}
-      .nav-container{display:flex;align-items:center;justify-content:space-between;padding:22px 40px;border-radius:25px;gap:1rem}
-      .logo-img{height:65px;object-fit:contain}
-      .nav-links{display:flex;gap:35px;align-items:center;list-style:none;margin:0;padding:0;flex:1;justify-content:center}
-      .nav-links a{color:var(--text-light);font-weight:600;font-size:.95rem;text-decoration:none;letter-spacing:.3px}
-      .book-btn{padding:12px 32px;background:linear-gradient(135deg,var(--primary-dark) 0%,var(--primary-gold) 100%);color:var(--primary-white);font-weight:700;border-radius:var(--radius-full);font-size:.95rem;white-space:nowrap;text-decoration:none;display:inline-block}
-      .hamburger-menu{display:none}
+      @font-face {
+        font-family: "Kenao";
+        src: url("./assets/fonts/Kenao.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+      :root {
+        --primary-dark: #d19c4a;
+        --primary-gold: #dbb172;
+        --primary-white: #ffffff;
+        --bg-dark: #0f0f0f;
+        --text-dark: #1a1a1a;
+        --text-light: #f5f5f5;
+        --transition-fast: 0.3s ease-in-out;
+        --space-lg: 2rem;
+        --radius-full: 9999px;
+      }
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+      body {
+        font-family: "Kenao", sans-serif;
+        background-color: var(--bg-dark);
+        color: var(--text-dark);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 0 var(--space-lg);
+        width: 100%;
+      }
+      .navbar {
+        position: fixed;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        max-width: 1000px;
+        z-index: 1000;
+        background: rgba(15, 15, 15, 0.45);
+        backdrop-filter: blur(20px);
+        border-radius: 25px;
+        box-shadow:
+          0 15px 50px rgba(0, 0, 0, 0.25),
+          0 0 40px rgba(209, 156, 74, 0.15),
+          inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(209, 156, 74, 0.25);
+      }
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 22px 40px;
+        border-radius: 25px;
+        gap: 1rem;
+      }
+      .logo-img {
+        height: 65px;
+        object-fit: contain;
+      }
+      .nav-links {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+        justify-content: center;
+      }
+      .nav-links a {
+        color: var(--text-light);
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-decoration: none;
+        letter-spacing: 0.3px;
+      }
+      .book-btn {
+        padding: 12px 32px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark) 0%,
+          var(--primary-gold) 100%
+        );
+        color: var(--primary-white);
+        font-weight: 700;
+        border-radius: var(--radius-full);
+        font-size: 0.95rem;
+        white-space: nowrap;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .hamburger-menu {
+        display: none;
+      }
     </style>
 
     <!-- Google Fonts: consolidated into one request, lazy-loaded -->
@@ -76,7 +174,10 @@
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap"
       as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -93,7 +194,10 @@
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-      onload="this.onload=null;this.rel='stylesheet'"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
     />
     <noscript>
       <link
@@ -110,11 +214,51 @@
     <link rel="shortcut icon" href="./assets/logo2.svg" />
 
     <!-- Full local stylesheets: async-loaded -->
-    <link rel="preload" href="./common.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="./layout.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="./components.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="./pages.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <link rel="preload" href="./styles-premium.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link
+      rel="preload"
+      href="./common.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="./layout.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="./components.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="./pages.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="./styles-premium.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
     <noscript>
       <link rel="stylesheet" href="./common.css" />
       <link rel="stylesheet" href="./layout.css" />
@@ -1285,10 +1429,10 @@
         </a>
       </div>
 
-    <!-- defer: ensures scripts run after DOM is ready without blocking HTML parsing -->
-    <script src="scripts-premium.js" defer></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
+      <!-- defer: ensures scripts run after DOM is ready without blocking HTML parsing -->
+      <script src="scripts-premium.js" defer></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
           const filterBtns = document.querySelectorAll(".filter-btn");
           const portfolioItems = document.querySelectorAll(".portfolio-item");
           filterBtns.forEach((btn) => {
@@ -1337,5 +1481,6 @@
           }, 1500);
         }
       </script>
+    </div>
   </body>
 </html>
