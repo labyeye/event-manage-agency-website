@@ -1153,8 +1153,6 @@
   .portfolio-page .portfolio-grid {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  .wedding-page .features-grid,
   .corporate-page .features-grid,
   .birthday-page .features-grid,
   .cultural-page .features-grid,
