@@ -4,7 +4,6 @@
     var(--primary-white) 0%,
     rgba(255, 255, 255, 0.95) 100%
   );
-  padding: var(--space-xl);
   border-radius: var(--radius-xl);
   text-align: center;
   box-shadow: var(--shadow-md);
@@ -578,10 +577,6 @@
 
   .portfolio-item {
     height: 200px;
-  }
-
-  .feature-card {
-    padding: var(--space-lg);
   }
 }
 
