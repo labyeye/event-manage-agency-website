@@ -173,7 +173,7 @@ a {
 
 .btn-white {
   background: var(--primary-white);
-  color: var(--primary-dark);
+  color: black;
   box-shadow: var(--shadow-md);
 }
 
