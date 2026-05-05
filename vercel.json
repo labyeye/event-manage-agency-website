@@ -97,6 +97,66 @@
       ],
       "destination": "https://arevents.in/:path*",
       "permanent": true
+    },
+    {
+      "source": "/anniversary-bihar/anniversary-decoration-in-bhagalpur.html",
+      "destination": "/anniversary-bihar/anniversary-decoration-in-bhagalpur",
+      "permanent": true
+    },
+    {
+      "source": "/anniversary-bihar/anniversary-decoration-in-bihar-sharif.html",
+      "destination": "/anniversary-bihar/anniversary-decoration-in-bihar-sharif",
+      "permanent": true
+    },
+    {
+      "source": "/anniversary-bihar/anniversary-decoration-in-motihari.html",
+      "destination": "/anniversary-bihar/anniversary-decoration-in-motihari",
+      "permanent": true
+    },
+    {
+      "source": "/anniversary-bihar/anniversary-decoration-in-gaya.html",
+      "destination": "/anniversary-bihar/anniversary-decoration-in-gaya",
+      "permanent": true
+    },
+    {
+      "source": "/anniversary-bihar/anniversary-decoration-in-madhubani.html",
+      "destination": "/anniversary-bihar/anniversary-decoration-in-madhubani",
+      "permanent": true
+    },
+    {
+      "source": "/anniversary-bihar/anniversary-decoration-in-darbhanga.html",
+      "destination": "/anniversary-bihar/anniversary-decoration-in-darbhanga",
+      "permanent": true
+    },
+    {
+      "source": "/anniversary-bihar/anniversary-decoration-in-purnia.html",
+      "destination": "/anniversary-bihar/anniversary-decoration-in-purnia",
+      "permanent": true
+    },
+    {
+      "source": "/anniversary-bihar/anniversary-decoration-in-saharsa.html",
+      "destination": "/anniversary-bihar/anniversary-decoration-in-saharsa",
+      "permanent": true
+    },
+    {
+      "source": "/birthday-bihar/birthday-decoration-in-bihar-sharif.html",
+      "destination": "/birthday-bihar/birthday-decoration-in-bihar-sharif",
+      "permanent": true
+    },
+    {
+      "source": "/birthday-bihar/birthday-decoration-in-arrah.html",
+      "destination": "/birthday-bihar/birthday-decoration-in-arrah",
+      "permanent": true
+    },
+    {
+      "source": "/anniversary-celebrations.html",
+      "destination": "/anniversary-celebrations",
+      "permanent": true
+    },
+    {
+      "source": "/award-ceremonies.html",
+      "destination": "/award-ceremonies",
+      "permanent": true
     }
   ]
 }

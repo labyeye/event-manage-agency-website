@@ -76,7 +76,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
-    <!-- Preload: custom body font -->
     <link
       rel="preload"
       href="./assets/fonts/Kenao.otf"
@@ -85,7 +84,6 @@
       crossorigin
     />
 
-    <!-- Critical CSS — navbar + body reset so first paint is unstyled-free -->
     <style>
       @font-face {
         font-family: "Kenao";
@@ -205,7 +203,6 @@
       }
     </style>
 
-    <!-- Full local stylesheets: async-loaded after critical inline CSS covers first paint -->
     <link
       rel="preload"
       href="./common.css"
@@ -585,9 +582,8 @@
       </div>
     </footer>
 
-    <!-- defer: runs after HTML is parsed, never blocks rendering -->
     <script src="scripts-premium.js" defer></script>
-    <!-- Nav active-state and mobile toggle moved here from mid-body -->
+
     <script>
       function toggleMobileNav() {
         document.querySelector(".nav-links").classList.toggle("active");

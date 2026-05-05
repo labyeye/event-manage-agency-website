@@ -1,0 +1,25 @@
+{
+  "name": "event-manage-agency-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "purge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labyeye/event-manage-agency-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/labyeye/event-manage-agency-website/issues"
+  },
+  "homepage": "https://github.com/labyeye/event-manage-agency-website#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}

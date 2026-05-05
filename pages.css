@@ -2573,7 +2573,6 @@
     padding: 0 20px;
   }
 
-  /* Responsive features-grid for tablet */
   .about-page .features-grid,
   .features-grid,
   .stage-cards-grid,
@@ -2592,7 +2591,6 @@
 }
 
 @media (max-width: 480px) {
-  /* Responsive features-grid for mobile */
   .about-page .features-grid,
   .features-grid,
   .stage-cards-grid,

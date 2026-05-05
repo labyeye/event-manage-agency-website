@@ -47,12 +47,10 @@
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
 
-    <!-- DNS / TCP pre-warm for external origins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
-    <!-- Preload: custom body font (used by every element) -->
     <link
       rel="preload"
       href="./assets/fonts/Kenao.otf"
@@ -60,13 +58,9 @@
       type="font/otf"
       crossorigin
     />
-    <!-- Preload: hero poster — the LCP candidate on mobile -->
+
     <link rel="preload" href="./assets/images/hero-poster.webp" as="image" />
 
-    <!-- ═══════════════════════════════════════════════════
-         CRITICAL CSS — above-the-fold only (navbar + hero).
-         Full styles load asynchronously below.
-    ════════════════════════════════════════════════════ -->
     <style>
       @font-face {
         font-family: "Kenao";
@@ -342,8 +336,6 @@
       }
     </style>
 
-    <!-- Non-critical external CSS: lazy-loaded (no parse cost on critical path) -->
-    <!-- Google Fonts: display=swap already set; loading asynchronously prevents layout shift -->
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,100..900;1,100..900&display=swap"
@@ -360,7 +352,6 @@
       />
     </noscript>
 
-    <!-- Font Awesome: icons are not above-the-fold critical; lazy-load to skip ~30 KB of blocking CSS -->
     <link
       rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -386,7 +377,6 @@
     <link rel="icon" type="image/svg+xml" href="./assets/logo2.svg" />
     <link rel="shortcut icon" href="./assets/logo2.svg" />
 
-    <!-- Full local stylesheets: lazy-loaded after critical CSS above handles first paint -->
     <link
       rel="preload"
       href="./common.css"
